@@ -43,12 +43,13 @@ dynamic-typing: True
 shuffle: True	# Shuffle the lines.
 loop: True
 loop-count:	False # Set False for infinite loop, or set any number for finite loop.
-type-speed:	15		# Default 10
+type-speed:	12		# Default 10
 start-delay: 200	# Default 200
 delete-delay: 5000	# Default 5000
 lines:			# You can add HTML Tags in the Text
-  - text: "Hi, I am John Chou, and you can call me Joou :)"
+  - text: "Hi, I am John Chou, nice to meet you :)"
   - text: "I am a Software Engineer based in the City of Tainan, Taiwan."
+  - text: "You can call me Joou, as you can see there are too many John or Chou."
 
 ########
 # Blog #
