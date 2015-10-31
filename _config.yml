@@ -24,7 +24,7 @@ author: "John Chou"
 lang: "en"
 title: "John Chou's Homepage"
 favicon: "/img/hacker.ico"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+description: "Blog and website of John Chou, blogging mainly for tech. Opinions expressed are mine."
 keywords: "Joou, blog, personal, jekyll, theme"
 
 ################
@@ -48,8 +48,10 @@ start-delay: 200	# Default 200
 delete-delay: 5000	# Default 5000
 lines:			# You can add HTML Tags in the Text
   - text: "Hi, I am John Chou, nice to meet you :)"
-  - text: "I am a Software Engineer based in the City of Tainan, Taiwan."
-  - text: "You can call me Joou, as you can see there are too many John or Chou."
+  - text: "I am a Software Engineer based in the City of Tainan."
+  - text: "I used to write C, Python, Javascript."
+  - text: "Yeah I like embedded system."
+  - text: "*nix is awesome."
 
 ########
 # Blog #
