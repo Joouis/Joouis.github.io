@@ -23,7 +23,7 @@ force-https: True
 author: "John Chou"
 lang: "en"
 title: "John Chou's Homepage"
-favicon: "/img/hacker.png"
+favicon: "/img/favicon.ico"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
 keywords: "Joou, blog, personal, jekyll, theme"
 
@@ -31,7 +31,7 @@ keywords: "Joou, blog, personal, jekyll, theme"
 # Intro layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "/img/hacker.png"
 background-img: "../img/intro-bg.jpg"
 me-img: "/img/jetpacktocat.png"
 
