@@ -49,7 +49,7 @@ delete-delay: 5000	# Default 5000
 lines:			# You can add HTML Tags in the Text
   - text: "Hi, I am John Chou, nice to meet you :)"
   - text: "I am a Software Engineer based in the City of Tainan."
-  - text: "I used to write C, Python, Javascript."
+  - text: "I used to write C, Python and Javascript."
   - text: "Yeah I like embedded system."
   - text: "*nix is awesome."
 
