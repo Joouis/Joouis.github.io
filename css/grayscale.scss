@@ -83,6 +83,11 @@ p {
     transition: all .35s;
 }
 
+.btn-primary:hover {
+    border-color: #f05f40;
+    color: #fff;
+    background-color: #f05f40;
+}
 
 .light {
     font-weight: 400;
