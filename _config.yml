@@ -75,7 +75,7 @@ events:
     description: "Obtaining master degree of EE in NCKU"
   - image: "/img/career/lilee.jpg"
     date: "July 2015 - September 2015"
-    description: "Intern Software Engineer"
+    description: "Software Engineer(Intern)"
 
 # First image of the Career timeline
 career-img: "/img/career/joou.jpg"
