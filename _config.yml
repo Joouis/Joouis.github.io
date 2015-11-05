@@ -48,10 +48,9 @@ start-delay: 200	# Default 200
 delete-delay: 5000	# Default 5000
 lines:			# You can add HTML Tags in the Text
   - text: "Hi, I am John Chou, nice to meet you :)"
-  - text: "I am a Software Engineer based in the City of Tainan."
+  - text: "I am a Software Engineer based in the Tainan City."
   - text: "I used to write C, Python and Javascript."
-  - text: "Yeah I like embedded system."
-  - text: "*nix is awesome."
+  - text: "*nix is awesome!"
 
 ########
 # Blog #
@@ -85,23 +84,19 @@ career-img: "/img/career/default.png"
 # Contact layout #
 ##################
 
-email: "your@email.here"
+email: "luckyjoou@gmail.com"
 
 ##################
 # Social Buttons #
 ##################
 
 social:
-  - title: "facebook"
-    url: "https://facebook.com/"
   - title: "twitter"
-    url: "https://twitter.com/"
-  - title: "youtube"
-    url: "https://youtube.com/"
+    url: "https://twitter.com/JoouChou"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "rss"
-    url: "/feed.xml"
+    url: "https://github.com/Joouis"
+  - title: "instagram"
+    url: "https://instagram.com/Joouis/"
 
 ############
 # 404 page #
