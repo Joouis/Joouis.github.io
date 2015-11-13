@@ -73,10 +73,10 @@ disqus-shortname: "joou"
 events:
   - image: "/img/career/ncku.png"
     date: "September 2014 - Today"
-    description: "Obtaining master degree of EE in NCKU"
+    description: "NCKU: Obtaining master degree of EE"
   - image: "/img/career/lilee.jpg"
     date: "July 2015 - September 2015"
-    description: "Software Engineer(Intern)"
+    description: "Lilee System: Software Engineer(Intern)"
 
 # First image of the Career timeline
 career-img: "/img/career/joou.jpg"
