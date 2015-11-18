@@ -99,7 +99,7 @@ ol {
     border-bottom: 1px solid rgba($light, 0.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #629aa9;
+    background-color: $light;
 	// opacity: 0.8;
 
     /* Fix height limit and scroll for small screen and many items menu */
@@ -175,7 +175,7 @@ ol {
     height: auto;
     padding: 100px 0;
     text-align: center;
-	color: #F43325;
+	color: $light;
     background: url( {{ site.background-img }} ) no-repeat bottom center scroll;
     background-color: $dark;
     -webkit-background-size: cover;
@@ -203,6 +203,10 @@ ol {
 	background-image: url("../img/career.jpg");
 }
 
+section#Career {
+	color: white;
+}
+
 @media(min-width:767px) {
     .intro {
         height: 100%;
@@ -214,7 +218,7 @@ ol {
 
             .intro-text {
                 font-size: 35px;
-				color: #F43325;
+				color: $light;
 				font-style: oblique;
 				// font-weight: bold;
             }
