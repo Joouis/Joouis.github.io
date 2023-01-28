@@ -4,7 +4,7 @@
 
 # Site
 title: 江边的旱鸭子
-subtitle: Blog of Joou
+subtitle: Blog of John Chou
 description: Stand high, think different.
 keywords: Web,JavaScript,blog,reading,life,前端,生活
 author: John Chou
@@ -102,7 +102,7 @@ Plugins:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:Joouis/blog.git
+  repo: git@github.com:Joouis.github.io.git
 
 # Feed Atom
 feed:
