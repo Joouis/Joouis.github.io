@@ -70,10 +70,11 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2023.01.20
+### 2023.02.05
 
 | Name | Team | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: |
+| Software Engineering Manager | M365 Search | Suzhou | Strong |
 | Senior Software Engineer | M365 Resilience | Suzhou | Strong |
 | Senior Software Engineer | M365 Fleet | Suzhou | Strong |
 | Senior Software Engineer | M365 Store | Suzhou | Strong |
@@ -81,10 +82,8 @@ date: 2019-04-20 01:01:00
 | Principal Software Eng Mgr | M365 Flighting | Suzhou | Strong |
 | Senior Software Engineer | M365 Big Data Optimization | Suzhou | Strong |
 | Senior Software Engineer | M365 Data Insights | Suzhou | Strong |
-| Senior Software Engineer | M365 Data Platform | Suzhou | Strong |
 | Senior/Principal Software Eng Mgr | M365 Performance | Suzhou | Strong |
-| Senior Software Engineer | Purview China Team | Shanghai | Middle |
-| Senior Software Engineer | Azure HDInsight Backend | Beijing | Strong |
+| Software Engineer II | Text to Speech | Beijing | Middle |
 
 
 ### 2020.11.28
