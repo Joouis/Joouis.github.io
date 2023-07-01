@@ -1,7 +1,7 @@
 ---
 title: 音乐基础速查笔记
 date: 2021-07-18 16:47:02
-updated: 2021-07-28 21:02:00
+updated: 2023-07-01 18:36:00
 categories:
 - 爱乐之城
 excerpt: 以爵士乐知识为主的大杂烩。
@@ -12,6 +12,7 @@ tags:
 - harmony
 - note
 - cheat sheet
+- intervals
 ---
 
 ## 和弦
@@ -113,3 +114,8 @@ TBC...
 |                | Bebop major                 | 1、2、3、4、5、#5、6、7      |
 |                | Bebop melodic minor         | 1、2、b3、4、5、#5、6、7     |
 
+### 音程推导
+
+[intervals-calculation-1](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2136636&authkey=%21AEhkC4Qr_RUmPr8&width=1063&height=1379)
+
+[intervals-calculation-2](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2136637&authkey=%21AFu1O4p3VCXv0Hk&width=1640&height=2128)
