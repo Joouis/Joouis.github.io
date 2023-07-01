@@ -70,9 +70,13 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2023.06.16
+### 2023.07.01
 
-目前暂无互联网研发相关职位开放，请保持关注，谢谢。
+| Name | Team | City | English |
+| :-----------: | :-----------: | :-----------: | :-----------: |
+| SENIOR SOFTWARE ENG MANAGER | Purview China UX Team Manager | Shanghai | Strong |
+| SOFTWARE ENGINEER II | Purview China Team | Shanghai | Strong |
+| SOFTWARE ENGINEER II | Purview China UX Team | Shanghai | Strong |
 
 
 ### 2020.11.28
