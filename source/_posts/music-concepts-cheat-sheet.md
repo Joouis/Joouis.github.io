@@ -116,6 +116,6 @@ TBC...
 
 ### 音程推导
 
-[intervals-calculation-1](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2136636&authkey=%21AEhkC4Qr_RUmPr8&width=1063&height=1379)
+![intervals-calculation-1](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2136636&authkey=%21AEhkC4Qr_RUmPr8&width=1063&height=1379)
 
-[intervals-calculation-2](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2136637&authkey=%21AFu1O4p3VCXv0Hk&width=1640&height=2128)
+![intervals-calculation-2](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2136637&authkey=%21AFu1O4p3VCXv0Hk&width=1640&height=2128)
