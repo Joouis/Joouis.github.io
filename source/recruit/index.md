@@ -70,13 +70,13 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2023.07.28
+### 2023.08.15
 
 | Name | Team | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: |
-| SENIOR SOFTWARE ENG MANAGER | Purview China UX Team Manager | Shanghai | Strong |
-| SOFTWARE ENGINEER II | Purview China Team | Shanghai | Strong |
-| SOFTWARE ENGINEER II | Purview China UX Team | Shanghai | Strong |
+| Principal Software ENG Manager | WebXT | Suzhou | Strong |
+| Software Engineer II | Purview China UX Team | Shanghai | Strong |
+| Software Engineer II | Purview China Team | Shanghai | Strong |
 
 
 ### 2020.11.28
