@@ -70,13 +70,18 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2023.08.15
+### 2023.08.24
 
 | Name | Team | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: |
+| Senior Software Engineer | AI Platform ⭐️ | Suzhou/Beijing | Middle |
+| Senior Software Engineer | Bing Retail team | Suzhou | Middle |
+| Senior Applied Scientist | WebXT | Suzhou | Middle |
+| Software Engineer 2 | Edge | Suzhou | Middle |
 | Principal Software ENG Manager | WebXT | Suzhou | Strong |
-| Software Engineer II | Purview China UX Team | Shanghai | Strong |
-| Software Engineer II | Purview China Team | Shanghai | Strong |
+| Software Engineer 2 | Purview China UX Team | Shanghai | Strong |
+| Software Engineer 2 | Purview China Team | Shanghai | Strong |
+| Senior Software Engineer | Bing Platform | Beijing | Middle |
 
 
 ### 2020.11.28
