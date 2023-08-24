@@ -74,7 +74,7 @@ date: 2019-04-20 01:01:00
 
 | Name | Team | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: |
-| Senior Software Engineer | AI Platform ⭐️ | Suzhou/Beijing | Middle |
+| **Senior Software Engineer** | **AI Platform** | **Suzhou**/**Beijing** | **Middle** |
 | Senior Software Engineer | Bing Retail team | Suzhou | Middle |
 | Senior Applied Scientist | WebXT | Suzhou | Middle |
 | Software Engineer 2 | Edge | Suzhou | Middle |
@@ -82,6 +82,9 @@ date: 2019-04-20 01:01:00
 | Software Engineer 2 | Purview China UX Team | Shanghai | Strong |
 | Software Engineer 2 | Purview China Team | Shanghai | Strong |
 | Senior Software Engineer | Bing Platform | Beijing | Middle |
+
+
+### (以下部分存档仅供参考)
 
 
 ### 2020.11.28
@@ -143,9 +146,6 @@ date: 2019-04-20 01:01:00
 
 
 
-
-
-### (保留过往半年内的职位，有部分删减，仅供参考)
 
 ### 2019.11.28
 
