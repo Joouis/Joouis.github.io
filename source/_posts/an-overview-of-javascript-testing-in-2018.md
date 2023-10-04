@@ -276,7 +276,7 @@ exports[`renders correctly 1`] = `
 
 UI 测试总是运行在**一个浏览器或近似浏览器环境 (7)** 中，模拟用户行为（点击，输入，滚动等等...），确保这些场景在终端用户眼中确实工作。
 
-请记住这类测试是最难准备的。设想你自己创建一个环境在不同的机器、设备、浏览器类型和版本上运行一个测试... 这就是为什么有[很多服务商](https://www.keycdn.com/blog/browser-compatibility-testing-tools)为你提供这项服务。[你还可以在这里发现更多](https://www.guru99.com/top-10-cross-browser-testing-tools.html)。
+请记住这类测试是最难准备的。设想你自己创建一个环境在不同的机器、设备、浏览器类型和版本上运行一个测试... 这就是为什么有[很多服务商](https://www.keycdn.com/blog/browser-compatibility-testing-tools)为你提供这项服务。
 
 ### 常见的知名测试工具
 
