@@ -1,7 +1,7 @@
 ---
 title: 2018 年 JavaScript 测试概观
 date: 2018-10-29 21:26:06
-updated: 2018-12-14 00:00:00
+updated: 2023-10-04 14:20:00
 categories:
 - Web 前端
 tags:
@@ -453,7 +453,7 @@ Tape 是这些框架中最简单的。它仅有一个 Node.js 文件和一个非
 
 ## UI 测试工具
 
-首先就像之前提过的，你可以在[这里](https://www.keycdn.com/blog/browser-compatibility-testing-tools)和[这里](https://www.guru99.com/top-10-cross-browser-testing-tools.html)找到有关服务提供商的好文，这些服务提供商提供主机帮助你在不同的设备和浏览器上执行你的测试。
+首先就像之前提过的，你可以在[这里](https://www.keycdn.com/blog/browser-compatibility-testing-tools)找到有关服务提供商的好文，这些服务提供商提供主机帮助你在不同的设备和浏览器上执行你的测试。
 
 长期以 UI 测试为目标的工具从实现、哲学到 API 都多种多样，因此强烈建议花时间理解不同的解决方案并在你的产品中检验它们。
 
@@ -748,7 +748,6 @@ Scenario('login with generated password', async (I) => {
 - [JavaScript Testing: **Unit vs Functional vs Integration Tests** (April 2016)](https://www.sitepoint.com/javascript-testing-unit-functional-integration/)
 - [What are **Unit Testing, Integration Testing and Functional Testing**? (April 2015)](https://codeutopia.net/blog/2015/04/11/what-are-unit-testing-integration-testing-and-functional-testing/)
 - [Top 12 Browser Compatibility Testing Tools (June 2017)](https://www.keycdn.com/blog/browser-compatibility-testing-tools/)
-- [Top 10 Cross Browser Compatibility Testing Tools In 2018 (2018)](https://www.guru99.com/top-10-cross-browser-testing-tools.html)
 
 ### spies 和 stubs
 
