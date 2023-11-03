@@ -70,19 +70,22 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2023.10.20
+### 2023.11.03
 
 | Name | Team | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: |
-| Software Engineer 2 | Windows365 | Suzhou | Middle |
-| Software Development Engineer 2 | Homepages Experience | Suzhou | Middle |
-| Senior Software Engineer | Edge IOS | Suzhou | Middle |
+| Senior Software Engineer | M365 | Suzhou | Strong |
 | Principal Software ENG Manager | Web Experience | Suzhou | Strong |
+| Principal Software Engineer - Java/Spring | DevDiv | Shanghai | Strong |
 | Senior Software Engineer | Purview China Team | Shanghai | Strong |
-| Senior Software Engineer | Edge Consumer | Beijing | Middle |
+| Senior Software Engineer | DeepSpeed | Beijing | Middle |
+| Senior Software Development Engineer | Bing Whole Page | Beijing | Middle |
+| Principal Architect | Feed&Analytics | Beijing | Excellent |
+| Senior Software Engineer | WebXT Data | Beijing | Strong |
 | Principal Software Eng Manager | Bing Platform | Beijing | Strong |
+| Senior Software Engineer | Edge IOS | Beijing | Middle |
 | Senior Software Engineer | Azure HDInsight | Beijing | Middle |
-| Principal Software Engineer | Bing Data | Beijing | Strong |
+| Senior/Principal Software Engineer | Bot Detection | Beijing | Strong |
 
 
 ### (以下部分存档仅供参考)
