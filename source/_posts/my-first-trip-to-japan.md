@@ -66,9 +66,9 @@ tags:
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138185&authkey=%21AD_QrvZuvl6XPVU&width=1500&height=2000)
 
-沿路看到的应该是Livehouse，上面写着演出类型主要是爵士、放克和布鲁斯。日本这些音乐的发展已经走在前面。
+沿路看到的应该是Livehouse，上面写着演出类型主要是爵士、放克和布鲁斯。
 
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138183&authkey=%21APfcnbBvy50HGLM&width=1500&height=2000)
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138445&authkey=%21AA7YFWrp6zjKAIs&width=1481&height=1975)
 
 日本特色之K car，没想到还有越野版。
 
@@ -95,6 +95,8 @@ tags:
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138195&authkey=%21ADz4Ii9BMarbswc&width=1500&height=2000)
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138196&authkey=%21AN9taH98LYJtyZA&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138198&authkey=%21APRoyBLWSkw4m08&width=1500&height=2000)
 
 这个卫生间，一方面觉得它面积很小，基本上只能一个人落脚；同时又觉得它的空间利用率很高，存在很多巧思设计。这就是日本吧~
 
@@ -201,3 +203,41 @@ tags:
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138248&authkey=%21AItFI65NWmIJVLc&width=2000&height=1500)
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138249&authkey=%21AA50_bji7SbfKtU&width=2000&height=1500)
+
+这家店看上去不大，实际地下还有整整一层，可以看到不少日本上班族来到这里畅饮畅谈。这里Eyama给我科普，日本人在这种场合以喝酒为主、只有少量菜下酒，而我们这种桌上除了两杯酒外全是菜的，一看就是外国人😅。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138245&authkey=%21AOnpIVIjq8G3AtA&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138236&authkey=%21AJOP0_c_DFD_jYo&width=2000&height=1500)
+
+墙上的海报同样有特色。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138237&authkey=%21AE5JdBIiRCeROtY&width=2000&height=1500)
+
+扫码点餐，顺便附上Wifi账密。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138238&authkey=%21AChVPFu8GyJYEUQ&width=1500&height=2000)
+
+啤酒很清爽，食物的整体口味也不错，基本没怎么踩雷。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138235&authkey=%21AKnVaW3VUnxEi4Q&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138239&authkey=%21AMrBiwZVtmqTNKg&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138240&authkey=%21AGdb2K4n0NYrGV4&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138241&authkey=%21AJ-ypCIYibPfS3k&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138242&authkey=%21AJx-svKD3YjVJTU&width=2000&height=1500)
+
+意犹未尽，再来一杯乌龙茶酒。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138243&authkey=%21AI_ZLvPFumXCAoo&width=1500&height=2000)
+
+这个炒面是正宗大阪口味，非常咸，我不太行。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138244&authkey=%21AJDzn9MpU2njAOM&width=2000&height=1500)
+
+走前去了个厕所，又是日本特色的迷你洗手池和电动马桶圈。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138246&authkey=%21AKNhpY6tOw8hmOk&width=2000&height=1500)
