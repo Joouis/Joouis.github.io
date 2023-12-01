@@ -70,29 +70,36 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2023.11.17
+### 2023.12.01
 
 | Name | Team | Skills | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| Principal Software Engineer | M365 |  | Suzhou | Strong |
+| Senior Software Engineer | Win365 |  | Suzhou | Middle |
+| Senior Software Engineer | MSAI | Required: C++ | Suzhou | Strong |
+| Principal Software Engineer | M365 | Preferred: AI/ML | Suzhou | Strong |
 | Principal SW Engineering Mgr | M365 |  | Suzhou | Strong |
-| Software Engineer 2 | M365 |  | Suzhou | Strong |
-| Senior Applied Scientist | Edge+SA |  | Suzhou | Middle |
-| Software Engineer 2 | SOX | Required: Deep Learning. Preferred: C++ | Suzhou | Strong |
-| Senior Software Engineer | M365 |  | Suzhou | Strong |
-| Software Engineer 2 | Win365 |  | Suzhou | Middle |
+| Senior Applied Scientist | Edge |  | Suzhou | Middle |
+| Senior Software Engineer | SOX | Required: Deep Learning. Preferred: C++ | Suzhou | Strong |
+| Senior Software Engineer | Ads+PIQ |  | Suzhou | Middle |
+| Senior Software Engineer | M365 | Preferred: C++ | Suzhou | Strong |
+| Software Engineer II | Win365 | Preferred: Security | Suzhou | Middle |
 | Principal Software Engineering Manager | Content Services+Maps |  | Suzhou | Strong |
-| Principal Software Engineer- Java/Spring | DevDiv |  | Shanghai | Strong |
-| Senior Software Engineer - Purview China Team | Azure Data Governance |  | Shanghai | Strong |
-| Principal Software Engineer--Edge desktop | Edge+SA |  | Beijing | Middle |
-| Senior Software Engineer--DeepSpeed | Bing Platform |  | Beijing | Middle |
-| Senior Software Development Engineer | S+D | Required: Fullstack, Frontend | Beijing | Middle |
+| Software Engineer II Copilot Plugin | DevDiv |  | Shanghai | Strong |
+| Senior Software Engineer | Azure Data Factory | Required: Data Processing, Data integration, Algorithm | Shanghai | Middle |
+| Principal Software Engineer | DevDiv | Required: JAVA, Kubernetes | Shanghai | Strong |
+| Senior Software Engineer | Azure Data Governance | Required: Data Processing, Algorithm | Shanghai | Strong |
+| Senior Software Engineer | S+D |  | Beijing | Strong |
+| Principal Software Engineer | Bing Platform |  | Beijing | Middle |
+| Principal Software Development Engineer | WebXT Data |  | Beijing | Strong |
+| Software Engineer II | Cognition Text to Speech | Required: Speech Recognition | Beijing | Middle |
+| Principal Software Engineer | Edge Desktop |  | Beijing | Middle |
+| Senior Software Engineer | Bing Platform |  | Beijing | Middle |
+| Senior Software Engineer | S+D | Required: Fullstack, Frontend | Beijing | Middle |
 | Principal Architect | Content Services+Maps |  | Beijing | Excellent |
 | Senior Software Engineer | WebXT Data | Required: Big Data, Spark | Beijing | Strong |
 | Senior Software Engineer | AI Platform | Preferred: C++, CPU, GPU | Beijing | Middle |
 | Principal Software Eng Manager | Bing Platform |  | Beijing | Strong |
-| Senior Software Engineer-Edge IOS | Edge+SA |  | Beijing | Middle |
-| Senior/Principal Software Engineer | WebXT Data | Preferred: Big Data, Data Processing, Data Analytics | Beijing | Strong |
+| Senior Software Engineer | Edge IOS |  | Beijing | Middle |
 
 
 ### (以下部分存档仅供参考)
