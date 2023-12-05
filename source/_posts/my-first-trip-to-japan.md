@@ -52,7 +52,7 @@ tags:
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138181&authkey=%21AMZlnPlyTliGuKE&width=2000&height=1500)
 
-我们当天预订了心斋桥边上的东横INN酒店，电车到达难波站后，由于距离不是很远我们决定直接步行过去。这几天Eyama都只提了一个内置保温层的大袋子，里面非常离谱地装了一位深圳朋友做得糕点，要带去东京给一群他们共同的朋友。我非常无语这群东京的人也是好意思让Eyama从苏州-大阪-东京这么带一路，同时这也苦了我的行李箱。因为大多时候他都把袋子放行李箱上，然后主动提出拖着箱子走。但是走得一旦久点，Eyama就会在过马路台阶时下意识直接通过拉杆提起箱子通过，这样的后果就是回苏州时拉杆已经摇摇晃晃、命不久矣。尽管路上说过几次但时间一久他就忘了，后半段还是我自己管好箱子吧。
+日本的酒店都是我做功课后预订的（Eyama则负责选择餐厅），我们今晚住在心斋桥边上的东横INN酒店。电车到达难波站后，由于距离不是很远我们决定直接步行过去。这几天Eyama都只提了一个内置保温层的大袋子，里面非常离谱地装了一位深圳朋友做得糕点，要带去东京给一群他们共同的朋友。我非常无语这群东京的人也是好意思让Eyama从苏州-大阪-东京这么带一路，同时这也苦了我的行李箱。因为大多时候他都把袋子放行李箱上，然后主动提出拖着箱子走。但是走得一旦久点，Eyama就会在过马路台阶时下意识直接通过拉杆提起箱子通过，这样的后果就是回苏州时拉杆已经摇摇晃晃、命不久矣。尽管路上说过几次但时间一久他就忘了，后半段还是我自己管好箱子吧。
 
 初到大阪只感觉日本的出租车打蜡保养得非常亮。
 
@@ -88,9 +88,15 @@ tags:
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138193&authkey=%21ADkoOLq5Q3imt1A&width=1500&height=2000)
 
-这就是我们今天过夜的连锁酒店，同事推荐，价格低廉还包含早餐，房间虽然面积不大但干净整洁，我觉得性价比很高。
+这就是我们今天过夜的东横INN酒店，同事推荐，是日本的一家连锁品牌。出门就是地铁，价格不贵还包含早餐，我觉得性价比很高。
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138194&authkey=%21AGABrWEhOf6R920&width=1500&height=2000)
+
+很复古的电梯。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138253&authkey=%21ACJDcWU8Ttt4kBc&width=2000&height=1500)
+
+房间虽然面积不大但干净整洁。
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138195&authkey=%21ADz4Ii9BMarbswc&width=1500&height=2000)
 
@@ -241,3 +247,85 @@ tags:
 走前去了个厕所，又是日本特色的迷你洗手池和电动马桶圈。
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138246&authkey=%21AKNhpY6tOw8hmOk&width=2000&height=1500)
+
+前面Eyama说过日本人在居酒屋以喝酒为主，然而他们并不是不饿，而是会在散场之后再站在拉面店门口搞碗面😅。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138250&authkey=%21AFhqsneqw151s-w&width=1500&height=2000)
+
+吃饱走回酒店，沿路夜景很好，满满的都会感。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138251&authkey=%21AB0od8YHFoPJzrw&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138252&authkey=%21AMiMKNq50nHyNfQ&width=1500&height=2000)
+
+睡前看了下酒店房间的电视有什么节目，果不其然有成人分类，并且需要付费观看。前一晚几乎没睡好，今天赶了大半天路，明晚还要坐夜间巴士，睡了睡了。
+
+
+
+## 04.22
+
+今天是未曾设想的超级特种兵的一天。
+
+八点半起来尝试了酒店的日式早餐，只能说很有特色 :)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138256&authkey=%21AMMGM0j9ywYgSPU&width=2000&height=1500)
+
+吃完我们就出发前往今天的唯一景点行程——大阪城。需要说明从心斋桥到大阪城再返回，我们全程几乎步行，因为Eyama对Hello Cycling的电动自行车有执念，沿路看停车点有无车辆。结果就是几乎所有网点都没有超过一辆可以使用的车，导致我们走了绝大多数路程。随后在心斋桥附近逛琴行，由于距离近、走街串巷，我们还是步行。最终手机记录今天走了**18.78公里**...
+
+此外晚上我开始感到脸烫头晕，一开始还以为过度疲劳有点感冒，后面几天才意识到，我居然晒伤了！还是太年轻，完全没想到大阪的紫外线如此强烈... 而Eyama，他戴了帽子😂。
+
+那么开始今天的city walk吧。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138257&authkey=%21APTUx8LDhl7td0M&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138258&authkey=%21ANCCEz0NMX2HgsI&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138259&authkey=%21AMwZdjDUU3k3CdY&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138260&authkey=%21AJcoVWeeIfeRIlE&width=1500&height=2000)
+
+这个红绿灯旁边有个按钮，如果需要过马路要提前按一下，不然一直是红灯。我们就这样傻傻等了好一会才意识到不对劲😂。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138261&authkey=%21AFpC-CdKD9reP6s&width=1500&height=2000)
+
+还有中文解释，说明咱国人游客不少。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138262&authkey=%21ADy3FwR9cDr78m8&width=1500&height=2000)
+
+说起来感觉大阪并没有很拥挤，街道宽敞，还能偶遇这样的小公园。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138263&authkey=%21AGkWD0cbArvjRYw&width=2000&height=1500)
+
+这里原本要触发一个支线任务，那就是Eyama计划在去大阪城的沿途，探寻一家Tabelog评分很高的店，就在这个小公园旁边。我们到店时间11点不到，想着这么早到应该不用排队，结果，店家告诉我们需要预约... 支线任务失败 :(
+
+这不仅需要Eyama当下再从Tabelog找一家附近的店，同时也无意中增加了行走量以及为晒伤埋下伏笔。在公园阴凉处稍息片刻，Eyama决定午餐吃一家步行十几分钟距离的大阪烧，既然选择权交给他我自然同意。
+
+到店差点破防，今天店里不接客。不过还好店家还做外卖，我们可以买了带去附近的7-11吃。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138267&authkey=%21AJHciR1rYWAJja4&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138265&authkey=%21AIgQiFvquI98zrE&width=1500&height=2000)
+
+炒面味道其实差不多，就是加得料有点区别。和昨晚的炒面类似，闻着很香，但吃起来特别咸。我俩都狂喝水，最后也没全吃完。只能说关西风味不太适合我们。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138268&authkey=%21AJXlGUg54vvfEDQ&width=2000&height=1500)
+
+中午十二点，我们顶着大太阳继续前往大阪城。路过大阪历史博物馆，下次一定。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138270&authkey=%21AJf4NkK4z5sHzzs&width=2000&height=1500)
+
+大阪警察本部就在大阪城对面。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138271&authkey=%21ADyUtitYZiyPlJw&width=1500&height=2000)
+
+护城河还挺宽的。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138273&authkey=%21AAmUgfOjcqaMnzc&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138275&authkey=%21ACXiNc9o0P19M4M&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138277&authkey=%21ALqLOw8UEwXuRvY&width=2000&height=1500)
+
+城门外就能看到大阪城主楼。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138278&authkey=%21APi27tUvYXDjDh4&width=2000&height=1500)
