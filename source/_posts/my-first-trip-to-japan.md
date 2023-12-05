@@ -1,7 +1,7 @@
 ---
-title: 2023大阪东京走马观花五日游
-date: 2023-11-27 22:51:49
-description: 疫情结束，为了Eric Clapton，冲！
+title: 2023大阪东京走马观花五日游（上）
+date: 2023-12-06 00:56:00
+description: 出发，特种兵大阪行！
 categories:
 - 人生游记
 tags:
