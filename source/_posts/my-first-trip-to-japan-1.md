@@ -1,5 +1,5 @@
 ---
-title: 2023大阪东京走马观花五日游（上）
+title: 2023大阪东京走马观花五日流水账（上）
 date: 2023-12-06 00:56:00
 description: 出发，特种兵大阪行！
 categories:
@@ -350,7 +350,7 @@ tags:
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138283&authkey=%21AL68FZOCWUY1kus&width=2000&height=1500)
 
-二楼是电木吉他区，都是比较亲民的一些型号，因此直接摆在外面。
+二楼是电木吉他区，都是比较亲民的一些型号，因此直接摆在外面。印象中还有一个玻璃墙隔出来的小房间，里面就全是相对高端的电琴，倒没什么罕见的系列，牌子也都是那些大牌。反过来说也因为国内现在资讯发达，并且有钱人多了各种奇珍异宝都能出现在闲鱼上，我们这些玩家不知不觉也涨了很多见识。
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138285&authkey=%21AL7CNv7ggl74Wt4&width=2000&height=1500)
 
@@ -419,3 +419,9 @@ tags:
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138305&authkey=%21AApzYpOCgPaMEmA&width=1500&height=2000)
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138514&authkey=%21AKQRGW1G-pt2Dl8&width=1080&height=2316)
+
+
+
+## 下一集
+
+《[2023大阪东京走马观花五日流水账（下）](https://joouis.com/2023/my-first-trip-to-japan-2/)》
