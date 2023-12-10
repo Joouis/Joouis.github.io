@@ -1,7 +1,7 @@
 ---
 title: 2023大阪东京走马观花五日流水账（中）
 date: 2023-12-06 18:00:00
-updated: 2023-
+updated: 2023-12-10 16:50:00
 description: 出发，特种兵大阪行！
 categories:
 - 人生游记
