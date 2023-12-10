@@ -122,6 +122,10 @@ Tabelog评分高达4.25的Sutaminaen烤肉店，老板娘是台湾人，所以�
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138346&authkey=%21APPOykDWdtV-VY8&width=2000&height=1500)
 
+吃完烤肉一身味道，正好酒店房间内有备除臭喷雾，试了下效果非常好。这项贴心的服务真是爱了。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138417&authkey=%21ALHpioX79eDQn-Q&width=1500&height=2000)
+
 哦对了，今天的原计划喊上Lq和Eyama朋友们一起吃烤肉还有一个原因，那就是要找她取之前在日本网络平台购买的Eric Clapton演唱会的门票。
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138348&authkey=%21AO_oriBNfA9geRg&width=2000&height=1500)
@@ -211,3 +215,95 @@ Tomoko把我们带到Eyama前团队所在的区域和老同事打招呼后就因
 在网上了解日本核酸的过程中，我还发现了一个短暂的灰色产业：闲鱼上居然有人帮忙伪造核酸检测报告！核酸检测报告本身非常简单，是一个只有基本信息和检测结果的文档，这意味着仿造的成本极低；而登机前航司只会查看报告但并不会去网上查验报告是否为真，约等于走个过场。只能说有些人胆子真的大！
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138372&authkey=%21AAV7Yfc7mfdvLVU&width=1500&height=2000)
+
+做完核酸三点不到，Eric的演唱会晚上六点入场、七点开演，时间比较充裕，我们先路过银座给Eyama女友以及他老板代购。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138373&authkey=%21AGE-2c6Kfmx4nlE&width=1500&height=2000)
+
+也不记得从什么时候起就知道银座这个名字，到了后的直接观感就是购物中心，满街的奢侈品店。不少店还配有懂中文的店员，简单了解才知道原来就是中国人。此外这里的店员绝对是我们在日本遇到英文最好的那批人，果然为了赚钱还得多学几门语言🤣。我们在回地铁站的路上遇到了看起来像精神不正常的流浪汉，边走边咒骂，时不时还扇自己巴掌，还好对路人没什么攻击性。
+
+乡巴佬头一次听说MIKIMOTO这个品牌，据说创始人是世界上第一个成功培育珍珠的人，因此这家珠宝店因珍珠闻名。我们来这儿是帮Eyama老板代购，跟导购小哥聊得过程中，Eyama开玩笑说帮老板买东西是为了升职，同为东亚人的日本小哥秒懂，后面反复使用“for promotion~”这个梗，只能说大家都深受传统东亚职场文化荼毒已久XD。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138375&authkey=%21AKA7Y3VKta9EZQc&width=1500&height=2000)
+
+买完东西已经五点出头，中间花了不少时间在微信沟通上。等我们到武道馆时已经五点半，看起来是没时间吃正餐了，便利店饭团解决吧。吃饭团前腹中感到不适，立马冲去路边的公共厕所大号。坦白讲这个厕所着实让我震惊，非常干净，没什么异味。要是偏远地段或者高级商场里的厕所就算了，这就是一个普通的路边厕所，并且靠近九段下地铁站，人流和使用量非常大，下午五点半居然能保持这么好？！当下在微信上跟对象说虽然听起来像国内公知说的话，但这个厕所甚至比我们家的还干净...
+
+出来后还发现马路对面居然是靖国神社，那正好把这泡屎送给供奉在里面的战犯们~
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138377&authkey=%21AGapmSW76yVdeNI&width=1500&height=2000)
+
+六点差几分，武道馆场外已经排起了长队，我们也抓紧时间入场，不过等坐进去才发现里面大多数座位还空着呢，再晚半小时都完全来得及。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138378&authkey=%21AEbBAttJ_1Rboi8&width=2000&height=1500)
+
+听说日本的音乐人都以能在武道馆开个人演唱会为荣，其地位类似香港的红馆。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138380&authkey=%21ACObAWlTuGM35Jo&width=2000&height=1500)
+
+“ERIC CLAPTON LIVE AT BUDOKAN 2023”，我们今晚是此次老克东京演出的最后一场。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138381&authkey=%21ANrh5nBCRWAyNbE&width=2000&height=1500)
+
+入座后发现超过一半以上的座位还空着。武道馆不大，座位还是老式的塑料板凳，更多是一种象征吧。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138382&authkey=%21AEPwmPImvGldQrE&width=2000&height=1500)
+
+年初手机从S21U升级到S23U，号称演唱会神器，客观说10倍光学变焦只能说看得到，没那么神，但确实比大部分手机强不少，整体差强人意吧。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138384&authkey=%21AHzAWUu-NwBmNwE&width=2000&height=1500)
+
+一眼望过去老年粉丝还真不少，不过Eric跟随Cream乐队在上世纪六十年代就闻名全球，有这么多老年粉丝追随也正常。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138387&authkey=%21ANyvgES9R9OV_d4&width=2000&height=1500)
+
+六点五十，工作人员上台进行最后的调音检查工作。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138388&authkey=%21ALo_DP25GGCmDTI&width=1500&height=2000)
+
+七点准时开演，一个半小时的听觉盛宴。我们当晚发现举起手机的观众很少，后来才知道日本的很多演出都不允许拍摄，不过这一场没有看到禁止告示，姑且认为没有问题吧。下面浅放一些演出照片。视频就不放了，YouTube上可以搜到其他场次的全场录像。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138392&authkey=%21AAKEsk7b-K4mqFk&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138394&authkey=%21AAPmJ6PsOQf5QEg&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138396&authkey=%21AC4zc7FAyecECD0&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138397&authkey=%21AKhwgm0Wxtr7yJY&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138399&authkey=%21AKTbWnBRVzZGUT0&width=1500&height=2000)
+
+在几首电吉他曲目后换木吉他表演，中间还说了几句话大意是感谢一直以来的支持。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138405&authkey=%21ABi0NrX-CQ6Le_U&width=1500&height=2000)
+
+等演到《Tears in Heaven》，全场观众自发打开手机闪光灯跟随节奏摇摆起来，场面很温情。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138406&authkey=%21AHH4ik_WeihJ0ZQ&width=2000&height=1500)
+
+我并非Eric的铁粉，之前也只听过他的一些广为流传的作品，更别说他的巡演乐队。但是当时就能感觉到乐手们非常厉害，各个卧虎藏龙，尤其是最左边的键盘手，solo的旋律和节奏都一顶一。演出结束后网上搜寻才知道他们中最年轻的吉他手Doyle Bramhall II都已54岁，键盘手Chris Stainton更是79岁高龄，背景履历都没得说，一群大师！总觉得光头佬很眼熟，一搜才恍然大悟拍大腿，居然是Nathan East——音乐史上参与录音最多的贝斯手之一。之前总是在网上的各种演出视频中见到，没想到他也是Eric的老伙伴。这场演出真的太超值了！
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138409&authkey=%21AET5unzMZUczX4I&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138413&authkey=%21AA8PjhHE4rS5oI0&width=2000&height=1500)
+
+演出一个半小时就结束了，意犹未尽，完全听不够。在大家的安可声中Eric和乐队只返场了一次，他与另一位键盘手Paul Carrack各唱一首歌便彻底谢幕。原本以为作为东京演唱会的最后一场会有更多表演回馈粉丝，不过了解他们的年龄后表示理解，这个岁数还能在舞台上近乎完美地表演一个半小时，很难要求更多。
+
+这是我第一次出国看演唱会，也是第一次现场看全球顶级巨星、吉他英雄的演出，今生难忘！当时在朋友圈感叹道：
+
+> 圆梦2023之老克演唱会，顶级的老克、顶级的乐队、顶级的观众，几乎完美的观看体验！不是老克的粉丝，但传奇的魅力无法阻挡！今晚最佳个人投《I shot the sheriff》，但用《Wonderful tonight》给日本之行画下句号再合适不过。
+>
+> 震撼，精彩！
+
+大家有序退场后，我们与Eyama的朋友一起吃了顿印度菜，顺便了解了一点日本大学生毕业后的工作生活状况。听上去名校毕业在大公司工作光鲜亮丽，实际收入在东京这样的大城市还是容易入不敷出，和北上深挺像的。
+
+依稀记得这是永田町站的换乘电梯。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138416&authkey=%21AOxnXGJWd1L735U&width=1500&height=2000)
+
+今天完成了来日本最重要的行程，一整个大满足。洗完澡放松地坐在床上跟Eyama再干一杯，把剩下的零食消灭掉，明天就要回国啰。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138418&authkey=%21AK2ie56ZUql_esI&width=1500&height=2000)
+
+## 04.25
+
+东京的最后一个行程也尤为精彩，那便是参观Google在涩谷的办公室。来之前我们本想在涩谷站取返回大阪的新干线高铁票，但不知为何Visa卡付款一直有问题，远程求助Lq君无果她直接杀下楼帮我们买好了票。再一看行李寄存柜的价格，算了托管在办公室的前台吧。
