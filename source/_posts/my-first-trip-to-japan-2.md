@@ -1,6 +1,7 @@
 ---
-title: 2023大阪东京走马观花五日流水账（下）
+title: 2023大阪东京走马观花五日流水账（中）
 date: 2023-12-06 18:00:00
+updated: 2023-
 description: 出发，特种兵大阪行！
 categories:
 - 人生游记
@@ -19,6 +20,166 @@ tags:
 ## 前情提要
 
 《[2023 大阪东京走马观花五日游（上）](https://joouis.com/2023/my-first-trip-to-japan-1/)》
+
+
+
+## 04.22
+
+今天是未曾设想的超级特种兵的一天。
+
+八点半起来尝试了酒店的日式早餐，只能说很有特色 :)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138256&authkey=%21AMMGM0j9ywYgSPU&width=2000&height=1500)
+
+吃完我们就出发前往今天的唯一景点行程——大阪城。需要说明从心斋桥到大阪城再返回，我们全程几乎步行，因为Eyama对Hello Cycling的电动自行车有执念，沿路看停车点有无车辆。结果就是几乎所有网点都没有超过一辆可以使用的车，导致我们走了绝大多数路程。随后在心斋桥附近逛琴行，由于距离近、走街串巷，我们还是步行。最终手机记录今天走了**18.78公里**...
+
+此外晚上我开始感到脸烫头晕，一开始还以为过度疲劳有点感冒，后面几天才意识到，我居然晒伤了！还是太年轻，完全没想到大阪的紫外线如此强烈... 而Eyama，他戴了帽子😂。
+
+那么开始今天的city walk吧。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138257&authkey=%21APTUx8LDhl7td0M&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138258&authkey=%21ANCCEz0NMX2HgsI&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138259&authkey=%21AMwZdjDUU3k3CdY&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138260&authkey=%21AJcoVWeeIfeRIlE&width=1500&height=2000)
+
+这个红绿灯旁边有个按钮，如果需要过马路要提前按一下，不然一直是红灯。我们就这样傻傻等了好一会才意识到不对劲😂。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138261&authkey=%21AFpC-CdKD9reP6s&width=1500&height=2000)
+
+还有中文解释，说明咱国人游客不少。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138262&authkey=%21ADy3FwR9cDr78m8&width=1500&height=2000)
+
+说起来感觉大阪并没有很拥挤，街道宽敞，还能偶遇这样的小公园。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138263&authkey=%21AGkWD0cbArvjRYw&width=2000&height=1500)
+
+这里原本要触发一个支线任务，那就是Eyama计划在去大阪城的沿途，探寻一家Tabelog评分很高的店，就在这个小公园旁边。我们到店时间11点不到，想着这么早到应该不用排队，结果，店家告诉我们需要预约... 支线任务失败 :(
+
+这不仅需要Eyama当下再从Tabelog找一家附近的店，同时也无意中增加了行走量以及为晒伤埋下伏笔。在公园阴凉处稍息片刻，Eyama决定午餐吃一家步行十几分钟距离的大阪烧，既然选择权交给他我自然同意。
+
+到店差点破防，今天店里不接客。不过还好店家还做外卖，我们可以买了带去附近的7-11吃。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138267&authkey=%21AJHciR1rYWAJja4&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138265&authkey=%21AIgQiFvquI98zrE&width=1500&height=2000)
+
+炒面味道其实差不多，就是加得料有点区别。和昨晚的炒面类似，闻着很香，但吃起来特别咸。我俩都狂喝水，最后也没全吃完。只能说关西风味不太适合我们。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138268&authkey=%21AJXlGUg54vvfEDQ&width=2000&height=1500)
+
+中午十二点，我们顶着大太阳继续前往大阪城。路过大阪历史博物馆，下次一定。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138270&authkey=%21AJf4NkK4z5sHzzs&width=2000&height=1500)
+
+大阪警察本部就在大阪城对面。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138271&authkey=%21ADyUtitYZiyPlJw&width=1500&height=2000)
+
+护城河还挺宽的。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138273&authkey=%21AAmUgfOjcqaMnzc&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138275&authkey=%21ACXiNc9o0P19M4M&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138277&authkey=%21ALqLOw8UEwXuRvY&width=2000&height=1500)
+
+城门外就能看到大阪城中央的天守阁。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138278&authkey=%21APi27tUvYXDjDh4&width=2000&height=1500)
+
+走进大门后左侧有一个小池子，有什么寓意已经记不清，只记得水特别清凉。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138279&authkey=%21AOERO_9Wdo9EMtI&width=2000&height=1500)
+
+四月春天，郁郁葱葱。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138280&authkey=%21ANYd0o-O3nywS2s&width=2000&height=1500)
+
+天守阁下游客不少，不过我跟Eyama都没什么兴趣，远远观望拍照就算来过了。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138281&authkey=%21AMw0ME4TN7tSRPk&width=1500&height=2000)
+
+天守阁边上有一栋小楼，有纪念品商店、展览厅等设施。我们在里面又休息了一会，便走回心斋桥附近的Ikebe琴行，中途当然免不了找自行车直到放弃。
+
+逛琴行自然是我提议的行程，这次旅行我们分别在大阪和东京都逛了Ikebe的分店。在网上看了那么久的逛琴行节目，并且一直总在闲鱼上看到有人在日本收琴回国卖，我自然也想试试能否捡到漏。于是提前在网上查到这家日本比较大的连锁琴行，并且在其官网上看好几把琴。
+
+心斋桥分店的琴行看着不大，里面也稍显拥挤。一楼是各种配件以及效果器单块，感觉价格并没有比国内便宜。最大的收获是见到一块售价三万多元（698000 JPY）的金马Klon，拍完才发现标价牌上写着 "No Picture"（抱歉！），就不放出来了。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138283&authkey=%21AL68FZOCWUY1kus&width=2000&height=1500)
+
+二楼是电木吉他区，都是比较亲民的一些型号，因此直接摆在外面。印象中还有一个玻璃墙隔出来的小房间，里面就全是相对高端的电琴，倒没什么罕见的系列，牌子也都是那些大牌。反过来说也因为国内现在资讯发达，并且有钱人多了各种奇珍异宝都能出现在闲鱼上，我们这些玩家不知不觉也涨了很多见识。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138285&authkey=%21AL7CNv7ggl74Wt4&width=2000&height=1500)
+
+询问店员才知道官网页面上有标注某一把吉他在哪家分店，而我想看的几把都在东京，加上当下已经有点累，第一次逛琴行就这样草草结束啦。
+
+我们早上离开酒店前已经办理了退房，不过把行李箱还是寄存在酒店，毕竟挨着地铁晚上去大阪车站也方便。回酒店之前我跟Eyama分开行动，他想吃点东西补充能量，而我想买杯咖啡休息一下。在Google Map上看到附近有家评分非常高的Mel Coffee，单程步行十分钟，我还是冲了。
+
+这家店门面不大，到的时候已经有几个人在排队，店员拿着菜单挨个询问客人要点什么。比较有趣的是菜单有日文和英文两种，店员看到我时一句话没问直接递给我英文版，犀利预判我不是日本人😆。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138287&authkey=%21ANOtDsz0-5B6150&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138286&authkey=%21APg8f6jEhsVWWpA&width=1500&height=2000)
+
+关西这边我们遇到的绝大多数日本服务业者都几乎不懂英文，这家咖啡店也不例外。沟通不太顺利的情况下，我盲选了一手价格居中、名字最长（之一）的Guatamala El Platanillo Geisha。然而我不太喝得出咖啡的好坏，个人喜好还停留在比较“初级”的香醇微甜。因此很难评价这杯咖啡到底好不好，印象中属于不难喝但也不好喝。当时随咖啡还有一张卡片，背后介绍了这款咖啡的来头，就当喝个文化吧。最搞笑的是店员不懂英文但会几句汉语，可能没少接待中国游客哈哈。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138288&authkey=%21AKWpDw7OXCoEBEk&width=1500&height=2000)
+
+由于店里没有座位，我端着热腾腾的咖啡走回了酒店，此时已经接近四点，Eyama也已经饱食一顿回来。在酒店大厅休息到五点，我们拖着行李出发大阪车站，准确说是先去吃一家Tabelog高评分的荞麦面店后再去车站。这家名为蕎斬的店在新地商业街的地下一层，门口只有一盏灯笼作为招牌，加上到得太早还没营业亮灯，我们完全没有发现店铺 😅。同时这一层有好几家店的门上都贴着由“大阪府风俗环境净化协会”出具的未成年不得入内警示，我们一度怀疑找错了地方（这是什么日本电影的场景？！）。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138291&authkey=%21ALgWHh96SC3WiSU&width=1500&height=2000)
+
+回到一层后我们又询问了路过的工作人员，确认地址没错，加上刚好荞麦面店员出来，我们才意识到居然在这！店员也是顺便点亮招牌。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138297&authkey=%21ALFNlL0yebjsoN4&width=1500&height=2000)
+
+这家店非常小，只有L字形两排座椅。但味道真的没话说，我们点了三种口味的面一起分享，都没有踩雷。另外看到老板给隔壁客人倒了乌龙茶，询问才知道是收费的，一杯居然要六百日元！秉持着“来都来了”的原则，我也要了一杯，嗯确实挺好喝的。当下也劝Eyama来一杯，既然来消费就一次爽到位，结果他还是没舍得😂。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138293&authkey=%21AKuVmirTtzIfXyc&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138294&authkey=%21ALIfTwujixmsAlA&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138295&authkey=%21ACDgyDDlU6sSOWM&width=2000&height=1500)
+
+味道实在太棒，也因为中午的大阪烧没吃饱，我们又加点了一碗面。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138296&authkey=%21AFpbp3v78SpNQkU&width=2000&height=1500)
+
+美食真的有治愈能力，如同前一晚，我们吃得很满足，也跟老板、隔壁桌的客人聊得很开心（主要靠Eyama蹩脚的日文和他们勉强听懂一点英文LOL）。下次一定还来，还点乌龙茶XDD。
+
+荞麦面店离大阪车站非常近，只花一刻钟我们就拖着行李箱来到大阪车站的候车厅。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138298&authkey=%21AJwvtz6XDkSjHO4&width=2000&height=1500)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138301&authkey=%21AFDJn-acElt5Gx4&width=2000&height=1500)
+
+这里就要介绍我们去东京的交通工具——夜间大巴。毫无疑问这是Eyama同学的提议，他看完网上的介绍后非常心动，一方面是新奇的体验，另一方面睡一夜到东京可以省一晚酒店钱。最初规划行程时，他在YouTube上找到有人体验拍下的视频，看起来也确实不错，我承认我也动心想试试。但是考虑到大巴座椅无法完全放倒，以及曾经在台湾坐过许多大巴的经验，我坚持只有去东京时体验一次就足够，回来必须新干线。事实证明我的担忧是正确的，视频里看起来的舒适都是假象，除了略微拥挤的座椅很难翻身外，最致命的是大巴隔音非常差，吵得人难以入睡。
+
+之前有提到，今天本就异常疲惫，加之被晒伤，上车前我已经开始头晕，还以为是感冒。原本计划在候车厅再喝点小酒吃个宵夜，我也毫无胃口只喝了点热饮。这一夜简直折磨，以致于到东京站我选择直接打车到酒店，希望能提前办理入住休息一下。不过酒店生意非常好，无法提前办理入住，以致于我们在酒店大堂枯坐几小时，这是后话。
+
+我们到大阪站候车厅时才七点，想在附近找点娱乐活动但又太累了提不起兴趣。Eyama决定先去附近的商场为他女朋友看下Cocah包，我就直接蔫了吧唧地待在候车厅玩手机。车站隔壁的便利店物品还挺丰富，有不少熟食。我顺便买了支牙刷，一会上车前刷牙、用漱口水。这只牙膏回国时因为忘了托运，还被安检人员收走了🙂。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138299&authkey=%21AE_X_FXfnrO-1Kk&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138300&authkey=%21AJUJiB5FlVXj1aM&width=1500&height=2000)
+
+十一点五十左右，广播和电视屏幕开始通知上车。上车前把行李箱交给工作人员，会给你一张凭证，下车时需要凭这张票领行李箱，很贴心的小细节。我们的车票是在网上提前预订的，上车时直接向工作人员出示电子票据即可。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138303&authkey=%21AE9GIEqj6kRAD2Q&width=1500&height=2000)
+
+这就是我今晚的“床铺”，毛毯、眼罩等细节其实很不错，但噪音实在是太恼人。另外座位本身也不大，我都觉得略窄，何况身材更高大的Eyama。并且当你座位前的人放倒座椅时，会占用你的腿部上方空间，也就是说前面人的躺下后你也得跟着躺下，不然会被挤得动弹不得。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138304&authkey=%21AFR3CEEwmD0NgA0&width=1500&height=2000)
+
+没有办法，就算预料到今夜无眠，也只能选择坐下。伴随着头痛和疲惫，开启应该是我人生中最后一次的夜间大巴之旅。
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138305&authkey=%21AApzYpOCgPaMEmA&width=1500&height=2000)
+
+![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138514&authkey=%21AKQRGW1G-pt2Dl8&width=1080&height=2316)
 
 
 
@@ -138,172 +299,6 @@ Tabelog评分高达4.25的Sutaminaen烤肉店，老板娘是台湾人，所以�
 
 
 
-## 04.24
+## 下一集
 
-一觉睡到九点半对我来说不算什么，但对Eyama来说算够晚的，他也是真累了。中午Eyama约了他之前在Bing的一位同事姐姐请我们吃饭，顺便带我们参观微软东京的办公室。微软东京就在品川站旁边，地理位置非常便利。不过我们并没有绕一圈，还是沿着昨晚返回的路线，R线转临海线到天王洲岛站下车。考虑到距离不远，并且地图上看这一带是好几个岛连接而成，景色应该不错，因此我们直接步行到微软办公室。
-
-沿途环境很优美，并且周一工作时间人也不多。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138350&authkey=%21AAEMrYXGAe4oUXw&width=1500&height=2000)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138351&authkey=%21AMprAKyWoBiaW8U&width=2000&height=1500)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138353&authkey=%21ADjHVUbQLtXwRXw&width=2000&height=1500)
-
-十点十分就到微软大楼了，真的很近。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138354&authkey=%21ANpJthUC4kJxdD8&width=2000&height=1500)
-
-电梯上来就是一个透明玻璃屋的纪念品店，我们离开前逛了一下，有意思的礼品不多。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138362&authkey=%21AFFUUXHjSI2YzxU&width=2000&height=1500)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138363&authkey=%21AIvT09lj1GCQETg&width=1500&height=2000)
-
-我背着小包出门，把工牌忘在酒店的书包里了，只能登记访客进入。而Eyama被前台小姐姐赋予了永久进入东京办公室的权限 = =+。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138356&authkey=%21AKzdfGAFRm8-xO8&width=1500&height=2000)
-
-Eyama的前同事Tomoko小姐姐是我厂的一名产品经理，人很亲切。接到我们之后先带我们吃午饭，其实才十一点左右😂。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138357&authkey=%21APEP3w2CxoBfZaQ&width=2000&height=1500)
-
-东京办公室的设计主题不知为何像是热带丛林，整体办公室环境和国内差不多。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138358&authkey=%21AJ-Tn4dSdNCy7FI&width=2000&height=1500)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138359&authkey=%21AIkfio1KkC8Y2b0&width=2000&height=1500)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138360&authkey=%21AF7l8VqUIjb5PG0&width=2000&height=1500)
-
-餐厅应该都比苏州办公室强（吧）。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138361&authkey=%21APmY3uYF7nk2Dps&width=2000&height=1500)
-
-Tomoko把我们带到Eyama前团队所在的区域和老同事打招呼后就因为工作先离开了，我们相约苏州办公室再见。三四年过去了，Eyama的同事还有好几位在原来的团队，大家随意叙旧聊了好一会。隔壁还有个做机器人的小哥在用我们组的机器学习产品，和他交流后互换Teams账号表示有问题随时ping我😎。
-
-离开前再拍一张，整体来说这边是很传统外企风的办公室。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138364&authkey=%21ANmNk7BQ73sxk7g&width=1500&height=2000)
-
-离开后我们到品川站坐地铁到涩谷，去那边的Ikebe琴行寻找在大阪没看到的中古琴。一路想着能带把合适的琴回去，把这次日本行的费用给挣回来。Ikebe在涩谷的分店距离车站很近，有一层全是中古琴，店的面积也不算小，有点意思。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138369&authkey=%21AAhkSdADzfxJLCo&width=2000&height=1500)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138368&authkey=%21AK05nog-5MtiW50&width=2000&height=1500)
-
-居然还能见到Warmoth的拼琴。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138367&authkey=%21AGoAC2E7Qxuh--o&width=1500&height=2000)
-
-我一眼就发现了之前在网上相中的吉他，向店员提出了试琴的请求。店员二话不说拿下琴接好音箱，调音之后交给我便离开了。体验非常棒。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138365&authkey=%21AMh7PeXMCn5bDt4&width=2000&height=1500)
-
-琴的音色没什么好说的，经典335之声。正面品相尚可，但其他地方有一些明显的磕碰。咨询价格才知道网上的标价似乎是店里的进货价，实际售价要比网上的价格高出不少，这样一下子就没比国内便宜多少了。好吧，看来回去还得多做做功课，这次看看就好。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138366&authkey=%21ANgfwklvFItNOM0&width=1500&height=2000)
-
-离开琴行后有件非常重要的事情要做，那就是做核酸。说来也不太走运，五月开始回国就不需要核酸了，我们恰好卡在四月的尾巴，还得花钱找一次麻烦。中午吃饭时Tomoko就帮我们查询到了涩谷站附近的核酸点，并协助我们完成了线上预约。走去核酸检测站的路上，觉得这个上坡很有澳门街道的味道。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138370&authkey=%21AK_U93jca5bImBo&width=1500&height=2000)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138371&authkey=%21ANJXHfDHBb2mv5U&width=1500&height=2000)
-
-日本做核酸可不便宜，跟国内20年刚开始去医院做核酸时的价格差不多了。里面的工作人员态度不是很好，是这次旅途中难得遇到的不太友善的日本人。当然我们也有点紧张，这边的核酸是自己操作检测，万一由于操作不当被认为检测无效，从而影响回程航班那将是灾难性的事件。最终在第二天下午一点返回大阪的路上，我们收到了检测结果且都是阴性。
-
-在网上了解日本核酸的过程中，我还发现了一个短暂的灰色产业：闲鱼上居然有人帮忙伪造核酸检测报告！核酸检测报告本身非常简单，是一个只有基本信息和检测结果的文档，这意味着仿造的成本极低；而登机前航司只会查看报告但并不会去网上查验报告是否为真，约等于走个过场。只能说有些人胆子真的大！
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138372&authkey=%21AAV7Yfc7mfdvLVU&width=1500&height=2000)
-
-做完核酸三点不到，Eric的演唱会晚上六点入场、七点开演，时间比较充裕，我们先路过银座给Eyama女友以及他老板代购。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138373&authkey=%21AGE-2c6Kfmx4nlE&width=1500&height=2000)
-
-也不记得从什么时候起就知道银座这个名字，到了后的直接观感就是购物中心，满街的奢侈品店。不少店还配有懂中文的店员，简单了解才知道原来就是中国人。此外这里的店员绝对是我们在日本遇到英文最好的那批人，果然为了赚钱还得多学几门语言🤣。我们在回地铁站的路上遇到了看起来像精神不正常的流浪汉，边走边咒骂，时不时还扇自己巴掌，还好对路人没什么攻击性。
-
-乡巴佬头一次听说MIKIMOTO这个品牌，据说创始人是世界上第一个成功培育珍珠的人，因此这家珠宝店因珍珠闻名。我们来这儿是帮Eyama老板代购，跟导购小哥聊得过程中，Eyama开玩笑说帮老板买东西是为了升职，同为东亚人的日本小哥秒懂，后面反复使用“for promotion~”这个梗，只能说大家都深受传统东亚职场文化荼毒已久XD。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138375&authkey=%21AKA7Y3VKta9EZQc&width=1500&height=2000)
-
-买完东西已经五点出头，中间花了不少时间在微信沟通上。等我们到武道馆时已经五点半，看起来是没时间吃正餐了，便利店饭团解决吧。吃饭团前腹中感到不适，立马冲去路边的公共厕所大号。坦白讲这个厕所着实让我震惊，非常干净，没什么异味。要是偏远地段或者高级商场里的厕所就算了，这就是一个普通的路边厕所，并且靠近九段下地铁站，人流和使用量非常大，下午五点半居然能保持这么好？！当下在微信上跟对象说虽然听起来像国内公知说的话，但这个厕所甚至比我们家的还干净...
-
-出来后还发现马路对面居然是靖国神社，那正好把这泡屎送给供奉在里面的战犯们~
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138377&authkey=%21AGapmSW76yVdeNI&width=1500&height=2000)
-
-六点差几分，武道馆场外已经排起了长队，我们也抓紧时间入场，不过等坐进去才发现里面大多数座位还空着呢，再晚半小时都完全来得及。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138378&authkey=%21AEbBAttJ_1Rboi8&width=2000&height=1500)
-
-听说日本的音乐人都以能在武道馆开个人演唱会为荣，其地位类似香港的红馆。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138380&authkey=%21ACObAWlTuGM35Jo&width=2000&height=1500)
-
-“ERIC CLAPTON LIVE AT BUDOKAN 2023”，我们今晚是此次老克东京演出的最后一场。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138381&authkey=%21ANrh5nBCRWAyNbE&width=2000&height=1500)
-
-入座后发现超过一半以上的座位还空着。武道馆不大，座位还是老式的塑料板凳，更多是一种象征吧。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138382&authkey=%21AEPwmPImvGldQrE&width=2000&height=1500)
-
-年初手机从S21U升级到S23U，号称演唱会神器，客观说10倍光学变焦只能说看得到，没那么神，但确实比大部分手机强不少，整体差强人意吧。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138384&authkey=%21AHzAWUu-NwBmNwE&width=2000&height=1500)
-
-一眼望过去老年粉丝还真不少，不过Eric跟随Cream乐队在上世纪六十年代就闻名全球，有这么多老年粉丝追随也正常。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138387&authkey=%21ANyvgES9R9OV_d4&width=2000&height=1500)
-
-六点五十，工作人员上台进行最后的调音检查工作。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138388&authkey=%21ALo_DP25GGCmDTI&width=1500&height=2000)
-
-七点准时开演，一个半小时的听觉盛宴。我们当晚发现举起手机的观众很少，后来才知道日本的很多演出都不允许拍摄，不过这一场没有看到禁止告示，姑且认为没有问题吧。下面浅放一些演出照片。视频就不放了，YouTube上可以搜到其他场次的全场录像。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138392&authkey=%21AAKEsk7b-K4mqFk&width=1500&height=2000)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138394&authkey=%21AAPmJ6PsOQf5QEg&width=1500&height=2000)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138396&authkey=%21AC4zc7FAyecECD0&width=1500&height=2000)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138397&authkey=%21AKhwgm0Wxtr7yJY&width=1500&height=2000)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138399&authkey=%21AKTbWnBRVzZGUT0&width=1500&height=2000)
-
-在几首电吉他曲目后换木吉他表演，中间还说了几句话大意是感谢一直以来的支持。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138405&authkey=%21ABi0NrX-CQ6Le_U&width=1500&height=2000)
-
-等演到《Tears in Heaven》，全场观众自发打开手机闪光灯跟随节奏摇摆起来，场面很温情。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138406&authkey=%21AHH4ik_WeihJ0ZQ&width=2000&height=1500)
-
-我并非Eric的铁粉，之前也只听过他的一些广为流传的作品，更别说他的巡演乐队。但是当时就能感觉到乐手们非常厉害，各个卧虎藏龙，尤其是最左边的键盘手，solo的旋律和节奏都一顶一。演出结束后网上搜寻才知道他们中最年轻的吉他手Doyle Bramhall II都已54岁，键盘手Chris Stainton更是79岁高龄，背景履历都没得说，一群大师！总觉得光头佬很眼熟，一搜才恍然大悟拍大腿，居然是Nathan East——音乐史上参与录音最多的贝斯手之一。之前总是在网上的各种演出视频中见到，没想到他也是Eric的老伙伴。这场演出真的太超值了！
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138409&authkey=%21AET5unzMZUczX4I&width=1500&height=2000)
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138413&authkey=%21AA8PjhHE4rS5oI0&width=2000&height=1500)
-
-演出一个半小时就结束了，意犹未尽，完全听不够。在大家的安可声中Eric和乐队只返场了一次，他与另一位键盘手Paul Carrack各唱一首歌便彻底谢幕。原本以为作为东京演唱会的最后一场会有更多表演回馈粉丝，不过了解他们的年龄后表示理解，这个岁数还能在舞台上近乎完美地表演一个半小时，很难要求更多。
-
-这是我第一次出国看演唱会，也是第一次现场看全球顶级巨星、吉他英雄的演出，今生难忘！当时在朋友圈感叹道：
-
-> 圆梦2023之老克演唱会，顶级的老克、顶级的乐队、顶级的观众，几乎完美的观看体验！不是老克的粉丝，但传奇的魅力无法阻挡！今晚最佳个人投《I shot the sheriff》，但用《Wonderful tonight》给日本之行画下句号再合适不过。
->
-> 震撼，精彩！
-
-大家有序退场后，我们与Eyama的朋友一起吃了顿印度菜，顺便了解了一点日本大学生毕业后的工作生活状况。听上去名校毕业在大公司工作光鲜亮丽，实际收入在东京这样的大城市还是容易入不敷出，和北上深挺像的。
-
-依稀记得这是永田町站的换乘电梯。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138416&authkey=%21AOxnXGJWd1L735U&width=1500&height=2000)
-
-今天完成了来日本最重要的行程，一整个大满足。洗完澡放松地坐在床上跟Eyama再干一杯，把剩下的零食消灭掉，明天就要回国啰。
-
-![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138418&authkey=%21AK2ie56ZUql_esI&width=1500&height=2000)
-
-## 04.25
-
-东京的最后一个行程也尤为精彩，那便是参观Google在涩谷的办公室。来之前我们本想在涩谷站取返回大阪的新干线高铁票，但不知为何Visa卡付款一直有问题，远程求助Lq君无果她直接杀下楼帮我们买好了票。再一看行李寄存柜的价格，算了托管在办公室的前台吧。
+《[2023大阪东京走马观花五日流水账（下）](https://joouis.com/2023/my-first-trip-to-japan-3/)》
