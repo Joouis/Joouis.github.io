@@ -70,25 +70,24 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2023.12.29
+### 2024.01.27
 
 | Name | Team | Skills | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| Principal Software Engineering Manager | S+D | Required: Frontend | Suzhou | Strong |
 | Senior Software Engineer | M365 | Required: Backend | Suzhou | Strong |
-| Senior Software Engineer | AI Platform | Required: Fullstack, Frontend, Cloud. Preferred: AI/ML | Suzhou | Middle |
-| Senior Software Engineer | Win365 | Required: Backend | Suzhou | Middle |
-| Senior Software Engineer | MSAI | Required: C++ | Suzhou | Strong |
-| Software Engineer 2 | M365 | Preferred: C++ | Suzhou | Strong |
-| Principal Software Engineer | M365 | Required: Backend. Preferred: AI/ML | Suzhou | Strong |
-| Principal SW Engineering Mgr | M365 | Required: Backend | Suzhou | Strong |
-| Sr Software Engineer/Software Engineer 2 | S+D | Required: C++ | Beijing | Middle |
-| Senior Software Development Engineer | S+D | Required: C, C++, Python. Preferred: AI/ML | Beijing | Middle |
-| Principal Data & Applied Scientist | WebXT Data | Required: Data Analytics. Preferred: Machine Learning | Beijing | Strong |
-| Senior Software Engineer | Bing Platform | Required: Large-scale Platform | Beijing | Strong |
-| Senior Software Engineer | Ads+PIQ | Required: Algorithm, AI/ML | Beijing | Middle |
-| Principal Software Engineer | Bing Platform | Required: Big Data, Large-scale Platform | Beijing | Strong |
-| Principal Software Engineer | WebXT Data | Preferred: Big Data | Beijing | Strong |
+| Senior Software Engineer | Ads+PIQ | Required: Data Processing | Suzhou | Middle |
+| Senior Software Engineer | Bing Experimentation | Required: Frontend | Suzhou | Middle |
+| Senior Software Engineer | MSAI | Required: Backend | Suzhou | Strong |
+| Senior Applied Scientist | MSAI | Required: AI/ML, Natural Language/NLP | Suzhou | Middle |
+| Principal Software Engineer | Edge Browser | Required: Backend. Preferred: Fullstack | Suzhou | Middle |
+| Senior Software Engineer | M365 Copilot platform | Required: Backend | Suzhou | Middle |
+| Principal Software Engineer | Bing |  | Beijing | Strong |
+| Senior Software Engineer | S+D | Required: Frontend. Preferred: Fullstack | Beijing | Strong |
+| Software Engineer 2 | Ads+PIQ | Required: C++, Algorithm | Beijing | Middle |
+| Principal Software Engineer | Edge Mobile | Preferred: Mobile | Beijing | Middle |
+| Senior Software Engineer | Edge+SA | Required: Backend | Beijing | Middle |
+| Senior Software Engineer | Bing Platform | Required: C#. Preferred: BI & PowerBI, Data Analytics | Beijing | Strong |
+| Software Engineer 2 | WebXT Data |  | Beijing | Middle |
 
 
 ### (以下部分存档仅供参考)
