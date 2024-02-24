@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/hacker.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/hacker.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/hacker.ico">
+  <link rel="mask-icon" href="/images/hacker.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.css" integrity="sha256-6cQIC71/iBIYXFK+0RHAvwmjwWzkWd+r7v/BX3/vZDc=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="TL;DR站在负责 UI 层的 Web 前端视角看无线端框架，评判的第一个标准无非是文档够不够全、Demo 能不能很容易在手机上跑起来。近来的热门框架 Flutter 就上手而言给出了漂亮的答案。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简易计数器——年轻人的第一个Flutter应用">
+<meta property="og:url" content="https://joouis.com/2018/first-flutter-app-review/index.html">
+<meta property="og:site_name" content="江边的旱鸭子">
+<meta property="og:description" content="TL;DR站在负责 UI 层的 Web 前端视角看无线端框架，评判的第一个标准无非是文档够不够全、Demo 能不能很容易在手机上跑起来。近来的热门框架 Flutter 就上手而言给出了漂亮的答案。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ua60cg.bn.files.1drv.com/y4mx50xV8910Opf1_TigYabB06b-3qTsFGJf8KmR8dFIArUO5nb5BpePdYkUfp_JA9tj_DeBthEENIc1l8QFt9hVkSDojcSlBHbx7tIxOlqwXqVyrvW1pTDYPTNOj57MVyos5giC9Uv_YTAlLDUcz5ZsH-7vvVEwt_tiwodR5tawta_g1V30y9Br8QdL6TAmuF9Rf603Y4DUjvVFrXZ6a0UwQ">
+<meta property="og:image" content="https://ua6zcg.bn.files.1drv.com/y4mUF6sd-hueRZgEbFQx1UmVfQaYGtyEK6TXqqpD3Z-VB4Bj49dDyTKooH_yZESWfth4XK8OHc_p-WlaNIEaCBv51mZYrSlNxtjPJShjlLFWf1qLXV3-5OPc88KJQQxt2_WGdzV32Fljycb9HjfMPAaqaMUm6_tyXGZ_NJilhRUVpX92WQ8LRT1j_CQPOHxpUXajsuzAuDrht8FpZt-jc4ItA">
+<meta property="article:published_time" content="2018-07-24T18:17:05.000Z">
+<meta property="article:modified_time" content="2018-07-24T18:17:05.000Z">
+<meta property="article:author" content="John Chou">
+<meta property="article:tag" content="flutter">
+<meta property="article:tag" content="app">
+<meta property="article:tag" content="dart">
+<meta property="article:tag" content="mobile">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ua60cg.bn.files.1drv.com/y4mx50xV8910Opf1_TigYabB06b-3qTsFGJf8KmR8dFIArUO5nb5BpePdYkUfp_JA9tj_DeBthEENIc1l8QFt9hVkSDojcSlBHbx7tIxOlqwXqVyrvW1pTDYPTNOj57MVyos5giC9Uv_YTAlLDUcz5ZsH-7vvVEwt_tiwodR5tawta_g1V30y9Br8QdL6TAmuF9Rf603Y4DUjvVFrXZ6a0UwQ">
+
+
+<link rel="canonical" href="https://joouis.com/2018/first-flutter-app-review/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://joouis.com/2018/first-flutter-app-review/","path":"2018/first-flutter-app-review/","title":"简易计数器——年轻人的第一个Flutter应用"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>简易计数器——年轻人的第一个Flutter应用 | 江边的旱鸭子</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E247SGMNGH"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-E247SGMNGH","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?199f195e233fd5ecca0d9346d3259670"></script>
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="江边的旱鸭子" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">江边的旱鸭子</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Blog of John Chou</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section">首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-recruit"><a href="/recruit/" rel="section">招聘</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TL-DR"><span class="nav-number">1.</span> <span class="nav-text">TL;DR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Prolog"><span class="nav-number">2.</span> <span class="nav-text">Prolog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">3.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Setup"><span class="nav-number">4.</span> <span class="nav-text">Setup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Review-for-Official-Counter"><span class="nav-number">5.</span> <span class="nav-text">Code Review for Official Counter</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Intro"><span class="nav-number">5.1.</span> <span class="nav-text">Intro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Import"><span class="nav-number">5.2.</span> <span class="nav-text">Import</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#App-Entry"><span class="nav-number">5.3.</span> <span class="nav-text">App Entry</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Stateless-Widget"><span class="nav-number">5.4.</span> <span class="nav-text">Stateless Widget</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Stateful-Widget"><span class="nav-number">5.5.</span> <span class="nav-text">Stateful Widget</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#State"><span class="nav-number">5.6.</span> <span class="nav-text">State</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#End"><span class="nav-number">6.</span> <span class="nav-text">End</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="John Chou"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">John Chou</p>
+  <div class="site-description" itemprop="description">Stand high, think different.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">66</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">248</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Joouis" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Joouis" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:luckyjoou@gmail.com" title="E-Mail → mailto:luckyjoou@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/Joouis" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;Joouis" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.slideshare.net/choujohn351" title="SlideShare → http:&#x2F;&#x2F;www.slideshare.net&#x2F;choujohn351" rel="noopener me" target="_blank"><i class="fab fa-slideshare fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nd.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://joouis.com/2018/first-flutter-app-review/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="John Chou">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="江边的旱鸭子">
+      <meta itemprop="description" content="Stand high, think different.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="简易计数器——年轻人的第一个Flutter应用 | 江边的旱鸭子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          简易计数器——年轻人的第一个Flutter应用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-07-25 02:17:05" itemprop="dateCreated datePublished" datetime="2018-07-25T02:17:05+08:00">2018-07-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Web-%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">Web 前端</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2018/first-flutter-app-review/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/first-flutter-app-review/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>6 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="TL-DR"><a href="#TL-DR" class="headerlink" title="TL;DR"></a>TL;DR</h2><p>站在负责 UI 层的 Web 前端视角看无线端框架，评判的第一个标准无非是文档够不够全、Demo 能不能很容易在手机上跑起来。近来的热门框架 Flutter 就上手而言给出了漂亮的答案。</p>
+<span id="more"></span>
+
+<h2 id="Prolog"><a href="#Prolog" class="headerlink" title="Prolog"></a>Prolog</h2><p>- 我是谁：曾是 Embedded C 开发的 Web 前端攻城狮，完全没有 <code>dart</code> 或是 <code>flutter</code> 开发经验<br>- 开发环境：MacBook Pro，XCode with iOS simulator<br>- 学习初心：2018 年的 Weex 开发体验依然不好，不如拥抱下一个技术红利（假笑.jpg<br>- 种草文：什么你还没听过 Flutter，简单介绍一下吧《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/xV-FGR9o2ODLFJFq4YwnKg">Release Flutter的最后一公里</a>》<br>- 最后一句话：以下”学习笔记”中，若有错误&#x2F;模糊概念请友好指正，么么哒</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Flutter 最近真的是大热，可能笔者身处阿里的缘故，自从咸鱼在他们的商品详情页成功使用后，集团内无论是 ATA 技术论坛还是周报都能看到有人学习研究这门技术。</p>
+<p>笔者一直都想尝试原生的无线端开发，在错过 React Native、受够 Weex 之后，身处这个时间点刚好趁热学习一下 Flutter，说不定这次真的跟过往的轮子不一样。</p>
+<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>照着<a target="_blank" rel="noopener" href="https://flutter.io/get-started/install/">官方文档</a>来，一切还算顺利：装好 Flutter SDK，<code>flutter doctor</code> 把相关依赖都装好，插上 iPhone 手机，VS Code 新建一个 <code>Flutter Demo</code> 工程，调试…</p>
+<p>在真机调试时，出现了第一个与苹果应用验证相关的问题：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Failed to create provisioning profile.</span><br><span class="line">The app ID &quot;com.example.flutterFlutterDemo&quot; cannot be registered to your development team. Change your bundle identifier to a unique string to try again.</span><br></pre></td></tr></table></figure>
+
+<p>解决方法有两种：</p>
+<p>1. 使用自己的 Apple ID，详见<a target="_blank" rel="noopener" href="http://bbs.sightp.com/thread-1241-1-1.html">这里</a>；（好吧我也没试过）<br>2. 使用模拟器。</p>
+<p>命令行输入 <code>open ios/Runner.xcworkspace</code> 打开 Runner 工程，选择模拟器即可跑起来默认的 Demo 工程。</p>
+<h2 id="Code-Review-for-Official-Counter"><a href="#Code-Review-for-Official-Counter" class="headerlink" title="Code Review for Official Counter"></a>Code Review for Official Counter</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p>官方默认的 Demo 工程是一个简易计数器。先看眼效果，真的非常简单，右下角点击加号，中间的数字对应增长，就酱~</p>
+<p><img src="https://ua60cg.bn.files.1drv.com/y4mx50xV8910Opf1_TigYabB06b-3qTsFGJf8KmR8dFIArUO5nb5BpePdYkUfp_JA9tj_DeBthEENIc1l8QFt9hVkSDojcSlBHbx7tIxOlqwXqVyrvW1pTDYPTNOj57MVyos5giC9Uv_YTAlLDUcz5ZsH-7vvVEwt_tiwodR5tawta_g1V30y9Br8QdL6TAmuF9Rf603Y4DUjvVFrXZ6a0UwQ"></p>
+<p>外行看热闹，内行看门道。应用层代码总共就六十多行，反正也不会 Dart，就边看边学习一下。</p>
+<h3 id="Import"><a href="#Import" class="headerlink" title="Import"></a>Import</h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:flutter/material.dart&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>首先是 Dart 依赖的导入。Dart 使用 <code>pubspec.yaml</code> 文件定义工程和依赖，类似 Node 世界里的 <code>package.json</code>；<code>pub</code> 则是对应 <code>npm</code> 的存在，<code>pub get</code> 一下即可安装相关的依赖包；安装完成后，会在项目根目录生成一个 <code>.packages</code> 文件，记录了所有依赖包在系统中对应的缓存地址，大概长这样：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash"> Generated by pub on 2018-07-18 20:28:35.360131.</span></span><br><span class="line">analyzer:file:///Users/joou/workspace/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-0.31.2-alpha.2/lib/</span><br></pre></td></tr></table></figure>
+
+<p>再来说说最上方的引用语句。除了引用相对路径的 dart 文件外，引用包需加上 <code>package:</code> 前缀，Dart 运行时会自动去查询包文件。那这里引用的 <code>flutter/material.dart</code> 在哪呢？笔者的第一反应是在 Flutter SDK 工程中，果不其然在此：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">joou 2018-07-19 Thu 11:36:~/workspace/flutter/packages/flutter/lib(beta 50d8h)</span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash"> <span class="built_in">ls</span></span></span><br><span class="line">analysis_options_user.yaml foundation.dart            painting.dart              scheduler.dart             src</span><br><span class="line">animation.dart             gestures.dart              physics.dart               semantics.dart             widgets.dart</span><br><span class="line">cupertino.dart             material.dart              rendering.dart             services.dart</span><br></pre></td></tr></table></figure>
+
+<p>SDK 中已经内置了不少包，让我们看看 <code>material.dart</code> 这个物料包里有些啥：</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="string">&#x27;src/material/about.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="string">&#x27;src/material/animated_icons.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="string">&#x27;src/material/app.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="string">&#x27;src/material/app_bar.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="string">&#x27;src/material/arc.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="string">&#x27;src/material/back_button.dart&#x27;</span>;</span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure>
+
+<p>所以说 <code>flutter/lib</code> 下的包文件类似一个入口，类似 C 语言里的 header file，暴露给外界 <code>flutter/lib/src</code> 中的各种组件，想要深入了解某个包的具体实现去对应目录下即可找到真相。</p>
+<p>当然，除了自己 xjb 探索外，也别忘了阅读<a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/material/material-library.html">官方文档</a>，因为接下来的代码基本都要靠文档救命。</p>
+<h3 id="App-Entry"><a href="#App-Entry" class="headerlink" title="App Entry"></a>App Entry</h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> main() =&gt; runApp(<span class="keyword">new</span> MyApp());</span><br></pre></td></tr></table></figure>
+
+<p>Dart 的每一个程序应用最顶层都要有一个 <code>main()</code> 函数作为入口，这和 C 语言是一致的。此外还有 <code>void</code> 类型，代表返回值可以是任意类型。Dart 是 OO 范式的语言，函数、方法都是对象，存在一个对应的类型，因此在定义函数时最好申明其返回值类型。<code>=&gt;</code> 语法是 <code>&#123; return expr; &#125;</code> 的简写，注意里面不允许出现 statement (Eg. <code>if</code> )。上述代码一样可改写为：</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> main() &#123;</span><br><span class="line">  <span class="keyword">return</span> runApp(<span class="keyword">new</span> MyApp());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>runApp()</code> 是 Flutter 提供的<a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/runApp.html">函数</a>，其作用是将一个 <code>Widget</code> 类的实例（作为其入参）挂载（attach）到屏幕上，逻辑大概如下：</p>
+<p>1. 检查 <code>WidgetsFlutterBinding</code> 是否初始化；<br>2. 将控件（widget）实例挂载到 <code>renderViewElement</code> 上，这个元素是渲染层级的根节点实例；<br>3. 调用 <code>scheduleWarmUpFrame()</code> 方法，开始渲染。</p>
+<h3 id="Stateless-Widget"><a href="#Stateless-Widget" class="headerlink" title="Stateless Widget"></a>Stateless Widget</h3><p>接下来让我们看看 <code>MyApp</code> 类。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> MaterialApp(</span><br><span class="line">      title: <span class="string">&#x27;Flutter Counter&#x27;</span>,</span><br><span class="line">      theme: <span class="keyword">new</span> ThemeData(</span><br><span class="line">        primarySwatch: Colors.orange,</span><br><span class="line">      ),</span><br><span class="line">      home: <span class="keyword">new</span> MyHomePage(title: <span class="string">&#x27;Flutter Trivial Counter 🙃&#x27;</span>),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>此控件是应用的根节点。首先它作为子类继承了 <code>StatelessWidget</code> ，无状态是指它不需要可变状态，而是通过构建其他的控件来更具体地描述 UI，构建过程以递归方式执行，直到 UI 被完全具象化。可能这么说比较抽象，不过先别急，后面的代码会解释什么叫具象化。在 <code>MyApp</code> 中，重载了 <code>build</code> 方法，实例化了一个 <code>MaterialApp</code> 对象。</p>
+<p>如果你写过 React 框架，那么我想换个方法解释可能更好理解。<code>StatelessWidget</code> 好比 React 中的 <code>PureComponent</code> ，而 <code>Widget</code> 类的 <code>build</code> 方法好比 React 中的 <code>render</code>。<code>build</code> 方法负责描述控件代表的 UI ，入参是构造的上下文，内容则是使用 <code>MaterialApp</code> 对象的实例描述 UI。实例化的过程中进行了一些配置，例如命名为 “Flutter Counter”，使用橙色主题，主页标题栏的文字设为 “Flutter Trivial Counter 🙃”。即便完全不知道 <code>MaterialApp</code> 类的内部实现，也很容易猜到它更具体地定义了一些 UI 内容。</p>
+<p>React 是具备生命周期的，当 <code>componentWillUpdate</code> 钩子触发后将执行 <code>render</code> 方法，重新渲染组件。而 <code>PureComponent</code> 则是通过在渲染前（例如在 <code>shouldComponentUpdate</code> 钩子中）浅对比新旧 props 和 state 判断是否需要重新渲染，从而实现性能优化。同理，控件的 <code>build</code> 方法将会在其 lifetime 的以下时刻被调用：</p>
+<p>- 调用 <a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/State/initState.html">iniState</a> 之后。<br>- 调用 <a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/State/didUpdateWidget.html">didUpdateWidget</a> 之后。<br>- 收到 <a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/State/setState.html">setState</a> 的请求后。<br>- 在 <a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/State-class.html">State</a> 对象的依赖之一改变（例如被之前的 <a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/State/build.html">build</a> 方法引用的某个 <a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/InheritedWidget-class.html">InheritedWidget</a> 发生了改变）后。<br>- 调用 <a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/State/deactivate.html">deactivate</a> 后重新在挂件树的另一个位置注入 <a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/State-class.html">State</a> 类。</p>
+<p>而 <code>StatelessWidget</code> 中的 <code>build</code> 方法仅在三种情况中被调用：</p>
+<p>- 控件第一次被插入挂件树中，也就是初始化时。<br>- 控件的父亲改变了自身配置。<br>- 控件依赖的继承控件类改变。</p>
+<p>这和 React 是何等的相似（此处感慨 3 秒…）！因此减少无状态控件的重新构建也是一门优化技巧，在此不延伸了，有兴趣请看<a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/StatelessWidget-class.html">文档</a>。至于 <code>MaterialApp</code> 类的内部配置在此也不深入，有机会再研究、分享一下这些官方组件。让我们看看配置中描述主页的 <code>MyHomePage</code> 挂件吧，这是在应用代码中实现的。</p>
+<h3 id="Stateful-Widget"><a href="#Stateful-Widget" class="headerlink" title="Stateful Widget"></a>Stateful Widget</h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyHomePage</span> <span class="keyword">extends</span> <span class="title">StatefulWidget</span> </span>&#123;</span><br><span class="line">  MyHomePage(&#123;Key key, <span class="keyword">this</span>.title&#125;) : <span class="keyword">super</span>(key: key);</span><br><span class="line">  <span class="keyword">final</span> <span class="built_in">String</span> title;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  _MyHomePageState createState() =&gt; <span class="keyword">new</span> _MyHomePageState();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>MyHomePage</code> 是一个有状态的挂件，最底部重载了 <code>createState</code> 方法定义其状态，用来描述 UI，这个稍后再细看。通常如果父类（superclass）没有默认的构造函数，dart 则要求子类在代码块的初始位置使用 <code>:</code> 指定父类的构造函数。而 <code>Key key</code> 用来申明可选参数（optional parameter），此处申明了 <code>title</code> 变量（field）。<code>title</code> 变量的值由父类赋予，被其 <code>State</code> 类的 <code>build</code> 方法使用渲染，像这种子类挂件的变量通常定义为 <code>final</code> 类型，意味着变量只能被赋值一次。与 <code>const</code> 不同的是 <code>final</code> 变量在程序运行时才赋值，而非编译时期就定义好的常量。</p>
+<h3 id="State"><a href="#State" class="headerlink" title="State"></a>State</h3><p>让我们最后瞅瞅首页挂件的状态类。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">_MyHomePageState</span> <span class="keyword">extends</span> <span class="title">State</span>&lt;<span class="title">MyHomePage</span>&gt; </span>&#123;</span><br><span class="line">  <span class="built_in">int</span> _counter = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">void</span> _incrementCounter() &#123;</span><br><span class="line">    setState(() &#123;</span><br><span class="line">      _counter++;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Scaffold(</span><br><span class="line">      appBar: <span class="keyword">new</span> AppBar(</span><br><span class="line">        title: <span class="keyword">new</span> Text(widget.title),</span><br><span class="line">      ),</span><br><span class="line">      body: <span class="keyword">new</span> Center(</span><br><span class="line">        child: <span class="keyword">new</span> Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            <span class="keyword">new</span> Text(</span><br><span class="line">              <span class="string">&#x27;老铁没毛病，双击:&#x27;</span>,</span><br><span class="line">            ),</span><br><span class="line">            <span class="keyword">new</span> Text(</span><br><span class="line">              <span class="string">&#x27;<span class="subst">$_counter</span>&#x27;</span>,</span><br><span class="line">              style: Theme.of(context).textTheme.display1,</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      floatingActionButton: <span class="keyword">new</span> FloatingActionButton(</span><br><span class="line">        onPressed: _incrementCounter,</span><br><span class="line">        tooltip: <span class="string">&#x27;Increment&#x27;</span>,</span><br><span class="line">        child: <span class="keyword">new</span> Icon(Icons.add),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>好吧这也是笔者第一次接触泛型，看过<a target="_blank" rel="noopener" href="https://www.dartlang.org/guides/language/language-tour#generics">官方文档</a>的例子后觉得还是比较好理解。<code>MyHomePage</code> 继承了拥有可变状态的 <code>StatefulWidget</code> 类，当其第一次被插入控件树中时，Flutter 框架会调用 <code>createState</code> 函数创建一个全新的 <code>_MyHomePageState</code> 实例与树中的位置相关联。当挂件的父组件重新构建（rebuild）时，父组件会重新创建一个 <code>MyHomePage</code> 实例，但是将复用已有的 <code>_MyHomePageState</code> 对象。</p>
+<p><code>_MyHomePageState</code> 定义了一个数字类型的 <code>_counter</code> ，另外自定义了一个 <code>_incrementCounter</code> 方法每次对 <code>_counter</code> 值加一。加一语句写在 <code>setState</code> 方法中，当被执行完后，会触发 Flutter 框架重新运行下方的 <code>build</code> 方法，以达到最终更新界面的目的。虽然推荐将状态变更的代码写在 <code>setState</code> 的回调函数中，但这么改写也是可以正常工作的…</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> _incrementCounter() &#123;</span><br><span class="line">  _counter++;</span><br><span class="line">  setState(() &#123;&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>最后的最后，在 <code>_MyHomePageState</code> 的 <code>build</code> 方法里，初始化并返回了一个 <code>Scaffold</code> 实例，源自 Material 组件。每当 <code>setState</code> 被触发后，就将执行一次 <code>build</code> 方法。不过 Flutter 框架号称优化过重跑 <code>build</code> 方法的性能，无需担心重新构建的成本。</p>
+<p><code>Scaffold</code> 类配置了三处地方：</p>
+<ul>
+<li>新建一个 <code>appBar</code> 实例。这里通过 <code>widget</code> 属性获取到了 <code>MyHomePage</code> 挂件中的属性，此外还可以通过 <a target="_blank" rel="noopener" href="https://docs.flutter.io/flutter/widgets/State-class.html#didUpdateWidget"><code>didUpdateWidget</code></a> 钩子在 <code>widget</code> 发生改变时进行操作。</li>
+<li><code>body</code> 属性被赋予了 <code>Center</code> 实例，无论是 <code>Center</code> 还是 <code>Column</code> 都是布局（layout）挂件。前者可以定位到父组件的中心位置，而后者将会水平排列其子组件。<code>Column</code> 挂件有多种属性控制样式，这里使用了 <code>mainAxisAlignment</code> 将其子组件垂直居中（别糊涂，列的主轴是垂直方向）。</li>
+<li>屏幕右下角的按钮由 <code>FloatingActionButton</code> 描述，使用了加号图标，绑定之前定义好的 <code>_incrementCounter</code> 函数作为 <code>onPressed</code> 事件的处理者。</li>
+</ul>
+<p>好了说了这么多组件，让我们使用 Flutter tool 的 <code>Toggle Debug Paint</code> 指令直观感受一把。</p>
+<p><img src="https://ua6zcg.bn.files.1drv.com/y4mUF6sd-hueRZgEbFQx1UmVfQaYGtyEK6TXqqpD3Z-VB4Bj49dDyTKooH_yZESWfth4XK8OHc_p-WlaNIEaCBv51mZYrSlNxtjPJShjlLFWf1qLXV3-5OPc88KJQQxt2_WGdzV32Fljycb9HjfMPAaqaMUm6_tyXGZ_NJilhRUVpX92WQ8LRT1j_CQPOHxpUXajsuzAuDrht8FpZt-jc4ItA"></p>
+<h2 id="End"><a href="#End" class="headerlink" title="End"></a>End</h2><p>笔者去年写了篇 Weex 从入门到放弃的上手文，说实话这次 Flutter 上手体验要比 Weex 好非常多——详实的文档，齐全的基础脚手架，轻松在手机&#x2F;模拟器上运行应用。</p>
+<p>对于没有客户端开发经验的笔者来说，能看着文档打通流程（实际编译出一个安装包并在对应平台上安装、执行）是一件非常关键的事情，它意味着小白也能使用这项技术栈独立开发简单的应用，能给学习者十足的信心。过去接触 Weex，只能使用 Playground App 扫码跑 demo，非常的“半成品”，而 Flutter 轻松几个指令，就在你的设备上跑起了你的工程，赞！</p>
+<p>至于 Flutter 相关的信息，如学习 Dart 语言、Flutter 入门教程、代码范例、官方库接口等资料已经颇为丰富，Stack Overflow 上也有一些讨论的话题，对于一个处于 Beta 阶段的框架来很成熟了。</p>
+<p>接下来就期待国内外有更多关于 Flutter 的线上生产实践经验，笔者有空也会接着研究并分享 Flutter 的知识。</p>
+<p>如果你看了这篇文章感到意犹未尽，那么再提供一点延伸阅读：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=UUfXWzp0-DU">Flutter’s Rendering Pipeline</a></li>
+<li><a target="_blank" rel="noopener" href="https://flutter.io/widgets-intro/">A Tour of the Flutter Widget Framework</a></li>
+</ul>
+<p>相信你能从上述两个方向发现更多一手、可靠、丰富的信息！</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/reward-wechat.jpg" alt="John Chou 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/reward-alipay.jpg" alt="John Chou 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>John Chou
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://joouis.com/2018/first-flutter-app-review/" title="简易计数器——年轻人的第一个Flutter应用">https://joouis.com/2018/first-flutter-app-review/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nd/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/flutter/" rel="tag"># flutter</a>
+              <a href="/tags/app/" rel="tag"># app</a>
+              <a href="/tags/dart/" rel="tag"># dart</a>
+              <a href="/tags/mobile/" rel="tag"># mobile</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2018/javascript-performance-optimization-tips-an-overview/" rel="prev" title="JavaScript 性能优化概观">
+                  <i class="fa fa-angle-left"></i> JavaScript 性能优化概观
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2018/how-you-can-refactor-to-use-classes/" rel="next" title="Javascript 简洁之道：如何使用类重构">
+                  Javascript 简洁之道：如何使用类重构 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2016 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Chou</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.umd.js" integrity="sha256-ytMJGN3toR+a84u7g7NuHm91VIR06Q41kMWDr2pq7Zo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://joouis.com/2018/first-flutter-app-review/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"joou","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

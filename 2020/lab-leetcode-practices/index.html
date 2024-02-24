@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/hacker.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/hacker.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/hacker.ico">
+  <link rel="mask-icon" href="/images/hacker.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.css" integrity="sha256-6cQIC71/iBIYXFK+0RHAvwmjwWzkWd+r7v/BX3/vZDc=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="这是我的嵌入式笔记第六篇，原文写于2015年。 几乎所有候选人都问过我，进微软是不是要刷题，而我总是不厌其烦地告诉他们，我没刷题就进来了（在阿里疯狂996，享不尽福报，哪里还有时间刷题😅）。 嵌入式课程的LeetCode作业应该是我到目前为止仅有的“刷题”经验。Jserv的本意也不是让学生刷题型，而是通过几道算法题对比递归和迭代结构关于程序的性能差异，此外每题要求写出递归和迭代版本对思维能力的提">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode小练习">
+<meta property="og:url" content="https://joouis.com/2020/lab-leetcode-practices/index.html">
+<meta property="og:site_name" content="江边的旱鸭子">
+<meta property="og:description" content="这是我的嵌入式笔记第六篇，原文写于2015年。 几乎所有候选人都问过我，进微软是不是要刷题，而我总是不厌其烦地告诉他们，我没刷题就进来了（在阿里疯狂996，享不尽福报，哪里还有时间刷题😅）。 嵌入式课程的LeetCode作业应该是我到目前为止仅有的“刷题”经验。Jserv的本意也不是让学生刷题型，而是通过几道算法题对比递归和迭代结构关于程序的性能差异，此外每题要求写出递归和迭代版本对思维能力的提">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://itob9g.bn.files.1drv.com/y4mVd0fYruo-LRS3d2fy4LXEAbbUTRy9PhdBjCgfdnF4SfZjDJglUh_PLO5scg1th8jtlkYKUTXATy16FijZWD7GP1Bins39euZa2PnHWXmf4Tr_dAiRA-XrzIOPNj5L5R1ZRyelwS0WR2hUxXixPJAGGdTsSxuUN1zJtgZV_7WUstKWf1mrC9XH23FYAWQVVTIFGVxO87e01SX_s4O21pE4g?width=971&height=698&cropmode=none">
+<meta property="article:published_time" content="2020-01-24T08:53:32.000Z">
+<meta property="article:modified_time" content="2020-01-24T08:53:32.000Z">
+<meta property="article:author" content="John Chou">
+<meta property="article:tag" content="embedded system course">
+<meta property="article:tag" content="performance">
+<meta property="article:tag" content="leetcode">
+<meta property="article:tag" content="cache">
+<meta property="article:tag" content="recursion">
+<meta property="article:tag" content="iteration">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://itob9g.bn.files.1drv.com/y4mVd0fYruo-LRS3d2fy4LXEAbbUTRy9PhdBjCgfdnF4SfZjDJglUh_PLO5scg1th8jtlkYKUTXATy16FijZWD7GP1Bins39euZa2PnHWXmf4Tr_dAiRA-XrzIOPNj5L5R1ZRyelwS0WR2hUxXixPJAGGdTsSxuUN1zJtgZV_7WUstKWf1mrC9XH23FYAWQVVTIFGVxO87e01SX_s4O21pE4g?width=971&height=698&cropmode=none">
+
+
+<link rel="canonical" href="https://joouis.com/2020/lab-leetcode-practices/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://joouis.com/2020/lab-leetcode-practices/","path":"2020/lab-leetcode-practices/","title":"LeetCode小练习"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>LeetCode小练习 | 江边的旱鸭子</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E247SGMNGH"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-E247SGMNGH","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?199f195e233fd5ecca0d9346d3259670"></script>
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="江边的旱鸭子" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">江边的旱鸭子</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Blog of John Chou</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section">首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-recruit"><a href="/recruit/" rel="section">招聘</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2015q3-Homework-3"><span class="nav-number">1.</span> <span class="nav-text">2015q3 Homework #3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%9C%E6%96%BCDrop-Cache"><span class="nav-number">2.</span> <span class="nav-text">關於Drop Cache</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">3.</span> <span class="nav-text">#2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Recursive"><span class="nav-number">3.1.</span> <span class="nav-text">Recursive</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Iterative"><span class="nav-number">3.2.</span> <span class="nav-text">Iterative</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Performance"><span class="nav-number">3.3.</span> <span class="nav-text">Performance</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3"><span class="nav-number">4.</span> <span class="nav-text">#3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Question"><span class="nav-number">4.1.</span> <span class="nav-text">Question</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Recursive-1"><span class="nav-number">4.2.</span> <span class="nav-text">Recursive</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Iterative-1"><span class="nav-number">4.3.</span> <span class="nav-text">Iterative</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Performance-1"><span class="nav-number">4.4.</span> <span class="nav-text">Performance</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4"><span class="nav-number">5.</span> <span class="nav-text">#4</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Question-1"><span class="nav-number">5.1.</span> <span class="nav-text">Question</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Recursive-2"><span class="nav-number">5.2.</span> <span class="nav-text">Recursive</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Iterative-2"><span class="nav-number">5.3.</span> <span class="nav-text">Iterative</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Performance-2"><span class="nav-number">5.4.</span> <span class="nav-text">Performance</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%80%E7%9C%8B%E3%80%8A%E9%80%B2%E6%93%8A%E7%9A%84%E9%BC%93%E6%89%8B%E3%80%8B"><span class="nav-number">6.</span> <span class="nav-text">觀看《進擊的鼓手》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">7.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="John Chou"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">John Chou</p>
+  <div class="site-description" itemprop="description">Stand high, think different.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">66</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">248</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Joouis" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Joouis" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:luckyjoou@gmail.com" title="E-Mail → mailto:luckyjoou@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/Joouis" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;Joouis" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.slideshare.net/choujohn351" title="SlideShare → http:&#x2F;&#x2F;www.slideshare.net&#x2F;choujohn351" rel="noopener me" target="_blank"><i class="fab fa-slideshare fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nd.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://joouis.com/2020/lab-leetcode-practices/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="John Chou">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="江边的旱鸭子">
+      <meta itemprop="description" content="Stand high, think different.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="LeetCode小练习 | 江边的旱鸭子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LeetCode小练习
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-01-24 16:53:32" itemprop="dateCreated datePublished" datetime="2020-01-24T16:53:32+08:00">2020-01-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%BA%95%E5%B1%82/" itemprop="url" rel="index"><span itemprop="name">系统与底层</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/lab-leetcode-practices/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/lab-leetcode-practices/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>8 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>这是我的<a href="https://joouis.com/2019/watching-notes-revolution-os/">嵌入式笔记</a>第六篇，原文写于2015年。</p>
+<p>几乎所有候选人都问过我，进微软是不是要刷题，而我总是不厌其烦地告诉他们，我没刷题就进来了（在阿里疯狂996，享不尽福报，哪里还有时间刷题😅）。</p>
+<p>嵌入式课程的LeetCode作业应该是我到目前为止仅有的“刷题”经验。Jserv的本意也不是让学生刷题型，而是通过几道算法题对比递归和迭代结构关于程序的性能差异，此外每题要求写出递归和迭代版本对思维能力的提升也是显而易见的。在此与大家分享:)</p>
+<span id="more"></span>
+
+
+
+<h2 id="2015q3-Homework-3"><a href="#2015q3-Homework-3" class="headerlink" title="2015q3 Homework #3"></a><a target="_blank" rel="noopener" href="http://wiki.csie.ncku.edu.tw/embedded/2015q3h3">2015q3 Homework #3</a></h2><ul>
+<li>實做 <a target="_blank" rel="noopener" href="http://people.debian.org.tw/~jserv/ncku/2015q3.pdf">Week #2 程式題目</a>，解釋其運作原理（至少 3 題，限定 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/C99">C99</a> 或以上的規格）</li>
+<li>Question #2, #3, #4, #5, #6, #27</li>
+<li>在 GitHub 上 fork <a target="_blank" rel="noopener" href="https://github.com/embedded2015/quiz">quiz</a>，然後逐一修改每個目錄裡面的檔案<ul>
+<li>對於 Question #2, #3, … #6 都需要實做<strong>遞迴</strong>和<strong>非遞迴</strong>的版本</li>
+<li>要一併準備測試資料</li>
+</ul>
+</li>
+<li>除了修改程式，也要編輯 Hackpad 下方「<a target="_blank" rel="noopener" href="https://paper.dropbox.com/doc/RrcZhOoThosgCSGRKwFTM">+作業區</a>」，增添開發紀錄和 GitHub 連結<ul>
+<li>額外要求觀賞電影《<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E7%88%86%E8%A3%82%E9%BC%93%E6%89%8B">進擊的鼓手</a>》，思考這 4 週以來，課程給你的衝擊（若你沒衝擊的話，可以退選了），在自己的 Hackpad 紀錄心得，特別是對於追求卓越這件事</li>
+</ul>
+</li>
+<li>應該要有完整的測試程式，並測試各項邊界狀況<ul>
+<li>執行時間分析</li>
+<li>記憶體需求分析</li>
+<li>cache miss 分析</li>
+<li>時間複雜度分析</li>
+</ul>
+</li>
+<li>善用 assert</li>
+<li>提供遞迴與非遞迴的版本</li>
+<li>截止日期：Oct 17, 2015（含）之前</li>
+<li>remember to use:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">astyle --style=kr --indent=spaces=4 --indent-switches --suffix=none *.[ch] </span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="關於Drop-Cache"><a href="#關於Drop-Cache" class="headerlink" title="關於Drop Cache"></a>關於Drop Cache</h2><ul>
+<li>之前一直都是用<code>echo &quot;echo 1 &gt; /proc/sys/vm/drop_caches&quot; | sudo sh</code>來清理cache</li>
+<li>剛才做quiz#4時突然想到好像echo的數字可以有<code>1</code>、<code>2</code>、<code>3</code>，於是乎都試了一下。驚奇地發現用<code>3</code>所耗費的時間比用<code>1</code>耗費的時間要多出25%：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;echo 3 &gt; /proc/sys/vm/drop_caches&quot;</span> | sudo sh</span><br><span class="line">perf <span class="built_in">stat</span> -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./recursive</span><br><span class="line">Performance counter stats <span class="keyword">for</span> <span class="string">&#x27;./recursive&#x27;</span> (100 runs):</span><br><span class="line">    44    cache-misses        <span class="comment">#   0.490 % of all cache refs    ( +-  8.59% )</span></span><br><span class="line">    0.000430226 seconds time elapsed                      ( +- 33.97% )</span><br><span class="line">    </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;echo 1 &gt; /proc/sys/vm/drop_caches&quot;</span> | sudo sh</span><br><span class="line">perf <span class="built_in">stat</span> -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./recursive</span><br><span class="line">Performance counter stats <span class="keyword">for</span> <span class="string">&#x27;./recursive&#x27;</span> (100 runs):</span><br><span class="line">    39    cache-misses        <span class="comment">#   0.447 % of all cache refs    ( +-  9.38% )</span></span><br><span class="line">    0.000327662 seconds time elapsed                      ( +-  3.46% )</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>於是查了一下：</p>
+<ul>
+<li><code>echo 1 &gt; /proc/sys/vm/drop_caches</code>：To free pagecache</li>
+<li><code>echo 2 &gt; /proc/sys/vm/drop_caches</code>：To free dentries and inodes</li>
+<li><code>echo 3 &gt; /proc/sys/vm/drop_caches</code>：To free pagecache, dentries and inodes</li>
+<li>關於上述三個名詞的<a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/29870068/what-are-pagecache-dentries-inodes">解釋</a></li>
+</ul>
+</li>
+<li><p>所以用3多清除了dentries和inodes，相比1多花費的時間，就是讀當前目錄找到該執行檔所花的時間</p>
+</li>
+</ul>
+<h2 id="2"><a href="#2" class="headerlink" title="#2"></a>#2</h2><p><strong>Question：</strong></p>
+<p>Given a sorted character array and a character, return the smallest character that is strictly larger than the search character. If no such character exists, return the smallest character in the array. For example:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Input: [&#x27;c&#x27;, &#x27;f&#x27;, &#x27;j&#x27;, &#x27;p&#x27;, &#x27;v&#x27;], &#x27;a&#x27;   </span><br><span class="line">Output: &#x27;c&#x27;   </span><br><span class="line"> </span><br><span class="line">Input: [&#x27;c&#x27;, &#x27;f&#x27;, &#x27;j&#x27;, &#x27;p&#x27;, &#x27;v&#x27;], &#x27;c&#x27;   </span><br><span class="line">Output: &#x27;f&#x27;   </span><br><span class="line"> </span><br><span class="line">Input: [&#x27;c&#x27;, &#x27;f&#x27;, &#x27;j&#x27;, &#x27;p&#x27;, &#x27;v&#x27;], &#x27;z&#x27;   </span><br><span class="line">Output: &#x27;c&#x27;   </span><br><span class="line"> </span><br><span class="line">Input: [&#x27;c&#x27;, &#x27;c&#x27;, &#x27;k&#x27;], &#x27;f&#x27;   </span><br><span class="line">Output: &#x27;k&#x27; </span><br></pre></td></tr></table></figure>
+
+<p>請寫出合法的 C 語言程式 char smallest_character(char str[], char c) { … }</p>
+<h3 id="Recursive"><a href="#Recursive" class="headerlink" title="Recursive"></a>Recursive</h3><ul>
+<li>因為需要將array里的元素由小到大順序和作比較特定字符：<ul>
+<li>單純的size沒有狀態</li>
+<li>size-1可從array中較大的元素遍歷到較小的，但不是從小到大</li>
+<li>設一個local tmp[size-1]每次從array取[1..size-1]，然後向下傳，但這樣會丟失了原始array的數據，若array里沒有元素大於比較的字符，則無法取得array[0]</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> uchar unsigned char</span></span><br><span class="line">uchar <span class="title function_">smallest_char</span><span class="params">(uchar str[], uchar c, uchar size, uchar count)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span> ( <span class="number">1</span> == size || <span class="number">0</span> == count) &#123;</span><br><span class="line">    <span class="keyword">return</span> str[<span class="number">0</span>];</span><br><span class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> ( str[size - count] &gt; c ) &#123;</span><br><span class="line">    <span class="keyword">return</span> str[size - count];</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    count--;</span><br><span class="line">    <span class="keyword">return</span> smallest_char(str, c, size, count);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Iterative"><a href="#Iterative" class="headerlink" title="Iterative"></a>Iterative</h3><ul>
+<li>對array進行遍歷，如果比字符大就返回，如果沒有就返回array[0]</li>
+<li>smallest_char()函式里多加一個參數size，因為array傳給子函式傳的是pointer而不是完整的array，<a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/9413046/how-to-get-the-length-of-array-in-c-is-sizeof-is-one-of-the-solution">參考</a></li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> uchar unsigned char</span></span><br><span class="line">uchar <span class="title function_">smallest_char</span><span class="params">(uchar str[], uchar c, uchar size)</span></span><br><span class="line">&#123;</span><br><span class="line">  uchar i;</span><br><span class="line">  <span class="keyword">for</span> ( i = <span class="number">0</span>; i &lt; size; i++ ) &#123;</span><br><span class="line">    <span class="keyword">if</span> ( str[i] &gt; c ) &#123;</span><br><span class="line">    <span class="keyword">return</span> str[i];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> str[<span class="number">0</span>];</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<h3 id="Performance"><a href="#Performance" class="headerlink" title="Performance"></a>Performance</h3><ul>
+<li>想使用perf kmem觀察slab行為時發生錯誤：<code>invalid or unsupported event: &#39;kmem:kmalloc&#39;</code></li>
+<li>使用perf測量cache misses和time elapsed:<br><code>echo &quot;echo 1 &gt; /proc/sys/vm/drop_caches&quot; | sudo sh</code><br><code>perf stat -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./iterative</code>：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Performance counter stats for &#x27;./iterative&#x27; (100 runs):</span><br><span class="line">  66    cache-misses        #   0.753 % of all cache refs    ( +-  9.27% )</span><br><span class="line">  8810    cache-references                        ( +-  0.62% )</span><br><span class="line">  9600    L1-dcache-load-misses                     ( +-  0.19% )</span><br><span class="line">  4203    L1-dcache-store-misses                     ( +-  0.23% )</span><br><span class="line">  0    L1-dcache-prefetch-misses</span><br><span class="line">  3714    L1-icache-load-misses                     ( +-  0.77% )</span><br><span class="line">  0.000354619 seconds time elapsed                      ( +-  3.88% )</span><br><span class="line">  </span><br><span class="line">Performance counter stats for &#x27;./recursive&#x27; (100 runs):</span><br><span class="line">  66    cache-misses        #   0.768 % of all cache refs    ( +-  8.41% )</span><br><span class="line">  8627    cache-references                        ( +-  0.63% )</span><br><span class="line">  9597    L1-dcache-load-misses                     ( +-  0.24% )</span><br><span class="line">  4227    L1-dcache-store-misses                     ( +-  0.23% )</span><br><span class="line">  0    L1-dcache-prefetch-misses</span><br><span class="line">  3573    L1-icache-load-misses                     ( +-  0.76% )</span><br><span class="line">  0.000402208 seconds time elapsed                      ( +- 32.71% )</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Quiz#2</th>
+<th>recursive</th>
+<th>iterative</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>執行時間</td>
+<td>0.000402208</td>
+<td>0.000354619</td>
+</tr>
+<tr>
+<td>cache-misses</td>
+<td>66</td>
+<td>66</td>
+</tr>
+<tr>
+<td>時間複雜度</td>
+<td>O(n)</td>
+<td>O(n)</td>
+</tr>
+</tbody></table>
+<h2 id="3"><a href="#3" class="headerlink" title="#3"></a>#3</h2><h3 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h3><p><img src="https://itob9g.bn.files.1drv.com/y4mVd0fYruo-LRS3d2fy4LXEAbbUTRy9PhdBjCgfdnF4SfZjDJglUh_PLO5scg1th8jtlkYKUTXATy16FijZWD7GP1Bins39euZa2PnHWXmf4Tr_dAiRA-XrzIOPNj5L5R1ZRyelwS0WR2hUxXixPJAGGdTsSxuUN1zJtgZV_7WUstKWf1mrC9XH23FYAWQVVTIFGVxO87e01SX_s4O21pE4g?width=971&height=698&cropmode=none" alt="img"></p>
+<h3 id="Recursive-1"><a href="#Recursive-1" class="headerlink" title="Recursive"></a>Recursive</h3><ul>
+<li>先對右結點處理，再對左結點處理<ul>
+<li>對於右結點，把他們push進stack</li>
+<li>對於左結點把他變成父節點的右結點，然後如果stack里有結點則pop出來接上</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">Node *<span class="title function_">flatten</span><span class="params">(Node *node, <span class="built_in">stack</span> *S)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span> ( !node ) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  node-&gt;right = flatten(node-&gt;right, S);</span><br><span class="line">  <span class="keyword">if</span> ( node-&gt;right  ) &#123;</span><br><span class="line">    stack_push(S, (<span class="type">int</span>)node-&gt;right);</span><br><span class="line">    node-&gt;right = <span class="literal">NULL</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  node-&gt;left = flatten(node-&gt;left, S);</span><br><span class="line">  <span class="keyword">if</span> ( node-&gt;left  ) &#123;</span><br><span class="line">    node-&gt;right = node-&gt;left;</span><br><span class="line">    node-&gt;left = <span class="literal">NULL</span>;</span><br><span class="line">    Node *tmp = (Node *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    tmp = node;</span><br><span class="line">    <span class="keyword">while</span>(S-&gt;size) &#123;</span><br><span class="line">      node = node-&gt;right;</span><br><span class="line">      node-&gt;right = (Node *)stack_pop(S);</span><br><span class="line">      <span class="keyword">if</span> ( !S-&gt;size  ) &#123;</span><br><span class="line">        <span class="keyword">return</span> tmp;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> node;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Iterative-1"><a href="#Iterative-1" class="headerlink" title="Iterative"></a>Iterative</h3><ul>
+<li>自上而下的，把右結點push到stack，然後把左結點變為右結點，然後移動到該結點；直到右結點也沒有時，把stack的結點依次pop出來接上</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">flatten</span><span class="params">(Node *node)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">stack</span> *S = (<span class="built_in">stack</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="built_in">stack</span>));</span><br><span class="line">  stack_init(S);</span><br><span class="line">  <span class="keyword">while</span> ( node || S-&gt;size ) &#123;</span><br><span class="line">    <span class="keyword">if</span> ( node-&gt;right ) &#123;</span><br><span class="line">      stack_push(S, (<span class="type">int</span>)node-&gt;right);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> ( node-&gt;left ) &#123;</span><br><span class="line">      node-&gt;right = node-&gt;left;</span><br><span class="line">      node-&gt;left = <span class="literal">NULL</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> ( S-&gt;size ) &#123;</span><br><span class="line">      node-&gt;right = (Node *)stack_pop(S);</span><br><span class="line">    &#125;</span><br><span class="line">    node = node-&gt;right;</span><br><span class="line">  &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<h3 id="Performance-1"><a href="#Performance-1" class="headerlink" title="Performance"></a>Performance</h3><ul>
+<li><code>echo &quot;echo 1 &gt; /proc/sys/vm/drop_caches&quot; | sudo sh </code></li>
+<li><code>perf stat -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./iterative</code>：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Performance counter stats <span class="keyword">for</span> <span class="string">&#x27;./iterative&#x27;</span> (100 runs):</span><br><span class="line">       65    cache-misses        <span class="comment">#   0.672 % of all cache refs    ( +- 11.50% )</span></span><br><span class="line">      9735    cache-references                        ( +-  0.53% )</span><br><span class="line">      11348    L1-dcache-load-misses                     ( +-  0.17% )</span><br><span class="line">      4601    L1-dcache-store-misses                     ( +-  0.21% )</span><br><span class="line">        0    L1-dcache-prefetch-misses</span><br><span class="line">      4014    L1-icache-load-misses                     ( +-  0.63% )</span><br><span class="line"></span><br><span class="line">   0.000489711 seconds time elapsed                      ( +- 37.21% )</span><br><span class="line"> </span><br><span class="line">Performance counter stats <span class="keyword">for</span> <span class="string">&#x27;./recursive&#x27;</span> (100 runs):</span><br><span class="line">       65    cache-misses        <span class="comment">#   0.672 % of all cache refs    ( +- 10.02% )</span></span><br><span class="line">      9637    cache-references                        ( +-  0.54% )</span><br><span class="line">      11429    L1-dcache-load-misses                     ( +-  0.18% )</span><br><span class="line">      4610    L1-dcache-store-misses                     ( +-  0.21% )</span><br><span class="line">        0    L1-dcache-prefetch-misses</span><br><span class="line">      3973    L1-icache-load-misses                     ( +-  0.60% )</span><br><span class="line"></span><br><span class="line">   0.000320526 seconds time elapsed                      ( +-  1.22% )</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Quiz#3</th>
+<th>recursive</th>
+<th>iterative</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>執行時間</td>
+<td>0.000320526</td>
+<td>0.000489711</td>
+</tr>
+<tr>
+<td>cache-misses</td>
+<td>65</td>
+<td>65</td>
+</tr>
+<tr>
+<td>時間複雜度</td>
+<td>O(n)</td>
+<td>O(n)</td>
+</tr>
+</tbody></table>
+<h2 id="4"><a href="#4" class="headerlink" title="#4"></a>#4</h2><h3 id="Question-1"><a href="#Question-1" class="headerlink" title="Question"></a>Question</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Find the contiguous subarray within an array (containing at least one number) which has the largest sum.</span><br><span class="line">For example, given the array [-2, 1, -3, 4, -1, 2, 1, -5, 4], the contiguous subarray [4, -1, 2, 1] has the largest sum 6.</span><br><span class="line">請寫出合法的 C 程式 : int maxSubArray(int A[], int n) &#123; … &#125; </span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+<h3 id="Recursive-2"><a href="#Recursive-2" class="headerlink" title="Recursive"></a>Recursive</h3><ul>
+<li>採用Divide&amp;Conquer方法，把完整陣列分成兩半，最大值的區間分為以下三種情形：<ul>
+<li>最大值陣列在完整陣列的左半部分：<ul>
+<li>解法：直接遞歸然後</li>
+</ul>
+</li>
+<li>最大值陣列在完整陣列的右半部分<ul>
+<li>解法：直接遞歸然後</li>
+</ul>
+</li>
+<li>最大值陣列穿過中點左右陣列都有<ul>
+<li>解法：以陣列中心點為初始，向左右延伸求和後遞歸</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>然後將這三種情形的值做比較即可</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">Across_mid</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> left, <span class="type">int</span> mid, <span class="type">int</span> right)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="type">int</span> sum = <span class="number">0</span>,</span><br><span class="line">    lsum = a[mid], i;</span><br><span class="line">  <span class="keyword">for</span> ( i = mid; i &gt;= left; i-- ) &#123;</span><br><span class="line">    sum += a[i];</span><br><span class="line">    lsum = sum&gt;lsum?sum:lsum;</span><br><span class="line">  &#125;</span><br><span class="line">  sum = <span class="number">0</span>;</span><br><span class="line">  <span class="type">int</span> rsum = a[mid];</span><br><span class="line">  <span class="keyword">for</span> ( i = mid+<span class="number">1</span>; i &lt;=right; i++ ) &#123;</span><br><span class="line">    sum += a[i];</span><br><span class="line">    rsum = sum&gt;rsum?sum:rsum;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> lsum+rsum;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="type">int</span> <span class="title function_">maxArray</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> left, <span class="type">int</span> right)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span>(left == right) &#123;</span><br><span class="line">    <span class="keyword">return</span> a[left];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="type">int</span> mid = (left + right)/<span class="number">2</span>;</span><br><span class="line">  <span class="keyword">return</span> max3(</span><br><span class="line">        maxArray(a, left, mid),</span><br><span class="line">        maxArray(a, mid+<span class="number">1</span>, right),</span><br><span class="line">        Across_mid(a, left, mid, right)</span><br><span class="line">      );</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="type">int</span> <span class="title function_">maxSubArray</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">return</span> maxArray(a, <span class="number">0</span>, n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+<h3 id="Iterative-2"><a href="#Iterative-2" class="headerlink" title="Iterative"></a>Iterative</h3><ul>
+<li>從頭開始累加陣列中元素的和，如果之前的和是負數則拋棄之前的和從該元素開始重頭加，記錄下和最大的那個值便是答案</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">maxSubArray</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> size)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="type">int</span> max = a[<span class="number">0</span>], sum = a[<span class="number">0</span>], i;</span><br><span class="line">  <span class="keyword">for</span> ( i = <span class="number">1</span>; i &lt; size; i++ ) &#123;</span><br><span class="line">    sum = sum + a[i] &gt; a[i] ? sum + a[i]: a[i];</span><br><span class="line">    max = max &gt; sum ? max : sum;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> max;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Performance-2"><a href="#Performance-2" class="headerlink" title="Performance"></a>Performance</h3><ul>
+<li><code>echo &quot;echo 3 &gt; /proc/sys/vm/drop_caches&quot; | sudo sh </code></li>
+<li><code>perf stat -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./iterative</code>：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Performance counter stats <span class="keyword">for</span> <span class="string">&#x27;./iterative&#x27;</span> (100 runs):</span><br><span class="line">       43    cache-misses        <span class="comment">#   0.487 % of all cache refs    ( +- 10.54% )</span></span><br><span class="line">      8817    cache-references                        ( +-  0.63% )</span><br><span class="line">      9657    L1-dcache-load-misses                     ( +-  0.21% )</span><br><span class="line">      4250    L1-dcache-store-misses                     ( +-  0.22% )</span><br><span class="line">        0    L1-dcache-prefetch-misses</span><br><span class="line">      3736    L1-icache-load-misses                     ( +-  0.75% )</span><br><span class="line">   0.000440431 seconds time elapsed                      ( +- 35.40% )</span><br><span class="line"> </span><br><span class="line">Performance counter stats <span class="keyword">for</span> <span class="string">&#x27;./recursive&#x27;</span> (100 runs):</span><br><span class="line">       40    cache-misses        <span class="comment">#   0.457 % of all cache refs    ( +-  8.53% )</span></span><br><span class="line">      8819    cache-references                        ( +-  0.76% )</span><br><span class="line">      9586    L1-dcache-load-misses                     ( +-  0.24% )</span><br><span class="line">      4224    L1-dcache-store-misses                     ( +-  0.26% )</span><br><span class="line">        0    L1-dcache-prefetch-misses</span><br><span class="line">      3674    L1-icache-load-misses                     ( +-  0.85% )</span><br><span class="line">   0.000423999 seconds time elapsed                      ( +- 34.31% )</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Quiz#4</th>
+<th>recursive</th>
+<th>iterative</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>執行時間</td>
+<td>0.000423999</td>
+<td>0.000440431</td>
+</tr>
+<tr>
+<td>cache-misses</td>
+<td>40</td>
+<td>43</td>
+</tr>
+<tr>
+<td>時間複雜度</td>
+<td>O(nlogn)</td>
+<td>O(n)</td>
+</tr>
+</tbody></table>
+<h2 id="觀看《進擊的鼓手》"><a href="#觀看《進擊的鼓手》" class="headerlink" title="觀看《進擊的鼓手》"></a>觀看《進擊的鼓手》</h2><p>剛看完《進擊的鼓手》，首先，我愛Jazz。</p>
+<p>其次，這部影片討論的是超於自我的主題，很壓抑，但這不是音樂的本質，音樂是帶給人快樂、抒發情感的語言，所以聽首經典的《<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=NXKYTJHnqvw">All of me</a>》換一下心情~</p>
+<p>電影可以討論的真的太多，所以還是切回到Embedded2015這門課吧。</p>
+<p>上學期第一次上課時受到極大的衝擊，從知識本身的深度到思考問題的方式，發現自己學的太淺、想的太淺；接著暑期去台北實習，真正面對一堆資深工程師時，發現自己與他們的差距，也是令自己驚訝不已。</p>
+<p>回歸到這學期的課程，單純從心態和認知上已經得到改變，其實對上課是一件很期待的事情。無論是學習使用GProf、Perf等工具量化效能（一直以來都是聽定性的東西太多了）還是今天看到一個compiler是如何做的，這都讓人興奮。我喜歡從無到有的這個創造的過程，並且在知道自己和資工背景（無論好壞至少背景課程的基本概念他們都考試學&#x2F;背過）的同學的差距時，學到這樣的東西會有大補的快感。</p>
+<p>綜上，這半年多來，接受了很多衝擊，但和電影不同，我沒那麼玻璃心，老師也沒那麼苛刻，我們一直認可超越自己、有進步就是賺。電影里的男主角後面追求的東西似乎變了質，不是音樂帶來的快樂本身，而是親情被孤立更想得到親人們的關注而想成功。在我看來，來學嵌入式純粹是對電腦科學的這個領域的喜愛，從大學到現在，動力也是來源於此，不然我就去中國石油行業值班爽爽過公務員的生活了。</p>
+<p>最後，關於追求卓越，我覺得是超越自我的某個較遠的階段，當我能更好地管理自己的時間、處理自己的各種情緒時，效率會越來越高，到那個比較ready的時候，應該就是會追求卓越了吧！</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li>官網<a target="_blank" rel="noopener" href="https://leetcode.com/problemset/algorithms/">Leetcode Algorithms of Problemset</a>，簡短的<a target="_blank" rel="noopener" href="http://coolshell.cn/articles/12052.html">介紹</a></li>
+<li>經典《<a target="_blank" rel="noopener" href="https://github.com/esbanarango/Competitive-Programming/blob/master/%C2%B7Documentation/Books/Introduction.to.Algorithms.3rd.Edition.Sep.2010.pdf">Introduction to algorithms</a>》</li>
+<li>一個簡中的題解《<a target="_blank" rel="noopener" href="https://www.gitbook.com/book/siddontang/leetcode-solution/details">LeetCode题解</a>》</li>
+<li>《<a target="_blank" rel="noopener" href="http://www.cs.uofs.edu/~mccloske/courses/cmps144/recursion_feb13_01.html">Recursive solutions to array problems: Three examples</a>》</li>
+<li>《<a target="_blank" rel="noopener" href="http://groups.csail.mit.edu/graphics/classes/6.837/F04/cpp_notes/stack1.html">Stack Implementation in C</a>》</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/reward-wechat.jpg" alt="John Chou 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/reward-alipay.jpg" alt="John Chou 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>John Chou
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://joouis.com/2020/lab-leetcode-practices/" title="LeetCode小练习">https://joouis.com/2020/lab-leetcode-practices/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nd/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/embedded-system-course/" rel="tag"># embedded system course</a>
+              <a href="/tags/performance/" rel="tag"># performance</a>
+              <a href="/tags/leetcode/" rel="tag"># leetcode</a>
+              <a href="/tags/cache/" rel="tag"># cache</a>
+              <a href="/tags/recursion/" rel="tag"># recursion</a>
+              <a href="/tags/iteration/" rel="tag"># iteration</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/2020-referral-kickoff/" rel="prev" title="2020 微软内推，已协助超过十余位候选人拿到 offer">
+                  <i class="fa fa-angle-left"></i> 2020 微软内推，已协助超过十余位候选人拿到 offer
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/vuetify-playground/" rel="next" title="Vuetify Playground - A responsive playground to try all UI components at once">
+                  Vuetify Playground - A responsive playground to try all UI components at once <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2016 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Chou</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.umd.js" integrity="sha256-ytMJGN3toR+a84u7g7NuHm91VIR06Q41kMWDr2pq7Zo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://joouis.com/2020/lab-leetcode-practices/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"joou","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
