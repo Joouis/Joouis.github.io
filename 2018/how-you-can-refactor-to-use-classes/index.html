@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.css" integrity="sha256-6cQIC71/iBIYXFK+0RHAvwmjwWzkWd+r7v/BX3/vZDc=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="源文链接：JavaScript code cleanup: how you can refactor to use Classes  在一些小规模的 React 工程中，将组件里所用的所有方法维护在组件内部没什么问题。不过到了中等规模的项目时，你可能会将那些方法从组件抽取到一个 “helper” 里。本文将展示如何使用类（而非导出独立的函数和变量）来组织代码。">
 <meta property="og:type" content="article">
@@ -318,7 +318,7 @@
 </ol>
 <p>当逻辑复杂起来，你将不得不传一些如控制状态的对象、函数到这些函数里。如今我就遇到一个问题：我有三个入参相同（一个 <code>资源</code> 和一个更新 <code>资源</code> 的函数）的函数希望从组件中提取出来。于是乎就酝酿出了更好的方法…</p>
 <h2 id="使用类重构"><a href="#使用类重构" class="headerlink" title="使用类重构"></a>使用类重构</h2><p>我为本文做了一个隆重的演示，你可以在 <a target="_blank" rel="noopener" href="https://github.com/AmberWilkie/class-demo">GitHub</a> 上查阅源码。初始的提交显示所有功能都写在主组件中（<code>App.js</code>），而随后的提交逐渐使用了类重构代码。</p>
-<p><img src="https://ua6wcg.bn.files.1drv.com/y4mYy_pu9AzJk55bWAa0HOHDdjZDUp6QId12MxyJKxSSyBDQX8L-w321hFpMC47CYkQCl1Hly1JCATTUeP6-KTjE05cxDg46eOARJogyaVeodrYaM3bm3i8hcPo9dbhQ7wQOq0A2SAkUGdhaeS1C7xX2Do4yLK_ThI45fsjemuXGxGAb0UeuqpqghFkUUr-kqnLmw7AQZVQh1-kHQTP9mkTYQ"></p>
+<p><img data-src="https://ua6wcg.bn.files.1drv.com/y4mYy_pu9AzJk55bWAa0HOHDdjZDUp6QId12MxyJKxSSyBDQX8L-w321hFpMC47CYkQCl1Hly1JCATTUeP6-KTjE05cxDg46eOARJogyaVeodrYaM3bm3i8hcPo9dbhQ7wQOq0A2SAkUGdhaeS1C7xX2Do4yLK_ThI45fsjemuXGxGAb0UeuqpqghFkUUr-kqnLmw7AQZVQh1-kHQTP9mkTYQ"></p>
 <p>你可以尝试运行该工程，不过请记得 <code>yarn install</code> 安装依赖。</p>
 <p>我们从一个”获取”对象（通常是请求一个 API 接口）的组件开始，它有一些确切的属性：repeat（盒子的个数），side（高和宽），text，color。接着我们有一系列操作视图的方法——改变色彩，更新文字，等等。每次视图更改后，我们展示一条信息。</p>
 <p>举个例子，这是我们改变宽高的方法：</p>
@@ -454,6 +454,7 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.umd.js" integrity="sha256-ytMJGN3toR+a84u7g7NuHm91VIR06Q41kMWDr2pq7Zo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 

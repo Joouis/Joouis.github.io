@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.css" integrity="sha256-6cQIC71/iBIYXFK+0RHAvwmjwWzkWd+r7v/BX3/vZDc=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="前言还记得刚入职见到第一个 YunOS App 时，笔者问师兄 Manifest.json 文件是干嘛用的，师兄说如果你有 Android 开发经验的话就会明白了。当下笔者立马找了本电子书放在桌面准备苦读，结果…时至今日未曾宠幸过。对于没有一点 Java 经验的笔者来说，不知道何时才会迈出无线开发第一步，直到最近遇见了 Weex。">
 <meta property="og:type" content="article">
@@ -211,6 +211,23 @@
     </div>
 
     
+        <div class="sidebar-inner sidebar-post-related">
+          <div class="animated">
+              <div class="links-of-blogroll-title"><i class="fa fa-signs-post fa-fw"></i>
+    相关文章
+  </div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/2020/vuetify-playground/" rel="bookmark">
+        <time class="popular-posts-time">2020-03-01</time>
+        <br>
+      Vuetify Playground - A responsive playground to try all UI components at once
+      </a>
+    </li>
+  </ul>
+
+          </div>
+        </div>
   </aside>
 
 
@@ -311,7 +328,7 @@
 <p>Weex 是集团去年推出的移动开发框架，Apache 顶级开源项目，已经被手淘、天猫等业务广泛使用，经历了双十一等活动的考验。它与传统的移动开发不同、也是吸引笔者的地方，即使用 Web 前端技术进行开发且能达到 Native 级别的性能体验。</p>
 <p>既然笔者毫无 Java 以及 Android 开发经验，必然会站在 <strong>纯前端人员的视角</strong> 来带领大家上车。此外，Weex 在集团内外的热度真的是非常之高，相关的文档、博文也是数不胜数，因此文中将会使用一些引用来保证心得的简洁同时给大家更多延伸的内容。</p>
 <h2 id="什么是-Weex-？"><a href="#什么是-Weex-？" class="headerlink" title="什么是 Weex ？"></a>什么是 Weex ？</h2><p>理论角度，<a target="_blank" rel="noopener" href="http://weex.apache.org/cn/guide/intro/how-it-works.html">官方文档</a>上已经说得挺清楚的了，一张流程图可以说明一切。</p>
-<img src="https://v64blg.bn.files.1drv.com/y4mgihO5S41NuNsjSkDcgj3dmHqmgoCLojI9FuKZ1AaB76FK7uSYiyR1HhkKeNwtpDk3UZMvW0gsthHEg1eOyhcoOhZNzE3OzIMwciSO-vDQU5M2F15ZhKe7mU54RriMLd_T3SyoepJfMnxQH7fs_cYOP--tjsnJ5MRCqHwjuF8GC34xP6eODvWzGZbXl8qRj9xl4Enm2-xL6w3b6uRRPCAMQ" class="" title="Source: http:&#x2F;&#x2F;weex.apache.org&#x2F;cn&#x2F;guide&#x2F;images&#x2F;flow.png">
+<img data-src="https://v64blg.bn.files.1drv.com/y4mgihO5S41NuNsjSkDcgj3dmHqmgoCLojI9FuKZ1AaB76FK7uSYiyR1HhkKeNwtpDk3UZMvW0gsthHEg1eOyhcoOhZNzE3OzIMwciSO-vDQU5M2F15ZhKe7mU54RriMLd_T3SyoepJfMnxQH7fs_cYOP--tjsnJ5MRCqHwjuF8GC34xP6eODvWzGZbXl8qRj9xl4Enm2-xL6w3b6uRRPCAMQ" class="" title="Source: http:&#x2F;&#x2F;weex.apache.org&#x2F;cn&#x2F;guide&#x2F;images&#x2F;flow.png">
 
 <p>不过回到实际开发，Weex 是什么，这点在没有上手前很难从官方文档中得出结论。（网上有不少声音吐槽 Weex 文档写的不好，笔者持保留态度，不过确实从落地的角度来说，缺乏一些必要的细节，这个后面还会再提。此外作者还有一个疑问，官方文档究的目标群体究竟是谁？是传统的移动端开发者？还是 Web 前端背景的开发人员？至少笔者觉得不是后者。）</p>
 <p>以实践的角度，在笔者看来，Weex 有两部分，一是前端技术方面的自动化框架，在PC端帮助开发人员快速进行 vue 文件的开发、打包等，这部分可以在官网<a target="_blank" rel="noopener" href="http://weex.apache.org/cn/guide/set-up-env.html">搭建开发环境</a>的教程中获取；二是使 JS 代码能在移动端成功运行起来的各平台 SDK 套件或源码，在编译各平台安装包时加入，<a target="_blank" rel="noopener" href="http://weex.apache.org/cn/guide/integrate-to-your-app.html">文档</a>中也有提及。</p>
@@ -460,6 +477,7 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.umd.js" integrity="sha256-ytMJGN3toR+a84u7g7NuHm91VIR06Q41kMWDr2pq7Zo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 

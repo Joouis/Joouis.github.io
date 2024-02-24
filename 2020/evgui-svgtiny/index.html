@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.css" integrity="sha256-6cQIC71/iBIYXFK+0RHAvwmjwWzkWd+r7v/BX3/vZDc=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="这是我的硕士论文笔记系列第二篇，原文写于 2016 年五月。">
 <meta property="og:type" content="article">
@@ -43,13 +43,13 @@
 <meta property="article:modified_time" content="2020-04-05T16:45:00.000Z">
 <meta property="article:author" content="John Chou">
 <meta property="article:tag" content="embedded system">
-<meta property="article:tag" content="svg">
-<meta property="article:tag" content="svg tiny">
-<meta property="article:tag" content="libsvgtiny">
 <meta property="article:tag" content="vector">
 <meta property="article:tag" content="gui">
 <meta property="article:tag" content="twin">
 <meta property="article:tag" content="window system">
+<meta property="article:tag" content="svg">
+<meta property="article:tag" content="svg tiny">
+<meta property="article:tag" content="libsvgtiny">
 <meta property="article:tag" content="cairo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://hsxmua.bn.files.1drv.com/y4mVRHjbTq_FPN7KNhj_jr2kI0RAnFIITSM-Vej1v_8G7k-UM9X2lplZzlzjzQNZhkDvYFvwU_AVbsyaXs9CHOt8bppajump_Kx-0kN09oDRfxIYFqysnIGHYlxwQEswug05hUwk4gBh7zRvcyRaWJR042NWlwLAWsEAmfYORmM3As5J5yjaJFh79LzhYMJDxNvvfaOgp3CjAgIN__H-fwmog?width=1912&height=451&cropmode=none">
@@ -222,6 +222,23 @@
     </div>
 
     
+        <div class="sidebar-inner sidebar-post-related">
+          <div class="animated">
+              <div class="links-of-blogroll-title"><i class="fa fa-signs-post fa-fw"></i>
+    相关文章
+  </div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/2020/evgui-xml-parser/" rel="bookmark">
+        <time class="popular-posts-time">2020-04-08</time>
+        <br>
+      XML Parser for Libsvgtiny
+      </a>
+    </li>
+  </ul>
+
+          </div>
+        </div>
   </aside>
 
 
@@ -409,25 +426,25 @@
 </ul>
 <h3 id="Libsvgtiny-有的可以成功顯示，有的部分顯示，有的則顯示失敗"><a href="#Libsvgtiny-有的可以成功顯示，有的部分顯示，有的則顯示失敗" class="headerlink" title="Libsvgtiny 有的可以成功顯示，有的部分顯示，有的則顯示失敗"></a>Libsvgtiny 有的可以成功顯示，有的部分顯示，有的則顯示失敗</h3><p>（左、中、右圖分別對應 Image Viewer、Libsvgtiny with Cairo、Libsvgtiny with TWIN）</p>
 <h4 id="成功顯示"><a href="#成功顯示" class="headerlink" title="成功顯示"></a>成功顯示</h4><p>注意最右邊的圖顯示是正確的，因爲圓形和矩形沒有例如 <code>fill: #000000</code> 這樣的屬性，至於左邊兩個爲什麼會自動填黑很有趣。</p>
-<p><img src="https://hsxmua.bn.files.1drv.com/y4mVRHjbTq_FPN7KNhj_jr2kI0RAnFIITSM-Vej1v_8G7k-UM9X2lplZzlzjzQNZhkDvYFvwU_AVbsyaXs9CHOt8bppajump_Kx-0kN09oDRfxIYFqysnIGHYlxwQEswug05hUwk4gBh7zRvcyRaWJR042NWlwLAWsEAmfYORmM3As5J5yjaJFh79LzhYMJDxNvvfaOgp3CjAgIN__H-fwmog?width=1912&height=451&cropmode=none"></p>
+<p><img data-src="https://hsxmua.bn.files.1drv.com/y4mVRHjbTq_FPN7KNhj_jr2kI0RAnFIITSM-Vej1v_8G7k-UM9X2lplZzlzjzQNZhkDvYFvwU_AVbsyaXs9CHOt8bppajump_Kx-0kN09oDRfxIYFqysnIGHYlxwQEswug05hUwk4gBh7zRvcyRaWJR042NWlwLAWsEAmfYORmM3As5J5yjaJFh79LzhYMJDxNvvfaOgp3CjAgIN__H-fwmog?width=1912&height=451&cropmode=none"></p>
 <h4 id="部分成功顯示"><a href="#部分成功顯示" class="headerlink" title="部分成功顯示"></a>部分成功顯示</h4><ul>
 <li>都可顯示，但由於 Libsvgtiny 和 TWIN 的限制致使顯示有缺陷。中間的圖基本和原圖一樣，不過有條不明顯的黑線，可以修改 <code>libsvgtiny.c</code> 或刪除這條 path 多餘的 <code>stroke-width</code> 屬性即可修正。最右除了 Libsvgtiny 自身的問題外，和 TWIN 也有關聯。</li>
 </ul>
-<p><img src="https://hcxeua.bn.files.1drv.com/y4ml_N8t3aeOuTjDC1r8xBq_ywDJORW3FQy3j_6sqxWW-SvMfaZ589WXZsvsIxQbv7cxclTzqnNqGI9t3cY3Yu8bRBwjtGzKCrPV2VZQd1nuiNR7mPvsR9kFz0hhXKbg9Dj_gSb7oBAvenPAggRJqanawaZqXU3H0P_9r2S1Y0tV8asD_XAx4DrAegGEF8083p72hGWs6sEaMifn0j9Yywbcg?width=854&height=284&cropmode=none"></p>
+<p><img data-src="https://hcxeua.bn.files.1drv.com/y4ml_N8t3aeOuTjDC1r8xBq_ywDJORW3FQy3j_6sqxWW-SvMfaZ589WXZsvsIxQbv7cxclTzqnNqGI9t3cY3Yu8bRBwjtGzKCrPV2VZQd1nuiNR7mPvsR9kFz0hhXKbg9Dj_gSb7oBAvenPAggRJqanawaZqXU3H0P_9r2S1Y0tV8asD_XAx4DrAegGEF8083p72hGWs6sEaMifn0j9Yywbcg?width=854&height=284&cropmode=none"></p>
 <ul>
 <li>Cairo 可成功顯示但 TWIN 不行（後已修復）</li>
 </ul>
-<p><img src="https://hsxnua.bn.files.1drv.com/y4m_nOg9IadeovxjnjzDnUwsFGL8LSZLWQa2tG_yg26a2nkyQrGeZN2y2e83EElONJsrvFWQQGg0B5xydmEfMSG15cT149yu44wxsNp8XF-1Z9zFPWsGKolLv4CBHKNAdCtUZA69A1n3VsG47VTY5PxUGP9jeBALlY1CjvyEDRKjc5hcH846g-3KNjIdIDylnP5DAT8ZEj_QLTyhgZcLRfDUg?width=1199&height=547&cropmode=none"></p>
-<h4 id="顯示失敗"><a href="#顯示失敗" class="headerlink" title="顯示失敗"></a>顯示失敗</h4><p><img src="https://hcxiua.bn.files.1drv.com/y4mqJEAnS1bmpULVGsbJ6y2R-Pnia66bHGIlev0EF3WWVxVeoBTEgjV_G7x5jZ-nl6y9uH7DVHZ5MPBu4txZNw3hUfgVbLq8uh91DVhE8Cd_RNEm7nNu3k4a_0us0dvqp9m98PImTMf84FMkmBbvsQElXA1f8JGvpmo1o1JmrvCkM1Pn-BhfNf4WbkXO-8sxmCkwQSTr7cqpqroxSy8UqZ3_Q?width=1890&height=1028&cropmode=none"></p>
+<p><img data-src="https://hsxnua.bn.files.1drv.com/y4m_nOg9IadeovxjnjzDnUwsFGL8LSZLWQa2tG_yg26a2nkyQrGeZN2y2e83EElONJsrvFWQQGg0B5xydmEfMSG15cT149yu44wxsNp8XF-1Z9zFPWsGKolLv4CBHKNAdCtUZA69A1n3VsG47VTY5PxUGP9jeBALlY1CjvyEDRKjc5hcH846g-3KNjIdIDylnP5DAT8ZEj_QLTyhgZcLRfDUg?width=1199&height=547&cropmode=none"></p>
+<h4 id="顯示失敗"><a href="#顯示失敗" class="headerlink" title="顯示失敗"></a>顯示失敗</h4><p><img data-src="https://hcxiua.bn.files.1drv.com/y4mqJEAnS1bmpULVGsbJ6y2R-Pnia66bHGIlev0EF3WWVxVeoBTEgjV_G7x5jZ-nl6y9uH7DVHZ5MPBu4txZNw3hUfgVbLq8uh91DVhE8Cd_RNEm7nNu3k4a_0us0dvqp9m98PImTMf84FMkmBbvsQElXA1f8JGvpmo1o1JmrvCkM1Pn-BhfNf4WbkXO-8sxmCkwQSTr7cqpqroxSy8UqZ3_Q?width=1890&height=1028&cropmode=none"></p>
 <ul>
 <li>其實修改 Libsvgtiny 後使用 Cairo 是可以大致顯示的，簡單說就是 Libsvgtiny 的 fill 邏輯出了問題，要麼都塗黑了如上圖所示，要麼如下圖沒把該塗黑的地方塗黑ORZ</li>
 </ul>
-<p><img src="https://hcxhua.bn.files.1drv.com/y4mMu0upkRKHdD4MJrHjGzXaScyp2AmKT1HDz_gME-UggXO2r2J9mzrTGEQYHr9E4fpy-OcFdE0PNzq0i1bYYDH-QlYP5EF9nu_U8e5LUErWspvAp-tfTVh9gFPhL1Hyi7M7jHUQ15WklJ2Cjbou2k5P2fPpIsbaowHPOHc4vh7toBvWVY85ZQ-wMo8ltWzW3eJTNfATEAU_ikt0Itoshwo3w?width=1637&height=1024&cropmode=none"></p>
-<p><img src="https://hcxfua.bn.files.1drv.com/y4mC2VoVCOon8Qu4X4YWVASaNWVdhm60A_IOSHMhPnp4xyybH6qgM6l-CmsyPpV6UOsiaCpzv3S8MKJIXL4HtkL0zK5E7yZAiBpQeUFbZpB3PSd7Hr6D1BCO2z4ZlZNYXTqXDfu8cgCJiRlAHqLJkJ2UXbMDk-kSe0gWAdF3NgWXGPgk-MvHNPeIsRWatLJxmDYxa6_vb0FJyIDta-16RWFUQ?width=1641&height=1031&cropmode=none"></p>
+<p><img data-src="https://hcxhua.bn.files.1drv.com/y4mMu0upkRKHdD4MJrHjGzXaScyp2AmKT1HDz_gME-UggXO2r2J9mzrTGEQYHr9E4fpy-OcFdE0PNzq0i1bYYDH-QlYP5EF9nu_U8e5LUErWspvAp-tfTVh9gFPhL1Hyi7M7jHUQ15WklJ2Cjbou2k5P2fPpIsbaowHPOHc4vh7toBvWVY85ZQ-wMo8ltWzW3eJTNfATEAU_ikt0Itoshwo3w?width=1637&height=1024&cropmode=none"></p>
+<p><img data-src="https://hcxfua.bn.files.1drv.com/y4mC2VoVCOon8Qu4X4YWVASaNWVdhm60A_IOSHMhPnp4xyybH6qgM6l-CmsyPpV6UOsiaCpzv3S8MKJIXL4HtkL0zK5E7yZAiBpQeUFbZpB3PSd7Hr6D1BCO2z4ZlZNYXTqXDfu8cgCJiRlAHqLJkJ2UXbMDk-kSe0gWAdF3NgWXGPgk-MvHNPeIsRWatLJxmDYxa6_vb0FJyIDta-16RWFUQ?width=1641&height=1031&cropmode=none"></p>
 <ul>
 <li>使用 Netsurf 開啓老虎圖，直接笑出來了…</li>
 </ul>
-<p><img src="https://hcxgua.bn.files.1drv.com/y4mDaXibkKkZ2DLw13I-H9R_eFWZvjP5M9Wy9jShTnZTLLC1u2TYdXXg_tydEf9dGEhqdmln1m09ye6YlSLJXk-7vWw03JjvBtSHx2RQfwSA6BEIozngeq3myirgFaEdWP6kbF-lfgF-SfUo1BJXK8jo4x0JID6PhT8nx2aoTztA-vrdUBN3u2bH48H1_RZ02BvBR9WmxYXoqnmo7VV0_zUNQ?width=1272&height=1080&cropmode=none"></p>
+<p><img data-src="https://hcxgua.bn.files.1drv.com/y4mDaXibkKkZ2DLw13I-H9R_eFWZvjP5M9Wy9jShTnZTLLC1u2TYdXXg_tydEf9dGEhqdmln1m09ye6YlSLJXk-7vWw03JjvBtSHx2RQfwSA6BEIozngeq3myirgFaEdWP6kbF-lfgF-SfUo1BJXK8jo4x0JID6PhT8nx2aoTztA-vrdUBN3u2bH48H1_RZ02BvBR9WmxYXoqnmo7VV0_zUNQ?width=1272&height=1080&cropmode=none"></p>
 <h3 id="移植到-STM32F429-上的過程中，編譯鏈接又出問題了"><a href="#移植到-STM32F429-上的過程中，編譯鏈接又出問題了" class="headerlink" title="移植到 STM32F429 上的過程中，編譯鏈接又出問題了"></a>移植到 STM32F429 上的過程中，編譯鏈接又出問題了</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">In file included from /usr/include/libxml2/libxml/parser.h:810:0,</span><br><span class="line">                 from /usr/include/libxml2/libxml/globals.h:18,</span><br><span class="line">                 from /usr/include/libxml2/libxml/threads.h:35,</span><br><span class="line">                 from /usr/include/libxml2/libxml/xmlmemory.h:218,</span><br><span class="line">                 from /usr/include/libxml2/libxml/tree.h:1307,</span><br><span class="line">                 from libsvgtiny/src/xml2dom.c:14:</span><br><span class="line">/usr/include/libxml2/libxml/encoding.h:31:26: fatal error: unicode/ucnv.h: No such file or directory</span><br><span class="line"><span class="meta prompt_"> #</span><span class="language-bash">include &lt;unicode/ucnv.h&gt;</span></span><br><span class="line">                          ^</span><br><span class="line">compilation terminated.</span><br><span class="line">Makefile:85: recipe for target &#x27;libsvgtiny/src/xml2dom.o&#x27; failed</span><br><span class="line">make: *** [libsvgtiny/src/xml2dom.o] Error 1</span><br></pre></td></tr></table></figure>
 
 <p>Jserv replied:</p>
@@ -443,16 +460,16 @@
 <h3 id="Updates"><a href="#Updates" class="headerlink" title="Updates"></a>Updates</h3><h4 id="2016-06-08"><a href="#2016-06-08" class="headerlink" title="2016&#x2F;06&#x2F;08"></a>2016&#x2F;06&#x2F;08</h4><ul>
 <li>修復 Libsvgtiny 問題，顯示 tiger 黑圖（修改 Libsvgtiny 的 fill、stroke 可顯示不完全正確的 tiger 圖）</li>
 </ul>
-<p><img src="https://hcxmua.bn.files.1drv.com/y4mhLEBOyK8sGD0_VrOOuxH6fEX9gqHmvH4IimCPlaMICaYNvEXcuu-fJ_FEsFS1o9F6wTo4AGgt9eY1Yxiyrdfr87NDvMgYhXV-Ji63oR0CJPuIQwenFqmz9fyZupLOOJUR58_t-TL_Ce9DoJUQUMSmul5kdzUYfgVqHJEoUHg4iFsTY4x-DfRnBJXjfN7G3JLcvpu2Ii7APNssspgUn-oKw?width=1917&height=1080&cropmode=none"></p>
+<p><img data-src="https://hcxmua.bn.files.1drv.com/y4mhLEBOyK8sGD0_VrOOuxH6fEX9gqHmvH4IimCPlaMICaYNvEXcuu-fJ_FEsFS1o9F6wTo4AGgt9eY1Yxiyrdfr87NDvMgYhXV-Ji63oR0CJPuIQwenFqmz9fyZupLOOJUR58_t-TL_Ce9DoJUQUMSmul5kdzUYfgVqHJEoUHg4iFsTY4x-DfRnBJXjfN7G3JLcvpu2Ii7APNssspgUn-oKw?width=1917&height=1080&cropmode=none"></p>
 <h4 id="2016-06-11"><a href="#2016-06-11" class="headerlink" title="2016&#x2F;06&#x2F;11"></a>2016&#x2F;06&#x2F;11</h4><ul>
 <li>twin 接口問題，顯示 sonic 黑圖（使用 cairo 可正常顯示）</li>
 </ul>
-<p><img src="https://hcxjua.bn.files.1drv.com/y4m-0PTeYG_SCSKGrAJ_UX_W9gvAcMhyGnbX6_tfB-qxeecqbcwS1K_tgrCstPor3U_KHdKuvpa2sNLTcOko5PSEdpGeccRThEk3Wi5XZdmhx1EA_AdBuUQwJ2h7neioFCYsbbYe8FgLWe_NbXWfWgN-f-PsXbdltn8By-_T-Row0TACiVCBzCT-DoaXKanCRUGvaGUhd_A0Oou7CZcB4GIBg?width=1000&height=1037&cropmode=none"></p>
+<p><img data-src="https://hcxjua.bn.files.1drv.com/y4m-0PTeYG_SCSKGrAJ_UX_W9gvAcMhyGnbX6_tfB-qxeecqbcwS1K_tgrCstPor3U_KHdKuvpa2sNLTcOko5PSEdpGeccRThEk3Wi5XZdmhx1EA_AdBuUQwJ2h7neioFCYsbbYe8FgLWe_NbXWfWgN-f-PsXbdltn8By-_T-Row0TACiVCBzCT-DoaXKanCRUGvaGUhd_A0Oou7CZcB4GIBg?width=1000&height=1037&cropmode=none"></p>
 <h4 id="2016-06-12"><a href="#2016-06-12" class="headerlink" title="2016&#x2F;06&#x2F;12"></a>2016&#x2F;06&#x2F;12</h4><ul>
 <li>修復 Libsvgtiny 縮放問題，在 STM32F429Discovery 上顯示成功</li>
 </ul>
-<p><img src="https://hsxlua.bn.files.1drv.com/y4mBIRRiVRqn_SnqOF1CRSGbMzSD_fppWopMwsrAafydPutl2ZOLjFRfmDvURmHjMj02i5u8sIL9lWJiM3yviTrC1JQe8pfKyPnGx-Oh2__re_0FIozZn4Lxq8gmtkmHDa2EhvgBmjgfTOLwu9_-7a0UqRY7hrKmuz4OcmXT0jH0WM4wDuOyOeYT8nYAHBHo8GR60toXQ2XCFOoATxHW7W3iA?width=14440&height=1920&cropmode=none"></p>
-<p><img src="https://hcxlua.bn.files.1drv.com/y4mxzBp__N-J4lAX9LtXPkZXqkZC4qKoLvBLoFebz8ipnVAFwkIZhHbLFx5xkh5BUimnO3y6jp6uZKv7S5EwS7PN6K3QZyIO88CLoo2UKhIZstZ97IA-nFQeZ8oBk2umKL7_6XDIlpH2nRGTRR-ZlQtfWhqq9qvCjZexTFsWK1bRrZm6xMrKVxPqCLnQlilFZ6UFe3p0B8ho7Lis_v-mDQcmw?width=1440&height=1920&cropmode=none"></p>
+<p><img data-src="https://hsxlua.bn.files.1drv.com/y4mBIRRiVRqn_SnqOF1CRSGbMzSD_fppWopMwsrAafydPutl2ZOLjFRfmDvURmHjMj02i5u8sIL9lWJiM3yviTrC1JQe8pfKyPnGx-Oh2__re_0FIozZn4Lxq8gmtkmHDa2EhvgBmjgfTOLwu9_-7a0UqRY7hrKmuz4OcmXT0jH0WM4wDuOyOeYT8nYAHBHo8GR60toXQ2XCFOoATxHW7W3iA?width=14440&height=1920&cropmode=none"></p>
+<p><img data-src="https://hcxlua.bn.files.1drv.com/y4mxzBp__N-J4lAX9LtXPkZXqkZC4qKoLvBLoFebz8ipnVAFwkIZhHbLFx5xkh5BUimnO3y6jp6uZKv7S5EwS7PN6K3QZyIO88CLoo2UKhIZstZ97IA-nFQeZ8oBk2umKL7_6XDIlpH2nRGTRR-ZlQtfWhqq9qvCjZexTFsWK1bRrZm6xMrKVxPqCLnQlilFZ6UFe3p0B8ho7Lis_v-mDQcmw?width=1440&height=1920&cropmode=none"></p>
 
     </div>
 
@@ -498,13 +515,13 @@
 
           <div class="post-tags">
               <a href="/tags/embedded-system/" rel="tag"># embedded system</a>
-              <a href="/tags/svg/" rel="tag"># svg</a>
-              <a href="/tags/svg-tiny/" rel="tag"># svg tiny</a>
-              <a href="/tags/libsvgtiny/" rel="tag"># libsvgtiny</a>
               <a href="/tags/vector/" rel="tag"># vector</a>
               <a href="/tags/gui/" rel="tag"># gui</a>
               <a href="/tags/twin/" rel="tag"># twin</a>
               <a href="/tags/window-system/" rel="tag"># window system</a>
+              <a href="/tags/svg/" rel="tag"># svg</a>
+              <a href="/tags/svg-tiny/" rel="tag"># svg tiny</a>
+              <a href="/tags/libsvgtiny/" rel="tag"># libsvgtiny</a>
               <a href="/tags/cairo/" rel="tag"># cairo</a>
           </div>
 
@@ -574,6 +591,7 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.umd.js" integrity="sha256-ytMJGN3toR+a84u7g7NuHm91VIR06Q41kMWDr2pq7Zo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 

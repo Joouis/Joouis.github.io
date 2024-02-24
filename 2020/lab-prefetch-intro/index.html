@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.css" integrity="sha256-6cQIC71/iBIYXFK+0RHAvwmjwWzkWd+r7v/BX3/vZDc=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="这是我的嵌入式笔记第六篇，原文写于2015年。">
 <meta property="og:type" content="article">
@@ -209,6 +209,37 @@
     </div>
 
     
+        <div class="sidebar-inner sidebar-post-related">
+          <div class="animated">
+              <div class="links-of-blogroll-title"><i class="fa fa-signs-post fa-fw"></i>
+    相关文章
+  </div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/2020/lab-leetcode-practices/" rel="bookmark">
+        <time class="popular-posts-time">2020-01-24</time>
+        <br>
+      LeetCode小练习
+      </a>
+    </li>
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/2016/online-notes-of-john-chou/" rel="bookmark">
+        <time class="popular-posts-time">2016-04-14</time>
+        <br>
+      Online notes of John Chou
+      </a>
+    </li>
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/2019/x86-performance-qna/" rel="bookmark">
+        <time class="popular-posts-time">2019-04-27</time>
+        <br>
+      如何在 X86-64 下比较精准地测量系统性能
+      </a>
+    </li>
+  </ul>
+
+          </div>
+        </div>
   </aside>
 
 
@@ -322,7 +353,7 @@
 
 <ul>
 <li>接著sse_prefetch_transpose，使用了Intel處理器SIMD的技術，在<a target="_blank" rel="noopener" href="https://paper.dropbox.com/doc/qrEPXoXETqtGUHyPua3tl">+Week#1</a>有做簡單的整理，簡單說就是一次將4筆資料放入sse暫存器中，執行一條指令就可以完成4筆資料處理。<br>具體實現的過程參考了文章<a target="_blank" rel="noopener" href="https://randombit.net/bitbashing/posts/integer_matrix_transpose_in_sse2.html">Programming trivia: 4x4 integer matrix transpose in SSE2</a>。<ul>
-<li>SSE指令的格式：<br><img src="https://idoc9g.bn.files.1drv.com/y4m9bN43kHK5gLhfzVqwQeWXHEafixrMU2j8LWuwyHH51gxPNE69jrdp2XJTuwigzllW5jiCb3s1hWj637DFbmBgq_UkKgIHI20cUGonOwWF3e0wKuWVjrWqLxuCNL0ol0u4jkeFgyPYo86njZir6KJWqlPHW9pLM-crLDuZbyxkyL02Y3rjqa9HCVBKXmJFuksBe08HFC1QdgdchSYmVtCxA?width=563&height=253&cropmode=none"></li>
+<li>SSE指令的格式：<br><img data-src="https://idoc9g.bn.files.1drv.com/y4m9bN43kHK5gLhfzVqwQeWXHEafixrMU2j8LWuwyHH51gxPNE69jrdp2XJTuwigzllW5jiCb3s1hWj637DFbmBgq_UkKgIHI20cUGonOwWF3e0wKuWVjrWqLxuCNL0ol0u4jkeFgyPYo86njZir6KJWqlPHW9pLM-crLDuZbyxkyL02Y3rjqa9HCVBKXmJFuksBe08HFC1QdgdchSYmVtCxA?width=563&height=253&cropmode=none"></li>
 <li><a target="_blank" rel="noopener" href="https://msdn.microsoft.com/en-us/library/x8atst9d(v=vs.90).aspx">_mm_unpacklo_epi32(I0, I1)</a>讀入兩個128位暫存器後會使用他們的2個低32位值，返回[a0, b0, a1, b1]，_mm_unpackhi_epi32同理，而_mm_unpacklo_epi64則是一次取64位</li>
 </ul>
 </li>
@@ -514,6 +545,7 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.umd.js" integrity="sha256-ytMJGN3toR+a84u7g7NuHm91VIR06Q41kMWDr2pq7Zo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 

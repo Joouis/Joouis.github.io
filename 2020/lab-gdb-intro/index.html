@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.css" integrity="sha256-6cQIC71/iBIYXFK+0RHAvwmjwWzkWd+r7v/BX3/vZDc=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="这是我的嵌入式笔记第七篇同时也是完结篇，原文写于2015年。本文除了介绍GDB&#x2F;CGBD的基础使用方法以及嵌入式开发应用外，还会分享一个解密类经典游戏 Defusing a binary bomb with GDB ，非常有趣！">
 <meta property="og:type" content="article">
@@ -424,18 +424,18 @@
 </ul>
 <h3 id="Phase-0-Phase-1-Comparison"><a href="#Phase-0-Phase-1-Comparison" class="headerlink" title="Phase 0, Phase 1: Comparison"></a>Phase 0, Phase 1: Comparison</h3><ul>
 <li><p>使用 <code>b phase_0</code> 設好斷點後，一個 <code>c</code> 來到 <code>phase0</code> 函數，在源程式端輸入 <code>help</code>，則可見：</p>
-<p><img src="https://g8xeua.bn.files.1drv.com/y4m2NfjgmRex3zQrLCz2ec6NFVRh9RVlYb6UxUVIW5Cp_ERI9Aewx17RtVAc74PA33vZdXPAFsMqMHaKmV2-v_SDvAxa4SEyYr4-WXEyT5QEvDfMBkrjNr70ggOdi7F8irjC_en48kPMwf2HBEiPWzfTYVrCg7LWUmb17hT1ciWMNiR9a9Woxr9HTBiQEVtRbLmfF59Kt7I6Gm9L5d-gahNOg"></p>
+<p><img data-src="https://g8xeua.bn.files.1drv.com/y4m2NfjgmRex3zQrLCz2ec6NFVRh9RVlYb6UxUVIW5Cp_ERI9Aewx17RtVAc74PA33vZdXPAFsMqMHaKmV2-v_SDvAxa4SEyYr4-WXEyT5QEvDfMBkrjNr70ggOdi7F8irjC_en48kPMwf2HBEiPWzfTYVrCg7LWUmb17hT1ciWMNiR9a9Woxr9HTBiQEVtRbLmfF59Kt7I6Gm9L5d-gahNOg"></p>
 </li>
 <li><p>可以看到程式是用 <code>r0</code> 和 <code>r1</code> 作比較，<code>r0</code> 是我們輸入的值，<code>r1</code> 就是我們要猜的值，這裏已經告訴我們是 <code>help</code> 了</p>
 </li>
 <li><p>用 <code>si</code> 執行到 0x87ee ，可以看到 <code>r0</code> 和 <code> r1</code> 的值：</p>
-<p><img src="https://g8xgua.bn.files.1drv.com/y4mPoBctTovg6J0yvhXhtffMfAPecqUB0wg5NJ-TYuE67eCPc5pFngsB3YWObYbw43_WCi__xFFjIXMMUfVCTjDQ3LB6WldJeVVdl2GgzHvk4e1NfiWyWz8eGqvKqxMx1Q3DrNTZSsd33h6aalvSdyIOxcohH8GQd7F3Ibi-5khQgNfOWTshN_lITEZAtALGyuedC96KqrLIVX3UkXz3I2kHQ"></p>
+<p><img data-src="https://g8xgua.bn.files.1drv.com/y4mPoBctTovg6J0yvhXhtffMfAPecqUB0wg5NJ-TYuE67eCPc5pFngsB3YWObYbw43_WCi__xFFjIXMMUfVCTjDQ3LB6WldJeVVdl2GgzHvk4e1NfiWyWz8eGqvKqxMx1Q3DrNTZSsd33h6aalvSdyIOxcohH8GQd7F3Ibi-5khQgNfOWTshN_lITEZAtALGyuedC96KqrLIVX3UkXz3I2kHQ"></p>
 </li>
 <li><p><code>x/s $r0</code> <code>x/s $r1</code> 直接可以印出 <code>r0</code> <code>r1</code> 的地址和指向的值：</p>
-<p><img src="https://g8xfua.bn.files.1drv.com/y4m_1q4cb_ll8OFKXEtf82M3NkP2TNsY5Azfo4LAaj05-y7DCWA0U670BtSnsiDXmBxMUSpoGz9DprJ3apqbGyR5MIboLmpWA32V50cpmYdg0310ksBg7LMouIDVvvvAXHuVc3BsB5SIuAVcz8LUgrTyrev5T8nkSifzjYigM5PsfkLBv28c1Ao3kko5shSbA2ExRtj4SUzF0T0lUH-6Frgzg"></p>
+<p><img data-src="https://g8xfua.bn.files.1drv.com/y4m_1q4cb_ll8OFKXEtf82M3NkP2TNsY5Azfo4LAaj05-y7DCWA0U670BtSnsiDXmBxMUSpoGz9DprJ3apqbGyR5MIboLmpWA32V50cpmYdg0310ksBg7LMouIDVvvvAXHuVc3BsB5SIuAVcz8LUgrTyrev5T8nkSifzjYigM5PsfkLBv28c1Ao3kko5shSbA2ExRtj4SUzF0T0lUH-6Frgzg"></p>
 </li>
 <li><p>同理，<code>continue</code> 到 <code>phase_1</code>，印出 <code>r1</code></p>
-<p><img src="https://g8xlua.bn.files.1drv.com/y4mrKjOr0UFu4U4LD7lJ5pL2tLIW2V6vUrnwlS2dsLfOfuEVWlJzV5pMx7xSbVswnj1Mg-QY5E3QrGgCp3RTtiNHEyDIrtxtUdTYbaEGmazryd_8204Rwn0bXhAtze8hLOyXvsifBbBBylHoGZNUBXjiRiUIBY9JVLCAiw34WfD3j-KKSlnmDNUp1a0m5yZ7bEj0AIrekGdCZt95WOFOS5cbQ"></p>
+<p><img data-src="https://g8xlua.bn.files.1drv.com/y4mrKjOr0UFu4U4LD7lJ5pL2tLIW2V6vUrnwlS2dsLfOfuEVWlJzV5pMx7xSbVswnj1Mg-QY5E3QrGgCp3RTtiNHEyDIrtxtUdTYbaEGmazryd_8204Rwn0bXhAtze8hLOyXvsifBbBBylHoGZNUBXjiRiUIBY9JVLCAiw34WfD3j-KKSlnmDNUp1a0m5yZ7bEj0AIrekGdCZt95WOFOS5cbQ"></p>
 </li>
 </ul>
 <blockquote>
@@ -445,12 +445,12 @@
 <li><p>先隨意輸入，看下寄存器 <code>r1</code> 的值 <code>0x8bc8: &quot;%d %d %d %d&quot;</code>，看起來是要輸入4個整數，重頭再來一次</p>
 </li>
 <li><p>發現用 <code>ni</code> 跳過 function 會讀不到指令，還是用 <code>si</code> 一步一步來吧</p>
-<p><img src="https://g8xiua.bn.files.1drv.com/y4mqViBPUFsaPQty38x5OBoy_Hs77ynzLJI6UOdjfk4lJmGhtQ4eiaYLFGX5sdKFFwavCyTtx-sZa75RmLRCSyELNwHVzOeoYoWvNhuNkiOwvON5aS47fCuI0LWYpgJNMG-i5AKdiBlsxvqY2mDK3uPWoRPaf5uoIUcNRLIGk0yXFVc-N7RpbfMaktiMDI58yj1MfT_xetol8gQR64f3l4tRg"></p>
+<p><img data-src="https://g8xiua.bn.files.1drv.com/y4mqViBPUFsaPQty38x5OBoy_Hs77ynzLJI6UOdjfk4lJmGhtQ4eiaYLFGX5sdKFFwavCyTtx-sZa75RmLRCSyELNwHVzOeoYoWvNhuNkiOwvON5aS47fCuI0LWYpgJNMG-i5AKdiBlsxvqY2mDK3uPWoRPaf5uoIUcNRLIGk0yXFVc-N7RpbfMaktiMDI58yj1MfT_xetol8gQR64f3l4tRg"></p>
 </li>
 <li><p>到 0x885e，如果輸入的數的個數不是4個，就會 explode bomb，若是則跳到 0x8864</p>
 </li>
 <li><p>接下來的代碼中：</p>
-<p><img src="https://g8xhua.bn.files.1drv.com/y4mJJh_4kT5r_QS5Eoq9flUbX7c8Cg0mYiqCXdt7921pMyBN3eDAayILtWmPGZjLEXBty5TADzKfKz7Eh4YTcNxJCO9qq4ENGg_Kni1pOSmrFlLu5IKe2VGUZY6ZqMZQ5N_ypvcEJz-CJiUpdjsROctT39V6tRqWW2fexd78ie9PFxw3SEFH55VstWrwzyYgwyWzeW5Ir2yia0WXOO5rFHFmw"></p>
+<p><img data-src="https://g8xhua.bn.files.1drv.com/y4mJJh_4kT5r_QS5Eoq9flUbX7c8Cg0mYiqCXdt7921pMyBN3eDAayILtWmPGZjLEXBty5TADzKfKz7Eh4YTcNxJCO9qq4ENGg_Kni1pOSmrFlLu5IKe2VGUZY6ZqMZQ5N_ypvcEJz-CJiUpdjsROctT39V6tRqWW2fexd78ie9PFxw3SEFH55VstWrwzyYgwyWzeW5Ir2yia0WXOO5rFHFmw"></p>
 <ul>
 <li><p>從 0x886a 到 0x887a 是一個迴圈，完整的 <code>si</code> 走了一邊，只是運行完後不能讀到 <code>r2</code> <code>r3</code> 的值所指向的地址裏的值</p>
 </li>
@@ -464,17 +464,17 @@
 <li><p>而函數最後對比的是 <code>r7+16</code> 和 <code>r7+20</code>，需要他們相等，故輸入時第三個數減第二個數要等於10</p>
 </li>
 <li><p>測試果然過關~</p>
-<p><img src="https://g8xjua.bn.files.1drv.com/y4mc5EpPCrZB3UjhoesaVAL4k4lRFD6EspybuSYiTw4xBfnC5a4JDC_NgHnhQ7Iqfls1jNxQ2iPxRRgEmStB9oWm0BhhSm9novzSpEsfD0ymcFihk1cGO5gYvvfuE8vmd5bbqYaKHTW4JKMTkbSjFPLyiuf-arPBqnJ1qoz3scVVtNqhgH_4xfE1qLX1zvG1RH0S8LM09fw2f7id47vrCopPQ"></p>
+<p><img data-src="https://g8xjua.bn.files.1drv.com/y4mc5EpPCrZB3UjhoesaVAL4k4lRFD6EspybuSYiTw4xBfnC5a4JDC_NgHnhQ7Iqfls1jNxQ2iPxRRgEmStB9oWm0BhhSm9novzSpEsfD0ymcFihk1cGO5gYvvfuE8vmd5bbqYaKHTW4JKMTkbSjFPLyiuf-arPBqnJ1qoz3scVVtNqhgH_4xfE1qLX1zvG1RH0S8LM09fw2f7id47vrCopPQ"></p>
 </li>
 </ul>
 </li>
 </ul>
 <h3 id="Phase-3-If-condition"><a href="#Phase-3-If-condition" class="headerlink" title="Phase 3: If condition"></a>Phase 3: If condition</h3><ul>
 <li><p>第一步，設置斷點在 <code>phase_3</code> 後隨意輸入進入斷點，印出 <code>r1</code> 的值，爲 <code>&quot;%d %d %d&quot;</code> ，後面也有判斷輸入個數的代碼，和階段2同理：</p>
-<p><img src="https://gsxjua.bn.files.1drv.com/y4mUqM4HweD1xwIFi5B1A7Bnst_1qzf0FrK2v0xH25U6pZ8P6K76cFWxxHnYTfMwFcYha4mX6Fg-i7FI1qPAdAfx81PntBGquONp82JbgKphAVHnsxDfb9_tCJX3oSmzVFs5wJUgAqY7neLUnLM0YZsWkWprzA-pJSdH_apeFrv1ysTR9qkV8TcnQ5rybRigiyVfh63TJXMzSmKxf2UYVi1ag"></p>
+<p><img data-src="https://gsxjua.bn.files.1drv.com/y4mUqM4HweD1xwIFi5B1A7Bnst_1qzf0FrK2v0xH25U6pZ8P6K76cFWxxHnYTfMwFcYha4mX6Fg-i7FI1qPAdAfx81PntBGquONp82JbgKphAVHnsxDfb9_tCJX3oSmzVFs5wJUgAqY7neLUnLM0YZsWkWprzA-pJSdH_apeFrv1ysTR9qkV8TcnQ5rybRigiyVfh63TJXMzSmKxf2UYVi1ag"></p>
 </li>
 <li><p>接着把斷點設在 0x88be，代碼如下：</p>
-<p><img src="https://gsxkua.bn.files.1drv.com/y4mORvlx72p5_6PDiPtzxSy6__pPrJOV9I_XeiIvDjBtYjCurQUXhRT9cL9aDS5mbRp5QvYZr97fs0nj-iZi2qPHZQjcM-fqoTYnzySfukulgpJjwKwoWkVtf7ccjYof9yes3l7wlgijIsvN9Y0A1Q7Ly9o6-Q1ObfIc99nb1XVTohiBIOZm608wg6p7n8iSsTWyq4SAsPxYh6vjWAHjcdkOw"></p>
+<p><img data-src="https://gsxkua.bn.files.1drv.com/y4mORvlx72p5_6PDiPtzxSy6__pPrJOV9I_XeiIvDjBtYjCurQUXhRT9cL9aDS5mbRp5QvYZr97fs0nj-iZi2qPHZQjcM-fqoTYnzySfukulgpJjwKwoWkVtf7ccjYof9yes3l7wlgijIsvN9Y0A1Q7Ly9o6-Q1ObfIc99nb1XVTohiBIOZm608wg6p7n8iSsTWyq4SAsPxYh6vjWAHjcdkOw"></p>
 </li>
 <li><p><code>r3</code> 會先取出輸入的第一個數，和 40 做對比，這裏我輸入的 1，因此會繼續往下走</p>
 </li>
@@ -489,29 +489,29 @@
 <li><p>試驗一下</p>
 <ul>
 <li><p>當第一個數不爲40時，正確</p>
-<p><img src="https://g8xkua.bn.files.1drv.com/y4mNjNKy3ObTQ3OziMqXlvoF7pyUzotNvDaaFyvIY3z_wIogyPhn1NLmB5T4xbph1UQ6Bd9PCPwRQF1onforUpnrNKLiBkYmZvIoXkFYeCPg1hDR2sCv_3P370mUy4ma7qfXu5uuqXixeoKQmiYfQ3cXnndVZ4oeBE9efulUvF2wM-UwjVPSNRgKCQFsVQPctP4SYfxWgwXmW7iUS4D0K091A"></p>
+<p><img data-src="https://g8xkua.bn.files.1drv.com/y4mNjNKy3ObTQ3OziMqXlvoF7pyUzotNvDaaFyvIY3z_wIogyPhn1NLmB5T4xbph1UQ6Bd9PCPwRQF1onforUpnrNKLiBkYmZvIoXkFYeCPg1hDR2sCv_3P370mUy4ma7qfXu5uuqXixeoKQmiYfQ3cXnndVZ4oeBE9efulUvF2wM-UwjVPSNRgKCQFsVQPctP4SYfxWgwXmW7iUS4D0K091A"></p>
 </li>
 <li><p>當第一個數爲40時，正確</p>
-<p><img src="https://g8xmua.bn.files.1drv.com/y4m3Pqfq-DHHyNIvsjgTb7k2BlfrkbLEiwsu3UM3A3iTmqsb0GNqbiOQP_1fgZvrv8KfjwPhNHgXta8PCLrw_19zBsArIwvR_dh_PlcwEoIeo7P1cHSa5TfeBcTz0M9AUBHhEnFbShVas3u4yd6XpNfxTcaMbZdc5p5waVlkUk_gTK_Vyk-qGXfdu5Xzn26_qzgMuTXnJN4ink2FKuq4ZGn9g"></p>
+<p><img data-src="https://g8xmua.bn.files.1drv.com/y4m3Pqfq-DHHyNIvsjgTb7k2BlfrkbLEiwsu3UM3A3iTmqsb0GNqbiOQP_1fgZvrv8KfjwPhNHgXta8PCLrw_19zBsArIwvR_dh_PlcwEoIeo7P1cHSa5TfeBcTz0M9AUBHhEnFbShVas3u4yd6XpNfxTcaMbZdc5p5waVlkUk_gTK_Vyk-qGXfdu5Xzn26_qzgMuTXnJN4ink2FKuq4ZGn9g"></p>
 </li>
 </ul>
 </li>
 </ul>
 <h3 id="Phase-4-Iteration"><a href="#Phase-4-Iteration" class="headerlink" title="Phase 4: Iteration"></a>Phase 4: Iteration</h3><ul>
 <li><p>與階段2、3同理，得知輸入爲一個整數</p>
-<p><img src="https://gsxeua.bn.files.1drv.com/y4ma2y8fO8ZPfARqL6qOz4Fvy00y07cQIIzsEXuwLGcEFMMIJuwh2zqeI_VyBIeel-p_LMbHRmVoGqd0ZuKOg6mdAwBASP1v_YhEn4abeZhkVoENAskxbCV_4WEZMptlxq7VB6R5yVJnkj3h93p8YORHEUxWLiaZoD7o5wE0AA8knib4scjyfZ261UHLugUjSz2wWQ29BNRV_SPZsh1uNZHUw"></p>
+<p><img data-src="https://gsxeua.bn.files.1drv.com/y4ma2y8fO8ZPfARqL6qOz4Fvy00y07cQIIzsEXuwLGcEFMMIJuwh2zqeI_VyBIeel-p_LMbHRmVoGqd0ZuKOg6mdAwBASP1v_YhEn4abeZhkVoENAskxbCV_4WEZMptlxq7VB6R5yVJnkj3h93p8YORHEUxWLiaZoD7o5wE0AA8knib4scjyfZ261UHLugUjSz2wWQ29BNRV_SPZsh1uNZHUw"></p>
 </li>
 <li><p>接下來 <code>phase_4</code> 的函數就很短了</p>
-<p><img src="https://g8xnua.bn.files.1drv.com/y4mUvdDoZ8nPQPsuwD8sMK-75pZGwvsiV8sYOTW_qbhWybCYZWFnLgMtiexjznqdNtJzpDqV4B84ajzPPjYzKEkumC24wFXMpJNpgpTak1gylEmJh-dAkWMIAHozf0f3NzJyQx1nOSsPLwajC2Xk0w-q-xFXok0K5kKpdDpLT9vm4TVHuOpGli0Srxe8nEM6Hy3Jd_Cm4w58uyblrkUqeO3Xg"></p>
+<p><img data-src="https://g8xnua.bn.files.1drv.com/y4mUvdDoZ8nPQPsuwD8sMK-75pZGwvsiV8sYOTW_qbhWybCYZWFnLgMtiexjznqdNtJzpDqV4B84ajzPPjYzKEkumC24wFXMpJNpgpTak1gylEmJh-dAkWMIAHozf0f3NzJyQx1nOSsPLwajC2Xk0w-q-xFXok0K5kKpdDpLT9vm4TVHuOpGli0Srxe8nEM6Hy3Jd_Cm4w58uyblrkUqeO3Xg"></p>
 <p>把輸入的數，代入fun4後，return的值要等於1024。</p>
 </li>
 <li><p><code>fun4</code> 的代碼如下：</p>
-<p><img src="https://gsxiua.bn.files.1drv.com/y4mlxNA_jEBIGKIHZQSqzMTL2a6D2-B8yr-Hhwl39qIZqbA02BYOssQrohJ-8FFgBHwnJotMvff6nTWKUA3Bo-y8cwE92a4CgwNnKujuPR9qqHYZrJLoK2CuEmk6V6cFxXxmcnowE1Sf_d64kZkEJNMsfmYIdhfxXq7aw_PcX31YP8tyVtVR1800adG2tNxzDk7x8ANgNvFD_MN9LVeZgoK_g"></p>
+<p><img data-src="https://gsxiua.bn.files.1drv.com/y4mlxNA_jEBIGKIHZQSqzMTL2a6D2-B8yr-Hhwl39qIZqbA02BYOssQrohJ-8FFgBHwnJotMvff6nTWKUA3Bo-y8cwE92a4CgwNnKujuPR9qqHYZrJLoK2CuEmk6V6cFxXxmcnowE1Sf_d64kZkEJNMsfmYIdhfxXq7aw_PcX31YP8tyVtVR1800adG2tNxzDk7x8ANgNvFD_MN9LVeZgoK_g"></p>
 </li>
 <li><p>當 <code>r3</code> 不爲 0 時，會一直減 1 然後調用自身函數；當 <code>r3</code> 終於減到 0 後，會在 0x88f2 賦值爲 1，然後跳到 8904，回傳上一層的 <code>fun</code> 函數。然後 <code>r3=r0=1</code>，開始左移</p>
 </li>
 <li><p>所以相當於輸入的數字 n，可以滿足 2 的 n 次方爲 1024，即是正確答案，真相如下：</p>
-<p><img src="https://gsxhua.bn.files.1drv.com/y4mruackLegsDWFfF6teCuu9RUKNLp1pLHIecfDS5MdIW53DktomQZTUc63fegiDpsIwu46Gj-2u15MvQfPpEJeu9Xy3x2Kbqx3JetweFkeAwW_2AjGgIOTq8FamG56Cw_aQnubjySwTBN6MZxSb_vB66kWfnvaRCbn-E2hyYsTciL8MW1aGxif2yUQSMN6325r40UUBrelZk34NdwAYere7w"></p>
+<p><img data-src="https://gsxhua.bn.files.1drv.com/y4mruackLegsDWFfF6teCuu9RUKNLp1pLHIecfDS5MdIW53DktomQZTUc63fegiDpsIwu46Gj-2u15MvQfPpEJeu9Xy3x2Kbqx3JetweFkeAwW_2AjGgIOTq8FamG56Cw_aQnubjySwTBN6MZxSb_vB66kWfnvaRCbn-E2hyYsTciL8MW1aGxif2yUQSMN6325r40UUBrelZk34NdwAYere7w"></p>
 </li>
 </ul>
 
@@ -632,6 +632,7 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.umd.js" integrity="sha256-ytMJGN3toR+a84u7g7NuHm91VIR06Q41kMWDr2pq7Zo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 

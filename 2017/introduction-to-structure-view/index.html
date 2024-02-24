@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.css" integrity="sha256-6cQIC71/iBIYXFK+0RHAvwmjwWzkWd+r7v/BX3/vZDc=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="structure-view （以下简称 SV）是在开发 YunOS Studio（AliOS Studio 前身）时开源出来的一款代码结构提示插件。代码结构提示是一项由来已久的影响开发效率的功能，早在 VIM 时期就有经典的 ctags + Taglist 插件组合来实现这一功能，在桌面时代各大流行的 IDE 也都支持此功能，如 Eclipse 中的 Outline View 或 Webstor">
 <meta property="og:type" content="article">
@@ -214,6 +214,23 @@
     </div>
 
     
+        <div class="sidebar-inner sidebar-post-related">
+          <div class="animated">
+              <div class="links-of-blogroll-title"><i class="fa fa-signs-post fa-fw"></i>
+    相关文章
+  </div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/2016/my-configuration-for-ubuntu-distribution/" rel="bookmark">
+        <time class="popular-posts-time">2016-04-09</time>
+        <br>
+      我的 Ubuntu 系统配置
+      </a>
+    </li>
+  </ul>
+
+          </div>
+        </div>
   </aside>
 
 
@@ -313,7 +330,7 @@
 <span id="more"></span>
 
 <p>自从今年九月初将其开源并发布到 Atom 市场中，2个多月的时间达到了 800 余次的下载量，总计 20+ 的 star 数量，以及数十个 issues 和 PR。在没（精）啥（力）宣（有）传（限）的情况下，有人下载使用、提问题、提需求，甚至主动贡献 PR，都给了笔者极大的鼓舞，因此在此分享一下这个插件的设计，也欢迎 Atom 党服用此插件。</p>
-<img src="https://wk4tlg.bn.files.1drv.com/y4mN2I10UfETZdexdzTftd3jf_T3Ib94IPry-EWT69byliaUtzRSIo5zJ2DW4Uqib05ZmX4mPIq0lfLS_CkKf6-aYB6GFJRE7rmfguVYvz1uaJg2awvZfzPPy-C3hgQ5ORboLxnb5b-xY2ekYKwT1wThsrA3s2VtyTcSQnVJPrPmMRq-uYhG-Gf2EHM2lqnZrmjWUT6qxP5gskoz-5hPJjtmg" class="">
+<img data-src="https://wk4tlg.bn.files.1drv.com/y4mN2I10UfETZdexdzTftd3jf_T3Ib94IPry-EWT69byliaUtzRSIo5zJ2DW4Uqib05ZmX4mPIq0lfLS_CkKf6-aYB6GFJRE7rmfguVYvz1uaJg2awvZfzPPy-C3hgQ5ORboLxnb5b-xY2ekYKwT1wThsrA3s2VtyTcSQnVJPrPmMRq-uYhG-Gf2EHM2lqnZrmjWUT6qxP5gskoz-5hPJjtmg" class="">
 
 <p>链接：</p>
 <ul>
@@ -351,7 +368,7 @@
 <p>另外还有一种解决方案源自 Facebook 出品的 Nuclide IDE，SV 在设计之初并未参考到，不过后来发现是类似的思路 。Nuclide 中的 Outline 视图提供了代码结构提示和快速导航的功能，针对不同的语言使用不同的解析器，例如使用了自家的 Flow 类型检查工具处理 JavaScript 代码，而使用了 Python 官方的解析器处理 Python 代码。</p>
 <p>这种方法的好处自然是有深度，能把支持的语言解析到位，但坏处也十分明显。首先是依赖性太强，之所以没有很深入地调研 Nuclide，是因为笔者在解析 JavaScript 时提醒安装 Flow，但是 Nuclide 并没有提供自动化安装功能，需要用户到 Flow 的官网学习、完成这件事情，这显然很蠢，也不知道现在改进没…其次就是支持的语言类型有所限制，需要大量的资源支持新的语言开发，明显不适合笔者这种“单兵作战”模式。</p>
 <h3 id="流程设计"><a href="#流程设计" class="headerlink" title="流程设计"></a>流程设计</h3><p>SV 的代码结构解析流程与现有插件大体一致，如下图所示。</p>
-<img src="https://wk4ulg.bn.files.1drv.com/y4mc9Zhw83pbn0yN-CveyHdr9ui5NuMjEmSlmyKMVMupYsffd6LTZRTjbV2Dn13JloGV7wGVHj4tJ0Po66jJp3GzRiUh5OFWWuyKIcbQYlKb0NJRhiSMSqsCibAZ1g2qT00miHPlfkW0Q4QsqaweuVIPwJBSGyS8a6JYF4t0DkxxJ31heIREKZMMz68_5-gYdt5ssjc9YXqscYUvNQMIGhuVg" class="">
+<img data-src="https://wk4ulg.bn.files.1drv.com/y4mc9Zhw83pbn0yN-CveyHdr9ui5NuMjEmSlmyKMVMupYsffd6LTZRTjbV2Dn13JloGV7wGVHj4tJ0Po66jJp3GzRiUh5OFWWuyKIcbQYlKb0NJRhiSMSqsCibAZ1g2qT00miHPlfkW0Q4QsqaweuVIPwJBSGyS8a6JYF4t0DkxxJ31heIREKZMMz68_5-gYdt5ssjc9YXqscYUvNQMIGhuVg" class="">
 
 <p>一次完整的解析显示流程可分解为以下几步：</p>
 <ol>
@@ -368,7 +385,7 @@
 <li>SV 中设计了一个通用的语法解析器，定位为“万金油”角色，以满足支持语言的广度</li>
 </ul>
 <p>具体的架构图如下所示。</p>
-<img src="https://wk4vlg.bn.files.1drv.com/y4mLUlTJAXfBGYQwwryeg8IwBCTnFZRjXG7pqyUlIt_i5R04DhxiqJGEHczlmvIfqYusKqKxV-48n8yLPlL8LexeYRBioLbSvOUViST6YEneIe1wQc_X7zyCSsrXOftKnUIoY5mHDLBK-9s9XrEy26WVjD1bAE52y21oEoRuAQ6IENMTlLt_eA1RNW3FYuvMvMhjGqCdg6zkfydvriQrtsVsw" class="">
+<img data-src="https://wk4vlg.bn.files.1drv.com/y4mLUlTJAXfBGYQwwryeg8IwBCTnFZRjXG7pqyUlIt_i5R04DhxiqJGEHczlmvIfqYusKqKxV-48n8yLPlL8LexeYRBioLbSvOUViST6YEneIe1wQc_X7zyCSsrXOftKnUIoY5mHDLBK-9s9XrEy26WVjD1bAE52y21oEoRuAQ6IENMTlLt_eA1RNW3FYuvMvMhjGqCdg6zkfydvriQrtsVsw" class="">
 
 <h4 id="Tag-Generator"><a href="#Tag-Generator" class="headerlink" title="Tag Generator"></a>Tag Generator</h4><p>在 Tag Generator 层封装了各种语言对应的专业语法解析器，SV 判断出代码文件的语言类型，便会选择对应的语法解析器。如果没有某一个语言对应的解析器，则代表目前 SV 还未深度支持，此时就会使用一个名为 Universal 的解析器进行处理。</p>
 <p>Universal 顾名思义就是通用的解决方案，虽不像专业的语法解析器那样能解析得很全面，但是它可以尽可能多地覆盖各种语言，以确保遇到未深度支持的语言时也能得到代码的初略结构信息。秉持着 DRY (Don’t repeat yourself) 原则，SV 借鉴了现有插件，通过配置、使用 ctags 插件来实现这个“万金油”角色。</p>
@@ -510,6 +527,7 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.umd.js" integrity="sha256-ytMJGN3toR+a84u7g7NuHm91VIR06Q41kMWDr2pq7Zo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
