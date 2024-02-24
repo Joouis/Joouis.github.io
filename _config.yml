@@ -9,7 +9,7 @@ description: Stand high, think different.
 keywords: Web,JavaScript,blog,reading,life,前端,生活
 author: John Chou
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -45,6 +45,7 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
   enable: true
   line_number: true
@@ -93,10 +94,10 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next-8.0.2
-Plugins:
-  - hexo-generator-sitemap
-  - hexo-generator-baidu-sitemap
+theme: next
+# Plugins:
+#   - hexo-generator-sitemap
+#   - hexo-generator-baidu-sitemap
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -104,6 +105,12 @@ deploy:
   type: git
   repo: git@github.com:Joouis/Joouis.github.io.git
   branch: gh-pages
+
+
+
+########################################################################################
+# Plugins
+########################################################################################
 
 # Feed Atom
 feed:
@@ -113,7 +120,14 @@ feed:
 
 # Sitemap
 sitemap:
-  path: sitemap.xml
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  template: ./sitemap_template.xml
+  template_txt: ./sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true
 baidusitemap:
   path: baidusitemap.xml
 
@@ -126,13 +140,9 @@ symbols_count_time:
   total_time: false
 
 # Local search
-# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 search:
   path: search.xml
   field: post
+  content: true
   format: html
-  limit: 10000
-
-# Music player
-aplayer:
-  meting: true
