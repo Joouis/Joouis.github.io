@@ -629,6 +629,8 @@
     
     <category term="embedded system" scheme="https://joouis.com/tags/embedded-system/"/>
     
+    <category term="svg" scheme="https://joouis.com/tags/svg/"/>
+    
     <category term="vector" scheme="https://joouis.com/tags/vector/"/>
     
     <category term="gui" scheme="https://joouis.com/tags/gui/"/>
@@ -636,8 +638,6 @@
     <category term="twin" scheme="https://joouis.com/tags/twin/"/>
     
     <category term="window system" scheme="https://joouis.com/tags/window-system/"/>
-    
-    <category term="svg" scheme="https://joouis.com/tags/svg/"/>
     
     <category term="workflow" scheme="https://joouis.com/tags/workflow/"/>
     
@@ -666,6 +666,8 @@
     
     <category term="embedded system" scheme="https://joouis.com/tags/embedded-system/"/>
     
+    <category term="svg" scheme="https://joouis.com/tags/svg/"/>
+    
     <category term="vector" scheme="https://joouis.com/tags/vector/"/>
     
     <category term="gui" scheme="https://joouis.com/tags/gui/"/>
@@ -673,8 +675,6 @@
     <category term="twin" scheme="https://joouis.com/tags/twin/"/>
     
     <category term="window system" scheme="https://joouis.com/tags/window-system/"/>
-    
-    <category term="svg" scheme="https://joouis.com/tags/svg/"/>
     
     <category term="api" scheme="https://joouis.com/tags/api/"/>
     
@@ -699,6 +699,8 @@
     
     <category term="embedded system" scheme="https://joouis.com/tags/embedded-system/"/>
     
+    <category term="svg" scheme="https://joouis.com/tags/svg/"/>
+    
     <category term="vector" scheme="https://joouis.com/tags/vector/"/>
     
     <category term="gui" scheme="https://joouis.com/tags/gui/"/>
@@ -706,8 +708,6 @@
     <category term="twin" scheme="https://joouis.com/tags/twin/"/>
     
     <category term="window system" scheme="https://joouis.com/tags/window-system/"/>
-    
-    <category term="svg" scheme="https://joouis.com/tags/svg/"/>
     
     <category term="µGUI" scheme="https://joouis.com/tags/%C2%B5GUI/"/>
     
