@@ -70,24 +70,20 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2024.01.27
+### 2024.02.24
 
 | Name | Team | Skills | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| Senior Software Engineer | M365 | Required: Backend | Suzhou | Strong |
-| Senior Software Engineer | Ads+PIQ | Required: Data Processing | Suzhou | Middle |
-| Senior Software Engineer | Bing Experimentation | Required: Frontend | Suzhou | Middle |
-| Senior Software Engineer | MSAI | Required: Backend | Suzhou | Strong |
-| Senior Applied Scientist | MSAI | Required: AI/ML, Natural Language/NLP | Suzhou | Middle |
-| Principal Software Engineer | Edge Browser | Required: Backend. Preferred: Fullstack | Suzhou | Middle |
-| Senior Software Engineer | M365 Copilot platform | Required: Backend | Suzhou | Middle |
-| Principal Software Engineer | Bing |  | Beijing | Strong |
-| Senior Software Engineer | S+D | Required: Frontend. Preferred: Fullstack | Beijing | Strong |
-| Software Engineer 2 | Ads+PIQ | Required: C++, Algorithm | Beijing | Middle |
-| Principal Software Engineer | Edge Mobile | Preferred: Mobile | Beijing | Middle |
-| Senior Software Engineer | Edge+SA | Required: Backend | Beijing | Middle |
-| Senior Software Engineer | Bing Platform | Required: C#. Preferred: BI & PowerBI, Data Analytics | Beijing | Strong |
-| Software Engineer 2 | WebXT Data |  | Beijing | Middle |
+| Principal Software Engineer | Windows 365 | Required: Backend | Suzhou | Strong |
+| Software Engineer 2 | Microsoft 365 | Required: Backend | Suzhou | Strong |
+| Senior Software Engineer | Microsoft 365 | Required: Backend | Suzhou | Strong |
+| Senior Software Engineer | Windows 365 |  | Suzhou | Middle |
+| Principal Architect  | Office AI Copilot | Required: AI/ML | Suzhou | Strong |
+| Software Engineer 2 | Ads+PIQ | Required: Fullstack | Suzhou | Low |
+| Senior Software Engineer | Bing Platform | Required: Backend | Beijing | Middle |
+| Software Engineer 2 | Ads+PIQ | Required: Frontend | Beijing | Low |
+| Senior Software Engineer | Content Services+Maps | Required: Frontend | Beijing | Middle |
+| Principal Software Engineer | Marketplace | Required: Frontend | Beijing | Strong |
 
 
 ### (以下部分存档仅供参考)
