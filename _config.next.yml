@@ -288,6 +288,7 @@ follow_me:
 
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
+# Chinese is not supported well yet :(
 related_posts:
   enable: true
   related_count: 5
