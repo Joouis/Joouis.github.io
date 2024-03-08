@@ -70,20 +70,26 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2024.02.24
+### 2024.03.08
 
 | Name | Team | Skills | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| Principal Software Engineer | Windows 365 | Required: Backend | Suzhou | Strong |
-| Software Engineer 2 | Microsoft 365 | Required: Backend | Suzhou | Strong |
-| Senior Software Engineer | Microsoft 365 | Required: Backend | Suzhou | Strong |
-| Senior Software Engineer | Windows 365 |  | Suzhou | Middle |
-| Principal Architect  | Office AI Copilot | Required: AI/ML | Suzhou | Strong |
-| Software Engineer 2 | Ads+PIQ | Required: Fullstack | Suzhou | Low |
-| Senior Software Engineer | Bing Platform | Required: Backend | Beijing | Middle |
-| Software Engineer 2 | Ads+PIQ | Required: Frontend | Beijing | Low |
-| Senior Software Engineer | Content Services+Maps | Required: Frontend | Beijing | Middle |
-| Principal Software Engineer | Marketplace | Required: Frontend | Beijing | Strong |
+| Applied Speech Scientist | Speech Recognition |  | Suzhou | Middle |
+| Software Engineer 2 | M365 |  | Suzhou | Strong |
+| Software Engineer 2 | OPG & Windows |  | Suzhou | Middle |
+| Senior Software Engineer | Edge Engineering System |  | Suzhou | Strong |
+| Senior Software Engineer | M365 | Required: Backend | Suzhou | Strong |
+| Senior Software Engineer | Win365 |  | Suzhou | Middle |
+| Principal Architect | Office AI Copilot | Required: AI/ML | Suzhou | Strong |
+| Senior Software Engineer  | Ads+PIQ | Required: Fullstack | Suzhou | Low |
+| Java/Spring Architect | DevDiv | Required: JAVA, K8S, Cloud | Shanghai | Strong |
+| Software Engineer 2 | Azure Container App Service | Required: Algorithm, Microservices. Preferred: Containers | Shanghai | Middle |
+| Senior Technical Program Manager | Azure Global Growth | Required: Cloud | Beijing | Strong |
+| Senior Software Engineer | Azure Global Growth | Required: DevOps | Beijing | Strong |
+| Senior Software Engineer | Content Services| Required: Frontend | Beijing | Low |
+| Senior Software Engineer | Ads+PIQ | Preferred: Backend | Beijing | Low |
+| Principal Software Engineer | Edge Dual Engine |  | Beijing | Middle |
+| Software Engineer 2 | WebXT Data | Required: Big Data | Beijing | Middle |
 
 
 ### (以下部分存档仅供参考)
