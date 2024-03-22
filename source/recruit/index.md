@@ -54,7 +54,8 @@ date: 2019-04-20 01:01:00
 
 [luckyjoou AT gmail DOT com](mailto:luckyjoou@gmail.com)
 
-**暂不提供校招内推，只接受社招投递。**
+- **暂不提供校招内推，只接受社招投递。**
+- 为加速流程，简历请发**英文版**。
 
 
 
@@ -70,26 +71,23 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2024.03.08
+### 2024.03.22
 
 | Name | Team | Skills | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| Applied Speech Scientist | Speech Recognition |  | Suzhou | Middle |
+| Senior Software Engineer | S+D | Required: Frontend | Suzhou | Middle |
 | Software Engineer 2 | M365 |  | Suzhou | Strong |
-| Software Engineer 2 | OPG & Windows |  | Suzhou | Middle |
-| Senior Software Engineer | Edge Engineering System |  | Suzhou | Strong |
 | Senior Software Engineer | M365 | Required: Backend | Suzhou | Strong |
+| Principal Software Engineer | M365 |  | Suzhou | Strong |
+| Software Engineer 2 | WebXT Data |  | Suzhou | Low |
 | Senior Software Engineer | Win365 |  | Suzhou | Middle |
-| Principal Architect | Office AI Copilot | Required: AI/ML | Suzhou | Strong |
-| Senior Software Engineer  | Ads+PIQ | Required: Fullstack | Suzhou | Low |
 | Java/Spring Architect | DevDiv | Required: JAVA, K8S, Cloud | Shanghai | Strong |
-| Software Engineer 2 | Azure Container App Service | Required: Algorithm, Microservices. Preferred: Containers | Shanghai | Middle |
+| Principal Software Engineer | Bing Platform | Required: GPU, Kernel | Beijing | Middle |
+| Senior Software Engineer | Edge Shared Workspace |  | Beijing | Middle |
+| Senior Software Engineer | Bing Platform | Required: C++, Distributed Systems | Beijing | Middle |
 | Senior Technical Program Manager | Azure Global Growth | Required: Cloud | Beijing | Strong |
-| Senior Software Engineer | Azure Global Growth | Required: DevOps | Beijing | Strong |
-| Senior Software Engineer | Content Services| Required: Frontend | Beijing | Low |
-| Senior Software Engineer | Ads+PIQ | Preferred: Backend | Beijing | Low |
-| Principal Software Engineer | Edge Dual Engine |  | Beijing | Middle |
-| Software Engineer 2 | WebXT Data | Required: Big Data | Beijing | Middle |
+| Senior DevOps Engineer | Azure Global Growth | Required: DevOps | Beijing | Strong |
+| Software Engineer 2 | MSAI |  | Beijing | Middle |
 
 
 ### (以下部分存档仅供参考)
