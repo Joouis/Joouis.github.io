@@ -71,23 +71,17 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2024.03.22
+### 2024.04.20
 
 | Name | Team | Skills | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| Senior Software Engineer | S+D | Required: Frontend | Suzhou | Middle |
 | Software Engineer 2 | M365 |  | Suzhou | Strong |
-| Senior Software Engineer | M365 | Required: Backend | Suzhou | Strong |
-| Principal Software Engineer | M365 |  | Suzhou | Strong |
-| Software Engineer 2 | WebXT Data |  | Suzhou | Low |
-| Senior Software Engineer | Win365 |  | Suzhou | Middle |
-| Java/Spring Architect | DevDiv | Required: JAVA, K8S, Cloud | Shanghai | Strong |
-| Principal Software Engineer | Bing Platform | Required: GPU, Kernel | Beijing | Middle |
-| Senior Software Engineer | Edge Shared Workspace |  | Beijing | Middle |
-| Senior Software Engineer | Bing Platform | Required: C++, Distributed Systems | Beijing | Middle |
-| Senior Technical Program Manager | Azure Global Growth | Required: Cloud | Beijing | Strong |
-| Senior DevOps Engineer | Azure Global Growth | Required: DevOps | Beijing | Strong |
-| Software Engineer 2 | MSAI |  | Beijing | Middle |
+| Principal Software Engineer | M365 | Required: Backend | Suzhou | Strong |
+| Software Engineer II | Azure Stack |  | Shanghai | Strong |
+| Senior Customer Solutions Architect | Ads+PIQ |  | Beijing | Middle |
+| Customer Solutions Architect | Ads+PIQ |  | Beijing | Strong |
+| Senior Software Engineer | Bing Platform | Required: K8S, Linux, Deep Learning | Beijing | Low |
+| Senior Software Engineer | OPG & Windows |  | Beijing | Strong |
 
 
 ### (以下部分存档仅供参考)
