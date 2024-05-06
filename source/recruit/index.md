@@ -72,17 +72,18 @@ date: 2019-04-20 01:01:00
 
 
 
-### 2024.04.20
+### 2024.05.06
 
 | Name | Team | Skills | City | English |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| Senior Software Engineer | WebXT Data |  | Suzhou | Middle |
 | Software Engineer 2 | M365 |  | Suzhou | Strong |
-| Principal Software Engineer | M365 | Required: Backend | Suzhou | Strong |
-| Software Engineer II | Azure Stack |  | Shanghai | Strong |
-| Senior Customer Solutions Architect | Ads+PIQ |  | Beijing | Middle |
-| Customer Solutions Architect | Ads+PIQ |  | Beijing | Strong |
-| Senior Software Engineer | Bing Platform | Required: K8S, Linux, Deep Learning | Beijing | Low |
-| Senior Software Engineer | OPG & Windows |  | Beijing | Strong |
+| Senior Software Engineer | Ads+PIQ | Required: Backend | Suzhou/Beijing | Strong |
+| Software Engineer | Live Site Engineering | Required: Networking | Shanghai | Middle |
+| Principal Software Engineer | Bing Platform |  | Beijing | Strong |
+| Senior Software Engineer | Ads+PIQ | Required: Frontend | Beijing | Middle |
+| Principal Engineering Manager | Edge+SA | Required: Mobile | Beijing | Strong |
+| Senior Software Engineer | Instant Play | Required: Frontend | Beijing | Middle |
 
 
 ### (以下部分存档仅供参考)
