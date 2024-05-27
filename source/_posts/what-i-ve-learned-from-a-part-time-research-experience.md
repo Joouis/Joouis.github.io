@@ -8,7 +8,9 @@ tags:
 
 ## Introduction of recent research work
 
-## Few thoughts on Prompt flow (PF)
+## Reflections on Prompt flow
+
+[Prompt flow](https://github.com/microsoft/promptflow) (PF) is a suite of LLM tools developed by our team, I have been deeply involved in it since the inception of this project. Aimed to apply it in our research, but the experience deviated from my initial plans, here are few reflections on PF throughout the research journey.
 
 ### 1. Support and optimization of local inference experience will gain more customer favor
 
