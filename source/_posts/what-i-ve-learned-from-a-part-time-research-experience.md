@@ -40,9 +40,9 @@ Despite transitioning to OpenAI's GPT3.5/4 models, our repository was already ri
 
 ### 3. Is Prompt engineering really that important?
 
-The value of our work lies in placing LLM in the right position with right work in the system to maximize its value, and the prompts designed and used are relatively common today: simple structure, essential knowledge and few-shots. And we have even encountered the situation where longer prompts are less effective than shorter ones. Anyway prompt engineering have not played the key role in this work.
+The value of our work lies in placing LLM to an interesting position with right work in the system to maximize its value. The prompts designed and used are relatively common today: simple structure, essential knowledge and few-shots. Therefore prompt engineering have not played the key role in this work.
 
-It is worth mentioning that PF recently launched the Prompty feature, which provides quick access and focuses on the value of tuning prompts. This may be practical in large engineering applications, where the content of a single prompt can range from hundreds to thousands of lines. If this scenario holds, then support complex Jinja Template Designer features and preview the final prompt content will be of great help (just like Overleaf does).
+It is worth mentioning that PF recently launched the Prompty feature, which provides quick access and focuses on the value of tuning prompts. This may be practical in large engineering applications, where the content of a single prompt can range from hundreds to thousands of lines. If the scenario holds, then support complex Jinja Template Designer features and preview the final prompt content will be of great help (just like Overleaf does).
 
 ### 4. Where does PF excel over LangChain? What's the value?
 
@@ -54,11 +54,11 @@ When we began to learn and try to implement RAG App, we naturally looked at some
 
 Of course, there are also points worth discussing, such as whether you still need to write some code that will affect the ease of use assessment if it is not clear in the sample that embeddings are generated using the same model set and stored in the vector database; or the data input and output in the batch run scenario, which also involves a lot of manual work.
 
-Another aside, the File retrieval performance of OAI Assistants at that time was not satisfactory, I wonder if there has been a significant improvement after it was renamed to File Search now.
+Another aside, the performance of File retrieval of OAI Assistants was not satisfactory at that time. I wonder if there has been a significant improvement after it was renamed to File Search now.
 
 ### 5. What should PF focus on if it conducts Experiments?
 
-Firstly, there are some old topics, such as experiment status display and refresh, CRUD operations, and viewing logs at each step, which are essential features of various products.
+Firstly, there are some old topics, such as experiment status display and refresh, CRUD operations and viewing logs at each step, which are essential features of various products.
 
 When the amount of experimental data is huge, limitations on metrics like RPM and TPM will start to trouble users. Thus, how to estimate the number of tokens and requests for experiments under these constraints by services like OAI and AOAI to achieve automated high-concurrency scheduling, and even support multi-endpoints scheduling, will be a great value to customer. In previous experiments, we implemented very basic token calculation and request interval logic, and I believe we are not the only ones with such needs.
 
