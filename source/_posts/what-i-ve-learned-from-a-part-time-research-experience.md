@@ -1,16 +1,34 @@
 ---
 title: What I’ve learned from a part-time research experience?
 date: 2024-05-27 21:55:12
+updated: 2024-05-29 00:58:00
 tags:
+- llm
+- gpt
+- research
+- product mindset
+- reflection
+- prompt flow
+- acl
 ---
 
-## Motivation
+## Time to navigate the frontier
 
-## Introduction of recent research work
+In the dynamic landscape of Large Language Models (LLM), our team is once again at the cutting edge, pioneering a new venture called [Prompt flow](https://github.com/microsoft/promptflow) (PF). My role transcends the rapid and high-quality delivery of products. I need to contemplate the features that can deliver real values to our customers and the user experience that resonates with the essence of those features. This challenge is substantial for a web front-end engineer and has been a focal point of my professional contemplation.
+
+As 2023 drew to a close, a fortuitous invitation from a university peer led me to explore the synergy between LLMs and conventional ML models. This exploration transformed me into an amateur researcher, granting me the privilege to scrutinize the research process through our customers' lens, with the aim of pinpointing their pain points to better inform our product design.
+
+<!-- more -->
+
+## Introduction of recent work
+
+This paper has been accepted by ACL 2024 few days ago, a great encouragement for us.
+
+{% pdf https://arxiv.org/pdf/2402.13414 %}
 
 ## Reflections on Prompt flow
 
-[Prompt flow](https://github.com/microsoft/promptflow) (PF) is a suite of LLM tools developed by our team, I have been deeply involved in it since the inception of this project. Aimed to apply it in our research, but the experience deviated from my initial plans, here are few reflections on PF throughout the research journey.
+I have been deeply involved in PF since the inception of this project. Naturally, I endeavored to integrate it into our research, yet reality diverged from my original intentions. Hence, let's see these few reflections on PF throughout the research journey. Please note that most of our works were done before early February of 2024, so I don't mean to be a monday morning quarterback for some points.
 
 ### 1. Support and optimization of local inference experience will gain more customer favor
 
@@ -20,11 +38,11 @@ Most researchers and engineers have certain computational resources, and from th
 
 Despite transitioning to OpenAI's GPT3.5/4 models, our repository was already rich with Python utilities and Jupyter notebooks, complemented by a wealth of projects from previous research endeavors. The core competitive edge of PF aside, the availability of flex mode at that juncture would have allowed for an exploratory integration with our established GNN workflow, potentially igniting a synergistic spark.
 
-### 3. Is Prompt really that important?
+### 3. Is Prompt engineering really that important?
 
-The value of our work lies in placing LLM in the right position in the system to maximize its value, and the prompts designed and used are relatively simple (most prompt templates do not exceed a hundred words), and we have even encountered the situation where longer prompts are less effective than shorter ones. At least in our work, prompts have never been the focus of research.
+The value of our work lies in placing LLM in the right position with right work in the system to maximize its value, and the prompts designed and used are relatively common today: simple structure, essential knowledge and few-shots. And we have even encountered the situation where longer prompts are less effective than shorter ones. Anyway prompt engineering have not played the key role in this work.
 
-It is worth mentioning that PF recently launched the Prompty feature, which provides quick access and focuses on the value of tuning prompts. This may be practical in large engineering applications, where the content of a single prompt can range from hundreds to thousands of lines. If this scenario holds, then support complex Jinja Template Designer features and preview the final prompt content will be of great help (like the Latex editor Overleaf does).
+It is worth mentioning that PF recently launched the Prompty feature, which provides quick access and focuses on the value of tuning prompts. This may be practical in large engineering applications, where the content of a single prompt can range from hundreds to thousands of lines. If this scenario holds, then support complex Jinja Template Designer features and preview the final prompt content will be of great help (just like Overleaf does).
 
 ### 4. Where does PF excel over LangChain? What's the value?
 
@@ -44,8 +62,8 @@ Firstly, there are some old topics, such as experiment status display and refres
 
 When the amount of experimental data is huge, limitations on metrics like RPM and TPM will start to trouble users. Thus, how to estimate the number of tokens and requests for experiments under these constraints by services like OAI and AOAI to achieve automated high-concurrency scheduling, and even support multi-endpoints scheduling, will be a great value to customer. In previous experiments, we implemented very basic token calculation and request interval logic, and I believe we are not the only ones with such needs.
 
-## Ending
+## Last few words
 
-While it's not commonly encouraged for engineers to delve into academic pursuits unless they have strong collaborative partners, not everyone possesses the passion, foundation, or even time. However, in the era of Generative AI, immersing oneself in scholarly articles is always a wise move!
+It's not commonly encouraged for engineers to delve into academic pursuits, since not everyone possesses the passion, foundation, or even time. However, in the era of Generative AI, immersing oneself in scholarly articles is always a wise move!
 
 Whether in practical application or academic experimentation, only through in-depth engagement can one truly understand and unearth the pain points of users. I believe this embodies the spirit of our current discussion.
