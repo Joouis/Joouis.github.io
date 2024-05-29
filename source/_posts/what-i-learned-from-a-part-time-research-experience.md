@@ -1,7 +1,7 @@
 ---
 title: What I learned from a part-time research experience?
 date: 2024-05-27 21:55:12
-updated: 2024-05-29 00:58:00
+updated: 2024-05-29 11:05:00
 tags:
 - machine learning
 - large language model
@@ -22,11 +22,27 @@ As 2023 drew to a close, a fortuitous invitation from a university peer led me t
 
 <!-- more -->
 
-## Introduction of recent work
+## Brief introduction of recent work
 
-This paper has been accepted by ACL 2024 few days ago, a great encouragement for us.
+[This paper](https://arxiv.org/abs/2402.13414) has been accepted by ACL 2024 few days ago, a great encouragement for us. Let's quick go through the proposed framework by primary figures in the paper.
 
-{% pdf https://arxiv.org/pdf/2402.13414 %}
+### Figure 1: Harnessing LLMs as post-hoc correctors
+
+A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets.
+
+![Figure 1: Harnessing LLMs as post-hoc correctors. A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets.](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140759&authkey=%21AGQ_gEkU14TLVCY&width=1754&height=936)
+
+### Figure 2: A high-level overview of LLMCORR
+
+Harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model.
+
+![Figure 2: A high-level overview of LLMCORR, harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model.](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140761&authkey=%21AGSz893wvrBx3G8&width=2818&height=1584)
+
+### Figure 3: LLMCORR prompt template
+
+Multiple contextual knowledge from training and validation datasets can be included by expanding the template.
+
+![Figure 3: LLMCORR prompt template. Multiple contextual knowledge from training and validation datasets can be included by expanding the template.](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140760&authkey=%21AK09gwrTuJyJdbI&width=680&height=880)
 
 ## Reflections on Prompt flow
 
