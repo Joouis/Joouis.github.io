@@ -1,8 +1,10 @@
 ---
-title: What I’ve learned from a part-time research experience?
+title: What I learned from a part-time research experience?
 date: 2024-05-27 21:55:12
 updated: 2024-05-29 00:58:00
 tags:
+- machine learning
+- large language model
 - llm
 - gpt
 - research
@@ -14,7 +16,7 @@ tags:
 
 ## Time to navigate the frontier
 
-In the dynamic landscape of Large Language Models (LLM), our team is once again at the cutting edge, pioneering a new venture called [Prompt flow](https://github.com/microsoft/promptflow) (PF). My role transcends the rapid and high-quality delivery of products. I need to contemplate the features that can deliver real values to our customers and the user experience that resonates with the essence of those features. This challenge is substantial for a web front-end engineer and has been a focal point of my professional contemplation.
+In the dynamic landscape of Large Language Models (LLM), our team is once again at the cutting edge, pioneering a new venture called [Prompt flow](https://github.com/microsoft/promptflow) (PF). My role transcends the rapid and high-quality delivery of products. I need to contemplate the features that can deliver real values to our customers and the user experience that resonates with the essence of those features. This new challenge is substantial for a web front-end engineer and has been a focal point of my professional contemplation.
 
 As 2023 drew to a close, a fortuitous invitation from a university peer led me to explore the synergy between LLMs and conventional ML models. This exploration transformed me into an amateur researcher, granting me the privilege to scrutinize the research process through our customers' lens, with the aim of pinpointing their pain points to better inform our product design.
 
