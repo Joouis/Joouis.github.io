@@ -24,7 +24,7 @@ As 2023 drew to a close, a fortuitous invitation from a university peer led me t
 
 ## Brief introduction of recent work
 
-[This paper](https://arxiv.org/abs/2402.13414) has been accepted by ACL 2024 few days ago, a great encouragement for us. Let's quick go through the proposed framework by primary figures in the paper.
+[This paper](https://arxiv.org/abs/2402.13414) has been accepted by ACL 2024 few days ago, a great encouragement for us. Let's go through the proposed framework quickly by primary figures in the paper. Please read the paper if you have any detailed question.
 
 ### Figure 1: Harnessing LLMs as post-hoc correctors
 
