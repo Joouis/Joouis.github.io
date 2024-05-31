@@ -1,7 +1,7 @@
 ---
-title: What I learned from a part-time research experience?
+title: 'From Research to Product: Customer Insights on Prompt flow'
 date: 2024-05-27 21:55:12
-updated: 2024-05-29 11:05:00
+updated: 2024-05-31 11:06:00
 tags:
 - machine learning
 - large language model
@@ -22,27 +22,28 @@ As 2023 drew to a close, a fortuitous invitation from a university peer led me t
 
 <!-- more -->
 
-## Brief introduction of recent work
+## Recent academic work I learned from
 
-[This paper](https://arxiv.org/abs/2402.13414) has been accepted by ACL 2024 few days ago, a great encouragement for us. Let's go through the proposed framework quickly by primary figures in the paper. Please read the paper if you have any detailed question.
+[This paper](https://arxiv.org/abs/2402.13414) has been accepted by ACL 2024 Findings few days ago, a great encouragement for us. **Please read the full paper if you're interested in details, which will not be interpreted here**.
 
-### Figure 1: Harnessing LLMs as post-hoc correctors
+#### Harnessing LLMs as post-hoc correctors
 
 A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets.
 
-![Figure 1: Harnessing LLMs as post-hoc correctors. A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets.](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140759&authkey=%21AGQ_gEkU14TLVCY&width=1754&height=936)
+<img src="https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140759&authkey=%21AGQ_gEkU14TLVCY&width=1754&height=936" alt="Figure 1: Harnessing LLMs as post-hoc correctors. A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets." onerror="this.onerror=null; this.src='/images/from-research-to-product-customer-insights-on-prompt-flow/1-concept.png'" />
 
-### Figure 2: A high-level overview of LLMCORR
+#### A high-level overview of LLMCORR
 
 Harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model.
 
-![Figure 2: A high-level overview of LLMCORR, harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model.](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140761&authkey=%21AGSz893wvrBx3G8&width=2818&height=1584)
+<img src="https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140761&authkey=%21AGSz893wvrBx3G8&width=2818&height=1584" alt="Figure 2: A high-level overview of LLMCORR, harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model." onerror="this.onerror=null; this.src='/images/from-research-to-product-customer-insights-on-prompt-flow/2-pipeline.png'" />
 
-### Figure 3: LLMCORR prompt template
+#### LLMCORR prompt template
 
 Multiple contextual knowledge from training and validation datasets can be included by expanding the template.
 
-![Figure 3: LLMCORR prompt template. Multiple contextual knowledge from training and validation datasets can be included by expanding the template.](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140760&authkey=%21AK09gwrTuJyJdbI&width=680&height=880)
+<img src="https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140760&authkey=%21AK09gwrTuJyJdbI&width=680&height=880" alt="Figure 3: LLMCORR prompt template. Multiple contextual knowledge from training and validation datasets can be included by expanding the template." onerror="this.onerror=null; this.src='/images/from-research-to-product-customer-insights-on-prompt-flow/3-prompt.png'" />
+
 
 ## Reflections on Prompt flow
 
@@ -62,7 +63,7 @@ The value of our work lies in placing LLM to an interesting position with right 
 
 It is worth mentioning that PF recently launched the Prompty feature, which provides quick access and focuses on the value of tuning prompts. This may be practical in large engineering applications, where the content of a single prompt can range from hundreds to thousands of lines. If the scenario holds, then support complex Jinja Template Designer features and preview the final prompt content will be of great help (just like Overleaf does).
 
-### 4. Where does PF excel over LangChain? What's the value?
+### 4. What PF did right?
 
 When we began to learn and try to implement RAG App, we naturally looked at some LangChain samples first, then... went from beginner to giving up. My teammate chose the OpenAI Playground to use the GPT4 Assistants feature, meanwhile Azure OpenAI had not supported Assistants yet, so I chose to build a RAG flow following the PF sample. In this scenario, there are a few advantages to note:
 
@@ -72,13 +73,13 @@ When we began to learn and try to implement RAG App, we naturally looked at some
 
 Of course, there are also points worth discussing, such as whether you still need to write some code that will affect the ease of use assessment if it is not clear in the sample that embeddings are generated using the same model set and stored in the vector database; or the data input and output in the batch run scenario, which also involves a lot of manual work.
 
-Another aside, the performance of File retrieval of OAI Assistants was not satisfactory at that time. I wonder if there has been a significant improvement after it was renamed to File Search now.
+Another aside, the performance of File retrieval of OpenAI (OAI) Assistants was not satisfactory at that time. I wonder if there has been a significant improvement after it was renamed to File Search now.
 
 ### 5. What should PF focus on if it conducts Experiments?
 
 Firstly, there are some old topics, such as experiment status display and refresh, CRUD operations and viewing logs at each step, which are essential features of various products.
 
-When the amount of experimental data is huge, limitations on metrics like RPM and TPM will start to trouble users. Thus, how to estimate the number of tokens and requests for experiments under these constraints by services like OAI and AOAI to achieve automated high-concurrency scheduling, and even support multi-endpoints scheduling, will be a great value to customer. In previous experiments, we implemented very basic token calculation and request interval logic, and I believe we are not the only ones with such needs.
+When the amount of experimental data is huge, limitations on metrics like RPM and TPM will start to trouble users. Thus, how to estimate the number of tokens and requests for experiments under these constraints by services like OAI and Azure OpenAI (AOAI) to achieve automated high-concurrency scheduling, and even support multi-endpoints concurrency, will be a great value to customer. In previous experiments, we implemented very basic token calculation and request interval logic, and I believe we are not the only ones with such needs.
 
 ## Last few words
 
