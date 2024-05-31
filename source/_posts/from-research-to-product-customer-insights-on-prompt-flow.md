@@ -1,7 +1,8 @@
 ---
 title: 'From Research to Product: Customer Insights on Prompt flow'
 date: 2024-05-27 21:55:12
-updated: 2024-05-31 11:06:00
+updated: 2024-05-31 12:26:00
+description: Reflections on becoming a customer of our own product.
 tags:
 - machine learning
 - large language model
@@ -20,7 +21,6 @@ In the dynamic landscape of Large Language Models (LLM), our team is once again 
 
 As 2023 drew to a close, a fortuitous invitation from a university peer led me to explore the synergy between LLMs and conventional ML models. This exploration transformed me into an amateur researcher, granting me the privilege to scrutinize the research process through our customers' lens, with the aim of pinpointing their pain points to better inform our product design.
 
-<!-- more -->
 
 ## Recent academic work I learned from
 
