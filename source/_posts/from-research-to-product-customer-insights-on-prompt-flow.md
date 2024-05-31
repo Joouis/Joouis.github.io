@@ -30,19 +30,21 @@ As 2023 drew to a close, a fortuitous invitation from a university peer led me t
 
 A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets.
 
-<img src="https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140759&authkey=%21AGQ_gEkU14TLVCY&width=1754&height=936" alt="Figure 1: Harnessing LLMs as post-hoc correctors. A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets." onerror="this.onerror=null; this.src='/images/from-research-to-product-customer-insights-on-prompt-flow/1-concept.png'" />
+![Figure 1: Harnessing LLMs as post-hoc correctors. A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets.](/images/from-research-to-product-customer-insights-on-prompt-flow/1-concept.png)
+
 
 #### A high-level overview of LLMCORR
 
 Harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model.
 
-<img src="https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140761&authkey=%21AGSz893wvrBx3G8&width=2818&height=1584" alt="Figure 2: A high-level overview of LLMCORR, harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model." onerror="this.onerror=null; this.src='/images/from-research-to-product-customer-insights-on-prompt-flow/2-pipeline.png'" />
+![Figure 2: A high-level overview of LLMCORR, harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model.](/images/from-research-to-product-customer-insights-on-prompt-flow/2-pipeline.png)
+
 
 #### LLMCORR prompt template
 
 Multiple contextual knowledge from training and validation datasets can be included by expanding the template.
 
-<img src="https://onedrive.live.com/embed?resid=7A756318060FAEEC%2140760&authkey=%21AK09gwrTuJyJdbI&width=680&height=880" alt="Figure 3: LLMCORR prompt template. Multiple contextual knowledge from training and validation datasets can be included by expanding the template." onerror="this.onerror=null; this.src='/images/from-research-to-product-customer-insights-on-prompt-flow/3-prompt.png'" />
+![Figure 3: LLMCORR prompt template. Multiple contextual knowledge from training and validation datasets can be included by expanding the template.](/images/from-research-to-product-customer-insights-on-prompt-flow/3-prompt.png)
 
 
 ## Reflections on Prompt flow
