@@ -1196,6 +1196,7 @@
         <tag>recruit</tag>
         <tag>microsoft</tag>
         <tag>feedback</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -1264,6 +1265,7 @@
         <tag>anniversary</tag>
         <tag>hexo</tag>
         <tag>refactor</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -1508,6 +1510,7 @@
         <tag>u-boot</tag>
         <tag>boot</tag>
         <tag>os</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -1539,6 +1542,7 @@
         <tag>blog</tag>
         <tag>hexo</tag>
         <tag>github</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -1931,6 +1935,7 @@
         <tag>puppeteer</tag>
         <tag>nightmare</tag>
         <tag>codeceptjs</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -1989,6 +1994,7 @@
         <tag>wearable devices</tag>
         <tag>µGUI</tag>
         <tag>stm32</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -2145,6 +2151,7 @@
         <tag>svg tiny</tag>
         <tag>libsvgtiny</tag>
         <tag>cairo</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -2252,6 +2259,7 @@
         <tag>svg</tag>
         <tag>µGUI</tag>
         <tag>stm32</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -2407,6 +2415,7 @@
         <tag>certificate</tag>
         <tag>onecert</tag>
         <tag>dri</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -2483,6 +2492,7 @@
         <tag>window system</tag>
         <tag>svg</tag>
         <tag>api</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -2661,6 +2671,7 @@
         <tag>workflow</tag>
         <tag>uml</tag>
         <tag>scheduler</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -2773,6 +2784,7 @@
         <tag>libxml2</tag>
         <tag>dom</tag>
         <tag>ezxml</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -2949,6 +2961,7 @@
         <tag>reflection</tag>
         <tag>prompt flow</tag>
         <tag>acl</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -2977,6 +2990,7 @@
       </categories>
       <tags>
         <tag>leave</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -3352,6 +3366,7 @@
         <tag>regularization</tag>
         <tag>gradient descent</tag>
         <tag>feature engineering</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -3439,6 +3454,7 @@
         <tag>auth</tag>
         <tag>msal</tag>
         <tag>microsoft-identity</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -3497,6 +3513,7 @@
         <tag>javascript</tag>
         <tag>react</tag>
         <tag>hoc</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -3580,6 +3597,7 @@
         <tag>os</tag>
         <tag>interview</tag>
         <tag>alibaba</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -3669,6 +3687,7 @@
         <tag>app</tag>
         <tag>dart</tag>
         <tag>mobile</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -3772,6 +3791,7 @@
         <tag>javascript</tag>
         <tag>optimization</tag>
         <tag>performance</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -4164,6 +4184,7 @@
         <tag>structure view</tag>
         <tag>atom</tag>
         <tag>ide</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -4333,6 +4354,7 @@
         <tag>gnu</tag>
         <tag>compiler</tag>
         <tag>jit</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -4553,6 +4575,7 @@
         <tag>disassembly</tag>
         <tag>binary</tag>
         <tag>defusing binary bomb</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -4710,6 +4733,7 @@
         <tag>os</tag>
         <tag>gnu</tag>
         <tag>context switch</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -4942,6 +4966,7 @@
         <tag>cache</tag>
         <tag>recursion</tag>
         <tag>iteration</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -4968,6 +4993,7 @@
         <tag>microsoft</tag>
         <tag>hackathon</tag>
         <tag>reward</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -5013,6 +5039,7 @@
         <tag>ubuntu</tag>
         <tag>vim</tag>
         <tag>config</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -5461,6 +5488,7 @@
         <tag>sse</tag>
         <tag>streaming SIMD extensions</tag>
         <tag>instruction set</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -5657,6 +5685,7 @@
       <tags>
         <tag>note</tag>
         <tag>mysql</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -5726,6 +5755,7 @@
         <tag>embedded</tag>
         <tag>CS</tag>
         <tag>collaborate</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -5947,6 +5977,7 @@
         <tag>react</tag>
         <tag>optimization</tag>
         <tag>counter</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -6020,6 +6051,7 @@
         <tag>disassemble</tag>
         <tag>c</tag>
         <tag>gcc</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -6800,6 +6832,7 @@
         <tag>css</tag>
         <tag>tutorial</tag>
         <tag>responsive</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -6903,6 +6936,7 @@
         <tag>server-side</tag>
         <tag>render</tag>
         <tag>isomorphic</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -6930,6 +6964,7 @@
         <tag>silicon valley</tag>
         <tag>software</tag>
         <tag>inspiration</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -6952,6 +6987,7 @@
         <tag>vuetify</tag>
         <tag>vuetifyjs</tag>
         <tag>demo</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -7014,6 +7050,7 @@
         <tag>performance</tag>
         <tag>cache</tag>
         <tag>x86</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -7067,6 +7104,7 @@
         <tag>vue</tag>
         <tag>weex</tag>
         <tag>android</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -7192,6 +7230,7 @@
         <tag>os</tag>
         <tag>open source</tag>
         <tag>free software</tag>
+        <tag>TechTalk</tag>
       </tags>
   </entry>
 </search>

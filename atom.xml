@@ -49,6 +49,8 @@
     
     <category term="acl" scheme="https://joouis.com/tags/acl/"/>
     
+    <category term="TechTalk" scheme="https://joouis.com/tags/TechTalk/"/>
+    
   </entry>
   
   <entry>
@@ -516,6 +518,8 @@
     
     <category term="microsoft-identity" scheme="https://joouis.com/tags/microsoft-identity/"/>
     
+    <category term="TechTalk" scheme="https://joouis.com/tags/TechTalk/"/>
+    
   </entry>
   
   <entry>
@@ -609,6 +613,8 @@
     
     <category term="feature engineering" scheme="https://joouis.com/tags/feature-engineering/"/>
     
+    <category term="TechTalk" scheme="https://joouis.com/tags/TechTalk/"/>
+    
   </entry>
   
   <entry>
@@ -680,6 +686,8 @@
     
     <category term="scheduler" scheme="https://joouis.com/tags/scheduler/"/>
     
+    <category term="TechTalk" scheme="https://joouis.com/tags/TechTalk/"/>
+    
   </entry>
   
   <entry>
@@ -712,6 +720,8 @@
     <category term="svg" scheme="https://joouis.com/tags/svg/"/>
     
     <category term="api" scheme="https://joouis.com/tags/api/"/>
+    
+    <category term="TechTalk" scheme="https://joouis.com/tags/TechTalk/"/>
     
   </entry>
   
