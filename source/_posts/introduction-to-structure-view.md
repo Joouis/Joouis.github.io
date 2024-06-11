@@ -15,6 +15,7 @@ tags:
 - structure view
 - atom
 - ide
+- TechTalk
 ---
 
 structure-view （以下简称 SV）是在开发 YunOS Studio（AliOS Studio 前身）时开源出来的一款代码结构提示插件。代码结构提示是一项由来已久的影响开发效率的功能，早在 VIM 时期就有经典的 ctags + Taglist 插件组合来实现这一功能，在桌面时代各大流行的 IDE 也都支持此功能，如 Eclipse 中的 Outline View 或 Webstorm 中的 Structure View。

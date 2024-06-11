@@ -10,6 +10,7 @@ tags:
 - regularization
 - gradient descent
 - feature engineering
+- TechTalk
 mathjax: true
 ---
 

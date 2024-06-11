@@ -13,6 +13,7 @@ tags:
 - window system
 - stm32
 - µGUI
+- TechTalk
 ---
 
 这是我的[硕士论文笔记系列](https://joouis.com/2020/evgui-design-review/)第四篇，原文写于 2016 年六月。

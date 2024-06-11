@@ -13,6 +13,7 @@ tags:
 - reflection
 - prompt flow
 - acl
+- TechTalk
 ---
 
 ## Time to navigate the frontier

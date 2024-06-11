@@ -7,6 +7,7 @@ categories:
 tags:
 - mysql
 - note
+- TechTalk
 ---
 
 

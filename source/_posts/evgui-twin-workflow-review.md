@@ -14,6 +14,7 @@ tags:
 - workflow
 - uml
 - scheduler
+- TechTalk
 ---
 
 这是我的[硕士论文笔记系列](https://joouis.com/2020/evgui-design-review/)第六篇同时也是完结篇，原文写于 2016 年七月。

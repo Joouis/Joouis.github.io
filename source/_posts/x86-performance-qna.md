@@ -8,6 +8,7 @@ tags:
 - x86
 - performance
 - cache
+- TechTalk
 ---
 
 这篇博文来自 Facebook 「2016年系統軟體課程」小组里的一个[问答](https://www.facebook.com/groups/system.software2016/permalink/1124571464289024/)。背景是正在修 Jserv 课程的一位同学 Louie Lu 在对作业 Phonebook 进行性能测试时，疑惑自己的电脑系统同时也跑着一堆别的应用如浏览器、音乐播放器等，那么怎样才能确认硬件资源是被他的测试程序最大化使用了呢？

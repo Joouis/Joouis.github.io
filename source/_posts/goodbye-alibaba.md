@@ -6,6 +6,7 @@ categories:
 - 技术人生谈
 tags:
 - leave
+- TechTalk
 ---
 
 

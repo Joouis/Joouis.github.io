@@ -11,6 +11,7 @@ tags:
 - os
 - gnu
 - context switch
+- TechTalk
 ---
 
 这是我的[嵌入式笔记](https://joouis.com/2019/watching-notes-revolution-os/)第四篇，原文写于2015年。

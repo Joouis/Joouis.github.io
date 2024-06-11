@@ -12,6 +12,7 @@ tags:
 - twin
 - window system
 - api
+- TechTalk
 ---
 
 这是我的[硕士论文笔记系列](https://joouis.com/2020/evgui-design-review/)第五篇，原文写于 2016 年四月。

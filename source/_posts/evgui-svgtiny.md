@@ -14,6 +14,7 @@ tags:
 - twin
 - window system
 - cairo
+- TechTalk
 ---
 
 这是我的[硕士论文笔记系列](https://joouis.com/2020/evgui-design-review/)第二篇，原文写于 2016 年五月。

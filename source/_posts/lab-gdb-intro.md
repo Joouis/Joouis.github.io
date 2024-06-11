@@ -11,6 +11,7 @@ tags:
 - disassembly
 - binary
 - defusing binary bomb
+- TechTalk
 ---
 
 这是我的[嵌入式笔记](https://joouis.com/2019/watching-notes-revolution-os/)第七篇同时也是完结篇，原文写于2015年。本文除了介绍GDB/CGBD的基础使用方法以及嵌入式开发应用外，还会分享一个解密类经典游戏 `Defusing a binary bomb with GDB` ，非常有趣！

@@ -9,6 +9,7 @@ tags:
 - anniversary
 - hexo
 - refactor
+- TechTalk
 ---
 
 有的时候事情就是这么巧。比如这篇博文，并非专程为三周年而写，而是恰好在这个时间节点博客有了一些质的进步，值得记录一下。

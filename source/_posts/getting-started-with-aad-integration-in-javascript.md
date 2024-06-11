@@ -12,6 +12,7 @@ tags:
 - auth
 - msal
 - microsoft-identity
+- TechTalk
 ---
 
 

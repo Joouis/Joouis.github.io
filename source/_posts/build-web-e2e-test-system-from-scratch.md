@@ -19,6 +19,7 @@ tags:
 - certificate
 - onecert
 - dri
+- TechTalk
 ---
 
 ## TL;DR

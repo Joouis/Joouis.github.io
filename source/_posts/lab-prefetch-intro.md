@@ -11,6 +11,7 @@ tags:
 - sse
 - streaming SIMD extensions
 - instruction set
+- TechTalk
 ---
 
 这是我的[嵌入式笔记](https://joouis.com/2019/watching-notes-revolution-os/)第六篇，原文写于2015年。

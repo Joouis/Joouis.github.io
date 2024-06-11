@@ -8,6 +8,7 @@ tags:
 - silicon valley
 - software
 - inspiration
+- TechTalk
 ---
 
 

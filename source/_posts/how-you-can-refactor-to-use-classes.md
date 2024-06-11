@@ -9,6 +9,7 @@ tags:
 - refactor
 - react
 - hoc
+- TechTalk
 ---
 
 

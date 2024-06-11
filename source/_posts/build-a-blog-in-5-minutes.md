@@ -8,6 +8,7 @@ tags:
 - blog 
 - github 
 - hexo
+- TechTalk
 ---
 
 作为部落格的第一篇文章，就记录一下它的诞生过程吧：）

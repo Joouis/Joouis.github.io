@@ -8,6 +8,7 @@ tags:
 - javascript
 - optimization
 - performance
+- TechTalk
 ---
 
 
