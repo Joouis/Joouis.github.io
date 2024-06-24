@@ -42,7 +42,7 @@ componentWillMount() {
     this.timer = setInterval(() => {
       const toUpdate = this.state.list.slice();
       if (toUpdate.length) {
-        update.forEach(i => {
+        toUpdate.forEach(i => {
           i.leftTime = Tools.getLastTime(i.endTime);
         });
         this.setState({ list: toUpdate });
@@ -134,7 +134,7 @@ componentDidMount() {
 }
 ```
 
-让我们来看看效果如何：模拟器上的更新时间缩短至 0.3 毫秒，比之前快了十几到二十几倍；测试机的数据也漂亮多了（如下图），再滑几下试试... 美滋滋！
+让我们来看看效果如何：模拟器上的平均刷新时间有下降但没那么夸张，而测试机上的表现天差地别，非常丝滑！
 
 ![](https://uk63cg.bn.files.1drv.com/y4mqJ8C6KonIi1uAISi4pEmOOwNdU8v65SRIRhNXt1JFz__hBhTyWthddLBjDNsFa_7nON7ee1lemoqa-fVSfzAjfHDLI20DNVswyDt1Tqb-lIDygnV2o4EnKoirhN4zT0-GldtJZSl4wGkQFia1bSdpo4obitIpE68skhikurHQIOXmfcf6_1dlWqN951ETFmxhr9tqb6WzAkHsbJXUSmHMw)
 
@@ -150,9 +150,11 @@ componentDidMount() {
 
 咳咳，我们言简意赅总结下：JS 主线程执行时有一个栈存储运行时的函数相关变量，遇到函数时会先入栈执行完后再出栈（废话）。当遇到 `setTimeout` `setInterval`  `requestAnimationFrame` 以及 I/O 操作时，这些函数会立刻返回一个值（如 `setInterval` 返回一个 `intervalID` ）保证主线程继续执行，而异步操作则由浏览器的其它线程维护。当异步操作完成时，浏览器会将其回调函数插入主线程的**任务队列**中，当主线程执行完当前栈的逻辑后，才会依次执行**任务队列**中的任务。
 
-但是在每个任务之间，还有一个**微任务队列**的存在。在当前任务执行完后，将先执行**微任务队列**中的所有任务，例如 `Promise` `process.nextTick` 等操作。也就是说当 `setInterval(fn, 1000)` 等待 1 秒钟后，`fn` 函数会被插入**任务队列**中，但并不一定会立刻执行，还需要等待当前任务以及**微任务队列**中的所有任务执行完。长此以往，使用 `setInterval` 的计时器超时将越来越严重。
+但是在每个任务之间，还有一个**微任务队列**的存在。在当前任务执行完后，将先执行**微任务队列**中的所有任务，例如 `Promise` `process.nextTick` 等操作。
 
-如果有毅力的朋友推荐看看[权威的 HTML 标准文档](https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model)，没耐心的就看看这个动图简单感受一下原理吧。
+也就是说当 `setInterval(fn, 1000)` 等待 1 秒钟后，`fn` 函数会被插入**任务队列**中，但并不一定会立刻执行，还需要等待当前任务以及**微任务队列**中的所有任务执行完。长此以往，使用 `setInterval` 的计时器超时将越来越严重。
+
+感兴趣的朋友可以查看[权威的 HTML 标准文档](https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model)，或者观看以下省流版动图。
 
 ![](https://uk61cg.bn.files.1drv.com/y4mcSzGXI67z9tGYkWxelXSAFLpRIaks9Y2vutDbVXmV4xEUO5VIOCAriv4qFN88wlj7dc82LfaJpTn8iqgS2LmLNfct48dCXPL_iRYVO_iaJSbDFD_OEWgG5Td5-QG5SMW2cqbaVVJftCHkMoxkSYA6tl33pNryxdaEoPvnKt8s5hTwlm39XfMWCyTwlbH8Ss0UKhPF9Pzt5_DrKI8Ya4pIA)
 
