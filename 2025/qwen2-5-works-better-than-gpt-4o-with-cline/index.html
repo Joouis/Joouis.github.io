@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/hacker.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/hacker.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/hacker.ico">
+  <link rel="mask-icon" href="/images/hacker.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.css" integrity="sha256-6cQIC71/iBIYXFK+0RHAvwmjwWzkWd+r7v/BX3/vZDc=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="If you haven&#39;t tried Cline before, just try it!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline">
+<meta property="og:url" content="https://joouis.com/2025/qwen2-5-works-better-than-gpt-4o-with-cline/index.html">
+<meta property="og:site_name" content="江边的旱鸭子">
+<meta property="og:description" content="If you haven&#39;t tried Cline before, just try it!">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-01-17T14:22:30.000Z">
+<meta property="article:modified_time" content="2025-01-17T15:53:00.000Z">
+<meta property="article:author" content="John Chou">
+<meta property="article:tag" content="large language model">
+<meta property="article:tag" content="llm">
+<meta property="article:tag" content="gpt">
+<meta property="article:tag" content="open source">
+<meta property="article:tag" content="agent">
+<meta property="article:tag" content="coding assistant">
+<meta property="article:tag" content="gpt-4o">
+<meta property="article:tag" content="qwen2.5">
+<meta property="article:tag" content="cline">
+<meta property="article:tag" content="windsurf">
+<meta property="article:tag" content="cursor">
+<meta property="article:tag" content="azure ai">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://joouis.com/2025/qwen2-5-works-better-than-gpt-4o-with-cline/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://joouis.com/2025/qwen2-5-works-better-than-gpt-4o-with-cline/","path":"2025/qwen2-5-works-better-than-gpt-4o-with-cline/","title":"Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline | 江边的旱鸭子</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E247SGMNGH"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-E247SGMNGH","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?199f195e233fd5ecca0d9346d3259670"></script>
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="江边的旱鸭子" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">江边的旱鸭子</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Blog of John Chou</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section">首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-recruit"><a href="/recruit/" rel="section">招聘</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Takeaways"><span class="nav-number">1.</span> <span class="nav-text">Key Takeaways:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exploring-the-Coding-Agent-Landscape"><span class="nav-number">2.</span> <span class="nav-text">Exploring the Coding Agent Landscape</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#My-Short-Journey-with-Cline-AOAI-GPT-4o"><span class="nav-number">3.</span> <span class="nav-text">My Short Journey with Cline + AOAI GPT-4o</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deployment-and-Testing"><span class="nav-number">4.</span> <span class="nav-text">Deployment and Testing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Scaling-Up-for-Team-Deployment"><span class="nav-number">5.</span> <span class="nav-text">Scaling Up for Team Deployment</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="John Chou"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">John Chou</p>
+  <div class="site-description" itemprop="description">Stand high, think different.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">68</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">265</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Joouis" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Joouis" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:luckyjoou@gmail.com" title="E-Mail → mailto:luckyjoou@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/Joouis" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;Joouis" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.slideshare.net/choujohn351" title="SlideShare → http:&#x2F;&#x2F;www.slideshare.net&#x2F;choujohn351" rel="noopener me" target="_blank"><i class="fab fa-slideshare fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nd.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+        <div class="sidebar-inner sidebar-post-related">
+          <div class="animated">
+              <div class="links-of-blogroll-title"><i class="fa fa-signs-post fa-fw"></i>
+    相关文章
+  </div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/2024/from-research-to-product-customer-insights-on-prompt-flow/" rel="bookmark">
+        <time class="popular-posts-time">2024-05-27</time>
+        <br>
+      From Research to Product: Customer Insights on Prompt flow
+      </a>
+    </li>
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/2020/hands-on-linear-regression-for-ml/" rel="bookmark">
+        <time class="popular-posts-time">2020-11-24</time>
+        <br>
+      Hands-on linear regression for machine learning
+      </a>
+    </li>
+  </ul>
+
+          </div>
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://joouis.com/2025/qwen2-5-works-better-than-gpt-4o-with-cline/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="John Chou">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="江边的旱鸭子">
+      <meta itemprop="description" content="Stand high, think different.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline | 江边的旱鸭子">
+      <meta itemprop="description" content="If you haven't tried Cline before, just try it!">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-01-17 22:22:30 / 修改时间：23:53:00" itemprop="dateCreated datePublished" datetime="2025-01-17T22:22:30+08:00">2025-01-17</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2025/qwen2-5-works-better-than-gpt-4o-with-cline/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2025/qwen2-5-works-better-than-gpt-4o-with-cline/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+            <div class="post-description">If you haven't tried Cline before, just try it!</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="Key-Takeaways"><a href="#Key-Takeaways" class="headerlink" title="Key Takeaways:"></a>Key Takeaways:</h3><ul>
+<li>The locally deployed open-source model Qwen2.5-72B outperforms GPT-4o with Cline.</li>
+<li>A more general instruction-tuned model is preferable over coding&#x2F;math-specific versions when using Cline.</li>
+<li>Improvements in model performance could enhance other tools, such as OpenHands, which I plan to try next.</li>
+</ul>
+<h3 id="Exploring-the-Coding-Agent-Landscape"><a href="#Exploring-the-Coding-Agent-Landscape" class="headerlink" title="Exploring the Coding Agent Landscape"></a>Exploring the Coding Agent Landscape</h3><p>Recently, one of the hottest topics has been coding agents. Our team explored the Cursor and Windsurf editors (both forks of VS Code) and found them to be amazing! Their capabilities, including code quality, response speed, automation, and less human feedback, are superior to the GitHub Copilot extension on VS Code. It’s not surprising that Cursor and Windsurf can easily outperform GitHub Copilot (and Cline + GPT-4o which I’ll introduce soon), as these products have comprehensive optimizations, including post-trained models, customized prompts, RAG, etc. However, they also come with privacy and security risks.</p>
+<p>To adopt a coding assistant while meeting compliance requirements, the Cline extension with the GPT-4o service provided by Azure AI is an excellent option. We are grateful for the leadership team’s encouragement and support in utilizing this tool.</p>
+<h3 id="My-Short-Journey-with-Cline-AOAI-GPT-4o"><a href="#My-Short-Journey-with-Cline-AOAI-GPT-4o" class="headerlink" title="My Short Journey with Cline + AOAI GPT-4o"></a>My Short Journey with Cline + AOAI GPT-4o</h3><p>I started using Cline + AOAI GPT-4o to replace Cursor right after the callout email. However, like my teammates, I found its performance below expectations. The setup process was complicated with unclear configurations and TPM rate limits, and its capabilities were far inferior to Cursor&#x2F;Windsurf. It also suffered from stability issues, including extended hangups (over 5 minutes) and code 500 request errors. The downgraded experience was disappointing for an aspiring engineer.</p>
+<p>GPT-4o should be the best model we can use so far, we can only choose AOAI models from the base model list. Although o1-preview is also on the list, applications are required, and there is a lengthy wait for approval. While creating the GPT-4o deployment on Azure AI Foundry, I noticed that fine-tuned models were “available”. This made me wonder if other models on Azure AI might be both compliant and superior to GPT-4o. Public leaderboards could answer the performance question, though verification would take effort. Azure AI only offers fine-tuning tool, which isn’t ideal for our case. Azure AI Foundry’s Model catalog presents another opportunity with its many popular models, but I lacked both quota and budget to experiment. Faced with either using a mediocre tool or leaving an idea unverified, I decided to locally deploy the open-source Qwen2.5 model.</p>
+<h3 id="Deployment-and-Testing"><a href="#Deployment-and-Testing" class="headerlink" title="Deployment and Testing"></a>Deployment and Testing</h3><p>I deployed the official Qwen2.5-72B-Instruct-AWQ model using vLLM, and the process went smoothly. Even configuring Cline proved easier than with AOAI. For smaller tasks, the model performs on par with GPT-4o. For project-level challenges like “write a Tetris game for the web using TypeScript”, its planning and reasoning capabilities surpass GPT-4o. I tested both models a few times for this task - Qwen2.5 consistently provided similar, rough, and workable versions with few rounds of human feedback, while GPT-4o only succeeded once. Both outputs were buggy and required multiple rounds of instructions to refine.</p>
+<p>The response speed for both models is about the same, which is acceptable to me. The token usage for Qwen2.5 always shows as 0, which might be a bug, but the log sizes for both models are comparable. While scaling up usage might reveal new challenges, the service and quality of Qwen2.5 currently meet my needs.</p>
+<p>Initially, I tried Qwen2.5-Coder-32B-Instruct because of its high download ranking and coding purpose, but it occasionally struggled with Cline prompts. There is <a target="_blank" rel="noopener" href="https://www.reddit.com/r/LocalLLaMA/comments/1gpqhgu/qwen_25_32b_coder_doesnt_handle_the_cline_prompt/">similar issue</a> discussed on Reddit. I also noticed that Cline supports DeepSeek, which has received glowing feedback from colleagues about its DeepSeek-V3 commercial version. However, its MoE architecture with 685B parameters makes it impractical for typical personal use.</p>
+<h3 id="Scaling-Up-for-Team-Deployment"><a href="#Scaling-Up-for-Team-Deployment" class="headerlink" title="Scaling Up for Team Deployment"></a>Scaling Up for Team Deployment</h3><p>I’m happy with my local server now, but how can I generalize it to the whole team? I guess the solution still lies with Azure AI model service. Interestingly, while Phi-4 is a Microsoft model, we’re unable to use it directly on Azure AI. Perhaps Microsoft is too deeply tied to OpenAI. If it’s possible to reallocate a portion of the AOAI compute quotas to deploy some of these wonderful open-source models, things would be different.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/reward-wechat.jpg" alt="John Chou 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/reward-alipay.jpg" alt="John Chou 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>John Chou
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://joouis.com/2025/qwen2-5-works-better-than-gpt-4o-with-cline/" title="Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline">https://joouis.com/2025/qwen2-5-works-better-than-gpt-4o-with-cline/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nd/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/large-language-model/" rel="tag"># large language model</a>
+              <a href="/tags/llm/" rel="tag"># llm</a>
+              <a href="/tags/gpt/" rel="tag"># gpt</a>
+              <a href="/tags/open-source/" rel="tag"># open source</a>
+              <a href="/tags/agent/" rel="tag"># agent</a>
+              <a href="/tags/coding-assistant/" rel="tag"># coding assistant</a>
+              <a href="/tags/gpt-4o/" rel="tag"># gpt-4o</a>
+              <a href="/tags/qwen2-5/" rel="tag"># qwen2.5</a>
+              <a href="/tags/cline/" rel="tag"># cline</a>
+              <a href="/tags/windsurf/" rel="tag"># windsurf</a>
+              <a href="/tags/cursor/" rel="tag"># cursor</a>
+              <a href="/tags/azure-ai/" rel="tag"># azure ai</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/from-research-to-product-customer-insights-on-prompt-flow/" rel="prev" title="From Research to Product: Customer Insights on Prompt flow">
+                  <i class="fa fa-angle-left"></i> From Research to Product: Customer Insights on Prompt flow
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2016 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Chou</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.28/fancybox/fancybox.umd.js" integrity="sha256-ytMJGN3toR+a84u7g7NuHm91VIR06Q41kMWDr2pq7Zo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://joouis.com/2025/qwen2-5-works-better-than-gpt-4o-with-cline/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"joou","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
