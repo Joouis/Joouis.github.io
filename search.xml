@@ -7236,7 +7236,7 @@
   </entry>
   <entry>
     <title>Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline</title>
-    <url>/2025/qwen25-vs-gpt4o/</url>
+    <url>/2025/qwen25-vs-gpt4o-with-cline/</url>
     <content><![CDATA[<h3 id="Key-Takeaways"><a href="#Key-Takeaways" class="headerlink" title="Key Takeaways:"></a>Key Takeaways:</h3><ul>
 <li>The locally deployed open-source model Qwen2.5-72B outperforms GPT-4o with Cline.</li>
 <li>A more general instruction-tuned model is preferable over coding&#x2F;math-specific versions when using Cline.</li>
