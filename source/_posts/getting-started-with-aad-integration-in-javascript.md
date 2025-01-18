@@ -34,7 +34,7 @@ Open source **libraries** for **several clients** to authenticate users using AA
 
 ### Usage scenario
 
-![](https://bn1301files.storage.live.com/y4mbKIeUshzLY0PLLa56wbDQFDXeixR2mD8SGV3qgrlICWv9gzwy7hJ3lc24Ljg88Aty5krpu9Onhn7RdurcYtsRI3gv93CFnkNdQP4QakTv_4eYVO5Bs6xTZKlK2KU28Tg6FWhztJepjHUltLkDzOdQoKS0JCVmCKElL0oQ7-q20uVuA5BfafdQu6ABR3Vm5hK?width=1141&height=754&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6IHQAAAAAAJbw7JxUahyBCOI?width=1141&height=754)
 
 
 
@@ -42,13 +42,13 @@ Open source **libraries** for **several clients** to authenticate users using AA
 
 ### Authentication flow
 
-![](https://bn1301files.storage.live.com/y4mKEw5-SJ-8saADw_GBd-p3uM8CeNIVSSIeM8rpqKNEMJUIQJVMRtDOg3HWZGdPpUEpgOAbGQiWUI95eY_2c15OyYsDKflxGWxxhQR73GaqjiW7befAS9rEF93PS9NVHzA_YcW3QxG4zkFSdc7QS4bRXlIqrFoaYNGS9KDpJcIijXwkW0ThNuVtrcia2ES1keJ?width=1820&height=1089&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6IXQAAAAAAPmBRQmNY7L1M_8?width=1820&height=1089)
 
 #### Two APIs
 
 Only two APIs requested from client-side, very simple. Notice that `/oauth2/v2.0/authorize` is `document` type.
 
-![](https://bn1301files.storage.live.com/y4mclbM9lfWdcOe0X1dKhrjNYAOCZzK52V_EqIe5dx6qyAG1lURMvBWQlU1LJz8Qbw42xFY8wscyvros1ZMUx7yOrDeJRGVdwuDTui3k7EtkaBaDUcRaCnUZOqKCMtVlakWSl6T1i9mKGmEf5bnNMXj8wevxfmhOKws6xEKrkkRTzGb_-Tv5-hPQjENax5hsCT0?width=1928&height=1161&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6HXQAAAAAADtAdchzfpJcMlc?width=1928&height=1161)
 
 #### Redirect URI setup
 
@@ -56,7 +56,7 @@ For CORS and redirect target from sign-in page usage, should configure it on bot
 
 #### Configuration on Azure Portal
 
-![](https://bn1301files.storage.live.com/y4mb5PAIWyRmN97uqImMhRAHZkrCkK_tw3AReJ_Dmqtc3evRy791bae_3pjSEub5lHvil98pzNY3aiL5YaMbfEP1LRfpEsrKpk4-xVCCLJUMgl9JXka0UO69RjR0YVtWHg8a7IizTUk4Qay1lWdJgYh_Ju28Tk0eltkjZ7mP5QI6Z0LznRehOmnyF7ViqALoHrr?width=1319&height=863&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6H3QAAAAAAEdVZ-zUMZ6cCHA?width=1319&height=863)
 
 #### oauth.html
 
@@ -122,11 +122,11 @@ msalInstance.handleRedirectPromise().then(handleResponse);
 
 After signed in successfully, page will redirect to the redirect URI we set before with the authorization code. MSAL.js library will handle it automatically, we can observe the code on the navigation bar.
 
-![](https://bn1301files.storage.live.com/y4mnLQosr7Z7_nxS_rVSvb0YPxm98sawmOYlQKq0ZKKoRrJxWsu1E_c29UoOEXRwpQA9zJCmFYRZkoh3c7oW4_bhcmsJ7vDU2vgsxmd5zo6dSK8b-_2i4uCa1Aplz_ojV3-Qym1yYTYpJXY4NxaRNvHOcuTJy-uAnCoxb2oMv0XHkMA-1EgeGdm4VruBuj_e4_g?width=1928&height=70&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6HHQAAAAAAHpK1DZ6S5AguZg?width=1928&height=70)
 
 Then the library will parse the authorization code and send the request to get token back directly, all logics encapsulated. Here is the structure of the decoded code.
 
-![](https://bn1301files.storage.live.com/y4mgf0dFCtw_HTR9DZSyoMR4-srEHFSbwXeQO8D8gATlUzlPmdfxEqYDA-eh-68LAnbiBgLV8r8Uzv357s8vZKXV4x_br015B2Y_EYVpoEhGidzQJWU32IDqVENpB0TbUAC0Wxi6dbQWDywWVR11Oy9gbZdRumKU820wr1lX0eKYZJzv8naaNRNohaCmyKFoDAb?width=1181&height=227&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6JHQAAAAAABGEAriQXq2iNsU?width=1181&height=227)
 
 ### Acquire a token with a redirect
 
@@ -165,7 +165,7 @@ You will find so many packages when you visit MSAL.js repository, APIs used abov
 
 Besides node package using in the server-side, I recommend `msal-browser` ([Microsoft Authentication Library for JavaScript v2.x](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser)) or other UI framework wrappers based on it, for its implementation of OAuth 2.0 Authorization Code Flow with PCKE as well as it's OpenID-compliant.
 
-![](https://bn1301files.storage.live.com/y4moqXn1EubA0Ly99dJ-_pGS5mij26zCOwW7EhuDM0NFVC8HcnKk5Rq-GkA7c_yNnZAjZ4qapCyCfTbs-3LuE32gw375kfkxJY5aUn6f3sNKKD7B7neMJrK9UkVlWMwUX8wjMjLmP0p8S4jA3eSu1IvrOPRskK0vF-FDeC390zsvNGFmU1xgmxHzw-MNsAz8uXj?width=1554&height=993&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6InQAAAAAAOR5onzJTSk7gxw?width=1554&height=993)
 
 These packages are just official engineering implementations, not so well-documented yet, I had to read the source code for debugging before. Anyway as long as you master the workflow of authentication, it would not be too complicated.
 
