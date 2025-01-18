@@ -106,7 +106,7 @@ Yes we're done. Our introduction is here 🤣🤣🤣 .
 
 Our loss function is differentiable indeed, so we can use it to find the local minimum (also the global minimum in this case). Let's get it by one chart.
 
-![Gradient Descent, Hands-On Machine Learning by Aurélien Géron](https://bn1301files.storage.live.com/y4mswG2flLOQG4BTxY2uv3jiGs1IbQ-VM8thBntnOmrtvJQGlthgCzW7nBj8fwkl6U7b1691jBXGBjxtsDb7dy7LF-FpJSTKouUhtfbrCRbZNUJNXt5M9WReSQKxdklCkhd7TNteQmNzZv89yr7hdMqCCgqKV9LZ1JK3nb1eWnNb2FohaTkcKiTTaVnezOQubsJ?width=2394&height=1186&cropmode=none)
+![Gradient Descent, Hands-On Machine Learning by Aurélien Géron](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6R2sAAAAAAPQ-mGkDYyePGrI?width=2394&height=1186)
 
 So here is the last equation in this post (I promise, typing these LaTeX expressions really wore me out 🥲 ), the gradient of our loss function:
 
@@ -114,7 +114,7 @@ $$\nabla{L} = \frac{\partial{L}}{\partial{\mathbf{w}}} = 2 \frac{1}{n} \sum_{i=1
 
 *Question: disadvantages of gradient descent?*
 
-![Gradient Descent pitfalls, Hands-On Machine Learning by Aurélien Géron](https://bn1301files.storage.live.com/y4mXviZ8mp3JlnWxYxmhq62tUPn4MF0xLkK7Q-K63Mn1JsJwcX3tNZN2CpkbdT-3VuMKMcw_CAxtWu4XpjltS_VSYB35RZavo_zgNKd43bf3fATQhFMWbFU4v9GiYmbrTSYwbrExykkH7yZdYqKDRej4IN94CuZmKQ234pffSK3cXTPtQBQlDJgUGdySnzqIxsL?width=2554&height=1150&cropmode=none)
+![Gradient Descent pitfalls, Hands-On Machine Learning by Aurélien Géron](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6SGsAAAAAAHmH4xAJ7m_yduo?width=2554&height=1150)
 
 #### Variants optimizers
 
@@ -163,7 +163,7 @@ Here is a [brief introduction](https://docs.microsoft.com/en-us/azure/machine-le
 - Rich sample notebooks are provided, and the tab view allows user to open several documents with several file types in one page.
 - An one-stop platform for user to develop their machine learning project, you can take it as cloud IDE (Integrated Development Environment). For example, user can manager their huge datasets by Datasets, and then consume them in Notebooks.
 
-![UI of Notebooks of AML Studio](https://bn1301files.storage.live.com/y4mVzdYhgME6-tYW9V4iodQjd8ZGVolggW_QrIVVi7OBFvv9C494-pDIQWqIEXTEG0deUyGt2-qNPjCXaGqT6293-Np1Yu1c8hjzEDJ9s4iBPqEL46ozLixi9EEYOkxdxWWmIYvnWUNvMueLGo0e49t4Ehk1grxvjktySD-POZs99Lr55eWrudDri_FRPWrBbp3?width=4912&height=2582&cropmode=none)
+![UI of Notebooks of AML Studio](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6U2sAAAAAAPYURa9nEX-UPE0?width=4912&height=2582)
 
 #### Google Colaboratory
 
@@ -174,7 +174,7 @@ You can open `ipynb` file on Google Drive by this product, there are also severa
 - It will create compute target or VM (virtual machine) for the user automatically.
 - Download dataset from Google Drive, comment and share are easily.
 
-![UI of Google Colab](https://bn1301files.storage.live.com/y4m4TYqChfysvCych0mZCpkGZGtmeEfUG9xVf6JTxgM-Sz4yGPHf1hyj896FPnCMHhMQ2qcW3eX0Iovun58Z2kZpJmsawXKw6L5TCteeLHN9D-oGU9rx9jh3JKsOGlSfBOCYaopT_SAkW7KFeKMwuWUFRDeysHrBRq6XpC0acgQECj73BMDC7bEqIhPqtz9fdoP?width=4908&height=2568&cropmode=none)
+![UI of Google Colab](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6UmsAAAAAALqhcQe6PL5VPxE?width=4908&height=2568)
 
 
 
@@ -203,7 +203,7 @@ Original data structure looks like this:
 
 24 columns represent 24 hours, 18 features with every first 20 days of month in one year, we have $18\ast20\ast12=4320$ rows.
 
-![Dataset preview in AML Studio](https://bn1301files.storage.live.com/y4miEc2E3IYCgCW6s4HLzCG2UbXLQq06M1mHKngJEc47T_2tOPbEbUauwXD-OGPBCh7XLoSniII63LuBeDE4hy65w2ChXih8w-bwnW6fFdg8KyWdbsCEVVgEHgoBvcBz2yZeJ29YyqFia0J12BoRMs5qmb_YH2A5LPUzGF7m1eKSbyhEam0B3KRn771YNioLjef?width=4904&height=2598&cropmode=none)
+![Dataset preview in AML Studio](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6TmsAAAAAAARo5bii67wvUE4?width=4904&height=2598)
 
 Our target data structure of $\mathbf{X}$ will be:
 
