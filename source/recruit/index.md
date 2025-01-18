@@ -3,14 +3,6 @@ title: 微软中国招聘，期待你的加入（已暂停内推）
 date: 2019-04-20 01:01:00
 ---
 
-{% video "https://cdnhk.blob.core.windows.net/blog/recruit/suzhou-wework.mp4" %}
-
-
-{% raw %}
-<div style="display:flex;justify-content:center;color:grey;font-size:0.9em;">2021年中秋节后，位于苏州中心的苏州中心🤣 WeWork 办公室已经启用，工作累了眺望金鸡湖美景放松片刻！同时微软二期大楼正在修建中~</div>
-{% endraw %}
-
-
 
 ## TL;DR
 
@@ -30,14 +22,6 @@ date: 2019-04-20 01:01:00
 
 - 作为开发，微软的硬件环境还是相当不错的。入职时工位就准备好了 Dell 双屏幕和 Humanscale 的支架，一台大概 Dell Precision 5820 Tower Workstation 等级的主机，一台 Surfacebook2。此外无需审批即可申请几台 VM 开发用，系统从 Windows Server 到主流 Linux distributions 都有，尝试新技术、玩 side project 的宽容度比互联网公司高很多。此外员工都有 Visual Studio Subscriptions，那些软件序列号啥的就不提了，Azure 每个月有 150 美刀的额度，可以干很多事情了哈哈。
 - 作为员工，公司的福利也不错。苏州这边每层楼都有一台 Jura 全自动咖啡机、一台雀巢胶囊咖啡机，热的茶饮料好几种换着喝，冰柜里汽水、豆奶、茶饮料、牛奶等等也是无限喝。~~楼下的篮球、足球、网球场是公司修的，只对员工开放，不用抢场地真的是美滋滋。~~工会每个月提供健身费，以及一年三千多的培训费用。其他互联网公司有的福利巨硬基本都有，在这就不提了。
-
-*受扩招和疫情的影响，2021年苏州办公室比较拥挤，工位和配套硬件设备不够分，这些是不争的事实。不过二期和三期大楼正在如火如荼地加盖，公司和政府也在安排新的临时办公场所如 WeWork，此外还有大家熟知的 WFH（Work From Home）政策，可以有不超过 50% 的时间在家办公。*
-
-昨天（2022.04.19）在朋友圈看到上海的同事已经收到工会发的生鲜大礼包，真的太不容易了，据说有些同事作为志愿者参与其中也贡献了一份力量。希望上海快点好起来吧！！
-
-![](https://bnz05pap002files.storage.live.com/y4m25830PK4K1SPbWAFc7d_OoUlqFxwLHq4ZXnkFdtKxUv4SRNQ4WR3uttVnsgVQLYAxDhBgBIDC8R6xytQToPpQQ29JyygSMrE6VLm-qvPWgtMA8IBXdHP0dR6O2n05-8l-FVlUqWEx0pWiUNi0p76-Wg4CJkvs2tDFkWyKV0MNtTWqPQUu24bA2feVmwoGrBL?width=540&height=720&cropmode=none)
-
-
 
 
 ## 找 Joou 内推又是一种什么样的体验？
@@ -91,43 +75,43 @@ date: 2019-04-20 01:01:00
 
 <!-- tab Overview -->
 
-![](https://bn1301files.storage.live.com/y4mwPNJXPslC97L9UH1vqrMJ2n48zIC1_Mgzp2r__-lZxAUlo7XfhlMzUMB1_Oda0sEFlK-_961uLPBYsZosuYxQUzE_boGVyk0GP_bckOJLJIhe82DaOo67eOd0bl3X0_rFQltMCWr-2Blzo4mCcnVSkaXJLa6TqBNKA2XBJcGb_Zh8ux2Rham5cVpq5og6_qi?width=750&height=8180&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6XGsAAAAAACNsszH-4TIgmho?width=750&height=8180)
 
 <!-- endtab -->
 
 <!-- tab M365 -->
 
-![](https://bn1301files.storage.live.com/y4mm3pZHiVrb2uMv1SsMPaoTzMkoLd_N2V1DXpi5KMtXkfg_DLutj0Z_wur8ryfNi5W5I7zOgssearKe31MhGUq5UXKsCQYS_Qvldh45MQlPuxdX_DPjA_gVXUqjc07Mc-rqv7Uvl2G_KQ9tMriYj7Tizz5CB3YQ12_MhP9qa8yvse7f0hzZfHNW2oy2jnNa_DL?width=750&height=4130&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6W2sAAAAAABJl-jZoBcjO6SE?width=750&height=4130)
 
 <!-- endtab -->
 
 <!-- tab SOX -->
 
-![](https://bn1301files.storage.live.com/y4mNQgEWMD8iw6LcZnrXVTSZaBcyD_S6w060wrSaT-B4Q8SwSr8jdpOr-zJ1XrJ7-SMmAhepIuMWdnh6V_ZbShKR-D89DdwmJ7l-bemXgV7zL6Vo54nJn7pLCQPqBuNsEGdX-ysXEbJGJtFyLYEZyBdslbJ-nl39Uezi-7x7VQZRnXlOIc1LQn36tGbfUw-YVLn?width=750&height=3965&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6WmsAAAAAAIB1VQsPVNPccAU?width=750&height=3965)
 
 <!-- endtab -->
 
 <!-- tab NLP -->
 
-![](https://bn1301files.storage.live.com/y4m8IkR6k-ra1Hpgt0Xp1hZ1_UFELYcsIuXXKFqufsHfgvQL78s0zFkH9G31s9i68XrZoxowt_SfDGBQuk5TkXlL4RNZGMKsdfoatGwvtmAS1xCakfUVSduTTppaWWfK3qHeNUQqgjphmvo5Ck4GdP_e5YIuWHlJR_vNaWp9-1cC3KYNQN5Xmk8-4iQgnFRufYu?width=750&height=3816&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6WWsAAAAAAMTqVF1s196scWQ?width=750&height=3816)
 
 <!-- endtab -->
 
 <!-- tab Ads -->
 
-![](https://bn1301files.storage.live.com/y4mtiJghcQfH772fLNoD7-eRU2f33PNiF22k6FOm-D0axrNi4HYxKTx5ZjH_QC5uNVWr7N3_KdBKYUB0RorSRUv4QjJOJzEYin3sjrXyjvTT2JIG1aeSZEMpeIJ-z2z3H15rUklQJ6d4IwAHxipH-I5wBLe5QKHxyinsyVTwY4aXyWHiwYIsIYXl7lfAUS1WYLR?width=750&height=2720&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6WGsAAAAAAO0vNf9je0FX8HM?width=750&height=2720)
 
 <!-- endtab -->
 
 <!-- tab MMD -->
 
-![](https://bn1301files.storage.live.com/y4mP0zNVI1BGU5k5kHeVxBEIArr5urYevsduqPXGPF4Nqw9-6RdR0X9HS9K0Pr6ambeQq8pNs4iW7hB82BnZquK6dULh42pgC_143TqistB0hUL6u07lttNjK6Du3RZwulDNZKa33-V2m9jTh2S70qNmq6s4iumtYBJlg9ffpa_oqpbWVyeDN41mXACMS7LVlVX?width=750&height=2636&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6V2sAAAAAAEgZ3NT1BQMDzhU?width=750&height=2636)
 
 <!-- endtab -->
 
 <!-- tab MSAI -->
 
-![](https://bn1301files.storage.live.com/y4mHjQlKOxtCstu0jvTFkn9XTs6tPR9YpX9GoBJ3FtkRAd5Ibzu3Wth9k-WLlQrbLGTnL1tIqzGOUeQVKx39PicRG8UvoR3SLtcZpmyM6LzSMQM8UITSYEnDIXsMU0QzHVciVwGeTK3jtAhb0tBFc-wDeTSpGu71izewVPAFs0f7eq8cxT3UHcXX40pAy8inVYU?width=750&height=2967&cropmode=none)
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6VmsAAAAAAJd48t8pxTx3Hc4?width=750&height=2967)
 
 <!-- endtab -->
 
