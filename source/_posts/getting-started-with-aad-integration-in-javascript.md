@@ -34,7 +34,7 @@ Open source **libraries** for **several clients** to authenticate users using AA
 
 ### Usage scenario
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6IHQAAAAAAJbw7JxUahyBCOI?width=1141&height=754)
+![oauth-scenario](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6IHQAAAAAAJbw7JxUahyBCOI?width=1141&height=754)
 
 
 
@@ -42,13 +42,13 @@ Open source **libraries** for **several clients** to authenticate users using AA
 
 ### Authentication flow
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6IXQAAAAAAPmBRQmNY7L1M_8?width=1820&height=1089)
+![auth-flow](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6IXQAAAAAAPmBRQmNY7L1M_8?width=1820&height=1089)
 
 #### Two APIs
 
 Only two APIs requested from client-side, very simple. Notice that `/oauth2/v2.0/authorize` is `document` type.
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6HXQAAAAAADtAdchzfpJcMlc?width=1928&height=1161)
+![auth-document](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6HXQAAAAAADtAdchzfpJcMlc?width=1928&height=1161)
 
 #### Redirect URI setup
 
@@ -56,7 +56,7 @@ For CORS and redirect target from sign-in page usage, should configure it on bot
 
 #### Configuration on Azure Portal
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6H3QAAAAAAEdVZ-zUMZ6cCHA?width=1319&height=863)
+![reply-uris-config](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6H3QAAAAAAEdVZ-zUMZ6cCHA?width=1319&height=863)
 
 #### oauth.html
 
@@ -122,11 +122,11 @@ msalInstance.handleRedirectPromise().then(handleResponse);
 
 After signed in successfully, page will redirect to the redirect URI we set before with the authorization code. MSAL.js library will handle it automatically, we can observe the code on the navigation bar.
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6HHQAAAAAAHpK1DZ6S5AguZg?width=1928&height=70)
+![hash-code](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6HHQAAAAAAHpK1DZ6S5AguZg?width=1928&height=70)
 
 Then the library will parse the authorization code and send the request to get token back directly, all logics encapsulated. Here is the structure of the decoded code.
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6JHQAAAAAABGEAriQXq2iNsU?width=1181&height=227)
+![auth-code-deserialized](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6JHQAAAAAABGEAriQXq2iNsU?width=1181&height=227)
 
 ### Acquire a token with a redirect
 
@@ -165,7 +165,7 @@ You will find so many packages when you visit MSAL.js repository, APIs used abov
 
 Besides node package using in the server-side, I recommend `msal-browser` ([Microsoft Authentication Library for JavaScript v2.x](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser)) or other UI framework wrappers based on it, for its implementation of OAuth 2.0 Authorization Code Flow with PCKE as well as it's OpenID-compliant.
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6InQAAAAAAOR5onzJTSk7gxw?width=1554&height=993)
+![msal-package-structure](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6InQAAAAAAOR5onzJTSk7gxw?width=1554&height=993)
 
 These packages are just official engineering implementations, not so well-documented yet, I had to read the source code for debugging before. Anyway as long as you master the workflow of authentication, it would not be too complicated.
 

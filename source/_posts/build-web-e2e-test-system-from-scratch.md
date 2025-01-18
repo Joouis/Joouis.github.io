@@ -60,7 +60,7 @@ The following parts will cover the answers for questions above, several workarou
 
 ### Legacy solution
 
-![](https://izqxiw.bn.files.1drv.com/y4mVIEZDs-Pp1DhfEUUOk8Enojm1rCeKLwoiO39tEFHVND_OkQ_HsiOi3aJsMXEvoIwAJaHphIn9g2J3Ht0G95NzAWMLUOIfDeurNKwBPDZtSLHuon-P4ZyyaVgMLKJvmg4HNgVQbjeoPPRcW5xWBsWxjT85pap2x-xizPAk0GagJ4LtvS6WUQbjaoNLYBEoNbP78OPm4EMdFFeDvi7VzbEOQ?width=3563&height=1506&cropmode=none)
+![studio-v1-solution](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB62WMAAAAAAKciKJan2mvOicA?width=3563&height=1506)
 
 Solution for V1 is developed in about 5 years ago. Selenium is chosen as test framework, it's usually for automating web applications for testing purpose. Test service is based on .Net framework as well as test cases coded in C# which is a very typical Microsoft style. They will manipulate Selenium client to do testing on different browsers for various scenarios by browser drivers. And the service is hosted by Geneva Runner Service, the part of Geneva Monitoring system. This system is a really useful and important internal system, Metrics and Alerting services can help for logging runner data, filing tickets in Incident Management system (IcM) and finally reporting to service owner through phone call , text message and E-mail when high priority ticket issued.
 
@@ -102,7 +102,7 @@ We already picked Jest as unit test framework for our React components, but anot
 
 Unfortunately, after YC and I wrote some complicated test cases, we both found that tests would fail inexplicable at some steps, elements couldn't be captured by our scripts. We didn't have too much time to solve this problem, thus YC had to switch to Jest with Puppeteer plan quickly. Fortunately this plan was not bad, most of steps worked fine and then I wrote more test cases based on it, including common functions like login and full scenarios like run an experiment.
 
-![](https://izqwiw.bn.files.1drv.com/y4m2Nc_cet04-QcpRzOp96cELYLtivmdXJafashQoIjgEf-NqD2Rh0zj8QvKJKKnlPrB7z-0-xkzuy2i43jwve-lRbrA4elIXUuBlVD-52oIP00K8bCqQmCJDFEtM4o4evMpc0VUZ5G66-upk1mTOvr079loRvaEjF5tBVcA2S1ZVgjTQTUBtG2h1eWDB_QnGMkvXwKO8wy41Ka0EsA8F8zlg?width=2289&height=1528&cropmode=none)
+![test-framework](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB62mMAAAAAADDsxgiSjuCJLeE?width=2289&height=1528)
 
 The biggest challenge of this part is robustness of test case scripts, which means test case can't fail when our web application is healthy, false positive rate should be as low as possible. The unexpected failures may caused by network traffic or browser lag, we need to reorder our actions with reasonable sequence, set enough timeout and try many times to make sure test cases are stable.
 
@@ -134,13 +134,13 @@ How to receive data from runner was not a hard thing too, Flow provides a set of
 
 This flow looks like the one in following picture.
 
-![](https://ijqriw.bn.files.1drv.com/y4mdq9rJEIcZscmSbBmGaXVQFCWqbn6B_Jtpez7xoXqO9ahNGPtn2FTgqUCaP5u6AbDqj3MguU_TKAdv6tKkrGn5EILeTX-i7371AOvXup0ALgv9BM87OMN2ZMxZhJ52dtGfljMvoPuGN58Ierv4-HRY34k9nZq1SrttqvdbJVRgsSUdLUM2-oEvAtuI_zfHT8KdfhrFuDzMSffRKABtG_ieA?width=1029&height=1544&cropmode=none)
+![flow-example](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB61WMAAAAAAA-u_7YO73_JtTI?width=1029&height=1544)
 
 One more important thing in this section that you may think about for a while: **our runners are running on a VM instead of cloud service, also Task Scheduler is not stable, how to ensure our test service is always running? Or how to keep stability of our service?** If once the service stopped, how to recognize this disaster as soon as possible? A simple but useful solution is detecting heartbeat. Since we already stored metrics in database, we could query latest row and check its timestamp regularly to see if runners were still working. If time interval between latest record and current time exceeds an hour (one hour is the timeout of run experiment test), our flow will trigger IcM connector to file a ticket named like `[E2E][AUE] Runners are missing heartbeat more than 60 minutes!`.
 
 We also built several dashboards for service stability which will be introduced later, at present we have simple metrics and alert, let's take a look at following diagram to see the whole process.
 
-![](https://izqviw.bn.files.1drv.com/y4mT0O6QIR606q0fqHpLm__3PE8AqIiR2YDgNuGNeSkJDTjL1e3hexU_3FeC89QcZPS7bVfQ3xOmPCT7LxoXWv5qZjz7Hed0E-gD6tbolOrpNSAoP55rzq1EuQQU0xF-oC_oNE_KtowDQCzEN9p-Yee7V789d7JTSlfAKNduujL5zC5lX6f5b6SHEgkzrqxNd8LdihMo9iVdi77WOvWj5Ca0g?width=3514&height=1469&cropmode=none)
+![task-scheduler](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB622MAAAAAAFD6fCVtJSUNcq8?width=3514&height=1469)
 
 
 
@@ -150,13 +150,13 @@ Although data flow has came from runners continuously and somehow went to the da
 
 You can't imagine how fast JS is developing. From Express.js, KOA.js to Egg.js, server-side JS Frameworks now act more and more important role in business world. There are three reasons for me to build our service based on Egg.js:
 
-- Not only I'm familiar with this framework, but it's also an out of box framework with well documentation. Comparing with Express.js, KOA.js offers a middleware onion model to handle asynchronous operations easily,     and Egg.js is based on KOA.js with more key features for building enterprise application, such as clusters and production mode.
+- Not only I'm familiar with this framework, but it's also an out of box framework with well documentation. Comparing with Express.js, KOA.js offers a middleware onion model to handle asynchronous operations easily, and Egg.js is based on KOA.js with more key features for building enterprise application, such as clusters and production mode.
 
-  ![](https://izqyiw.bn.files.1drv.com/y4mD34YcwXwufGCN7tTO-TyujEuRZjnrv-_98U7WHiLaeoDs6iwI_zXBt_JTPCte6HzX8QetLutH3h4NNAoucWTSNCLmVXTy2pNKSdHex1V34HPverU_Ze6tp7inz7v7ucKDQglgzrwq7IY4fbJTmpJNF9DufS8_AZcTTvSBV4eCY0GD1_ULYkvwVoAcw4jvsHkSEtrRFgPYxzf4X__-IP6GQ?width=478&height=435&cropmode=none)
+  ![koa-onion-model](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB62GMAAAAAAK0cU8bDyUAB9qY?width=478&height=435)
 
 - High performance with robustness, we already built several productions based on it in Alibaba for 11.11 shopping festival in last few years. Node.js service is good at I/O operations, and Egg.js offers a multi-process model to take advantage of modern CPU. We'll talk about how it applies to our scenario soon.
 
-  ![](https://ijqsiw.bn.files.1drv.com/y4mbX_cLLffjERi_Ux4rpLqFnq7sy5JilYOgB2QG7mtef3KC1IQ3Je0QX2RHeaAoUNGAOU9rYP0Z4lH8FC62lnKBRWNNjL1Ltp1sa5v7EWPV1Wx-MYN9_GrWB5ljJU-K9OqSBL9kpvE-aLVipsraSj7ort1pAe6CA0ScNNlGDElYFjMP01Lb-X1GwxC4kfKq1iAa_0a-91A2v7cuwbqCfMczg?width=1131&height=782&cropmode=none)
+  ![eggjs-cluster-model](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB61GMAAAAAAGjvGkGYWHTmwL4?width=1131&height=782)
 
 - Featured plugins like logger, scheduler, static server, i18n, session, security, template engine and so on.
 
@@ -180,7 +180,7 @@ There's no doubt that it's the first time to use Node.js with Kusto SDK in my te
 
 So here is our new system work flow.
 
-![](https://ijqqiw.bn.files.1drv.com/y4mlEoQnSUS7uj0M79I1RAUaT-PNrYMLKZA2vcDLn2d4FZz_9LA2ivxaXEVQPOzLefIvTlizATcKXT_luuuf_5aUosX23XWM5mCQvBx37p0dDE1qGCwryp3CHJYyMyUmJM1hibz_bMuBxIIjNKWLdROIWYPCI5I8qInisKeU5Xp8vefx2QDNfNYuFzpXHlUohB65zt7br_mOaZV0_oQVZCw3g?width=3594&height=1945&cropmode=none)
+![eggjs-solution](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB61mMAAAAAABeAW-BZNv5XbLU?width=3594&height=1945)
 
 Node.js can run across all popular platforms, I put service on Ubuntu server because we need to take full advantage of VM, graphical interface of Windows server is meaningless but also costs some resources. Each runner will cost about 500MB memory space (mostly taken by headless Chromium), when 30 runners work simultaneously I can't even move the pointer on Windows server but nothing is difference on Ubuntu server through SSH connection.
 
@@ -224,7 +224,7 @@ So what's new in this 2021 version?
 
 Here is the architecture of this system.
 
-![](https://bn1301files.storage.live.com/y4mawCY7JUMo-TIPOcpVJgAHWaYnQI6kOOSKZhPnh9Eh17as80JcK2XOMMPvTYJHaJx2YTLohOFwDiQ5AahapKIW5TP1Z9w13EM8D5UahjfJfb8vKGGXU1iRFqS2ZLAwfH0iUJ4OISK9c8PnSXdTtdlt1W5oBoMK0j7L1_glNw_qu-aMHguOZAGCJ56WRQM_eyy?width=4370&height=1674&cropmode=none)
+![arch-2021](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6DXYAAAAAAEuOvHpvxdFHrMI?width=4370&height=1674)
 
 ### Testing framework
 
@@ -232,7 +232,7 @@ We choose [Playwright](https://playwright.dev/) as E2E testing framework since 2
 
 Test cases are all written by my colleague Jie since it's decoupled with infrastructure works. One of the difficult thing is to simulate drag and drop action to put the modules on the canvas and connect them, all based on coordinate position. We also need to pay attention to the timeout settings to improve robustness for unexpected network conditions.
 
-![](https://bn1301files.storage.live.com/y4mirOdgbZbxdwUDWBwaFhxzo46QPrqxcv904liFycnZvA780QMKkZZNZ5IJJI6vuTbLNrmFZ3KKQzSK9SycIj9h4c0Cs_bJVwbe5QV5Qdud9C5eBsTtx3BiIR8i6ldF68e5wBzfELSrdNh3wvQLBmTL_VIiZLfPc-8siFbHlNSbgoQzRcI6DoKp3jfM4tS7wTl?width=3466&height=2602&cropmode=none)
+![test-case-sample](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6CnYAAAAAAN7M2gTdHv7WcIo?width=3466&height=2602)
 
 ### CI/CD
 
@@ -250,7 +250,7 @@ The most significant improvement compared to the 2019 system is the alerting lat
 
 Geneva Monitor will create incident ticket on IcM platform when alert conditions meet, for instance there is a heartbeat monitor showed below. We set a computed metric named `Runs` which is the total run times for web service creation test, the monitor will lookback on the sum of `Runs` in last 1 hour per 2 minutes, and create a severity 3 ticket if sum of `Runs` is equal to 0. The IcM platform will do the rest of alerting stuffs responding to different severities.
 
-![](https://bn1301files.storage.live.com/y4mayArB99SQ3zLia0ILJOppH_ou7C7iHFjLItS6102D4LvHEvi5hoKcJIZh8QCl_wmUKqukiIHD7iYk2M0oOy4dHk_oqA2VFiwq3-hdoUYHCoIdqaqxXMVmNvoj1pM31nbd0EOLSGxyiOpLPBTxBnvHP4sdCLUhpDaTnJ9rRpAPkBwhNSTjUe6wHVSRTTJhbtZ?width=3702&height=2600&cropmode=none)
+![monitor-sample](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6DHYAAAAAAH6YKNmvzReY8_o?width=3702&height=2600)
 
 When recreated these monitors (because part of the old ones were not actually working...), I also enabled the "Auto-mitigate Incident" feature with 15 times look back. So after the incident ticket created, if the monitor status turns back to healthy for 30 minutes, it will mitigate the ticket created on IcM before. This is really helpful to the DRI (Directly Response Individual, this role is also known by various other names, such as Google’s "Sheriff" or Facebook’s slightly different "Designated Response Individual"), as I happen to be one of them.
 
