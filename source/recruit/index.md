@@ -75,43 +75,43 @@ date: 2019-04-20 01:01:00
 
 <!-- tab Overview -->
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6XGsAAAAAACNsszH-4TIgmho?width=750&height=8180)
+![](https://cdn.joouis.com/recruit-20201127-STCA-Suzhou.jpeg)
 
 <!-- endtab -->
 
 <!-- tab M365 -->
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6W2sAAAAAABJl-jZoBcjO6SE?width=750&height=4130)
+![](https://cdn.joouis.com/recruit-20201127-M365.jpeg)
 
 <!-- endtab -->
 
 <!-- tab SOX -->
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6WmsAAAAAAIB1VQsPVNPccAU?width=750&height=3965)
+![](https://cdn.joouis.com/recruit-20201127-SOX.jpeg)
 
 <!-- endtab -->
 
 <!-- tab NLP -->
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6WWsAAAAAAMTqVF1s196scWQ?width=750&height=3816)
+![](https://cdn.joouis.com/recruit-20201127-NLP.jpeg)
 
 <!-- endtab -->
 
 <!-- tab Ads -->
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6WGsAAAAAAO0vNf9je0FX8HM?width=750&height=2720)
+![](https://cdn.joouis.com/recruit-20201127-Ads.jpeg)
 
 <!-- endtab -->
 
 <!-- tab MMD -->
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6V2sAAAAAAEgZ3NT1BQMDzhU?width=750&height=2636)
+![](https://cdn.joouis.com/recruit-20201127-MMD.jpeg)
 
 <!-- endtab -->
 
 <!-- tab MSAI -->
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6VmsAAAAAAJd48t8pxTx3Hc4?width=750&height=2967)
+![](https://cdn.joouis.com/recruit-20201127-MSAI.jpeg)
 
 <!-- endtab -->
 

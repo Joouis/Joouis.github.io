@@ -70,7 +70,7 @@ export const someFunction = () => 'Hey, I am text'
 
 
 
-![](https://ua6wcg.bn.files.1drv.com/y4mYy_pu9AzJk55bWAa0HOHDdjZDUp6QId12MxyJKxSSyBDQX8L-w321hFpMC47CYkQCl1Hly1JCATTUeP6-KTjE05cxDg46eOARJogyaVeodrYaM3bm3i8hcPo9dbhQ7wQOq0A2SAkUGdhaeS1C7xX2Do4yLK_ThI45fsjemuXGxGAb0UeuqpqghFkUUr-kqnLmw7AQZVQh1-kHQTP9mkTYQ)
+![](https://cdn.joouis.com/how-you-can-refactor-to-use-classes-1.png)
 
 
 
