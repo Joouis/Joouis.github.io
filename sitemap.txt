@@ -62,7 +62,7 @@ https://joouis.com/2018/javascript-performance-optimization-tips-an-overview/
 https://joouis.com/2018/optimization-road-of-count-down-timer/
 https://joouis.com/2017/weex-android-quick-tutorial/
 https://joouis.com/2018/interviews-for-the-offer-from-alibaba/
-https://joouis.com/2017/introduction-to-structure-view/
+https://joouis.com/2017/introduction-of-atom-structure-view/
 https://joouis.com/2017/server-side-rendering-review/
 https://joouis.com/2017/mysql-note/
 https://joouis.com/2017/rwd-fundamentals-note/

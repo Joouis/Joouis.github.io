@@ -23,14 +23,14 @@
 
     <meta name="description" content="structure-view （以下简称 SV）是在开发 YunOS Studio（AliOS Studio 前身）时开源出来的一款代码结构提示插件。代码结构提示是一项由来已久的影响开发效率的功能，早在 VIM 时期就有经典的 ctags + Taglist 插件组合来实现这一功能，在桌面时代各大流行的 IDE 也都支持此功能，如 Eclipse 中的 Outline View 或 Webstor">
 <meta property="og:type" content="article">
-<meta property="og:title" content="十分钟带你了解国产自制开源插件 structure-view">
-<meta property="og:url" content="https://joouis.com/2017/introduction-to-structure-view/index.html">
+<meta property="og:title" content="十分钟带你了解国产自制开源Atom插件 structure-view">
+<meta property="og:url" content="https://joouis.com/2017/introduction-of-atom-structure-view/index.html">
 <meta property="og:site_name" content="江边的旱鸭子">
 <meta property="og:description" content="structure-view （以下简称 SV）是在开发 YunOS Studio（AliOS Studio 前身）时开源出来的一款代码结构提示插件。代码结构提示是一项由来已久的影响开发效率的功能，早在 VIM 时期就有经典的 ctags + Taglist 插件组合来实现这一功能，在桌面时代各大流行的 IDE 也都支持此功能，如 Eclipse 中的 Outline View 或 Webstor">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://wk4tlg.bn.files.1drv.com/y4mN2I10UfETZdexdzTftd3jf_T3Ib94IPry-EWT69byliaUtzRSIo5zJ2DW4Uqib05ZmX4mPIq0lfLS_CkKf6-aYB6GFJRE7rmfguVYvz1uaJg2awvZfzPPy-C3hgQ5ORboLxnb5b-xY2ekYKwT1wThsrA3s2VtyTcSQnVJPrPmMRq-uYhG-Gf2EHM2lqnZrmjWUT6qxP5gskoz-5hPJjtmg">
-<meta property="og:image" content="https://wk4ulg.bn.files.1drv.com/y4mc9Zhw83pbn0yN-CveyHdr9ui5NuMjEmSlmyKMVMupYsffd6LTZRTjbV2Dn13JloGV7wGVHj4tJ0Po66jJp3GzRiUh5OFWWuyKIcbQYlKb0NJRhiSMSqsCibAZ1g2qT00miHPlfkW0Q4QsqaweuVIPwJBSGyS8a6JYF4t0DkxxJ31heIREKZMMz68_5-gYdt5ssjc9YXqscYUvNQMIGhuVg">
-<meta property="og:image" content="https://wk4vlg.bn.files.1drv.com/y4mLUlTJAXfBGYQwwryeg8IwBCTnFZRjXG7pqyUlIt_i5R04DhxiqJGEHczlmvIfqYusKqKxV-48n8yLPlL8LexeYRBioLbSvOUViST6YEneIe1wQc_X7zyCSsrXOftKnUIoY5mHDLBK-9s9XrEy26WVjD1bAE52y21oEoRuAQ6IENMTlLt_eA1RNW3FYuvMvMhjGqCdg6zkfydvriQrtsVsw">
+<meta property="og:image" content="https://cdn.joouis.com/introduction-of-structure-view-1.gif">
+<meta property="og:image" content="https://cdn.joouis.com/introduction-of-structure-view-2.png">
+<meta property="og:image" content="https://cdn.joouis.com/introduction-of-structure-view-3.png">
 <meta property="article:published_time" content="2017-11-21T08:19:22.000Z">
 <meta property="article:modified_time" content="2017-11-23T16:00:00.000Z">
 <meta property="article:author" content="John Chou">
@@ -45,17 +45,17 @@
 <meta property="article:tag" content="atom">
 <meta property="article:tag" content="ide">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://wk4tlg.bn.files.1drv.com/y4mN2I10UfETZdexdzTftd3jf_T3Ib94IPry-EWT69byliaUtzRSIo5zJ2DW4Uqib05ZmX4mPIq0lfLS_CkKf6-aYB6GFJRE7rmfguVYvz1uaJg2awvZfzPPy-C3hgQ5ORboLxnb5b-xY2ekYKwT1wThsrA3s2VtyTcSQnVJPrPmMRq-uYhG-Gf2EHM2lqnZrmjWUT6qxP5gskoz-5hPJjtmg">
+<meta name="twitter:image" content="https://cdn.joouis.com/introduction-of-structure-view-1.gif">
 
 
-<link rel="canonical" href="https://joouis.com/2017/introduction-to-structure-view/">
+<link rel="canonical" href="https://joouis.com/2017/introduction-of-atom-structure-view/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://joouis.com/2017/introduction-to-structure-view/","path":"2017/introduction-to-structure-view/","title":"十分钟带你了解国产自制开源插件 structure-view"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://joouis.com/2017/introduction-of-atom-structure-view/","path":"2017/introduction-of-atom-structure-view/","title":"十分钟带你了解国产自制开源Atom插件 structure-view"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>十分钟带你了解国产自制开源插件 structure-view | 江边的旱鸭子</title>
+<title>十分钟带你了解国产自制开源Atom插件 structure-view | 江边的旱鸭子</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E247SGMNGH"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-E247SGMNGH","only_pageview":false,"measure_protocol_api_secret":null}</script>
@@ -248,7 +248,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://joouis.com/2017/introduction-to-structure-view/">
+    <link itemprop="mainEntityOfPage" href="https://joouis.com/2017/introduction-of-atom-structure-view/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -261,12 +261,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="十分钟带你了解国产自制开源插件 structure-view | 江边的旱鸭子">
+      <meta itemprop="name" content="十分钟带你了解国产自制开源Atom插件 structure-view | 江边的旱鸭子">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          十分钟带你了解国产自制开源插件 structure-view
+          十分钟带你了解国产自制开源Atom插件 structure-view
         </h1>
 
         <div class="post-meta-container">
@@ -305,8 +305,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/2017/introduction-to-structure-view/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/introduction-to-structure-view/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2017/introduction-of-atom-structure-view/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/introduction-of-atom-structure-view/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -316,7 +316,7 @@
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>11 分钟</span>
+      <span>10 分钟</span>
     </span>
 </div>
 
@@ -331,8 +331,7 @@
 <span id="more"></span>
 
 <p>自从今年九月初将其开源并发布到 Atom 市场中，2个多月的时间达到了 800 余次的下载量，总计 20+ 的 star 数量，以及数十个 issues 和 PR。在没（精）啥（力）宣（有）传（限）的情况下，有人下载使用、提问题、提需求，甚至主动贡献 PR，都给了笔者极大的鼓舞，因此在此分享一下这个插件的设计，也欢迎 Atom 党服用此插件。</p>
-<img data-src="https://wk4tlg.bn.files.1drv.com/y4mN2I10UfETZdexdzTftd3jf_T3Ib94IPry-EWT69byliaUtzRSIo5zJ2DW4Uqib05ZmX4mPIq0lfLS_CkKf6-aYB6GFJRE7rmfguVYvz1uaJg2awvZfzPPy-C3hgQ5ORboLxnb5b-xY2ekYKwT1wThsrA3s2VtyTcSQnVJPrPmMRq-uYhG-Gf2EHM2lqnZrmjWUT6qxP5gskoz-5hPJjtmg" class="">
-
+<p><img data-src="https://cdn.joouis.com/introduction-of-structure-view-1.gif"></p>
 <p>链接：</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://atom.io/packages/structure-view">Atom 市场</a></li>
@@ -369,8 +368,7 @@
 <p>另外还有一种解决方案源自 Facebook 出品的 Nuclide IDE，SV 在设计之初并未参考到，不过后来发现是类似的思路 。Nuclide 中的 Outline 视图提供了代码结构提示和快速导航的功能，针对不同的语言使用不同的解析器，例如使用了自家的 Flow 类型检查工具处理 JavaScript 代码，而使用了 Python 官方的解析器处理 Python 代码。</p>
 <p>这种方法的好处自然是有深度，能把支持的语言解析到位，但坏处也十分明显。首先是依赖性太强，之所以没有很深入地调研 Nuclide，是因为笔者在解析 JavaScript 时提醒安装 Flow，但是 Nuclide 并没有提供自动化安装功能，需要用户到 Flow 的官网学习、完成这件事情，这显然很蠢，也不知道现在改进没…其次就是支持的语言类型有所限制，需要大量的资源支持新的语言开发，明显不适合笔者这种“单兵作战”模式。</p>
 <h3 id="流程设计"><a href="#流程设计" class="headerlink" title="流程设计"></a>流程设计</h3><p>SV 的代码结构解析流程与现有插件大体一致，如下图所示。</p>
-<img data-src="https://wk4ulg.bn.files.1drv.com/y4mc9Zhw83pbn0yN-CveyHdr9ui5NuMjEmSlmyKMVMupYsffd6LTZRTjbV2Dn13JloGV7wGVHj4tJ0Po66jJp3GzRiUh5OFWWuyKIcbQYlKb0NJRhiSMSqsCibAZ1g2qT00miHPlfkW0Q4QsqaweuVIPwJBSGyS8a6JYF4t0DkxxJ31heIREKZMMz68_5-gYdt5ssjc9YXqscYUvNQMIGhuVg" class="">
-
+<p><img data-src="https://cdn.joouis.com/introduction-of-structure-view-2.png"></p>
 <p>一次完整的解析显示流程可分解为以下几步：</p>
 <ol>
 <li>获取当前代码文件的绝对路径</li>
@@ -386,8 +384,7 @@
 <li>SV 中设计了一个通用的语法解析器，定位为“万金油”角色，以满足支持语言的广度</li>
 </ul>
 <p>具体的架构图如下所示。</p>
-<img data-src="https://wk4vlg.bn.files.1drv.com/y4mLUlTJAXfBGYQwwryeg8IwBCTnFZRjXG7pqyUlIt_i5R04DhxiqJGEHczlmvIfqYusKqKxV-48n8yLPlL8LexeYRBioLbSvOUViST6YEneIe1wQc_X7zyCSsrXOftKnUIoY5mHDLBK-9s9XrEy26WVjD1bAE52y21oEoRuAQ6IENMTlLt_eA1RNW3FYuvMvMhjGqCdg6zkfydvriQrtsVsw" class="">
-
+<p><img data-src="https://cdn.joouis.com/introduction-of-structure-view-3.png"></p>
 <h4 id="Tag-Generator"><a href="#Tag-Generator" class="headerlink" title="Tag Generator"></a>Tag Generator</h4><p>在 Tag Generator 层封装了各种语言对应的专业语法解析器，SV 判断出代码文件的语言类型，便会选择对应的语法解析器。如果没有某一个语言对应的解析器，则代表目前 SV 还未深度支持，此时就会使用一个名为 Universal 的解析器进行处理。</p>
 <p>Universal 顾名思义就是通用的解决方案，虽不像专业的语法解析器那样能解析得很全面，但是它可以尽可能多地覆盖各种语言，以确保遇到未深度支持的语言时也能得到代码的初略结构信息。秉持着 DRY (Don’t repeat yourself) 原则，SV 借鉴了现有插件，通过配置、使用 ctags 插件来实现这个“万金油”角色。</p>
 <p>由于语法解析器使用了不同的第三方库，获取的原始 tag 数据形式也是各有不同。因此在封装第三方库的过程中，这些语法解析器会遵循统一的数据格式，整理出 <code>name</code> <code>kind</code> <code>position</code> <code>parent</code> <code>id</code> <code>child</code> 等字段。</p>
@@ -406,7 +403,7 @@
 <li>吸取市面上主流IDE工具的功能特性，力求好用易用</li>
 <li>独立设计、开发，无 IP 依赖，利于推广和开源</li>
 </ul>
-<p>附件：<a target="_blank" rel="noopener" href="https://github.com/Joouis/blog/files/1500624/structure-view-intro-cn-v1.0.pdf">structure-view-intro-cn-v1.0.pdf</a></p>
+<p>附件：<a target="_blank" rel="noopener" href="https://1drv.ms/b/c/7a756318060faeec/UQTsrg8GGGN1IIB64l4AAAAAAEwFWtAg-PV02tM">structure-view-intro-cn-v1.0.pdf</a></p>
 
     </div>
 
@@ -442,7 +439,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://joouis.com/2017/introduction-to-structure-view/" title="十分钟带你了解国产自制开源插件 structure-view">https://joouis.com/2017/introduction-to-structure-view/</a>
+      <a href="https://joouis.com/2017/introduction-of-atom-structure-view/" title="十分钟带你了解国产自制开源Atom插件 structure-view">https://joouis.com/2017/introduction-of-atom-structure-view/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nd/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-ND</a> 许可协议。转载请注明出处！
@@ -549,7 +546,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://joouis.com/2017/introduction-to-structure-view/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://joouis.com/2017/introduction-of-atom-structure-view/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"joou","count":true,"i18n":{"disqus":"disqus"}}</script>
 <script src="/js/third-party/comments/disqus.js"></script>

@@ -28,9 +28,9 @@
 <meta property="og:site_name" content="江边的旱鸭子">
 <meta property="og:description" content="服务器端渲染（Server-Side Rendering，以下简称 SSR）并非是一门新技术，早期就有 Java, PHP 等后端语言进行页面渲染，后来 JavaScript 兴起、 Jquery, Backbone, React, Vue 等视图框架流行，前端逐渐夺回了渲染的地盘。随着如 Express, Koa 等 Node Web 应用程序框架的出现，SSR 以同构渲染（isomorphic">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cloud.githubusercontent.com/assets/948896/25062958/ca1b6618-2209-11e7-99ae-c2a75ad3dabb.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/8896124/32724607-92c0cddc-c837-11e7-88fe-7ae2a123cc9f.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/walmartlabs/react-ssr-optimization/master/images/react-renderToString-cpu-profile.png">
+<meta property="og:image" content="https://cdn.joouis.com/server-side-rendering-review-1.png">
+<meta property="og:image" content="https://cdn.joouis.com/server-side-rendering-review-2.jpg">
+<meta property="og:image" content="https://cdn.joouis.com/server-side-rendering-review-3.png">
 <meta property="article:published_time" content="2017-09-14T12:46:51.000Z">
 <meta property="article:modified_time" content="2017-11-13T11:43:15.000Z">
 <meta property="article:author" content="John Chou">
@@ -40,7 +40,7 @@
 <meta property="article:tag" content="render">
 <meta property="article:tag" content="isomorphic">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/948896/25062958/ca1b6618-2209-11e7-99ae-c2a75ad3dabb.png">
+<meta name="twitter:image" content="https://cdn.joouis.com/server-side-rendering-review-1.png">
 
 
 <link rel="canonical" href="https://joouis.com/2017/server-side-rendering-review/">
@@ -307,7 +307,7 @@
     <div class="post-body" itemprop="articleBody"><p>服务器端渲染（Server-Side Rendering，以下简称 SSR）并非是一门新技术，早期就有 Java, PHP 等后端语言进行页面渲染，后来 JavaScript 兴起、 Jquery, Backbone, React, Vue 等视图框架流行，前端逐渐夺回了渲染的地盘。随着如 Express, Koa 等 Node Web 应用程序框架的出现，SSR 以同构渲染（isomorphic rendering）的方式再次强势归来。</p>
 <span id="more"></span>
 
-<p><img data-src="https://cloud.githubusercontent.com/assets/948896/25062958/ca1b6618-2209-11e7-99ae-c2a75ad3dabb.png"></p>
+<p><img data-src="https://cdn.joouis.com/server-side-rendering-review-1.png"></p>
 <p>由于 SSR 在初次请求页面时已经包含了页面所需的数据内容（甚至是 CSS 和 JS 脚本），因此带来了两点好处：</p>
 <ul>
 <li>首屏性能：省去异步请求数据的时间</li>
@@ -318,7 +318,7 @@
 <h2 id="从0到1：不求甚解，先摆个姿势再说"><a href="#从0到1：不求甚解，先摆个姿势再说" class="headerlink" title="从0到1：不求甚解，先摆个姿势再说"></a>从0到1：不求甚解，先摆个姿势再说</h2><p>笔者之所以会用到 SSR，现在回想起来也有点偶然：那个时候笔者的前主管经过一番调研，发现淘系的前后端分离框架 Midway 不错，于是基于它开发了一个轻量级的 Web 应用。</p>
 <p>Midway 内置了一款名为 XTemplate 的模板引擎（类似 Nunjucks 的轮子），那时候身为前端小白的笔者看了这玩意，心想不就是一个 HTML 的超集么，虽然是方便那么一丢丢，但是为什么会有这类模板引擎，没想明白。</p>
 <p>在没有吃透这项技术的情况下，笔者和师兄写出了 Xtpl 和 Vue “水乳交融” 的代码，而整个页面渲染逻辑如下：</p>
-<p><img data-src="https://user-images.githubusercontent.com/8896124/32724607-92c0cddc-c837-11e7-88fe-7ae2a123cc9f.jpg" alt="uml-old"></p>
+<p><img data-src="https://cdn.joouis.com/server-side-rendering-review-2.jpg" alt="uml-old"></p>
 <p>由于业务长期对页面性能方面缺乏需求，大家都觉得这套方案没啥问题，即使偶尔在登入、刷新时会出现<strong>一些排列整齐的「{{}}」符号一闪而过</strong>，也只被解释成这就是稍微有点慢。</p>
 <p>意识到这个姿势有问题时笔者已经换了一个团队，完全没有前端工程基础，打造一套服务于当前业务的高效前端开发体系是首要目标。在回顾之前使用的技术栈时，针对 SSR 笔者一下子就想到了两个问题（OS：“你个傻X当初想什么去了…”）：</p>
 <ol>
@@ -337,7 +337,7 @@
 
 <p>除此之外，Xtpl 的优势就是在开发 Memory Analysor 等应用时积累的业务代码和经验了，没有学习成本，当业务压力大时，先顶一阵子也没什么问题；）</p>
 <p><em>注：现在无论是 React 还是 Vue 都对 SSR 进行了优化，通过缓存策略极大地改善响应时间并减少服务器的负载，延伸阅读可参考 <code>引用4</code> <code>引用5</code>。下图为 React 针对 SSR 优化的前后性能对比图。</em></p>
-<p><img data-src="https://raw.githubusercontent.com/walmartlabs/react-ssr-optimization/master/images/react-renderToString-cpu-profile.png" alt="React SSR Opt"></p>
+<p><img data-src="https://cdn.joouis.com/server-side-rendering-review-3.png" alt="React SSR Opt"></p>
 <h3 id="姿势小结-1"><a href="#姿势小结-1" class="headerlink" title="姿势小结"></a>姿势小结</h3><p>这是在最近开发一款新应用时遇到的问题，考虑到项目中第一次使用 React 和 Webpack 进行开发构建，为了进度的平稳，还是先采用 Xtpl +  React 这样的混合方案，等未来迭代时再逐步替换为同构方式。得益于模块化的开发风格，Xtpl 和 React 各司其职，完全解耦。</p>
 <h2 id="请求不要放在一个篮子里"><a href="#请求不要放在一个篮子里" class="headerlink" title="请求不要放在一个篮子里"></a>请求不要放在一个篮子里</h2><p>某一次笔者特意给自己挖了个坑，想看看什么时候会掉下去，没想到很快就如愿以偿了&#x3D;。&#x3D;</p>
 <p>前文总结时已经提到过，既然是请求首屏数据，就只需要先获取第一屏的内容，并且如果遇到大量数据的图表时还应调整粒度进行“压缩”。但是为了体会到那种慢的感觉，笔者特意把页面所有的数据都请求完了才进行渲染，而页面内容包含三图一表…</p>

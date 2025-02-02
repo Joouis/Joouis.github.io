@@ -3691,107 +3691,6 @@
       </tags>
   </entry>
   <entry>
-    <title>十分钟带你了解国产自制开源插件 structure-view</title>
-    <url>/2017/introduction-to-structure-view/</url>
-    <content><![CDATA[<p>structure-view （以下简称 SV）是在开发 YunOS Studio（AliOS Studio 前身）时开源出来的一款代码结构提示插件。代码结构提示是一项由来已久的影响开发效率的功能，早在 VIM 时期就有经典的 ctags + Taglist 插件组合来实现这一功能，在桌面时代各大流行的 IDE 也都支持此功能，如 Eclipse 中的 Outline View 或 Webstorm 中的 Structure View。</p>
-<p>YunOS Studio 基于扩展能力优异的 Atom 编辑器开发，由于 Atom 的生态市场缺乏一款好用的代码结构提示插件，因此 SV 应运而生（注：目前主流相关插件的比较可参考附件 PPT 中的 “开发由来与现状” 章节）。</p>
-<span id="more"></span>
-
-<p>自从今年九月初将其开源并发布到 Atom 市场中，2个多月的时间达到了 800 余次的下载量，总计 20+ 的 star 数量，以及数十个 issues 和 PR。在没（精）啥（力）宣（有）传（限）的情况下，有人下载使用、提问题、提需求，甚至主动贡献 PR，都给了笔者极大的鼓舞，因此在此分享一下这个插件的设计，也欢迎 Atom 党服用此插件。</p>
-<img data-src="https://wk4tlg.bn.files.1drv.com/y4mN2I10UfETZdexdzTftd3jf_T3Ib94IPry-EWT69byliaUtzRSIo5zJ2DW4Uqib05ZmX4mPIq0lfLS_CkKf6-aYB6GFJRE7rmfguVYvz1uaJg2awvZfzPPy-C3hgQ5ORboLxnb5b-xY2ekYKwT1wThsrA3s2VtyTcSQnVJPrPmMRq-uYhG-Gf2EHM2lqnZrmjWUT6qxP5gskoz-5hPJjtmg" class="">
-
-<p>链接：</p>
-<ul>
-<li><a href="https://atom.io/packages/structure-view">Atom 市场</a></li>
-<li><a href="https://github.com/alibaba/structure-view">Github</a></li>
-</ul>
-<p><em>平（臭）心（不）而（要）论（脸），eating my own dog food 这么久，我觉得挺好用的 &#x3D;。&#x3D;</em></p>
-<h2 id="需求与难点"><a href="#需求与难点" class="headerlink" title="需求与难点"></a>需求与难点</h2><h3 id="结合业务背景与现状谈需求"><a href="#结合业务背景与现状谈需求" class="headerlink" title="结合业务背景与现状谈需求"></a>结合业务背景与现状谈需求</h3><p>SV 最初是为 YunOS Studio 设计，其用户——YunOS 开发者主要使用 Web 相关语言开发，因此对 HTML, CSS, Javascript 的支持是第一要务 。</p>
-<p>其次，SV 应该具备目前主流类似插件的功能，总不能被“活化石” ctags + Taglist 给 K.O. 了。因此有些基本功能一定要满足：</p>
-<ul>
-<li>解析出代码的基本类型，如 HTML 的 Element，CSS 的 Selector，JS 的 Function, Class 等</li>
-<li>将上述类型展现在界面上，通常是树状图的形式</li>
-<li>点击树状图上的节点，编辑区域可快速定位到其对应的代码位置</li>
-</ul>
-<p>然后，扩展性是非常重要的一点。资源有限，不可能一口气支持所有语言，先把第一要务干完了，才能展望别的语言。秉着不能挖坑让自己跳的指导思想，一定要在初始阶段设计好扩展性。</p>
-<p>最后，能开源当然是最好的，一个人支持那么多语言是会累死的，能忽悠热心网友来干点活多好呀。这也从侧门对扩展性提出了要求。</p>
-<p>最后的最后，快速落地。在项目调研阶段笔者就发现，Atom 上不仅缺少好用的代码结构提示插件，即使是使用量最多的一个，作者也疑似不维护、消失很久了，项目相关的 issues 中已有一些对此类插件的明确需求。如果能快速落地，也就有机会获得一些外部开发者用户。</p>
-<h3 id="难吗？难"><a href="#难吗？难" class="headerlink" title="难吗？难"></a>难吗？难</h3><blockquote>
-<p>你永远不知道下一份读取的代码是用什么语言写的 Orz</p>
-</blockquote>
-<p>从以下几个维度分析下难在哪：</p>
-<ul>
-<li>广度：用户使用的语言无法预测，至少要覆盖主流语言吧，不然怎么好意思拿得出手</li>
-<li>深度：对我们业务所用的语言，一定要能全面地解析；对于主流语言，至少也得解析出个轮廓</li>
-<li>轻量：Atom 性能本来就不算好（当然人家也不主打性能…），所以插件一定要轻，切莫“喧宾夺主”</li>
-<li>广度和深度本来就很难同时满足，还要保证轻量，tradeoff 的哲学该如何落实</li>
-</ul>
-<h2 id="设计与实现"><a href="#设计与实现" class="headerlink" title="设计与实现"></a>设计与实现</h2><h3 id="目前主流的解决方案"><a href="#目前主流的解决方案" class="headerlink" title="目前主流的解决方案"></a>目前主流的解决方案</h3><p>当初调研时发现， Atom 市场中的竞品多是封装经典的 <a href="http://ctags.sourceforge.net/">ctags</a> 插件，其工作原理如下：</p>
-<ol>
-<li>提前内置 Windows&#x2F;macOS &#x2F;Linux 三个平台的二进制执行文件，以及其需要的配置文件 <code>.ctags</code> </li>
-<li>当插件工作时，命令行调用 ctags 解析，获取 stdout 输出的数据</li>
-<li>将 ctags 输出的数据进行加工，以 web 页面的形式呈现在 Atom 的视图中</li>
-</ol>
-<p>由于  <code>.ctags</code> 是正则匹配脚本，也就是说 ctags 其实是利用正则匹配方法处理代码。这种方法的好处是添加规则方便，规则越全面解析效果理论上越好。但是问题也显而易见，光靠正则匹配很难对 OOP 语言中的继承关系进行解析，更别提 JavaScript 这种靠原型链吃饭的语言了。</p>
-<p>另外还有一种解决方案源自 Facebook 出品的 Nuclide IDE，SV 在设计之初并未参考到，不过后来发现是类似的思路 。Nuclide 中的 Outline 视图提供了代码结构提示和快速导航的功能，针对不同的语言使用不同的解析器，例如使用了自家的 Flow 类型检查工具处理 JavaScript 代码，而使用了 Python 官方的解析器处理 Python 代码。</p>
-<p>这种方法的好处自然是有深度，能把支持的语言解析到位，但坏处也十分明显。首先是依赖性太强，之所以没有很深入地调研 Nuclide，是因为笔者在解析 JavaScript 时提醒安装 Flow，但是 Nuclide 并没有提供自动化安装功能，需要用户到 Flow 的官网学习、完成这件事情，这显然很蠢，也不知道现在改进没…其次就是支持的语言类型有所限制，需要大量的资源支持新的语言开发，明显不适合笔者这种“单兵作战”模式。</p>
-<h3 id="流程设计"><a href="#流程设计" class="headerlink" title="流程设计"></a>流程设计</h3><p>SV 的代码结构解析流程与现有插件大体一致，如下图所示。</p>
-<img data-src="https://wk4ulg.bn.files.1drv.com/y4mc9Zhw83pbn0yN-CveyHdr9ui5NuMjEmSlmyKMVMupYsffd6LTZRTjbV2Dn13JloGV7wGVHj4tJ0Po66jJp3GzRiUh5OFWWuyKIcbQYlKb0NJRhiSMSqsCibAZ1g2qT00miHPlfkW0Q4QsqaweuVIPwJBSGyS8a6JYF4t0DkxxJ31heIREKZMMz68_5-gYdt5ssjc9YXqscYUvNQMIGhuVg" class="">
-
-<p>一次完整的解析显示流程可分解为以下几步：</p>
-<ol>
-<li>获取当前代码文件的绝对路径</li>
-<li>调用文件系统接口读取代码内容</li>
-<li><strong>选择合适的语法分析器</strong>解析代码，获取 tags 数据</li>
-<li>Tag parser 将 tags 处理为前端可用的格式，例如给每个 tag 添加 Point 字段用于 Atom 编辑器的定位</li>
-<li>渲染树状图</li>
-</ol>
-<p>第三步中提到“选择合适的语法分析器”意味着 SV 中不止一个语法分析器，这是 SV 的一大特色，下一小节中会详细说明。</p>
-<h3 id="架构设计与实现"><a href="#架构设计与实现" class="headerlink" title="架构设计与实现"></a>架构设计与实现</h3><p>SV 的设计思想其实与 Nuclide 相似，也集成了多个语法解析器，但主要有两点不同：</p>
-<ul>
-<li>基于给用户更好的使用体验以及满足轻量需求的出发点，SV 的解析引擎以 JavaScript 三方库为主，在安装插件时一并安装，无需用户后续手动操作</li>
-<li>SV 中设计了一个通用的语法解析器，定位为“万金油”角色，以满足支持语言的广度</li>
-</ul>
-<p>具体的架构图如下所示。</p>
-<img data-src="https://wk4vlg.bn.files.1drv.com/y4mLUlTJAXfBGYQwwryeg8IwBCTnFZRjXG7pqyUlIt_i5R04DhxiqJGEHczlmvIfqYusKqKxV-48n8yLPlL8LexeYRBioLbSvOUViST6YEneIe1wQc_X7zyCSsrXOftKnUIoY5mHDLBK-9s9XrEy26WVjD1bAE52y21oEoRuAQ6IENMTlLt_eA1RNW3FYuvMvMhjGqCdg6zkfydvriQrtsVsw" class="">
-
-<h4 id="Tag-Generator"><a href="#Tag-Generator" class="headerlink" title="Tag Generator"></a>Tag Generator</h4><p>在 Tag Generator 层封装了各种语言对应的专业语法解析器，SV 判断出代码文件的语言类型，便会选择对应的语法解析器。如果没有某一个语言对应的解析器，则代表目前 SV 还未深度支持，此时就会使用一个名为 Universal 的解析器进行处理。</p>
-<p>Universal 顾名思义就是通用的解决方案，虽不像专业的语法解析器那样能解析得很全面，但是它可以尽可能多地覆盖各种语言，以确保遇到未深度支持的语言时也能得到代码的初略结构信息。秉持着 DRY (Don’t repeat yourself) 原则，SV 借鉴了现有插件，通过配置、使用 ctags 插件来实现这个“万金油”角色。</p>
-<p>由于语法解析器使用了不同的第三方库，获取的原始 tag 数据形式也是各有不同。因此在封装第三方库的过程中，这些语法解析器会遵循统一的数据格式，整理出 <code>name</code> <code>kind</code> <code>position</code> <code>parent</code> <code>id</code> <code>child</code> 等字段。</p>
-<p>此外，Tag Generator 也统一了语法解析器的 API（目前仅有一个），为扩展性提供了保证。未来支持新的语言时，只需在相应目录添加解析器文件，SV 会自动搜索并调用统一的接口。</p>
-<h4 id="Tag-Parser"><a href="#Tag-Parser" class="headerlink" title="Tag Parser"></a>Tag Parser</h4><p>Tag Parser 的作用很简单，就是为 View Controller 提供整理好的树结构资料，方便后者直接渲染。</p>
-<p>由于 Tag Generator 封装了不同的三方库进行 tags 解析，返回的数据结构主要有两种，一是哈希列表，另一种是 AST。这两种格式各有优点，前者在定位 tag 时方便找到对应的节点，无需遍历整颗树；后者作为一颗树，在渲染树状图时水到渠成。</p>
-<p>因此 SV 同时维护了这两种结构的数据，如果语法解析器提供的是哈希列表，Tag Parser 就通过该列表生成相应的 AST，反之亦然。</p>
-<h4 id="View-Controller"><a href="#View-Controller" class="headerlink" title="View Controller"></a>View Controller</h4><p>这一层使用了开源的 MVVM UI 框架 Vue 实现渲染逻辑和交互逻辑，在此就不赘述。</p>
-<h2 id="展望"><a href="#展望" class="headerlink" title="展望"></a>展望</h2><p>语言类型的支持是一项任重而道远的工作，限于人力资源，只能从业务需求和笔者常用的语言出发进行支持。但是个人力量终归是有限的，因此在设计 SV 之初，笔者就考虑到了开源社区，为 SV 编写了详细的英文文档。SV 的用户多是软件开发者，如果能获得他们的认可，提供简单的扩展方法，想必他们中也是有热心人士愿意贡献 PR 的。事实证明，SV 得到了一些 Atom 用户的关注和认同，也有开发者为了自己习惯的语言补充了 <code>.ctags</code> 配置文件，甚至编写语法解析器。</p>
-<p>目前语法解析器主要使用 JavaScript 编写的第三方解析库，这将会受到一定的限制。例如 C&#x2F;C++ 语言的 AST 解析器有 C&#x2F;Python&#x2F;Ruby 语言版本，但未必有 JavaScript 版本，即使有也可能存在健壮性方面的担忧，提供一个通用的办法解决这个问题也极具意义。</p>
-<p>从产品角度看，SV 目前非常粗糙，需要好好打磨。功能上仅支持基本的解析、展示、定位，与主流 IDE 的类似插件相比有一定的差距，需要多向如 WebStorm 之类的优质 IDE 学习。</p>
-<p>最后，SV 的架构设计考虑到了移植性。近年来 VS Code 的横空出世，以其高性能以及对 TypeScript 的优异支持，吸引了一部分 Atom 用户转投阵营。VS Code 同样允许第三方开发者发布插件，目前其市场中的竞品插件功能性较弱、使用人数较低，有机会做得更好。SV 独立出了 View Controller 层，未来如果被移植到其他热门编辑器如 VS Code 时，重写这一层即可。当然，这需要 VS Code 提供更多关于 UI 方面的接口。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>为 ATOM 设计、（目前）专注 Web 前端开发的代码结构提示工具</li>
-<li>灵活的代码标签生成器架构保证了工具的可扩展性</li>
-<li>吸取市面上主流IDE工具的功能特性，力求好用易用</li>
-<li>独立设计、开发，无 IP 依赖，利于推广和开源</li>
-</ul>
-<p>附件：<a href="https://github.com/Joouis/blog/files/1500624/structure-view-intro-cn-v1.0.pdf">structure-view-intro-cn-v1.0.pdf</a></p>
-]]></content>
-      <categories>
-        <category>Web 前端</category>
-      </categories>
-      <tags>
-        <tag>TechTalk</tag>
-        <tag>javascript</tag>
-        <tag>structure-view</tag>
-        <tag>outline</tag>
-        <tag>ctags</tag>
-        <tag>open source</tag>
-        <tag>outline view</tag>
-        <tag>structure view</tag>
-        <tag>atom</tag>
-        <tag>ide</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaScript 性能优化概观</title>
     <url>/2018/javascript-performance-optimization-tips-an-overview/</url>
     <content><![CDATA[<blockquote>
@@ -6668,9 +6567,9 @@
 <span id="more"></span>
 
 <p>首先打开 DevTools，点击设备反转按钮开启移动端视图：</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/1.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-1.png"></p>
 <p>如果想模拟特定的设备，可以点击 <code>设备列表</code> - <code>Edit…</code> ，以打开 Settings 列表；然后新增定制设备，设置 <code>Width</code> , <code>Height</code> , <code>Device pixel ratio</code> , <code>User agent string</code> 属性。</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/2.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-2.png"></p>
 <h3 id="Using-dev-tools-on-mobile"><a href="#Using-dev-tools-on-mobile" class="headerlink" title="Using dev tools on mobile"></a>Using dev tools on mobile</h3><ul>
 <li><p>Android 设备</p>
 <ol>
@@ -6679,7 +6578,7 @@
 <li>手机连接电脑，打开各自的 Chrome 浏览器</li>
 <li>在电脑的 Chrome 浏览器中登录 <code>chrome://inspect</code> ，可以看到连接的手机设备</li>
 </ol>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/3.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-3.png"></p>
 <ol start="5">
 <li>点击 <code>inspect</code> 功能，打开调试页面后即可像调试本地页面一样调试手机端的页面</li>
 </ol>
@@ -6704,14 +6603,14 @@
 <li><p>在渲染网页的时候，如果它原本是显示在一个宽 980 DIPs 的屏幕上，现在显示在一个只有 360 DIPs 的屏幕上时，内容就会以超过 2 倍的比例被压缩。</p>
 </li>
 <li><p>然后浏览器为了内容的美观性，会进行一项名为 font boosting 的工作，试图放大页面中的主要内容，而其他内容则维持大小不变。（如下图所示）</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/4.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-4.png"></p>
 </li>
 </ul>
 <p>Quiz:</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/5.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-5.png"></p>
  <br />
 
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/6.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-6.png"></p>
 <h3 id="Setting-the-Viewport"><a href="#Setting-the-Viewport" class="headerlink" title="Setting the Viewport"></a>Setting the Viewport</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <ul>
@@ -6756,32 +6655,32 @@
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>Flexbox 还有一个有用的特性是利用 CSS order 属性来改变元素的次序。</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/7.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-7.png"></p>
 <h2 id="Common-Responsive-Patterns"><a href="#Common-Responsive-Patterns" class="headerlink" title="Common Responsive Patterns"></a>Common Responsive Patterns</h2><p>模式的变化很快，但也有一些通用的模式几乎能在任何设备上有不错的表现。响应式网页布局大致可以分为四种模式：Mostly Fluid、Column Drop、Layout Shifter 和 Off Canvas，有时候一个页面也会使用如 Column Drop 和 Off Canvas 的组合。</p>
 <p>接下来将会讲解每种模式是怎样工作的，以及如何使用 Flexbox 和媒体查询技术来实现它们。注意在以下的示意图中，不同色块代表不同的内容区域。</p>
 <h3 id="Column-Drop"><a href="#Column-Drop" class="headerlink" title="Column Drop"></a>Column Drop</h3><p>此布局共有两个间断点，在不同宽度时的排版如下图所示。</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/8.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-8.png"></p>
 <p>代码范例非常简单：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box dark-blue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box light-blue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box green&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex</span>: wrap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">450px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.dark-blue</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">25%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.light-blue</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">75%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">550px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.dark-blue</span>, <span class="selector-class">.green</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">25%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.light-blue</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="Mostly-Fluid"><a href="#Mostly-Fluid" class="headerlink" title="Mostly Fluid"></a>Mostly Fluid</h3><p>此布局与 Column Drop 模型相似，但是更像网格系统，最明显的区别在于当视窗宽度达到最大宽度时，两边会出现外边距而内容不再延展。</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/9.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-9.png"></p>
 <p>代码范例如下：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box dark-blue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box light-blue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box green&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box red&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box orange&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">450px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.light-blue</span>, <span class="selector-class">.green</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">550px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.dark-blue</span>, <span class="selector-class">.light-blue</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.green</span>, <span class="selector-class">.red</span>, <span class="selector-class">.orange</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">33.333333%</span>;		<span class="comment">/* <span class="doctag">TODO:</span> use &quot;flex: 1&quot; instead */</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">700px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">700px</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: auto;</span><br><span class="line">    <span class="attribute">margin-right</span>: auto;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="Layout-Shifter"><a href="#Layout-Shifter" class="headerlink" title="Layout Shifter"></a>Layout Shifter</h3><p>Layout Shifter 布局模型应该是最灵活的响应式模型了，它有很多适用于不同设备的间断点，但最关键的是它的布局变化方式并不是单纯的重排到其它列的下方（参见下图中的红色列）。Flexbox 的亮点在这才真正凸显，因为我们可以利用 CSS 顺序属性来实现这种变化。</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/10.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-10.png"></p>
 <p>这次的代码范例稍微复杂一点：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box dark-blue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span> <span class="attr">id</span>=<span class="string">&quot;container2&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box light-blue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box green&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box red&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">500px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.dark-blue</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-id">#container2</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width</span>: <span class="number">600px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.dark-blue</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">25%</span>;</span><br><span class="line">    <span class="attribute">order</span>: <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-id">#container2</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.red</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">25%</span>;</span><br><span class="line">    <span class="attribute">order</span>: -<span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="Off-Canvas"><a href="#Off-Canvas" class="headerlink" title="Off Canvas"></a>Off Canvas</h3><p>在此模型中，内容并不是垂直堆放的，而是将不常用的内容比如导航栏或者应用菜单放在屏幕外，只有当屏幕足够大的时候才显示出来。在小尺寸屏幕上，溢出画布的内容通常会在用户点击菜单按钮时出现。</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/11.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-11.png"></p>
 <p>代码范例如下：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">id</span>=<span class="string">&quot;drawer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dark-blue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">main</span> <span class="attr">class</span>=<span class="string">&quot;light-blue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -6791,7 +6690,7 @@
 
 <p>点击<a href="http://udacity.github.io/RWDF-samples/Lesson4/patterns/off-canvas.html">此处</a>查看 Live demo。</p>
 <p>Quiz: Off Canvas Visualization Quiz</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/12.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-12.png"></p>
 <h2 id="Optimizations"><a href="#Optimizations" class="headerlink" title="Optimizations"></a>Optimizations</h2><h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><blockquote>
 <p>A picture is worth 1000 words.</p>
 </blockquote>
@@ -6799,7 +6698,7 @@
 <h3 id="Responsive-Tables"><a href="#Responsive-Tables" class="headerlink" title="Responsive Tables"></a>Responsive Tables</h3><p>表格有很多花样，如果其列超过一定的数量，是很有可能溢出视窗的，在小屏幕上会产生水平滚动条。有一些方法可以解决这个问题，以下是三种参考方案。</p>
 <h4 id="Hidden-Columns"><a href="#Hidden-Columns" class="headerlink" title="Hidden Columns"></a>Hidden Columns</h4><p>当视窗尺寸缩小时，Hidden Columns 实际上是根据表格的重要性来进行隐藏的。从小屏幕开始设计时，思考什么信息是最重要的，然后保留下来，隐藏其他不显示的内容。</p>
 <p>Hidden Columns 最大的问题在于隐藏了内容，如果这些被隐藏的内容刚好是用户想知道的就麻烦了。如果可以，请使用缩写而不是完全隐藏内容。</p>
-<p><img data-src="https://img.joouis.com/rwd-fundamentals-note/13.png"></p>
+<p><img data-src="https://cdn.joouis.com/rwd-fundamentals-note-13.png"></p>
 <h4 id="No-More-Tables"><a href="#No-More-Tables" class="headerlink" title="No More Tables"></a>No More Tables</h4><p>当视窗小于一定值时，表格会瓦解，并重组成长列表。这种方法的好处是所有数据都是可见的，无论视窗尺寸多大。</p>
 <h4 id="Contained-Scrolling"><a href="#Contained-Scrolling" class="headerlink" title="Contained Scrolling"></a>Contained Scrolling</h4><p>为了把表格放在视窗中，最简单的做法就是把它放在一个 <code>div</code> 里，然后设置宽度为 100%，最后设置 <code>overflow-x: auto;</code>。虽然表格还是会占据同样的宽度，但是可以用滚动条在视窗中拖动查看。</p>
 <h3 id="Fonts"><a href="#Fonts" class="headerlink" title="Fonts"></a>Fonts</h3><p>如果一段文字的每一行太短或太长，阅读起来都会让人感到不舒服，因此理想的文字行宽很重要。这是个很有技术含量的问题，目前已经有一些研究成果表明，依据使用的字体、显示的设备不同，每行 45 个字符到 90 个字符都是合理的。不过，<strong>在网页中大概每行 65 个字符是最常见的</strong>。这并不是硬性规定，但是个不错的建议。与此同时，行宽也是选择断点时的重要参考因素之一。</p>
@@ -6830,7 +6729,7 @@
     <content><![CDATA[<p>服务器端渲染（Server-Side Rendering，以下简称 SSR）并非是一门新技术，早期就有 Java, PHP 等后端语言进行页面渲染，后来 JavaScript 兴起、 Jquery, Backbone, React, Vue 等视图框架流行，前端逐渐夺回了渲染的地盘。随着如 Express, Koa 等 Node Web 应用程序框架的出现，SSR 以同构渲染（isomorphic rendering）的方式再次强势归来。</p>
 <span id="more"></span>
 
-<p><img data-src="https://cloud.githubusercontent.com/assets/948896/25062958/ca1b6618-2209-11e7-99ae-c2a75ad3dabb.png"></p>
+<p><img data-src="https://cdn.joouis.com/server-side-rendering-review-1.png"></p>
 <p>由于 SSR 在初次请求页面时已经包含了页面所需的数据内容（甚至是 CSS 和 JS 脚本），因此带来了两点好处：</p>
 <ul>
 <li>首屏性能：省去异步请求数据的时间</li>
@@ -6841,7 +6740,7 @@
 <h2 id="从0到1：不求甚解，先摆个姿势再说"><a href="#从0到1：不求甚解，先摆个姿势再说" class="headerlink" title="从0到1：不求甚解，先摆个姿势再说"></a>从0到1：不求甚解，先摆个姿势再说</h2><p>笔者之所以会用到 SSR，现在回想起来也有点偶然：那个时候笔者的前主管经过一番调研，发现淘系的前后端分离框架 Midway 不错，于是基于它开发了一个轻量级的 Web 应用。</p>
 <p>Midway 内置了一款名为 XTemplate 的模板引擎（类似 Nunjucks 的轮子），那时候身为前端小白的笔者看了这玩意，心想不就是一个 HTML 的超集么，虽然是方便那么一丢丢，但是为什么会有这类模板引擎，没想明白。</p>
 <p>在没有吃透这项技术的情况下，笔者和师兄写出了 Xtpl 和 Vue “水乳交融” 的代码，而整个页面渲染逻辑如下：</p>
-<p><img data-src="https://user-images.githubusercontent.com/8896124/32724607-92c0cddc-c837-11e7-88fe-7ae2a123cc9f.jpg" alt="uml-old"></p>
+<p><img data-src="https://cdn.joouis.com/server-side-rendering-review-2.jpg" alt="uml-old"></p>
 <p>由于业务长期对页面性能方面缺乏需求，大家都觉得这套方案没啥问题，即使偶尔在登入、刷新时会出现<strong>一些排列整齐的「{{}}」符号一闪而过</strong>，也只被解释成这就是稍微有点慢。</p>
 <p>意识到这个姿势有问题时笔者已经换了一个团队，完全没有前端工程基础，打造一套服务于当前业务的高效前端开发体系是首要目标。在回顾之前使用的技术栈时，针对 SSR 笔者一下子就想到了两个问题（OS：“你个傻X当初想什么去了…”）：</p>
 <ol>
@@ -6860,7 +6759,7 @@
 
 <p>除此之外，Xtpl 的优势就是在开发 Memory Analysor 等应用时积累的业务代码和经验了，没有学习成本，当业务压力大时，先顶一阵子也没什么问题；）</p>
 <p><em>注：现在无论是 React 还是 Vue 都对 SSR 进行了优化，通过缓存策略极大地改善响应时间并减少服务器的负载，延伸阅读可参考 <code>引用4</code> <code>引用5</code>。下图为 React 针对 SSR 优化的前后性能对比图。</em></p>
-<p><img data-src="https://raw.githubusercontent.com/walmartlabs/react-ssr-optimization/master/images/react-renderToString-cpu-profile.png" alt="React SSR Opt"></p>
+<p><img data-src="https://cdn.joouis.com/server-side-rendering-review-3.png" alt="React SSR Opt"></p>
 <h3 id="姿势小结-1"><a href="#姿势小结-1" class="headerlink" title="姿势小结"></a>姿势小结</h3><p>这是在最近开发一款新应用时遇到的问题，考虑到项目中第一次使用 React 和 Webpack 进行开发构建，为了进度的平稳，还是先采用 Xtpl +  React 这样的混合方案，等未来迭代时再逐步替换为同构方式。得益于模块化的开发风格，Xtpl 和 React 各司其职，完全解耦。</p>
 <h2 id="请求不要放在一个篮子里"><a href="#请求不要放在一个篮子里" class="headerlink" title="请求不要放在一个篮子里"></a>请求不要放在一个篮子里</h2><p>某一次笔者特意给自己挖了个坑，想看看什么时候会掉下去，没想到很快就如愿以偿了&#x3D;。&#x3D;</p>
 <p>前文总结时已经提到过，既然是请求首屏数据，就只需要先获取第一屏的内容，并且如果遇到大量数据的图表时还应调整粒度进行“压缩”。但是为了体会到那种慢的感觉，笔者特意把页面所有的数据都请求完了才进行渲染，而页面内容包含三图一表…</p>
@@ -7252,6 +7151,104 @@
         <tag>windsurf</tag>
         <tag>cursor</tag>
         <tag>azure ai</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>十分钟带你了解国产自制开源Atom插件 structure-view</title>
+    <url>/2017/introduction-of-atom-structure-view/</url>
+    <content><![CDATA[<p>structure-view （以下简称 SV）是在开发 YunOS Studio（AliOS Studio 前身）时开源出来的一款代码结构提示插件。代码结构提示是一项由来已久的影响开发效率的功能，早在 VIM 时期就有经典的 ctags + Taglist 插件组合来实现这一功能，在桌面时代各大流行的 IDE 也都支持此功能，如 Eclipse 中的 Outline View 或 Webstorm 中的 Structure View。</p>
+<p>YunOS Studio 基于扩展能力优异的 Atom 编辑器开发，由于 Atom 的生态市场缺乏一款好用的代码结构提示插件，因此 SV 应运而生（注：目前主流相关插件的比较可参考附件 PPT 中的 “开发由来与现状” 章节）。</p>
+<span id="more"></span>
+
+<p>自从今年九月初将其开源并发布到 Atom 市场中，2个多月的时间达到了 800 余次的下载量，总计 20+ 的 star 数量，以及数十个 issues 和 PR。在没（精）啥（力）宣（有）传（限）的情况下，有人下载使用、提问题、提需求，甚至主动贡献 PR，都给了笔者极大的鼓舞，因此在此分享一下这个插件的设计，也欢迎 Atom 党服用此插件。</p>
+<p><img data-src="https://cdn.joouis.com/introduction-of-structure-view-1.gif"></p>
+<p>链接：</p>
+<ul>
+<li><a href="https://atom.io/packages/structure-view">Atom 市场</a></li>
+<li><a href="https://github.com/alibaba/structure-view">Github</a></li>
+</ul>
+<p><em>平（臭）心（不）而（要）论（脸），eating my own dog food 这么久，我觉得挺好用的 &#x3D;。&#x3D;</em></p>
+<h2 id="需求与难点"><a href="#需求与难点" class="headerlink" title="需求与难点"></a>需求与难点</h2><h3 id="结合业务背景与现状谈需求"><a href="#结合业务背景与现状谈需求" class="headerlink" title="结合业务背景与现状谈需求"></a>结合业务背景与现状谈需求</h3><p>SV 最初是为 YunOS Studio 设计，其用户——YunOS 开发者主要使用 Web 相关语言开发，因此对 HTML, CSS, Javascript 的支持是第一要务 。</p>
+<p>其次，SV 应该具备目前主流类似插件的功能，总不能被“活化石” ctags + Taglist 给 K.O. 了。因此有些基本功能一定要满足：</p>
+<ul>
+<li>解析出代码的基本类型，如 HTML 的 Element，CSS 的 Selector，JS 的 Function, Class 等</li>
+<li>将上述类型展现在界面上，通常是树状图的形式</li>
+<li>点击树状图上的节点，编辑区域可快速定位到其对应的代码位置</li>
+</ul>
+<p>然后，扩展性是非常重要的一点。资源有限，不可能一口气支持所有语言，先把第一要务干完了，才能展望别的语言。秉着不能挖坑让自己跳的指导思想，一定要在初始阶段设计好扩展性。</p>
+<p>最后，能开源当然是最好的，一个人支持那么多语言是会累死的，能忽悠热心网友来干点活多好呀。这也从侧门对扩展性提出了要求。</p>
+<p>最后的最后，快速落地。在项目调研阶段笔者就发现，Atom 上不仅缺少好用的代码结构提示插件，即使是使用量最多的一个，作者也疑似不维护、消失很久了，项目相关的 issues 中已有一些对此类插件的明确需求。如果能快速落地，也就有机会获得一些外部开发者用户。</p>
+<h3 id="难吗？难"><a href="#难吗？难" class="headerlink" title="难吗？难"></a>难吗？难</h3><blockquote>
+<p>你永远不知道下一份读取的代码是用什么语言写的 Orz</p>
+</blockquote>
+<p>从以下几个维度分析下难在哪：</p>
+<ul>
+<li>广度：用户使用的语言无法预测，至少要覆盖主流语言吧，不然怎么好意思拿得出手</li>
+<li>深度：对我们业务所用的语言，一定要能全面地解析；对于主流语言，至少也得解析出个轮廓</li>
+<li>轻量：Atom 性能本来就不算好（当然人家也不主打性能…），所以插件一定要轻，切莫“喧宾夺主”</li>
+<li>广度和深度本来就很难同时满足，还要保证轻量，tradeoff 的哲学该如何落实</li>
+</ul>
+<h2 id="设计与实现"><a href="#设计与实现" class="headerlink" title="设计与实现"></a>设计与实现</h2><h3 id="目前主流的解决方案"><a href="#目前主流的解决方案" class="headerlink" title="目前主流的解决方案"></a>目前主流的解决方案</h3><p>当初调研时发现， Atom 市场中的竞品多是封装经典的 <a href="http://ctags.sourceforge.net/">ctags</a> 插件，其工作原理如下：</p>
+<ol>
+<li>提前内置 Windows&#x2F;macOS &#x2F;Linux 三个平台的二进制执行文件，以及其需要的配置文件 <code>.ctags</code> </li>
+<li>当插件工作时，命令行调用 ctags 解析，获取 stdout 输出的数据</li>
+<li>将 ctags 输出的数据进行加工，以 web 页面的形式呈现在 Atom 的视图中</li>
+</ol>
+<p>由于  <code>.ctags</code> 是正则匹配脚本，也就是说 ctags 其实是利用正则匹配方法处理代码。这种方法的好处是添加规则方便，规则越全面解析效果理论上越好。但是问题也显而易见，光靠正则匹配很难对 OOP 语言中的继承关系进行解析，更别提 JavaScript 这种靠原型链吃饭的语言了。</p>
+<p>另外还有一种解决方案源自 Facebook 出品的 Nuclide IDE，SV 在设计之初并未参考到，不过后来发现是类似的思路 。Nuclide 中的 Outline 视图提供了代码结构提示和快速导航的功能，针对不同的语言使用不同的解析器，例如使用了自家的 Flow 类型检查工具处理 JavaScript 代码，而使用了 Python 官方的解析器处理 Python 代码。</p>
+<p>这种方法的好处自然是有深度，能把支持的语言解析到位，但坏处也十分明显。首先是依赖性太强，之所以没有很深入地调研 Nuclide，是因为笔者在解析 JavaScript 时提醒安装 Flow，但是 Nuclide 并没有提供自动化安装功能，需要用户到 Flow 的官网学习、完成这件事情，这显然很蠢，也不知道现在改进没…其次就是支持的语言类型有所限制，需要大量的资源支持新的语言开发，明显不适合笔者这种“单兵作战”模式。</p>
+<h3 id="流程设计"><a href="#流程设计" class="headerlink" title="流程设计"></a>流程设计</h3><p>SV 的代码结构解析流程与现有插件大体一致，如下图所示。</p>
+<p><img data-src="https://cdn.joouis.com/introduction-of-structure-view-2.png"></p>
+<p>一次完整的解析显示流程可分解为以下几步：</p>
+<ol>
+<li>获取当前代码文件的绝对路径</li>
+<li>调用文件系统接口读取代码内容</li>
+<li><strong>选择合适的语法分析器</strong>解析代码，获取 tags 数据</li>
+<li>Tag parser 将 tags 处理为前端可用的格式，例如给每个 tag 添加 Point 字段用于 Atom 编辑器的定位</li>
+<li>渲染树状图</li>
+</ol>
+<p>第三步中提到“选择合适的语法分析器”意味着 SV 中不止一个语法分析器，这是 SV 的一大特色，下一小节中会详细说明。</p>
+<h3 id="架构设计与实现"><a href="#架构设计与实现" class="headerlink" title="架构设计与实现"></a>架构设计与实现</h3><p>SV 的设计思想其实与 Nuclide 相似，也集成了多个语法解析器，但主要有两点不同：</p>
+<ul>
+<li>基于给用户更好的使用体验以及满足轻量需求的出发点，SV 的解析引擎以 JavaScript 三方库为主，在安装插件时一并安装，无需用户后续手动操作</li>
+<li>SV 中设计了一个通用的语法解析器，定位为“万金油”角色，以满足支持语言的广度</li>
+</ul>
+<p>具体的架构图如下所示。</p>
+<p><img data-src="https://cdn.joouis.com/introduction-of-structure-view-3.png"></p>
+<h4 id="Tag-Generator"><a href="#Tag-Generator" class="headerlink" title="Tag Generator"></a>Tag Generator</h4><p>在 Tag Generator 层封装了各种语言对应的专业语法解析器，SV 判断出代码文件的语言类型，便会选择对应的语法解析器。如果没有某一个语言对应的解析器，则代表目前 SV 还未深度支持，此时就会使用一个名为 Universal 的解析器进行处理。</p>
+<p>Universal 顾名思义就是通用的解决方案，虽不像专业的语法解析器那样能解析得很全面，但是它可以尽可能多地覆盖各种语言，以确保遇到未深度支持的语言时也能得到代码的初略结构信息。秉持着 DRY (Don’t repeat yourself) 原则，SV 借鉴了现有插件，通过配置、使用 ctags 插件来实现这个“万金油”角色。</p>
+<p>由于语法解析器使用了不同的第三方库，获取的原始 tag 数据形式也是各有不同。因此在封装第三方库的过程中，这些语法解析器会遵循统一的数据格式，整理出 <code>name</code> <code>kind</code> <code>position</code> <code>parent</code> <code>id</code> <code>child</code> 等字段。</p>
+<p>此外，Tag Generator 也统一了语法解析器的 API（目前仅有一个），为扩展性提供了保证。未来支持新的语言时，只需在相应目录添加解析器文件，SV 会自动搜索并调用统一的接口。</p>
+<h4 id="Tag-Parser"><a href="#Tag-Parser" class="headerlink" title="Tag Parser"></a>Tag Parser</h4><p>Tag Parser 的作用很简单，就是为 View Controller 提供整理好的树结构资料，方便后者直接渲染。</p>
+<p>由于 Tag Generator 封装了不同的三方库进行 tags 解析，返回的数据结构主要有两种，一是哈希列表，另一种是 AST。这两种格式各有优点，前者在定位 tag 时方便找到对应的节点，无需遍历整颗树；后者作为一颗树，在渲染树状图时水到渠成。</p>
+<p>因此 SV 同时维护了这两种结构的数据，如果语法解析器提供的是哈希列表，Tag Parser 就通过该列表生成相应的 AST，反之亦然。</p>
+<h4 id="View-Controller"><a href="#View-Controller" class="headerlink" title="View Controller"></a>View Controller</h4><p>这一层使用了开源的 MVVM UI 框架 Vue 实现渲染逻辑和交互逻辑，在此就不赘述。</p>
+<h2 id="展望"><a href="#展望" class="headerlink" title="展望"></a>展望</h2><p>语言类型的支持是一项任重而道远的工作，限于人力资源，只能从业务需求和笔者常用的语言出发进行支持。但是个人力量终归是有限的，因此在设计 SV 之初，笔者就考虑到了开源社区，为 SV 编写了详细的英文文档。SV 的用户多是软件开发者，如果能获得他们的认可，提供简单的扩展方法，想必他们中也是有热心人士愿意贡献 PR 的。事实证明，SV 得到了一些 Atom 用户的关注和认同，也有开发者为了自己习惯的语言补充了 <code>.ctags</code> 配置文件，甚至编写语法解析器。</p>
+<p>目前语法解析器主要使用 JavaScript 编写的第三方解析库，这将会受到一定的限制。例如 C&#x2F;C++ 语言的 AST 解析器有 C&#x2F;Python&#x2F;Ruby 语言版本，但未必有 JavaScript 版本，即使有也可能存在健壮性方面的担忧，提供一个通用的办法解决这个问题也极具意义。</p>
+<p>从产品角度看，SV 目前非常粗糙，需要好好打磨。功能上仅支持基本的解析、展示、定位，与主流 IDE 的类似插件相比有一定的差距，需要多向如 WebStorm 之类的优质 IDE 学习。</p>
+<p>最后，SV 的架构设计考虑到了移植性。近年来 VS Code 的横空出世，以其高性能以及对 TypeScript 的优异支持，吸引了一部分 Atom 用户转投阵营。VS Code 同样允许第三方开发者发布插件，目前其市场中的竞品插件功能性较弱、使用人数较低，有机会做得更好。SV 独立出了 View Controller 层，未来如果被移植到其他热门编辑器如 VS Code 时，重写这一层即可。当然，这需要 VS Code 提供更多关于 UI 方面的接口。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>为 ATOM 设计、（目前）专注 Web 前端开发的代码结构提示工具</li>
+<li>灵活的代码标签生成器架构保证了工具的可扩展性</li>
+<li>吸取市面上主流IDE工具的功能特性，力求好用易用</li>
+<li>独立设计、开发，无 IP 依赖，利于推广和开源</li>
+</ul>
+<p>附件：<a href="https://1drv.ms/b/c/7a756318060faeec/UQTsrg8GGGN1IIB64l4AAAAAAEwFWtAg-PV02tM">structure-view-intro-cn-v1.0.pdf</a></p>
+]]></content>
+      <categories>
+        <category>Web 前端</category>
+      </categories>
+      <tags>
+        <tag>TechTalk</tag>
+        <tag>javascript</tag>
+        <tag>structure-view</tag>
+        <tag>outline</tag>
+        <tag>ctags</tag>
+        <tag>open source</tag>
+        <tag>outline view</tag>
+        <tag>structure view</tag>
+        <tag>atom</tag>
+        <tag>ide</tag>
       </tags>
   </entry>
 </search>
