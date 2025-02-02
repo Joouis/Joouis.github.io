@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="江边的旱鸭子">
 <meta property="og:description" content="前言还记得刚入职见到第一个 YunOS App 时，笔者问师兄 Manifest.json 文件是干嘛用的，师兄说如果你有 Android 开发经验的话就会明白了。当下笔者立马找了本电子书放在桌面准备苦读，结果…时至今日未曾宠幸过。对于没有一点 Java 经验的笔者来说，不知道何时才会迈出无线开发第一步，直到最近遇见了 Weex。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://v64blg.bn.files.1drv.com/y4mgihO5S41NuNsjSkDcgj3dmHqmgoCLojI9FuKZ1AaB76FK7uSYiyR1HhkKeNwtpDk3UZMvW0gsthHEg1eOyhcoOhZNzE3OzIMwciSO-vDQU5M2F15ZhKe7mU54RriMLd_T3SyoepJfMnxQH7fs_cYOP--tjsnJ5MRCqHwjuF8GC34xP6eODvWzGZbXl8qRj9xl4Enm2-xL6w3b6uRRPCAMQ">
+<meta property="og:image" content="https://cdn.joouis.com/weex-android-quick-tutorial-weex-flow.png">
 <meta property="article:published_time" content="2017-08-05T19:42:26.000Z">
 <meta property="article:modified_time" content="2018-05-06T16:00:00.000Z">
 <meta property="article:author" content="John Chou">
@@ -42,7 +42,7 @@
 <meta property="article:tag" content="weex">
 <meta property="article:tag" content="android">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://v64blg.bn.files.1drv.com/y4mgihO5S41NuNsjSkDcgj3dmHqmgoCLojI9FuKZ1AaB76FK7uSYiyR1HhkKeNwtpDk3UZMvW0gsthHEg1eOyhcoOhZNzE3OzIMwciSO-vDQU5M2F15ZhKe7mU54RriMLd_T3SyoepJfMnxQH7fs_cYOP--tjsnJ5MRCqHwjuF8GC34xP6eODvWzGZbXl8qRj9xl4Enm2-xL6w3b6uRRPCAMQ">
+<meta name="twitter:image" content="https://cdn.joouis.com/weex-android-quick-tutorial-weex-flow.png">
 
 
 <link rel="canonical" href="https://joouis.com/2017/weex-android-quick-tutorial/">
@@ -329,8 +329,7 @@
 <p>Weex 是集团去年推出的移动开发框架，Apache 顶级开源项目，已经被手淘、天猫等业务广泛使用，经历了双十一等活动的考验。它与传统的移动开发不同、也是吸引笔者的地方，即使用 Web 前端技术进行开发且能达到 Native 级别的性能体验。</p>
 <p>既然笔者毫无 Java 以及 Android 开发经验，必然会站在 <strong>纯前端人员的视角</strong> 来带领大家上车。此外，Weex 在集团内外的热度真的是非常之高，相关的文档、博文也是数不胜数，因此文中将会使用一些引用来保证心得的简洁同时给大家更多延伸的内容。</p>
 <h2 id="什么是-Weex-？"><a href="#什么是-Weex-？" class="headerlink" title="什么是 Weex ？"></a>什么是 Weex ？</h2><p>理论角度，<a target="_blank" rel="noopener" href="http://weex.apache.org/cn/guide/intro/how-it-works.html">官方文档</a>上已经说得挺清楚的了，一张流程图可以说明一切。</p>
-<img data-src="https://v64blg.bn.files.1drv.com/y4mgihO5S41NuNsjSkDcgj3dmHqmgoCLojI9FuKZ1AaB76FK7uSYiyR1HhkKeNwtpDk3UZMvW0gsthHEg1eOyhcoOhZNzE3OzIMwciSO-vDQU5M2F15ZhKe7mU54RriMLd_T3SyoepJfMnxQH7fs_cYOP--tjsnJ5MRCqHwjuF8GC34xP6eODvWzGZbXl8qRj9xl4Enm2-xL6w3b6uRRPCAMQ" class="" title="Source: http:&#x2F;&#x2F;weex.apache.org&#x2F;cn&#x2F;guide&#x2F;images&#x2F;flow.png">
-
+<p><img data-src="https://cdn.joouis.com/weex-android-quick-tutorial-weex-flow.png"></p>
 <p>不过回到实际开发，Weex 是什么，这点在没有上手前很难从官方文档中得出结论。（网上有不少声音吐槽 Weex 文档写的不好，笔者持保留态度，不过确实从落地的角度来说，缺乏一些必要的细节，这个后面还会再提。此外作者还有一个疑问，官方文档究的目标群体究竟是谁？是传统的移动端开发者？还是 Web 前端背景的开发人员？至少笔者觉得不是后者。）</p>
 <p>以实践的角度，在笔者看来，Weex 有两部分，一是前端技术方面的自动化框架，在PC端帮助开发人员快速进行 vue 文件的开发、打包等，这部分可以在官网<a target="_blank" rel="noopener" href="http://weex.apache.org/cn/guide/set-up-env.html">搭建开发环境</a>的教程中获取；二是使 JS 代码能在移动端成功运行起来的各平台 SDK 套件或源码，在编译各平台安装包时加入，<a target="_blank" rel="noopener" href="http://weex.apache.org/cn/guide/integrate-to-your-app.html">文档</a>中也有提及。</p>
 <p>除了 Weex 本身，其配套的开发工具比较丰富。有脚手架 <a target="_blank" rel="noopener" href="http://weex.apache.org/cn/guide/tools/toolkit.html">weex-toolkit</a> 、移动端的预览工具 <a target="_blank" rel="noopener" href="http://weex.apache.org/cn/playground.html">Weex Playground</a> 、在线代码执行工具 <a target="_blank" rel="noopener" href="http://dotwe.org/vue">Weex Playground</a> 等。</p>
