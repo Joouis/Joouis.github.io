@@ -16,7 +16,7 @@ tags:
 服务器端渲染（Server-Side Rendering，以下简称 SSR）并非是一门新技术，早期就有 Java, PHP 等后端语言进行页面渲染，后来 JavaScript 兴起、 Jquery, Backbone, React, Vue 等视图框架流行，前端逐渐夺回了渲染的地盘。随着如 Express, Koa 等 Node Web 应用程序框架的出现，SSR 以同构渲染（isomorphic rendering）的方式再次强势归来。
 <!-- more -->
 
-![](https://cdn.joouis.com/server-side-rendering-review/1.png)
+![](https://cdn.joouis.com/server-side-rendering-review-1.png)
 
 由于 SSR 在初次请求页面时已经包含了页面所需的数据内容（甚至是 CSS 和 JS 脚本），因此带来了两点好处：
 
@@ -39,7 +39,7 @@ Midway 内置了一款名为 XTemplate 的模板引擎（类似 Nunjucks 的轮�
 
 在没有吃透这项技术的情况下，笔者和师兄写出了 Xtpl 和 Vue “水乳交融” 的代码，而整个页面渲染逻辑如下：
 
-![uml-old](https://cdn.joouis.com/server-side-rendering-review/2.png)
+![uml-old](https://cdn.joouis.com/server-side-rendering-review-2.jpg)
 
 由于业务长期对页面性能方面缺乏需求，大家都觉得这套方案没啥问题，即使偶尔在登入、刷新时会出现**一些排列整齐的{% raw %}「{{}}」{% endraw %}符号一闪而过**，也只被解释成这就是稍微有点慢。
 
@@ -89,7 +89,7 @@ Fastest is Marko#renderToString,Xtpl#renderFile
 
 *注：现在无论是 React 还是 Vue 都对 SSR 进行了优化，通过缓存策略极大地改善响应时间并减少服务器的负载，延伸阅读可参考 `引用4` `引用5`。下图为 React 针对 SSR 优化的前后性能对比图。*
 
-![React SSR Opt](https://cdn.joouis.com/server-side-rendering-review/3.png)
+![React SSR Opt](https://cdn.joouis.com/server-side-rendering-review-3.png)
 
 ### 姿势小结
 

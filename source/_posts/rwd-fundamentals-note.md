@@ -25,11 +25,11 @@ tags:
 
 首先打开 DevTools，点击设备反转按钮开启移动端视图：
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/1.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-1.png)
 
 如果想模拟特定的设备，可以点击 `设备列表` - `Edit…` ，以打开 Settings 列表；然后新增定制设备，设置 `Width` , `Height` , `Device pixel ratio` , `User agent string` 属性。
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/2.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-2.png)
 
 ### Using dev tools on mobile
 
@@ -40,7 +40,7 @@ tags:
   3. 手机连接电脑，打开各自的 Chrome 浏览器
   4. 在电脑的 Chrome 浏览器中登录 `chrome://inspect` ，可以看到连接的手机设备
 
-  ![](https://cdn.joouis.com/rwd-fundamentals-note/3.png)
+  ![](https://cdn.joouis.com/rwd-fundamentals-note-3.png)
 
   5. 点击 `inspect` 功能，打开调试页面后即可像调试本地页面一样调试手机端的页面
 
@@ -71,15 +71,15 @@ A：最大的问题是你的视窗没有设置好。
 
 - 然后浏览器为了内容的美观性，会进行一项名为 font boosting 的工作，试图放大页面中的主要内容，而其他内容则维持大小不变。（如下图所示）
 
-  ![](https://cdn.joouis.com/rwd-fundamentals-note/4.png)
+  ![](https://cdn.joouis.com/rwd-fundamentals-note-4.png)
 
 Quiz:
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/5.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-5.png)
 
  <br />
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/6.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-6.png)
 
 
 ### Setting the Viewport
@@ -198,7 +198,7 @@ Flexbox 之所以功能强大，是因为它能够自动填充空白区域。如
 
 Flexbox 还有一个有用的特性是利用 CSS order 属性来改变元素的次序。
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/7.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-7.png)
 
 ## Common Responsive Patterns
 
@@ -210,7 +210,7 @@ Flexbox 还有一个有用的特性是利用 CSS order 属性来改变元素的�
 
 此布局共有两个间断点，在不同宽度时的排版如下图所示。
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/8.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-8.png)
 
 代码范例非常简单：
 
@@ -252,7 +252,7 @@ Flexbox 还有一个有用的特性是利用 CSS order 属性来改变元素的�
 
 此布局与 Column Drop 模型相似，但是更像网格系统，最明显的区别在于当视窗宽度达到最大宽度时，两边会出现外边距而内容不再延展。
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/9.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-9.png)
 
 代码范例如下：
 
@@ -300,7 +300,7 @@ Flexbox 还有一个有用的特性是利用 CSS order 属性来改变元素的�
 
 Layout Shifter 布局模型应该是最灵活的响应式模型了，它有很多适用于不同设备的间断点，但最关键的是它的布局变化方式并不是单纯的重排到其它列的下方（参见下图中的红色列）。Flexbox 的亮点在这才真正凸显，因为我们可以利用 CSS 顺序属性来实现这种变化。
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/10.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-10.png)
 
 这次的代码范例稍微复杂一点：
 
@@ -351,7 +351,7 @@ Layout Shifter 布局模型应该是最灵活的响应式模型了，它有很�
 
 在此模型中，内容并不是垂直堆放的，而是将不常用的内容比如导航栏或者应用菜单放在屏幕外，只有当屏幕足够大的时候才显示出来。在小尺寸屏幕上，溢出画布的内容通常会在用户点击菜单按钮时出现。
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/11.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-11.png)
 
 代码范例如下：
 
@@ -403,7 +403,7 @@ menu.addEventListener('click', e => {
 
 Quiz: Off Canvas Visualization Quiz
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/12.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-12.png)
 
 ## Optimizations
 
@@ -423,7 +423,7 @@ Quiz: Off Canvas Visualization Quiz
 
 Hidden Columns 最大的问题在于隐藏了内容，如果这些被隐藏的内容刚好是用户想知道的就麻烦了。如果可以，请使用缩写而不是完全隐藏内容。
 
-![](https://cdn.joouis.com/rwd-fundamentals-note/13.png)
+![](https://cdn.joouis.com/rwd-fundamentals-note-13.png)
 
 #### No More Tables
 
