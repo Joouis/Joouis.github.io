@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="江边的旱鸭子">
 <meta property="og:description" content="源文链接：JavaScript code cleanup: how you can refactor to use Classes  在一些小规模的 React 工程中，将组件里所用的所有方法维护在组件内部没什么问题。不过到了中等规模的项目时，你可能会将那些方法从组件抽取到一个 “helper” 里。本文将展示如何使用类（而非导出独立的函数和变量）来组织代码。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://ua6wcg.bn.files.1drv.com/y4mYy_pu9AzJk55bWAa0HOHDdjZDUp6QId12MxyJKxSSyBDQX8L-w321hFpMC47CYkQCl1Hly1JCATTUeP6-KTjE05cxDg46eOARJogyaVeodrYaM3bm3i8hcPo9dbhQ7wQOq0A2SAkUGdhaeS1C7xX2Do4yLK_ThI45fsjemuXGxGAb0UeuqpqghFkUUr-kqnLmw7AQZVQh1-kHQTP9mkTYQ">
+<meta property="og:image" content="https://cdn.joouis.com/how-you-can-refactor-to-use-classes-1.png">
 <meta property="article:published_time" content="2018-08-06T02:29:06.000Z">
 <meta property="article:modified_time" content="2018-08-06T02:29:06.000Z">
 <meta property="article:author" content="John Chou">
@@ -38,7 +38,7 @@
 <meta property="article:tag" content="react">
 <meta property="article:tag" content="hoc">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ua6wcg.bn.files.1drv.com/y4mYy_pu9AzJk55bWAa0HOHDdjZDUp6QId12MxyJKxSSyBDQX8L-w321hFpMC47CYkQCl1Hly1JCATTUeP6-KTjE05cxDg46eOARJogyaVeodrYaM3bm3i8hcPo9dbhQ7wQOq0A2SAkUGdhaeS1C7xX2Do4yLK_ThI45fsjemuXGxGAb0UeuqpqghFkUUr-kqnLmw7AQZVQh1-kHQTP9mkTYQ">
+<meta name="twitter:image" content="https://cdn.joouis.com/how-you-can-refactor-to-use-classes-1.png">
 
 
 <link rel="canonical" href="https://joouis.com/2018/how-you-can-refactor-to-use-classes/">
@@ -319,7 +319,7 @@
 </ol>
 <p>当逻辑复杂起来，你将不得不传一些如控制状态的对象、函数到这些函数里。如今我就遇到一个问题：我有三个入参相同（一个 <code>资源</code> 和一个更新 <code>资源</code> 的函数）的函数希望从组件中提取出来。于是乎就酝酿出了更好的方法…</p>
 <h2 id="使用类重构"><a href="#使用类重构" class="headerlink" title="使用类重构"></a>使用类重构</h2><p>我为本文做了一个隆重的演示，你可以在 <a target="_blank" rel="noopener" href="https://github.com/AmberWilkie/class-demo">GitHub</a> 上查阅源码。初始的提交显示所有功能都写在主组件中（<code>App.js</code>），而随后的提交逐渐使用了类重构代码。</p>
-<p><img data-src="https://ua6wcg.bn.files.1drv.com/y4mYy_pu9AzJk55bWAa0HOHDdjZDUp6QId12MxyJKxSSyBDQX8L-w321hFpMC47CYkQCl1Hly1JCATTUeP6-KTjE05cxDg46eOARJogyaVeodrYaM3bm3i8hcPo9dbhQ7wQOq0A2SAkUGdhaeS1C7xX2Do4yLK_ThI45fsjemuXGxGAb0UeuqpqghFkUUr-kqnLmw7AQZVQh1-kHQTP9mkTYQ"></p>
+<p><img data-src="https://cdn.joouis.com/how-you-can-refactor-to-use-classes-1.png"></p>
 <p>你可以尝试运行该工程，不过请记得 <code>yarn install</code> 安装依赖。</p>
 <p>我们从一个”获取”对象（通常是请求一个 API 接口）的组件开始，它有一些确切的属性：repeat（盒子的个数），side（高和宽），text，color。接着我们有一系列操作视图的方法——改变色彩，更新文字，等等。每次视图更改后，我们展示一条信息。</p>
 <p>举个例子，这是我们改变宽高的方法：</p>

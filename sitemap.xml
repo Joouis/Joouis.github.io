@@ -4,7 +4,7 @@
   <url>
     <loc>https://joouis.com/recruit/index.html</loc>
     
-    <lastmod>2025-01-18</lastmod>
+    <lastmod>2025-02-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -479,15 +479,6 @@
   </url>
   
   <url>
-    <loc>https://joouis.com/2016/build-a-blog-in-5-minutes/</loc>
-    
-    <lastmod>2019-04-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://joouis.com/2019/reading-notes-nonviolent-communication/</loc>
     
     <lastmod>2019-01-02</lastmod>
@@ -644,6 +635,15 @@
     <loc>https://joouis.com/2016/my-configuration-for-ubuntu-distribution/</loc>
     
     <lastmod>2016-04-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/2016/build-a-blog-in-5-minutes/</loc>
+    
+    <lastmod>2016-04-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

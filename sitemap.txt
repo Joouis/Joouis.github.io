@@ -51,7 +51,6 @@ https://joouis.com/2019/2019-thai-trip-2/
 https://joouis.com/2019/2019-thai-trip-1/
 https://joouis.com/2019/x86-performance-qna/
 https://joouis.com/2019/a-thought-of-referral/
-https://joouis.com/2016/build-a-blog-in-5-minutes/
 https://joouis.com/2019/reading-notes-nonviolent-communication/
 https://joouis.com/2018/goodbye-alibaba/
 https://joouis.com/2018/reading-notes-1587/
@@ -70,6 +69,7 @@ https://joouis.com/2017/remove-duplicates-from-javascript-array/
 https://joouis.com/2016/online-notes-of-john-chou/
 https://joouis.com/2016/the-details-i-learned-from-software-company-in-silicon-valley/
 https://joouis.com/2016/my-configuration-for-ubuntu-distribution/
+https://joouis.com/2016/build-a-blog-in-5-minutes/
 https://joouis.com/
 https://joouis.com/tags/trip/
 https://joouis.com/tags/travel/

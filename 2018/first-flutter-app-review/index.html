@@ -28,8 +28,8 @@
 <meta property="og:site_name" content="江边的旱鸭子">
 <meta property="og:description" content="TL;DR站在负责 UI 层的 Web 前端视角看无线端框架，评判的第一个标准无非是文档够不够全、Demo 能不能很容易在手机上跑起来。近来的热门框架 Flutter 就上手而言给出了漂亮的答案。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://ua60cg.bn.files.1drv.com/y4mx50xV8910Opf1_TigYabB06b-3qTsFGJf8KmR8dFIArUO5nb5BpePdYkUfp_JA9tj_DeBthEENIc1l8QFt9hVkSDojcSlBHbx7tIxOlqwXqVyrvW1pTDYPTNOj57MVyos5giC9Uv_YTAlLDUcz5ZsH-7vvVEwt_tiwodR5tawta_g1V30y9Br8QdL6TAmuF9Rf603Y4DUjvVFrXZ6a0UwQ">
-<meta property="og:image" content="https://ua6zcg.bn.files.1drv.com/y4mUF6sd-hueRZgEbFQx1UmVfQaYGtyEK6TXqqpD3Z-VB4Bj49dDyTKooH_yZESWfth4XK8OHc_p-WlaNIEaCBv51mZYrSlNxtjPJShjlLFWf1qLXV3-5OPc88KJQQxt2_WGdzV32Fljycb9HjfMPAaqaMUm6_tyXGZ_NJilhRUVpX92WQ8LRT1j_CQPOHxpUXajsuzAuDrht8FpZt-jc4ItA">
+<meta property="og:image" content="https://cdn.joouis.com/first-flutter-app-review-1.png">
+<meta property="og:image" content="https://cdn.joouis.com/first-flutter-app-review-2.png">
 <meta property="article:published_time" content="2018-07-24T18:17:05.000Z">
 <meta property="article:modified_time" content="2018-07-24T18:17:05.000Z">
 <meta property="article:author" content="John Chou">
@@ -39,7 +39,7 @@
 <meta property="article:tag" content="dart">
 <meta property="article:tag" content="mobile">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ua60cg.bn.files.1drv.com/y4mx50xV8910Opf1_TigYabB06b-3qTsFGJf8KmR8dFIArUO5nb5BpePdYkUfp_JA9tj_DeBthEENIc1l8QFt9hVkSDojcSlBHbx7tIxOlqwXqVyrvW1pTDYPTNOj57MVyos5giC9Uv_YTAlLDUcz5ZsH-7vvVEwt_tiwodR5tawta_g1V30y9Br8QdL6TAmuF9Rf603Y4DUjvVFrXZ6a0UwQ">
+<meta name="twitter:image" content="https://cdn.joouis.com/first-flutter-app-review-1.png">
 
 
 <link rel="canonical" href="https://joouis.com/2018/first-flutter-app-review/">
@@ -310,7 +310,7 @@
 <p>1. 使用自己的 Apple ID，详见<a target="_blank" rel="noopener" href="http://bbs.sightp.com/thread-1241-1-1.html">这里</a>；（好吧我也没试过）<br>2. 使用模拟器。</p>
 <p>命令行输入 <code>open ios/Runner.xcworkspace</code> 打开 Runner 工程，选择模拟器即可跑起来默认的 Demo 工程。</p>
 <h2 id="Code-Review-for-Official-Counter"><a href="#Code-Review-for-Official-Counter" class="headerlink" title="Code Review for Official Counter"></a>Code Review for Official Counter</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p>官方默认的 Demo 工程是一个简易计数器。先看眼效果，真的非常简单，右下角点击加号，中间的数字对应增长，就酱~</p>
-<p><img data-src="https://ua60cg.bn.files.1drv.com/y4mx50xV8910Opf1_TigYabB06b-3qTsFGJf8KmR8dFIArUO5nb5BpePdYkUfp_JA9tj_DeBthEENIc1l8QFt9hVkSDojcSlBHbx7tIxOlqwXqVyrvW1pTDYPTNOj57MVyos5giC9Uv_YTAlLDUcz5ZsH-7vvVEwt_tiwodR5tawta_g1V30y9Br8QdL6TAmuF9Rf603Y4DUjvVFrXZ6a0UwQ"></p>
+<p><img data-src="https://cdn.joouis.com/first-flutter-app-review-1.png"></p>
 <p>外行看热闹，内行看门道。应用层代码总共就六十多行，反正也不会 Dart，就边看边学习一下。</p>
 <h3 id="Import"><a href="#Import" class="headerlink" title="Import"></a>Import</h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:flutter/material.dart&#x27;</span>;</span><br></pre></td></tr></table></figure>
 
@@ -360,7 +360,7 @@
 <li>屏幕右下角的按钮由 <code>FloatingActionButton</code> 描述，使用了加号图标，绑定之前定义好的 <code>_incrementCounter</code> 函数作为 <code>onPressed</code> 事件的处理者。</li>
 </ul>
 <p>好了说了这么多组件，让我们使用 Flutter tool 的 <code>Toggle Debug Paint</code> 指令直观感受一把。</p>
-<p><img data-src="https://ua6zcg.bn.files.1drv.com/y4mUF6sd-hueRZgEbFQx1UmVfQaYGtyEK6TXqqpD3Z-VB4Bj49dDyTKooH_yZESWfth4XK8OHc_p-WlaNIEaCBv51mZYrSlNxtjPJShjlLFWf1qLXV3-5OPc88KJQQxt2_WGdzV32Fljycb9HjfMPAaqaMUm6_tyXGZ_NJilhRUVpX92WQ8LRT1j_CQPOHxpUXajsuzAuDrht8FpZt-jc4ItA"></p>
+<p><img data-src="https://cdn.joouis.com/first-flutter-app-review-2.png"></p>
 <h2 id="End"><a href="#End" class="headerlink" title="End"></a>End</h2><p>笔者去年写了篇 Weex 从入门到放弃的上手文，说实话这次 Flutter 上手体验要比 Weex 好非常多——详实的文档，齐全的基础脚手架，轻松在手机&#x2F;模拟器上运行应用。</p>
 <p>对于没有客户端开发经验的笔者来说，能看着文档打通流程（实际编译出一个安装包并在对应平台上安装、执行）是一件非常关键的事情，它意味着小白也能使用这项技术栈独立开发简单的应用，能给学习者十足的信心。过去接触 Weex，只能使用 Playground App 扫码跑 demo，非常的“半成品”，而 Flutter 轻松几个指令，就在你的设备上跑起了你的工程，赞！</p>
 <p>至于 Flutter 相关的信息，如学习 Dart 语言、Flutter 入门教程、代码范例、官方库接口等资料已经颇为丰富，Stack Overflow 上也有一些讨论的话题，对于一个处于 Beta 阶段的框架来很成熟了。</p>
