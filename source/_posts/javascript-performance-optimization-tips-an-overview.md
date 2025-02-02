@@ -23,7 +23,7 @@ tags:
 
 首先，让我们避开如下事情：如果你只在台式机上测试，你已将 [超过 50%](http://gs.statcounter.com/platform-market-share/desktop-mobile-tablet) 的用户排除在外了。
 
-![](https://uk6xcg.bn.files.1drv.com/y4mNVFLuHYlzHBeyfNYZsHgIHuDsfmF11B33HcdkHvMvvvIN3F5zXQIMsx5f2T6FTwIjNOB924XGxOyLVwfhrceWQTgqSANcEEglZy_zXdhayApGYOSCA68RyeOsEEbxzfRIGozZuO_wrU79c35vJqQz5o454NRbJRpJj0mT3uoxsXAsuaNwKWhSpxXoi3rlfbhxEa4ztlINll-bSMqHfPDnw)
+![](https://cdn.joouis.com/javascript-performance-optimization-tips-an-overview-1.png)
 
 由于新兴市场偏爱使用低于 100 美金的安卓设备上网，该趋势只会持续增长。台式机作为主力上网设备的时代已经结束，未来十亿网民将会首选移动设备访问你的网站。
 
@@ -33,7 +33,7 @@ Chrome DevTool 工具的设备模拟器并不能有效替代真实设备进行�
 
 当 [解析一个文件体积为平均数的 JS 包](https://docs.google.com/spreadsheets/d/1wHcNNQea28LhwQ_amFamT33d5woVrJfJy53Z1k6V090)（JS bundle）时，让我们看看它的解析速度排名。
 
-![Addy Osmani: Time spent in JS Parse & eval for average JS](https://uk6wcg.bn.files.1drv.com/y4m0-ZmIf1Xp68or_HfkesuOljc0Gw252YypTC3P6P6VpgBHI0-gXEYaaEyF8nqlDWnJSBxCTdFSIRjZULLHMFEkR8Zfkne6s8bJnYmdD5a9BPj2YVHDLfTIFYICJvJ2ff6ycJCauE298dxQFhFM3fysXz9rOBSmqxpl4bET8VLjW1R4Xh_JkU2rgZU90d_czDrPEM5eG7_ufUqskK0hI2xPg)
+![Addy Osmani: Time spent in JS Parse & eval for average JS](https://cdn.joouis.com/javascript-performance-optimization-tips-an-overview-2.png)
 
 虽然这张图只涵盖了 JS 解析和编译的时间（后续时间将会消耗更多）而非常规的性能数据，但有着强关联的它可以被视作 JS 性能的指标之一。
 
@@ -45,7 +45,7 @@ Bruce Lawson 曾说 “[it’s the World-Wide Web, not the Wealthy Western Web](
 
 虽说没有绝对的分类来定义高性能代码，但我们有一个以用户为中心的性能模型可以参考：[RAIL 模型](https://developers.google.com/web/fundamentals/performance/rail)。
 
-![Sam Saccone: Planning for Performance: PRPL](https://uk6vcg.bn.files.1drv.com/y4mmLE_Js1ooQjEX8AGy_4ytOtExYWfJ3SMsL4Q63loBlFj19s2GlTeQBv1fZn-eAP-EBfSbpPCuAjzM29rYAM2iHM-5MrDNa-r8iG_bQhRFSgmLfQuOMbXYeEwf_5PQbzt77QO5qXSVIZ3NZxVoeMDfvHt9zk78ZOuZGGtHZ0TuHo84Gw8qzSZf8_H3-4I-yIzgFPzBMZt6wMUvhuSuyJ2pA)
+![Sam Saccone: Planning for Performance: PRPL](https://cdn.joouis.com/javascript-performance-optimization-tips-an-overview-3.png)
 
 ### 响应
 
@@ -63,7 +63,7 @@ Bruce Lawson 曾说 “[it’s the World-Wide Web, not the Wealthy Western Web](
 
 一个页面的加载应低于 1000 毫秒，超过这个时间你的用户将会变得烦躁。而在移动设备上要求页面变得可交互而不仅完成渲染和可滑动时，是一个非常难的目标。实际上，可用于加载的时间往往更少：
 
-![Fast By Default: Modern Loading Best Practices](https://ua62cg.bn.files.1drv.com/y4mJXYSoOY-zysDoELXReJbrP9qgAlCz955Rlpuip5GmXG9kWD3BhEIB57MPHkmmbxrvhifOErq5rV54TSjKmsw7UgLrNNIVweRGVcyk4is2K_zZfDXM7HuPreemrsBs1TnplWdvyvi1i3MIndUqprEkSaONy1gWVcJZkXC9ULwXGJ27_3wPKnWFwAUbjxHBl7zgtEVM2p-35t4FbpQP-ZBgw)
+![Fast By Default: Modern Loading Best Practices](https://cdn.joouis.com/javascript-performance-optimization-tips-an-overview-4.png)
 
 在实践中，可交互时间以 5 秒为目标，这也是 Chrome 在其 Lighthouse audit 中使用的标志。
 
@@ -103,11 +103,11 @@ JavaScript 没有被预先编译过。它在浏览器中通过相对较慢的网
 
 另一件非常重要的事情是 JavaScript 是单线程的，运行在浏览器的主线程上。这意味着一次只有一颗处理器可以运行 JS 代码。如果 Chrome DevTools 的性能时间轴被黄色峰值填充，即 CPU 使用率达到 100%，画面将会出现长帧、掉帧、难用的滑动以及其他所有扎心的体验。
 
-![Paul Lewis: When everything's important, nothing is!](https://uk6ucg.bn.files.1drv.com/y4mf7OwF4UaBXdoAo5nmOKXVbIO52qOl0GsAP9_bpZNFT0Qm8dEFmJPzIeVLBrmsjgSTK-Mn1V6TQath0tmAFE9cCsSmH0hc_MK5e8I7uar-osIsRW1sKyfFBexLaJg3pSiGKctRsv7a83Bn0N-E6jSb6XDGmsxUx9tf9XmHD7b9nrLEmnmNuR6c8biwbDqpM9O0BW0LCKJ5oii9iLFg0KxgA)
+![Paul Lewis: When everything's important, nothing is!](https://cdn.joouis.com/javascript-performance-optimization-tips-an-overview-5.jpg)
 
 所以在你的 JS 代码开始运行前，上述所有工作需要完成。在 Chrome V8 引擎执行 JS 代码的总时间中，解析和编译占据了约 50% 的时间。
 
-![Addy Osmani: JavaScript Start-up Performance](https://ua63cg.bn.files.1drv.com/y4mmTS-JT-S3MyBeSJilW_BXMGOnvluzo-h4RC_2PkHPBfg2eU1pv__euNdtWHKIGJz9q67ARN2Hsy4YDUVS4iYbI2L78ZepPII9Q_bR89luYO4ikzWXr-Ae2xZ7hlVhYE5sSp-zHKqMvro8a8f2Sn5CNpPA3A97Q0scvJIvP_yZnY8cBVyBchtAz-yYeUKET79O3Vw5uoN6wV1orMk2_vvgw)
+![Addy Osmani: JavaScript Start-up Performance](https://cdn.joouis.com/javascript-performance-optimization-tips-an-overview-6.png)
 
 从这一部分我们学会两件事：
 
