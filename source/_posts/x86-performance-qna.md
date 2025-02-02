@@ -66,7 +66,7 @@ Champ Yen 大上面的討論很完整，我來扮演助教，補充一些 Linux 
 
 2. Linux 下，用 "lstopo" 指令可以列出機器的 cache 架構。lstopo 由 "hwloc" 套件提供。
 
-   ![](https://vk6wcg.bn.files.1drv.com/y4mDcDK8DZthxyf33kEOf7drCSSlkY4W7dGvxbZLEhlnEkSbRa7qPJZRXOcYp0dIxhZUkQr88PYY0x0cikEvH09ExoPll7U1OXOmgSbozLiT9AhJt09qdUecXlbh_4JPpZWSUQTOyYS4Jt1E5wjMUGGxi-vQiMBI47Zd3PHkAar_QUMT1V-fGQPeMm8LbrTFcEvGqU1WEC1Oaa2PJsJ8LBNXA)
+   ![](https://cdn.joouis.com/x86-performance-qna-1.jpg)
 
 3. 在實體機器上測，真的要不被其他執行中的程式影響，還是要把系統變成（幾乎）只跑你的程式。操作上：
 
