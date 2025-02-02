@@ -25,11 +25,11 @@ tags:
 
 首先打开 DevTools，点击设备反转按钮开启移动端视图：
 
-{% img "https://wk4xlg.bn.files.1drv.com/y4mTTaAk1G49MbIRQs7fFezNIftcdaPcWXydBVauqYUTuNvgv4E9mgf-gY7FN3aal0r6NgqboyK0-PMCprfwVvRNohXz2xJHymNTJjm2nroOG5uY5g_o-bUKPVB9sCX17tjXxQJrBI3w6KUJ0uBXBdpj-68eCq7XCrkqK2P6PZdzUbUcAhFLkr7wxI5DUNm5XB4RCLS-OWYkwFNu11ujH3fWg" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB63V4AAAAAANp2erpAwYoP7m8?width=2464&height=1386)
 
 如果想模拟特定的设备，可以点击 `设备列表` - `Edit…` ，以打开 Settings 列表；然后新增定制设备，设置 `Width` , `Height` , `Device pixel ratio` , `User agent string` 属性。
 
-{% img "https://wk4ylg.bn.files.1drv.com/y4mAlxG-j5zwSeqFM7c6lGpqTrMToa2aNBEJBjhHIFBLMdnFjrUD2_sYwZFmA2gLGcGaz0JA73RyihsthtpclzTw0yxroMsE-u2U8mgx725KhKvw22UvniOZGpUgRuyUO1kDGWFrUkQ2iBGsyZZoK9IpflQlcXRRsOG7GG3h9ql25U0cOcqAsYziLQ2pGCXumdlcin5OnPH8HZvjjCWb_T9-g" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB63F4AAAAAAC8FDo1i6lmQleQ?width=2232&height=1318)
 
 ### Using dev tools on mobile
 
@@ -40,7 +40,7 @@ tags:
   3. 手机连接电脑，打开各自的 Chrome 浏览器
   4. 在电脑的 Chrome 浏览器中登录 `chrome://inspect` ，可以看到连接的手机设备
 
-  {% img "https://wk4alg.bn.files.1drv.com/y4m2in5fYvNssbvGOrwHGxIWFXyVT18UfgzhYfJy6LLJTcWCwJtsVkpyUWSWgchLhUzGJI8ln2N9eGOaqp1o26QQi9c1NZrOlxL_jTirAJMxp-oN0AkL_mHM0vp3pjqCWLAK9UqQr5fD0RS0T-QJxLmSodDt_RZWDDeRBfBwha6lTIEBlzjnGUzFZgRaGcbGpqkFYex6phyTzKg6jm9AUXL6w" %}
+  ![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB62l4AAAAAAAlE8FrcJGUJfvw?width=619&height=396)
 
   5. 点击 `inspect` 功能，打开调试页面后即可像调试本地页面一样调试手机端的页面
 
@@ -71,16 +71,16 @@ A：最大的问题是你的视窗没有设置好。
 
 - 然后浏览器为了内容的美观性，会进行一项名为 font boosting 的工作，试图放大页面中的主要内容，而其他内容则维持大小不变。（如下图所示）
 
-  {% img "https://wk4zlg.bn.files.1drv.com/y4mIt-E_waBwSeVHyDwNMSeBf_hU53EbmO-celBkJl7fGorw5adv-d9cubs4CZSMHHOSvI2ot4-wvGx-_2fuZPN5qBXOmmJ8g9CYFDHlgWMYDCDtlCTt_XbBvqnrJcKldOtjlD_1JLPFJJqGiqF9Bh2RbykVFZ7mUQkCCDenh0XePhg_bG5OC2Vyd7oAx8T33iiasnVPv_iX91Kxhj351lZfw" %}
+  ![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6214AAAAAAGI6YnEqeb3-9sA?width=2474&height=1342)
 
 Quiz:
 
-{% img "https://wk4blg.bn.files.1drv.com/y4m6jJb-Nt8OIFPmCVRNDHnnJK-4f01faf3UkOKufQhfZKij8DQRtuyw8g9bOeKGib4JnDjlffly3xb3HNHyFwXcbiCK5RYBkkHUoUY6tCbViIhPISP6lnEdMM6fXvPp5FXjg8RpkOw4BrDFqzkZOFijGnV5f6pI_YCOEhTpvy3EDK7mLQT2fFC5rjEwHJCV4WVJHlHMrxSRAqAwu5cqN5YRQ" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB62V4AAAAAAL9pRsJ_jcEjWfQ?width=2460&height=1342)
 
  <br />
 
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB62F4AAAAAALDIfH0_yKGgMLQ?width=2236&height=1324)
 
-{% img "https://wk4clg.bn.files.1drv.com/y4my5vat3L5hkaetGF633ztT_hPNq_x-CxF6ccFZsYVlwrEJoH5XDMyZHw3zANYYKkfYCsv7D_WbF3hqvvagEfKGh_eCMfdDPM-kxX_zzddZXsIMQaX5PpfT29jlX5BKCS_tfmWkpJByqaaDpNw7oUlak_cTSVGjEVacVli5k7eHjX-LdlGLkbniz8ALh5s6aJSrlbA5MQJqb_ukENDoqQPfQ" %}
 
 ### Setting the Viewport
 
@@ -198,7 +198,7 @@ Flexbox 之所以功能强大，是因为它能够自动填充空白区域。如
 
 Flexbox 还有一个有用的特性是利用 CSS order 属性来改变元素的次序。
 
-{% img "https://v64tlg.bn.files.1drv.com/y4mv4XLjecjhVGpKRzVs49bjd9OUy9jiEIu0FAKPE0s7Y5EZHBv2RJbpET8EblfdRJX-yHPS8tfjKpJHZg2yXNFaHMVqBUlm1lctd-Z2-V9aqT4ZpQzLp_LVWPm3sSiayYpJmbX2jGnAQUjQ1LjIFVtlsc0GzBQnE7DpKDI7yWkLwdVC4vKEuT-LF__hf0i0KBcKuIHQA2UTKvS3L1yWb-18A" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6114AAAAAABHmLxtUfK3zDAI?width=2558&height=1294)
 
 ## Common Responsive Patterns
 
@@ -210,7 +210,7 @@ Flexbox 还有一个有用的特性是利用 CSS order 属性来改变元素的�
 
 此布局共有两个间断点，在不同宽度时的排版如下图所示。
 
-{% img "https://v64vlg.bn.files.1drv.com/y4mxdqh6iWBDr_eboXIKYOaaEa_d4rkKR0sNQE97hdF-QJDEh9IDvKIm0U7m79nJiie92TnUX7a20WNf5C24sJ5QAdXMWjhxzsRfh93d7t7o0ciA9JZp0hdycVtk0MsRasNyFhr2LCqS05zy-ieUb1f9z3Og8T_0zFOI_emHPSSmliPdLobqe9lggP048O9ZVPAWuhQxEE9c8ctppLvCkivnQ" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB61V4AAAAAANlXd9llEKA7Jz8?width=2294&height=958)
 
 代码范例非常简单：
 
@@ -252,7 +252,7 @@ Flexbox 还有一个有用的特性是利用 CSS order 属性来改变元素的�
 
 此布局与 Column Drop 模型相似，但是更像网格系统，最明显的区别在于当视窗宽度达到最大宽度时，两边会出现外边距而内容不再延展。
 
-{% img "https://v64ulg.bn.files.1drv.com/y4mPB3jzdwrrUvC0FB3yqZCvEIGUtAgvQvx6XypAfdTdQP0lY015qeTwWkLTf83nds2vk6ebHgqyEojSvB5KBLvZbeCZUxby9vG-cb89BJ-F87R6DQa5AeU923fOAebYDmkjJl4W2wSAWqpLseYmjnfyctYY2vx3GPSCKEF6844dj48xm9bPvSTzSVg03ywjrgmE9yYrgyXI5XG_2xRtyLibw" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB61l4AAAAAAIlRoe73MD6xmr0?width=2410&height=678)
 
 代码范例如下：
 
@@ -300,7 +300,7 @@ Flexbox 还有一个有用的特性是利用 CSS order 属性来改变元素的�
 
 Layout Shifter 布局模型应该是最灵活的响应式模型了，它有很多适用于不同设备的间断点，但最关键的是它的布局变化方式并不是单纯的重排到其它列的下方（参见下图中的红色列）。Flexbox 的亮点在这才真正凸显，因为我们可以利用 CSS 顺序属性来实现这种变化。
 
-{% img "https://v64wlg.bn.files.1drv.com/y4mqr8SRAqQVlou1gI4oql1M45wwzLtecM8rvtec4RRKIhbFvTiYv2QvHmjZDfDb0ODu9Du6cSQQccNhq3iVBH0cle69ICePNw-sAqr16DTCsDHjwXC7QfHIGfVKiuUyzj65gjm182iaLWgtdyB7QSS6Vv4ooN69y0DjyoCU24-i2Can_JmEB44A_guNSK95TTY_3r4-Yzq1r-ztSGIdBHvgA" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB61F4AAAAAAOVCy55lWruOpWE?width=2392&height=862)
 
 这次的代码范例稍微复杂一点：
 
@@ -351,7 +351,7 @@ Layout Shifter 布局模型应该是最灵活的响应式模型了，它有很�
 
 在此模型中，内容并不是垂直堆放的，而是将不常用的内容比如导航栏或者应用菜单放在屏幕外，只有当屏幕足够大的时候才显示出来。在小尺寸屏幕上，溢出画布的内容通常会在用户点击菜单按钮时出现。
 
-{% img "https://v64zlg.bn.files.1drv.com/y4mPHMLIxPrWCktIwkBiJAUzuajI-PSY9QFVUBBuIQinr4ZDoTBhRalx8YNXMyWTSiwwOwEeXlNXi4pcOBMj1TqGcphSzCUoWh1yUKX_BVcP7DOXeZcAoFYwdzOnAZnEV5AwQqBBYyAkDd3q3VosYy7YIiU36_1DC544X9I-uLlVXCwMREUh11MTZtqo2y1i0e7jba_CDijZPg9xGjGlhn43A" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB60V4AAAAAAJuhbcNSvQuNIC0?width=2402&height=956)
 
 代码范例如下：
 
@@ -403,7 +403,7 @@ menu.addEventListener('click', e => {
 
 Quiz: Off Canvas Visualization Quiz
 
-{% img "https://v64ylg.bn.files.1drv.com/y4mOfH4p-_gXKdrDJ0PbOuL3altg-9PY5rAtTWp26OdcBxNWaOsw6Wv07KxabhjWx9AIgW7jc6Njq8ievp4HERpSqfd8mbTvVQc6cyJCVnDIt4p-gTavaJ-_tL8ZrerEfgpaMfXGZM1CQq8xH9SkicQRS-2TTUOSHEkAK3io9WdM6tcHZusICJwHpKgacCCO0de8E8amUO4Rtca4DUC79n2qg" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB60l4AAAAAAIsnMMz72gWaidw?width=2408&height=1376)
 
 ## Optimizations
 
@@ -423,7 +423,7 @@ Quiz: Off Canvas Visualization Quiz
 
 Hidden Columns 最大的问题在于隐藏了内容，如果这些被隐藏的内容刚好是用户想知道的就麻烦了。如果可以，请使用缩写而不是完全隐藏内容。
 
-{% img "https://v64xlg.bn.files.1drv.com/y4m-Ivf4Uo1G75Gb_ekkSZRyD-S6LUKJFW4BR1fkXKoMyokyLD-SjYyzQRnusyiJ4_b_R0PanL1b3xkaBA7zmQGuDW6AyRSxAVq0u5g7K4SNsr8awwo7DBCsJ4qpQLXT1RH4A4jPRCg-PFbOhBtOpHp4_uw9eRMxh2CHG_H-4qf1PCOePBKYi9a2Y3Xuo2l5SvjiyAmD_zt9lUnlR0ZGQEj1A" %}
+![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6014AAAAAAP3sL-xLoM3GKn4?width=2210&height=1278)
 
 #### No More Tables
 
