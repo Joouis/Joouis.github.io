@@ -27,61 +27,61 @@ tags:
 
 机票是1.28晚飞，提前给M买了1.26的高铁到苏州，带她看下牙齿，顺便再转转苏州。1.26睡到中午，随便吃点东西就去苏州北站接人。苏州北比较新，但其实是很小的一个站，略荒，停车场倒是很大，接人方便。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-1.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-1.avif)
 
 1.27上午先去美奥口腔看牙，M的烂牙看得我心惊胆战。似乎有很多人都是这样，不少事情明明有解决办法，却可以一直拖下去，还总有理由解释。对待健康问题，相比挂号看医生，更喜欢在家看电视上的 "名医"讲座，然后对于自己的病情不停地 "我觉得…"。你试图跟他们讲道理，讲什么是重要的、高优先级的事，他们不仅搞不清楚，脾气还不小。
 
 下午带M参观了一下微软苏州的办公环境，顺便把车停在了公司的地下车库。苏州那几天天气转好，蓝天白云，可见度很高。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-2.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-2.avif)
 
 由于乘大巴到浦东机场大概需要三个小时的时间，加上国际航班建议提前三个小时抵达机场，以及考虑到大巴横跨上海时可能会堵车的风险，我们在1.28下午一点便出发前往苏州北广场客运站。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-3.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-3.avif)
 
 接下来都很顺利，准时抵达浦东机场，吃了个中式套餐，等待两个小时，值机，再等待，登机，准备出发目的地。
 
-![春秋航空9C8891](https://cdn.joouis.com/2019-thai-trip-1-4.jpg)
+![春秋航空9C8891](https://cdn.joouis.com/2019-thai-trip-1-4.avif)
 
 ## 1.29
 
 经过大约五个小时的飞行，于当地时间一点十五分左右抵达素万那普机场。飞机落地后的第一件事，当然是换上提前买好的预付流量卡。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-5.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-5.avif)
 
 入关人山人海，虽然已经提前在国内签好了泰国的签注，但还是花了大概一个小时排队，没有碰到抽查两万泰铢现金的检查。考虑到白天就要自驾去华欣，那边支付宝普及率可能不高（实际上曼谷可用支付宝的地方也不多，有些店家说他们的机器坏了，还有些直接不支持），因此入关后首先在ATM取了一万泰铢现金。彼时已经当地时间两点多（北京时间三点多），拖着疲惫的身躯，准备联系酒店。
 
 在规划时已经考虑到深夜抵达的情况，因此在Agoda上订了一个机场附近提供接机服务的小旅馆。酒店接机服务需提前告知，在酒店的回复中提到了碰面点在Gate 3和4之间。我们从关口走出来大概是Gate十几，在往Gate 4走时我便提前给酒店打电话询问具体的碰面点。结果就第一次感受到了泰国人浓厚的英语口音… 顺带一提在泰国的一个礼拜里，聊得最顺畅的一次居然是和一位德国佬，在拷龙穴洞口等人时寒暄了几句。尽管电话里没听懂酒店在讲什么鸟，不过当我们走到Gate 4时，就大概知道是怎么一回事了。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-6.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-6.avif)
 
 很快我找到了印有自己名字的牌子，和栏杆后面的工作人员确认后，等待十来分钟，终于踏上酒店之路。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-7.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-7.avif)
 
 小面包冷气开得很足，车开得也很快，大概十来分钟就到了酒店。酒店在一条比较深的巷子里，乍看之下不错，但内部其实比较老旧，因此并没拍照片。和前台不顺畅地沟通入住后，发现没有牙膏，想起巷口有一家全家，我便一个人走出来备点必需品。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-8.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-8.avif)
 
 深夜的巷子非常宁静，很久没有这么晚还在外面闲荡过，直到遇到好几条还没睡觉的看家狗… 俗话说得好，好狗不咬人，我拖着疲惫的双腿机智地绕开了他们，成功抵达了目的地全家，满满地亲切感，虽然我更爱 7-11 🤣
 
-![](https://cdn.joouis.com/2019-thai-trip-1-9.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-9.avif)
 
 考虑到第二天早上起来就要返回机场取车，除了牙膏外还买了些吃的喝的以及漱口水。看看账单，物价和国内差不多。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-10.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-10.avif)
 
 返回酒店时，之前看门的狗子们全都不见了，好在户外热气腾腾并没有阴风吹过。再次回到酒店已是三点多，隐约记得洗漱完睡去是四点后的事了。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-11.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-11.avif)
 
-早上计划十点起，十点半坐酒店接驳车返回机场，然后去 ThaiRent 柜台取车。取车时间订在11:30，主要考虑到三天后还车需要一大早从华欣开回来，单程不堵车也要大概三小时。之所以说是计划十点起，就是并没有按计划来。 M提前一个多小时起来洗漱整理（黑人问号脸.jpg），弄得我半睡半醒，非常痛苦，返回机场的第一件事就是来杯星巴克…
+早上计划十点起，十点半坐酒店接驳车返回机场，然后去 ThaiRent 柜台取车。取车时间订在11:30，主要考虑到三天后还车需要一大早从华欣开回来，单程不堵车也要大概三小时。之所以说是计划十点起，就是并没有按计划来。 M提前一个多小时起来洗漱整理（黑人问号脸.avif），弄得我半睡半醒，非常痛苦，返回机场的第一件事就是来杯星巴克…
 
-![](https://cdn.joouis.com/2019-thai-trip-1-12.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-12.avif)
 
 素万那普机场修得还是蛮不错的。昨天抵达时已经路过了租车柜台，再次返回轻车熟路。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-13.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-13.avif)
 
 我是通过国内的租租车平台在当地的 ThaiRent 公司租了一辆丰田致炫，也就是新款的雅力士。费用和国内租A级车差不多，人生地不熟果断买全险，只求省心。车的话题后面还会再聊，包括在泰国开车的心得以及致炫的驾驶感受。
 
@@ -89,13 +89,13 @@ tags:
 
 实际取车花了大概十几分钟，挺快。和网上信息略有不同的是车实际是三箱版，颜值不错，尤其前脸挺精神的，就是这大灯不是氙气或者LED差点意思。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-15.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-15.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-16.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-16.avif)
 
 如果你在国内租过车，对流程一定不陌生。照例检查一圈车的外观有无剐蹭，胎压是否正常，然后进入车内确认油箱是否满格，并一一拍照留存。都没有问题，签好字，未来三天车就是我的了。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-17.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-17.avif)
 
 上车后首先把从国内准备好的手机支架装上，连接AUX音频线，打开音乐播放器，设置好Google Map导航，瞬间就找回自己熟悉的开车氛围🤘。
 
@@ -107,23 +107,23 @@ tags:
 
 由于我一直在开车，路上的风景没法拍。高速看起来略显破旧，肯定没法和国内比。在没出曼谷之前马路两侧有不少大的商店，包括很多加油站、便利店一体的类服务区，等出了曼谷之后就是一片大农村的景象，不过加油站服务区还是很多。
 
-![服务区](https://cdn.joouis.com/2019-thai-trip-1-18.jpg)
+![服务区](https://cdn.joouis.com/2019-thai-trip-1-18.avif)
 
-![高速路](https://cdn.joouis.com/2019-thai-trip-1-19.jpg)
+![高速路](https://cdn.joouis.com/2019-thai-trip-1-19.avif)
 
 大概下午三点，距离华欣目的地还有一个小时左右车程，我们停在一个服务区吃点东西权当午饭。进来第一感觉人不多，可以说有点冷清，尽管能看到 "美食城" 这样明显吸引国人的招牌。猜测有能力自驾游的中国游客并不多，很可能是有旅游大巴定时运送他们到此消费。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-20.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-20.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-21.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-21.avif)
 
 出于一贯对服务区食物水准的怀疑，肥仔我果断选择了全球知名大品牌KFC。应该是泰国的欧美游客非常多，所以服务员基本上都会讲一点英语，即使口音非常重。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-22.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-22.avif)
 
 值得一提的是，服务区的男小便池都是开放式的，观察了好几个都是这样 🙃
 
-![](https://cdn.joouis.com/2019-thai-trip-1-23.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-23.avif)
 
 出曼谷后其实就不堵了，尽管之前在网上看说会有交警躲在路边偷偷测速，但看到当地车一个比一个开得快，我也就毫不客气地入乡随俗。Google Map导航体验很一般，不会提示限速，对于最终目的地的导航也在最后一里路上出了点偏差。好在问过路边小店的老板，最终顺利找到了预定的公寓。
 
@@ -131,97 +131,97 @@ M是个严重洁癖患者，出去玩可以不去景点，但一定要隔一两�
 
 入住的公寓环境不错，出入时前台小姐、保安都会问好，和在台北住高级公寓时一个体验。
 
-![公寓招牌](https://cdn.joouis.com/2019-thai-trip-1-24.jpg)
+![公寓招牌](https://cdn.joouis.com/2019-thai-trip-1-24.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-42.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-42.avif)
 
-![会客室和入口](https://cdn.joouis.com/2019-thai-trip-1-25.jpg)
+![会客室和入口](https://cdn.joouis.com/2019-thai-trip-1-25.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-26.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-26.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-28.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-28.avif)
 
 进入室内、乘坐电梯全部需要刷卡。一楼普遍被称为 Ground。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-29.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-29.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-30.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-30.avif)
 
 楼道墙上贴有火灾逃生指南。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-34.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-34.avif)
 
 房间一室一厅，还算温馨。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-31.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-31.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-32.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-32.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-33.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-33.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-36.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-36.avif)
 
 房间内依然没有牙膏，也没洗漱用品，更重要的是没有洗衣液，一切在 7-11 搞定。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-35.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-35.avif)
 
 去小七的路上才发现住的地方离海边非常近，步行只要五分钟。海边也没什么人，处处写满了宁静与悠闲。非常舒服~~
 
-![](https://cdn.joouis.com/2019-thai-trip-1-37.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-37.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-38.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-38.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-39.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-39.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-40.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-40.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-41.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-41.avif)
 
 买好东西，迅速杀回公寓，M 要洗衣服。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-27.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-27.avif)
 
 此处发生了两次争吵。
-第一次是M不会用洗衣机，让我来倒腾，其实也就是选好各个配置然后启动洗衣机。M不相信洗衣机提示的时间，需要两个多小时洗好，一定要守在那里观察一阵洗衣机的行为（再次黑人问号脸.jpg），此时我又累又饿，想回房间吃点东西，但门禁卡限制我们俩必须同进退，就吵了一架。
+第一次是M不会用洗衣机，让我来倒腾，其实也就是选好各个配置然后启动洗衣机。M不相信洗衣机提示的时间，需要两个多小时洗好，一定要守在那里观察一阵洗衣机的行为（再次黑人问号脸.avif），此时我又累又饿，想回房间吃点东西，但门禁卡限制我们俩必须同进退，就吵了一架。
 第二次吵是M觉得已经洗好了，催我跟她下来拿衣服。上去前我就拿手机记了时，跟她说了还没好，她不信，开始哔哔她的感觉，然后下去就被打脸了，依然还觉得自己感觉没错。真的很无语。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-43.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-43.avif)
 
 两袋子衣服，包含羽绒服、厚棉裤，人家洗衣机洗两个小时怎么了。（不是我不提衣服，是我手脏只配刷电梯、开房门 🙂）。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-44.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-44.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-45.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-45.avif)
 
 等晒好衣服，终于可以出发觅食！想着这是来泰国正儿八经的第一顿，总得吃点好的呀，于是开车前往华欣夜市。到的时候天已黑，路过喧闹的夜市后想赶紧找地方停车，看到铁轨对面似乎很空旷，于是嚣张地开了过去，停在了一排车旁。第二天再来才知道隔壁就是华欣火车站 😂
 
-![](https://cdn.joouis.com/2019-thai-trip-1-46.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-46.avif)
 
 夜市应该是华欣唯二喧闹的地方（另一个就是华欣火车站吧），和国内有的一比，一眼望去全是人，只不过欧美人居多，居然没怎么见到中国游客，太神奇啦。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-47.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-47.avif)
 
 饥肠辘辘的我们就近选择了一家看起来生意很好的餐厅。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-48.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-48.avif)
 
 在等餐的过程中，欣赏了泰国大叔为隔壁桌老夫妇调酒的表演。可惜开车不喝酒，我也只能看看了。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-49.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-49.avif)
 
 终于，我们的食物来了，果不其然饥饿状态下容易点多… 味道还不错，但可能前一夜睡眠不足，加上开车奔波太累，食欲不是很好，也没吃太多。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-50.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-50.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-51.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-51.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-52.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-52.avif)
 
 最后，吃饱喝足，散步逛一逛夜市，买杯芒果汁，结束今天这漫长的一回合。
 
-![](https://cdn.joouis.com/2019-thai-trip-1-53.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-53.avif)
 
-![](https://cdn.joouis.com/2019-thai-trip-1-54.jpg)
+![](https://cdn.joouis.com/2019-thai-trip-1-54.avif)
 
 
 
