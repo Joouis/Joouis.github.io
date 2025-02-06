@@ -25,65 +25,65 @@ tags:
 
 ## 1.31
 
-今天是在华欣游玩的最后一天，明天一大早就要开车赶回素万那普机场还车。今天的第一站并不是拷汪宫，而是 Big C 超市，我们需要再买一个行李箱。来的时候还穿着冬天的衣服，一个大点的行李箱装夏装足矣。然而在前天洗完冬装后，发现一个箱子要装下所有东西比较吃力，因此决定再买一个。买前当然也在网上做了功课，还真有人在泰国买过行李箱，推荐的 Big C，号称物美价廉。不过那个帖子有点老，我又在 Big C 的线上商城确认过，有行李箱卖，价格确实不贵 😝。Big C（和其便利店 Mini Big C）基本随处可见，刚好最近的一家距离我们就几公里，可以说是顺路来采购。
+今天是在华欣游玩的最后一天，明天一大早就要开车赶回素万那普机场还车。今天的第一站并不是拷汪宫，而是Big C超市，我们需要再买一个行李箱。来的时候还穿着冬天的衣服，一个大点的行李箱装夏装足矣。然而在前天洗完冬装后，发现一个箱子要装下所有东西比较吃力，因此决定再买一个。买前当然也在网上做了功课，还真有人在泰国买过行李箱，推荐的Big C，号称物美价廉。不过那个帖子有点老，我又在Big C 的线上商城确认过，有行李箱卖，价格确实不贵😝。Big C（和其便利店Mini Big C）基本随处可见，刚好最近的一家距离我们就几公里，可以说是顺路来采购。
 
-在路上随处可见 Big C 的招牌。
+路上随处可见 Big C 的招牌。
 
-![](https://vq4e3q.bn.files.1drv.com/y4mtTortiduXFRwFMC1Xx86C6brkLsP_MCa_0u0EecnoTY9wjbhisez7x2ueYyW5fXhIBohLBVmql6KH9cDb7TkJMrIy0OgKIxMleTVKRT8JCHOfDTn728m5Czvh0y5iblCvv2Bu-ad8Mfm3US3oIKHvNTrgkOgs9R2DZ3YWPGONhRnD91nZEHNk2m5bZpbKlwnVn8_XCkrU4HMVPZprKJjKQ?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-1.avif)
 
 一大早也没什么人来买东西，空空荡荡的停车场。
 
-![](https://vq4f3q.bn.files.1drv.com/y4m7Vx9ZPWNkP2Xz8p-rs656R_6paBcNKj-SCnu7_Lh0fhJBvkOrJY1zKKc9vJ9zX4HqtpfKisv8VjVBsEWzHKio_uEsbcY0vFN_3JtclZUgU4z8x337wlyEdF5nxnkzsQ7EYZ0Z6P-rwJUr7cnorxI4evXEhV0eONKi82s4DtvubsBEcxPy8Q-OCrOVYNLDqYXSfc_lubDfjGSYrEU0UPlfg?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-2.avif)
 
 这里的肥仔水好像比国内便宜啊。
 
-![](https://vq4d3q.bn.files.1drv.com/y4m6ZO8tyKjd-x0mYo35lQrcVfPuLL89vlFEv6Tx6cnVzDgiF0Ue1GyaaIygCE7nqf55vRsLyXLF-fxkQvuAksyWTD38AuV0D72yBiWI6G9yBCQKj62HSqDmqhibRiis6ielXhWZ_bpPA4FflanPHy0e4yEetXsHN24KRIQjovAUIzuPS8Suu4YLEDtaxeeWy3NR5uXc7wr8I8tJm0aRuTa7Q?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-3.avif)
 
 然而转了一圈都没有看到我们想要的行李箱，只好去收银台问店员，有没有 luggage 或者 suitcase，结果收银小哥一脸懵逼地看着我们，后面又来了俩同事也是如此。多亏发达的移动互联网，沟通不清楚我就找了张行李箱的图片给他们看，人家立刻恍然大悟 😂，指引我们走到目标前——原来行李箱摆在收银台外面的区域。
 
-价格和网上一样，并且 20 寸的箱子居然和 24 寸相同，那当然是买大的会感觉赚到哈哈。橙色显得有点廉价，于是选了低调的蓝色，反正后面也要被飞机托运给摧残。
+价格和网上一样，并且20寸的箱子居然和24寸相同，那当然是买大的会感觉赚到哈哈。橙色显得有点廉价，于是选了低调的蓝色，反正后面也要被飞机托运给摧残。
 
-![](https://vq4c3q.bn.files.1drv.com/y4mM4u8Q5qeC96hjppJuPirsQfnlRdA5bC-H8mltJiLqrh5YJGM1qMxs-B-uMJ1pfaqsLWiy6zGYePGpbnx7iEvvfgaMZyp3zWMNJeYtAvzx8Jt5_m8jYwVWxfybMLPHI1J7Znc1JirelrP0kHDPlJvHP_jJwUDmw38M3a32pvyDLGZ2dYP0ugkoNRXa6bPPr5Uv0i__5mqLSO7nIucQ0UhgA?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-4.avif)
 
-汇率还不错，感谢支付宝 😊。
+汇率还不错，感谢支付宝😊。
 
-![](https://vq4b3q.bn.files.1drv.com/y4mqjZMXFNwHG84T3UKuatVWkyy3zro9udWJMU1N-UVg4gP8WelCtkvCK0cFJKxOoTQhukHwiz8hLf7UbSOEEB4fYsVKNIHl2zcBFZZm1hT9L49cnKdXQBuL3BkraCJE4ZiLwm9LbL1DrmWsQC_hIE2umXobsEW5V2es4sPpAiUpQn8LbhGOlt0SbIPpIZD-tjqCF7vKRkpMBYHxOZyVC1_gw?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-5.avif)
 
 行李箱对面好像是卖潜水器材的区域，不多见所以拍一张，灯光打得比较亮。
 
-![](https://vq4a3q.bn.files.1drv.com/y4m6zmRllG42D0uAmdgJ3FbITqKtQXCQtgHW59WO9LCG0oz5p3FHKpJJ8iPX3aII-0_mI51fx7j54GL1mkXsuZWS_YDXvj98p12NfVCNIjeSxgKQf9lpBjbz7KhNeWDjl1sEI8bIvHuBmBXN1JdzfPr7mtQQFb61lZ-ofCgvOV-Ucid1kgWdpoGq-drnvtWrjhq3DHU6pXF6dBJ2No2FTWQyw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-6.avif)
 
 买到了需要的东西，我们继续出发，前往拷汪宫。谷歌地图把我们带到了应该是拷汪宫的后山入口，而景点的入口其实在山的另一边。
 
-![](https://v64i3q.bn.files.1drv.com/y4mzIM91DfRP2kxSVOtEENwpoewmUyi5Tx94JcYACI_14kr_fx330szF3fRPVMe_zuebkM_OwXfkRwh_Ee_JG6PXM4oKdW9II2gbD62D7WrwwrQMSkIuinKY2IVmTPM2wms9mra_ScJErNbP4Z5j7aV1f_0StRTLQLX2L9W9ifaS05uwCuskK3sPeRjaCLi83ZPHYSF4BSoTPqYktlJCOlG6Q?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-7.avif)
 
-路边居然还看到了 🐒，生态很好嘛哈哈。
+路边居然还看到了🐒，生态很好嘛哈哈。
 
-![](https://v64j3q.bn.files.1drv.com/y4m5EUeUj-bI3hfIHaSCJoKCXEEoDvfWb1B4fe-dgOe1zkl66gxXbdiYyRGbZ--a6NHcjmZ7Xf-enMKVK_PLc58X6ldh7Fb5ypBfIghJ0QIuYZXIVUzbsuFZxWdRoTEGDPWzpiO677DyudhTQRL2anf-njv7_uCJsK-tuX594_u-CwmqQqXEMTzgay37zCKqrPJX6DSupSkm0rKNXZU-mTckw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-8.avif)
 
 问过一个骑摩托的大叔后，重新导航，很快来到了真正的入口。景点就是景点，一眼能看出来。
 
-![](https://v64f3q.bn.files.1drv.com/y4mnnMNlVsm-x48VQ3QCpdW2MgB-NQgGfx8C2zhfeCDwAQElE1BulAOeANDb4vEw_SjM8KEFvnsrIiTtJu6uxPhphZP78mheONONd_ZlSQeavhSGl-BiWW0Eehry9Bi1KEYyH6eZIn3huWas017Q_Ka8S8h8RNWgA13Ok6lvbBsIwSCHVjaXEF8gt-kB5TD8iPn4MOQiSbs6Dvf5zg0J2qsug?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-9.avif)
 
 门口的纪念品商店，这家挺有当地特色。
 
-![](https://v64h3q.bn.files.1drv.com/y4mLGOSMp1eSK-5B33FZWweUVsM4NMxe7aw1sVGbbtawEnTt2M5c1zZQfn4dkty54lt7ZCy_AOWbETuGdyJC9toeJBqTtaFmIPL_1itUUpNgIEdsKGmoogfA1o-2LnGDiAvqd8Gnla_QiOIYXXD0yzU_D8sszv8XswekLU0Qvq0IVoa_qgbLQqOPT1AddkhYwemXgWK1h0RUmtNB5O1pBQSkw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-10.avif)
 
 外国人的票价是来回缆车 50 和门票 150 共 200 泰铢，对比国内的门票价格不得不说真的非常便宜。在检票口就要搭乘缆车，这缆车票还没捂热就还回去了，也拍张留个纪念吧。
 
-![](https://v64g3q.bn.files.1drv.com/y4m1VMR2uF69qKLAJCzdXBG73AIMUjdS_xHxE6E-pnQ4IJbgMe2ZNutrKJmGexmNSQmUQ0hXkpt6PF5dSd4FoJCpRKMpK7GbGXMTGI7lEeLKsD7a_fNfZE2lV6BLvTrJ4MoHaguK8s_6XddEl8-ZTLd1C92VTiWxJPq4G3Mc_G4pC4aVLzFkyDcAVALEisRlJYEMSyRXVcMkUSh7ouCezoNTQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-11.avif)
 
 这是门票，背面有拷汪宫的简介。
 
-![](https://v64c3q.bn.files.1drv.com/y4mLxnxQIzgF5csya8Z-KwjmIwaN2N4w632d3Nt35zMGywuUQxEUAbeXACX7TulhHUrvHz6ITtz1GjVKvHHa49RKTYViaSkrMirBWUYkZedUOyvOdXOEeLftGwaq7x9hUGsrWMGtj1UFhXJ_G__BygqqUfb0_-wOPiaB7NDluGjp32hsoElZA5YbCtvKv4DebES6J_SoIOEqh7YdsTwdJx9vA?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-12.avif)
 
-![](https://v64b3q.bn.files.1drv.com/y4m2cCR4UnTbggRhj_enaUp2cWg56MysiAXAPPLydNq4BvBL7rizcWHXwQgLAbItfkLjbiARWeevs9sjvLh-hKoYsRC_K-e8sEMC5r58Npqxdv1sxFlDoUmgGurKVenhsxTfT7FcF80Otej8UVpOpDQem6QLNv7M09VuA8JVjw2UQodUgOTZ6jQTzbzbh8nFOu4o6AE5ycBFOALIAkuAjAYxw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-13.avif)
 
 门票上其实已经交待了现在的拷汪宫是一个包含国家博物馆的历史公园，不过这个公园在山上，因此绝大多数游客需要搭乘这个缆车上山下山。山并不高，缆车行程也就几分钟而已。
 
-![](https://v64d3q.bn.files.1drv.com/y4m3U6Y3mXZDpjhnSAfc-4DW54AjO4Bin05pqtjSQT_UUhkrBqGXmYIC-XKwxwvColMvcy9LptwwnqOdQsROP20vEgVIcJUerIhThgqI-xHLOTFpdN4gTWBqq9QSAsKzUFZH6D2W2AzykooowNcTkyFv7qFRv2zJri6aqW9T6L_tUjB41ticwvEXN9reEoGIKuAp9V6gPocQcWCG9HkyiGwCA?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-14.avif)
 
-![](https://v64e3q.bn.files.1drv.com/y4m_hQyIBC-VEOj14lUguOmfPmLFojGGPeA9a_rnl_ouuwXsvmgy2tw1YSe46ZuKRSy_Qr646HXjDuX3IqUeIaCeorsQYT9U0nVtljeOB1BTbe-Ri7g8kDjAfXTbzhc2X8-SCbIJ8g-V8GooDcXSA61s24SbY1aoAkuyTMkcrLGlbyzVcDOyv5aQFhwn-G7_TzIdOZt_BlVi1yuCQRiwpFWaw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-15.avif)
 
 拷汪宫是泰国国王拉玛四世建立的皇宫，通常介绍它都会提到发哥闯荡好莱坞时的作品《安娜与国王》。不过拷汪宫只是电影的原型，至于为什么不直接来这里取景呢，看看维基百科的介绍就知道了。
 
@@ -91,209 +91,209 @@ tags:
 
 皇宫给人的最大感受就是幽静典雅，不愧是皇室的居住地！
 
-![](https://wk4i3q.bn.files.1drv.com/y4m8FeU1ypDkTdiPBm-6Mh8nGsXDLMwcEYGV8VHq2A8W3jJiWM48hTFulyTYcQrJc04f8dA_lIGKUxVPXfUWrcb0mQwRuW8TaltRMIaAcxWvzotYW9Vpgx1E-4EOoXY6AmAsWf-anIpPiLHq1-b4JPTU0Ba6wTfUewi_Bo02sVgJ9Is4nNF14vpTGgq9zmaI84O5UBwlSchQLttOd2-M-G8-g?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-16.avif)
 
 我们从最近的国家博物馆逛起，就两个字，好看！虽然不到百年的历史，但这些石柱上都刻满了岁月的痕迹。
 
-![](https://vk4nja.bn.files.1drv.com/y4mzBLGnQ7HBRpko_fLjIoyHZoB9JdQNt6uAuIQdP0Fn8aPK9QgPFEYKRGkwbO_1T8CjvbU59EYRYQxS741ZhLrlFoMffZlCUZkAIwstee_MoFSiPPc_-UQVKA-2TKHzFB2uCvYne2kk5Zo4rgHPkzvgqkJ2xInqZfCuEcIzVeWNTmZ5_5rG2NJ6Ivx7mi-kBO5XEnFXfU1fumtcFoLHgXFVQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-17.avif)
 
-![](https://v64a3q.bn.files.1drv.com/y4mujaU78sLsqpIpSh6--5iWXgsV0u6ZRLUVTCRj4zSq7BYiZqOuS5_T5GptBiiPr1JbdJmooXpK2_zAFwvCRkLLtqJhyusLWh_wtIlMwOgr446rkrky_7vD9LAW1Z5ht9I6zQmBx-d9J3TiP1BSlZ97K31Kz3YDHs6u3SSrm9Qy9WEkJsKFub0xYSa5EHpem1f-TS7JFOZf6CPkOF_x-N9kg?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-18.avif)
 
-![](https://wk4j3q.bn.files.1drv.com/y4mmbu5coNEFywQFYpG08bCacDhJQBa0P1jj5kP34FKkP-DTmGzsPlayyoU4UMeSwAmGtgDXNPtn1GqUppJlgf9IjcXDabfMnKmcb0JbO_ax1JnM76HklJYNQDj9QsKB68g5bZogKJW-p9H-0FwjjP0UK08agJGvRt621gk95bHv7xiMOrt_a66k2jglyxMjakPQD-qiZulMkMnGq-UTJ_NeQ?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-19.avif)
 
 皇宫的植物摆放为建筑增色不少，设计得太棒了。
 
-![](https://wk4g3q.bn.files.1drv.com/y4miHO02rqJ49spfFmlUbAxCY86oAr-91cfpSdjgeLHoVPuSnr7zOtmTlXd_I2x3qeOCtNjDrY5Or84kBIIthzpP9cRzRU5LYsgXAMf5ynBO4b-DC_xfrNr726Asb0qsi-mUH_dduIydcdpDSW_ljMayNcpqPkuyqSfEZlZIE4LROhUjcQvG2b_qc_NX8-rPBUbjeELlCE_YGl8pLkJ2x05Sg?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-20.avif)
 
 博物馆的招牌来一张。
 
-![](https://wk4h3q.bn.files.1drv.com/y4m9JkUIOjHr-f6HYQA7OAh_afJbkagcE_QXl_VsccaEmisgNvQyYlVJ2PkY5jl0iDYdb__IrablEMJJUpDuyj3Ad3-Ae8uyCRfPpWwWewBHRyK82obbge5hScVZLzTykhuM8fsUrUHsTwINJO8dmAKG3t0MZn2w8kALp1qZPIm6Rue6mZ5yn4pTJ7WQ07OXzvXHmLUEiLNx5joQOcRFYmuTw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-21.avif)
 
 很喜欢这个台阶扶手缠绕的设计。
 
-![](https://wk4f3q.bn.files.1drv.com/y4mITRHWfmLn2RPoOv4HeSC3Z1BL8ltIXsmlzajrrP5QjGD56ihRn6OethfNwn2yQf1BV_2gxitMXDBdcxqdzD2CG7P23_nwDmOQgQVMbagSN6YsUNV4ba6uhWwKXQ78CpuZ4_SqXhuMeiU4iGbjEers0_JhioLEdr-yh69tn5PpAzUCKj-6UuGmPg7qmW8aLuLfY1Plzf2xkmxZM0kgm4LWg?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-22.avif)
 
 很不巧这个宫殿暂未开放，在网上可以看到里面应该是个摆放着大长桌和国王画像的餐厅。
 
-![](https://wk4e3q.bn.files.1drv.com/y4m1u0iv7X4wuxwlOaljXKYQuVlCVezZbCX9prGa6uZuQZncNTe1sQw8cPuyletdOGkNxvXgjiKD6fj1Q3HqO7w55oAQBRi5RHPUn1VVrY_6I3f7Oa2njysiMBrb8To1WAXEQOUi0pDD4LzbKkNuaNIAeEtmSS0hqZKXCYvdL1vPc-LDNL8IZUXX4mlLdQwcIcxiS9LsxYDAUgEL9Oagzpk1g?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-23.avif)
 
-接着往上走到 Western Peak 的最高处。
+接着往上走到Western Peak的最高处。
 
-![](https://wk4d3q.bn.files.1drv.com/y4m3hP5Sbfi5J1jCGRJIFo_b9y0XsW4JNOGzuRbKkexlgevGPfcgIGENFk2JWHBXAEekijBc6e8HkUyHi0DvTq78FJL71C_iceuqOUbP6GjbKn3VvhGmL4jxDXCwqryCLOhPu7qrftqfOAN4dwhWicDNPcJkf4NlheU3KfDgTtKpOkBaFbiEzRaCdZno_wE4usgbNXpUqo2WFwU-Iy6z-dv8g?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-24.avif)
 
-![](https://wk4b3q.bn.files.1drv.com/y4my8V7WVbQ63q9nmNwfgsQyoc94rZ1TxmZ07fdHJxTYRM93shNicdCCWeXraCl2AV3-VgwxlOKHuWcl3xVxGBD4yCN6jLYWIGiLzOo13m4M4Pkm7CFFuy1_VariEpad_zlzozp_RWreWQpLhCTwC9TknkvH5QQxxtTgGE57rEsrchetkyWGlIAdcDKSnqFNocqlHhtO68xY1PX6Df9lBL0Qw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-25.avif)
 
-![](https://wk4a3q.bn.files.1drv.com/y4mz9dTNWiVl-VKvZWlJNyuyUMe1HFOxcDycK3WLoKD27g3BOTSfmkLXXiGoJpLdBhdECnE3jBa5r0kFuupo5y81zav1wJfryg8VhVusTjCHNwCmmB8kiWuLHOKqJa50C4aJYJ7fiBIkbIC9p59UsiDqmVZaSs5Ci6gRKQatxgKvN_GedVzp2cjCPt1jX6fvehTurnhN41RTTYP9vKCN8_6Ww?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-26.avif)
 
-![](https://wa4j3q.bn.files.1drv.com/y4m6e6n2i9Qyf6poxRjaSoQnF_Jd7ERlSo1xwmUivwHJOQdD-REtUQJg7OWy2Lb72SQySKkOw83SqKKTfdHVutNfuT18TNpPlzPoLWLBIWJxY-H7RNP_KOnLciQUoVGxGOyuQfcgUTrTtGz5K63lxeJo1ZOipDPHJ8is4fCmIBooKDWM_u7lPwYkpZqp1Srs-e7DAc77wQEF_-ulzpEETO5dw?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-27.avif)
 
 想象国王俯瞰自己的土地。还有，最近几天曼谷居然有雾霾… 😯
 
-![](https://wk4c3q.bn.files.1drv.com/y4mcfjSIpwSz_jENbuSF5lCW3q53MnSR8tS2GuhWxRSlXYUx_ks930MVH4OgzXrBz02rLpwkzxmFja3JlZtRewczB6Wd_vZKkRNWaEHO9UAlqN6F6UAk_2Q3kVcoWMiv-ZNexs5mkFjtcK-geQULlVb7N6sIQ2FALSIiGKZ21cSJJOGL0Zu0riLoUYwhcaz52FUcAkhZqFvQ57NVNQazqwfSw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-28.avif)
 
-远处可以看到 Middle Peak 的佛塔和 Eastern Peak 的另一座皇宫和佛塔，不过大中午又晒又热，加上还没补充能量，就远远眺望一下当去过了 😝。
+远处可以看到Middle Peak的佛塔和Eastern Peak的另一座皇宫和佛塔，不过大中午又晒又热，加上还没补充能量，就远远眺望一下当去过了😝。
 
-![](https://wa4i3q.bn.files.1drv.com/y4m39uHt3eXRzr4txr4VhAbdLgFgDo8C9nptNLQN9yadGY5-qd2rE9nn1AQmB5yrzK72BPe_nWxLFhE1ewtSS3Ncm-3RspwvJYAgQACAUv4-9GHBhD2bnBr8MFjHGIkLEdK2j8PS3NJ2a0jcyT3PopYUyKPK-09jA4xIOA0TeIx0icoaHCY-vFc5ZRAOfthlmi1y0L7ART6ntYC4tq0s1KkCw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-29.avif)
 
 这个宫殿有不少西式建筑的味道。
 
-![](https://wa4h3q.bn.files.1drv.com/y4mbgQVNR6EaOUcNdXyoc2kTaHPMsmNez7E65qGBkbWqubHi4vsEYK0AqBDdL6x1hCzbBttequxJHLwYGbqj7MgHBqOLKtEzTL_qFR5KrN8L0llMUE35FI9pL3czN73Ce7TS7GMuopg5yV7bD-j0vjRMBBv2xIQqJDZE-ButSrZsAg_2QSJtZrh69vquHg6S8PsmdIuMwWN_A6f1UgYENDKHQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-30.avif)
 
-![](https://wa4g3q.bn.files.1drv.com/y4mw-vg-pv3LW33jFs55ANXdaeFApjdMmgsGwrrJ3TjGTi5vlrX9eSK-OYX-ININEBHAeCwlfGaFMyy_04-ucDDGSRy8N98SbXmeccid7xR7dK2NqsD5vS3n9EPhrtVEy-rvVAy1QCn8ZzeqSO3dCkbpKVnPCvHNzobOTn0zmrPLUwIWihHLEPhB9kLEuag1p4azj2_bAHWz3gvt9JjWdCwlQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-31.avif)
 
-![](https://wa4f3q.bn.files.1drv.com/y4mFvmQ0Z1gn3z_b3rUUjgtUNgFlbSRLcd3_c3KicqAHdtsPg38B_g_ih_yfqokEkccyhUJcQV4oDmSWdzP-f4jISbHXx-GIh1prQ-YoxLVQysj9xdRaG_uvJt7ku5o6JkSx8uwShoBEiel6aiwUQUSV28OUKvVMxngUwQCcUbb5EhQN7etVjAmPHieJ8s4vXYUFJ1sF_UiBvmGZ8Sal51X4A?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-32.avif)
 
-敢问路在何方？太远的咱不去 🙏。
+敢问路在何方？太远的咱不去🙏。
 
-![](https://wa4e3q.bn.files.1drv.com/y4mH-j0yYadCgnHwtd8TuEMD2CLZYiJa1qqHSME83O3rYZ0GKQbs3bwYl7wBspeIXIWzxrHvM1V1XB854bEWpfFHUDvaIpTOgG-gBwR136Pder1LS2xZ82V_GZkC5VAJBRaeGGi_MICTX4Ml-VdAPXxTVW-n1mID7flsaXWF6a6dFaSdDykARQgzn4TNkppK56GfX3G1TgqxPJYL2tdxJtVtg?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-33.avif)
 
 另一块距离入口很近的建筑是用来接待国宾的住处和剧场。
 
-![](https://wa4c3q.bn.files.1drv.com/y4mY7bLIhlFGLDe0q-0gBOY9EbemeKeubpmpXOBMZoaUtaGQRao9N_GOcc5ImmMG92s9Ns36-zH6U-Z1aZ9RBmSZc4NrcVukREvXyBJCGDLkxLG969PfA9i4gDsr6YtUC4586EP1-Z14Y9P2QG89Y4Ru4mlihg2gCfrpAIlMkMMuPxh3PP47iju7WS2hNOI37Xt3_RX7figQc9NJykGvafJAQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-34.avif)
 
 如果可以，还挺想在这住一宿，刚好咱也是外国来的客人嘛哈哈。
 
-![](https://wa4d3q.bn.files.1drv.com/y4mzbzdjoTw7CoyoKVtAIuusb0YQkizfkKd6F3VtSaYt0gADghIXK45ftblgRqb-3j4gesKVCBJvHPyExCNGNTZDO7cf21iUGKHsKxPaUzp22O12hRpxLOAIvnx0aM1UKnQyX7RTadTjNNsJC-SfNQ6Rh5kFTLLqxybhurEL7AB4vwKKfdL1nV-qCQuA82e5cBrcb4DI1v7MT-Uony9OfVCAg?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-35.avif)
 
-![](https://wa4b3q.bn.files.1drv.com/y4mTnT0vSWEF2pmqTdB9oyb7IfUhdDJ2zYeRU2VJ8krsDxZJfLNigtEFFJK1Swz09RLfEnbzOk1_qIPaoulCL3BbBR45jerYLPooA_yScPrPXO_MGYSsY6CGExGsNIcTpQ-rhPHMzV_doVUa1P5Thv8RpJ95grUvwZ3OXE2dM07Z6ND-knmA7E5RB42pQgDjgiRQBKdWHEM3N_V-oo4xeEcuQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-36.avif)
 
-剧场长 27 米宽 8 米，早期其实是有顶的。这个应该是二维码介绍，不过太热了没兴致扫。
+剧场长27米宽8米，早期其实是有顶的。这个应该是二维码介绍，不过太热了没兴致扫。
 
-![](https://wa4a3q.bn.files.1drv.com/y4mw3U1Zqp3OXnvhE5K4A8rx91e6KjDgIMvm95tnlbJUUtUfXqwblMkuSPYrpfJg8g1EmWSPPwGRBugg50-0DVeKksbtuILfqHnduFtXVmrc55TnMEDMbLttHylTuD2cPnnCUzlbmyqS1UAGecxupFI5pK85ubAmZXae65XvkapJVZQ0UytSTKZ25dSZb5CKLqhWgW3F0INGngpv3I1XvFhmA?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-37.avif)
 
 这个白色的椅子很抓人眼球。
 
-![](https://uk4pja.bn.files.1drv.com/y4me_KJ_uKCCzWWnlv5G-FwoqxaSI0qQmhMWiE46N813xVpWjcVROZ912i7DZFm4aItBfN6oCy57xqClbyp68CDvQrVdcvTs_UBYtIesfFN3I7YelvWC2b-PbeWUkFcIp4DmM3MNdqiIr1gdI9ZOvSM9dbNOAX3MIALmKIsKx1YFr7dl85mwQVaXIY7sOq_TDOHyaq-Hp7-wSNExDeG_d-hQQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-38.avif)
 
 随便看看就往回走咯。
 
-![](https://uk4qja.bn.files.1drv.com/y4mAxBw6qR_I29esyubTDUg0xV1802d09tN1cp5BcxMi3vRJuq0V6CGZcYvV7fE5yKAjbfmW-OU9sPWbNqwzBQFLlNm1XFv1_QVVIUTTyGT6qwZC09S5ER1IEkGJje4KR36bPr9WSN1PAdFcpkYu7pM77cz4tJoeHDGnP7qulxAA-1dF9TqrYqk7FZ92RNzY2Qy0w7UQTOnJ5Chm5khmNwTKw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-39.avif)
 
-![](https://uk4oja.bn.files.1drv.com/y4m1NUf7OMoLV38Oer0yhkqG929-fAwo4poESZfM3OGsJ_F0M5gopUZ-ej_RSzca8-podQrolnZazuiI4CTMig9CaR4dGRtZfmMVOgiPUSmEhUebDlDRXb5uptmdxh395DmYncqh2Kh51d1zFEITsfPbcHdzCgp4gUx2B5wx1x3P0OnT-YqgxIcJFMXqr5tDxqO_tRH5e1xy0JfCZWxPwCo8A?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-40.avif)
 
-![](https://uk4mja.bn.files.1drv.com/y4mRxJh4dMewebp8UigH7YO1DCZcopO2o5v0fFlf0ze_1D1T1brrZ5XiUlnEsG3ZOl6DBGZZvqtgIQBbdQGd7A7RxlPDN5Jzhn6TosLNU3zvqGzFcOf6AXIo_AN88hKrasiOvHArZanX1cQKIWJg0BeUAnC2fjFJmBnR_RAZPxFslDIYOF25H7jdMbAUcYQtPA-Tt3Z9rCCLi1gHPGxy7WA2g?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-41.avif)
 
-最后看一眼拷汪宫的地图，同样充满了历史厚重感。可以看到我们只游玩了白字 "PlAN OF PHRA NAKHON KHIRI" 下方的一带区域，另外还能看到右下角就是我们一开始走错的后山入口，那个牌匾细节都和我拍的一模一样 👍。
+最后看一眼拷汪宫的地图，同样充满了历史厚重感。可以看到我们只游玩了白字"PlAN OF PHRA NAKHON KHIRI"下方的一带区域，另外还能看到右下角就是我们一开始走错的后山入口，那个牌匾细节都和我拍的一模一样👍。
 
-![](https://uk4nja.bn.files.1drv.com/y4mwsS_igL9KxI_dhp5WI0VUYHtbbbUzWiJmiPbh-biCcX8zBjFjz_lzNIkX3RR1oUzbVG-lf98V3Aq6hLkNl-aJ-wRsHl-epT4XSg5W2OVfbBOjMS8iItmjZLWVsmed6VpoEBfj9GxUd-wpR3IcrxFRMaxB2RkX-k03n3VLXg3kRZlCyaMVvuSZd87_D0kxYhW1Ig-bBikataH8sYbQIy3HA?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-42.avif)
 
 还是搭乘缆车下山，没想到出发口的墙壁上也雕刻了不少图案。
 
-![](https://uk4kja.bn.files.1drv.com/y4mD2XQxxQG8pfsa9nTlqSpnhEsTFWRem6mDKV8lOKglPV1q2aSXVnWDBTDupT6iYrUdgs--sXwNC8ZnFvmWYLRQ66F7guvK2L0z_C5NTyqLutibCpXJWHgnobbyZA0dTMAtFrQPqLPqGmRtlwCbMamlyH40zm0JBPmvYElcvXzsRt9hxLpJdLntcr6IUAqn4cH9lfieXvEfwu3CuA5zNW2lw?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-43.avif)
 
 炎炎夏日，毫无食欲。从拷汪宫出来，我们决定晚点再吃午饭，先去拷龙穴。途径 7-11 补充点水和咖啡，对面居然是一所有着百年历史的中学。
 
-![](https://uk4jja.bn.files.1drv.com/y4msh5AfaUW5AKg2y4xbew53AOlajwHRzm7bljCzkYfIFSULg2tL8pI8f5QGoqG1b8N6nHnaijfkbnBzwFFzxnWmALk1eHwwEDmpwG-hxhNRSL0qtMi4NpULflDS5_WkS9Y61UWHFBGOANF4BUo_VRqUTWwMwgSbQZMpw--FVLPwcefkOZipcPizIsPtlAWC84CTJJ2WQWzBx3LlrK0ChiJoQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-44.avif)
 
-还没到景点，就可以看到警惕 🐒 的安全提醒，感觉这群家伙已经在各大景区臭名昭著了。
+还没到景点，就可以看到警惕🐒的安全提醒，感觉这群家伙已经在各大景区臭名昭著了。
 
-![](https://uk4ija.bn.files.1drv.com/y4mwv7ah9FyrVUiyl5fiqH3BpNNiNaNtpFIykigb36hURbLl3v9DJY5ZbR2BkyiX-1RzM7yHib4PYrvprNfrwp-vAfE_3UAZzH1gnAT-afmaAXJA-bIPLZTKAH6FvhsvXFIH-n1Q1OxG6HtZlol2C4TCy-13x5Jq-OVjL37MhqQwmnNeQRvjlY9PFCQlZ0DR-7ZkikTRP_2VlwvBocUrLBxuw?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-45.avif)
 
 拷龙穴不要门票，停车也免费，真是太佛心。几个工作人员在树下乘凉，除了告诉我们 all free 外，又再次提醒把包括水在内的东西锁在车里。感觉周围的环境还在建设中，一开始还以为这是洞口，然而好像是个介绍场馆。
 
-![](https://uk4hja.bn.files.1drv.com/y4mjOznlXh8KRK5BurhOFinnIlcFVVoxldnunWuGmRCvscrgd_l48TnOLYZCrmylRnU655CqbtpqXqku3vrwkicxfAbtpoBKcFlhp3RYIbabSTuAI5sMNNJ-I5X2OSVwOpBmdcMTjC3Tj4zDJduLSrQp1xQn3VRRnUzk0rv2I8zLd5uesAUludniKMU016yZGBQvnj0qlNaTRcbEYpo54VyhQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-46.avif)
 
 在它的左手边，才是洞穴入口。
 
-![](https://ua4qja.bn.files.1drv.com/y4m2GT6nUvK59PrCMPGvDVrXrlAKEVsqVzErKTuDnzCN1zpi8ScbVDVYiwHoqoOyYbJ1lv8fTxnE_ZP4xqNBsVKR2lx4UCTou4u1SvMDN6iaO_ea6lkK-TqF2t-cyUb3ZquhPSpBEpWUiZApzAbjW-PI1tbzz8s0c1gdfcVLqlSk0j8U3pL23dfr3uwyoaAHFKUMWUtOxQqgpxDGy2JUyfEqw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-47.avif)
 
 走过这扇门，发现洞穴还挺深的。
 
-![](https://ua4nja.bn.files.1drv.com/y4mqK-9xEHAJv0vFk32dC-xLpj16rsy5ntJRz25BFYw3k23gPwBQirHmn2roQYsNjQ48Qk7uM5uQ3xn76wraB-2T62njXjIVWznrPMsz9YDL0WLAAYuNcpD2vrLrmONCUYX_576OfFuFs-mwy33zFD5g_F_DgVc1epS-LqElLc73YdqPH7isHJoEVEdiumhUhha07lYkNSe8ldNU-ak9aU0Ag?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-48.avif)
 
-![](https://ua4oja.bn.files.1drv.com/y4mddhZWg_FbaeCF9dlHuSfkeCpx1YyLOt_vSZ0V4cz18FLizQeZTHlm95g5qtWMskLamQ48XfdvLsGFFZpLsyFHkE5RsUfTYF3bH2Cb4cmOTSgCKb272BGOImfxQHAIMIpBWNo7nv01SLLj97CkKNF5ic8r2r0tNDPg1MNrLqjcmHJGgICbUeBMWf6DaEKVbRhGSHS0VEbm8JP-VodAhNQdQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-49.avif)
 
-![](https://ua4mja.bn.files.1drv.com/y4mfAIPWJ6ssRhM_ssh4Jq1DLRL9kWQgEBrPBifGCPS-uHOcI0cP4NvH5-yw4XA_iv0NVMSDQfvMEhhZm5bAdSQXxugPnxjlgDIDvn5gyS8_yY4sy2mP9w-6AdAo_gzxrT5rqj_tNh9d9YubzaYIccGSczck0KvoPwJCGmdjXqda8xBeC2nblNoRzq8HwtpWl3dye_44tiFQk1Ivkhhlv3ODw?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-50.avif)
 
 一走下来就能看到佛像。
 
-![](https://ua4lja.bn.files.1drv.com/y4meGTK0lQqLD160gPS-XolaRbMbpN7qZjRDGTxHWhsB_KuKwz-WK_QhiYkTFrcN-RWzqeQm8ZYD9fjOIKUVa7XsEgJZXpSH1Npml1FHCOFW6x6k0NJOs3a8Cq-ZhjyyWqJrDoNPHyDCC3Q36-w2-Beu0c7ltlyZsFmtNRl5SdfMJvH4hfEuEmFA7I5_cZtfr4wwBhtsvDjJ1A-jFXGp1nrbw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-51.avif)
 
-![](https://ua4pja.bn.files.1drv.com/y4mDsREirTZCRnq-PHLa6ShWrC3ML6tHlCLlbUOFBAyBee17GfTKcJXPz9E8_SdNGH6sqIaDBYZUguGqC8V14_yICSRE1p2Mf6FHAsmpzfrulKdlmCCgmpxOH8jg49RI-WS0aUh7d80mJ4QCrRSgaSIbzPZWXUZoW_UCc7tO7e1VW7mBsErBIqWtEBqSrXdVh6AJ3LcEfNkbm9UaSQ_B1KPVg?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-52.avif)
 
 洞穴内的光线其实比较昏暗，阳光透过顶部的洞口照射进来，配合庄严的佛像，令人肃穆。
 
-![](https://ua4kja.bn.files.1drv.com/y4msmp3E-14wbuHC0MzfdcDyVJTLP87JJXi4NRR0ukZGrvDa2TnTit_mXTc-lVhlVvi7g9HYFEusq8-1c0HvSTC4_wbpmkPoerTML7r-kFOz0XCz--u2U6boi4vEn0kBxaDJMrlI9lHE_qv7lWUdfU5Wi6AcGzn7tbK3uEB0YkG3auNbfhiKc1JWYjanYqEjRPcLKBqzeElIU8VcXrtYCupqg?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-53.avif)
 
-![](https://ua4jja.bn.files.1drv.com/y4mwXpYn7p0UHIxbrOxnqfdpMPPnezdtIfchUOklz1qmYh8WIbSxAl4i6oXeO3ryEz-9RHNzWfeIZkGtO7uLUIm0RTdVaNoifQNqUVVm4Bp0ZXYn0aSHle6OPhwFMYiHJIwmeHsBcdz2ogQWsJy065S9qPT319Rqqo1SaN61JMCi6Lr6gqcLwL8SvBjEjy8Ss61ivm03AuXIKQ2rPNOxiHOvg?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-54.avif)
 
 拷龙穴至少也有百年的历史。
 
-![](https://ua4hja.bn.files.1drv.com/y4mPyz6gGqflnNiIAf1_Fv3T8wtSRRjUsgEV2dnDkUrsfeHPq-nqMrx03u8JMmFAf6bWGRf8CDqnS90CbwzR9e_Oy5c263Aunrmz-KAMkkBSCNcXj6_ONaS8wzP532srBXQNWaLc2f6_cek1R6PRg3pqLysLtPopIwrQQiGh4BpjKpNmDVokAEjBp7a4NHaxhyBRfqzA-JBhD5y9iGCNruNKg?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-55.avif)
 
-![](https://ua4ija.bn.files.1drv.com/y4mth8IAkgvt4rVq_fRUEmOLrPmHfXfl1u6eypBssDSejCuLSMwhHYFQHCwAbFtfsKq5Mf8PLptmTW5U7bJyBHQOpeu37vP6Gq0v3ApNrPyOqDqI6-GR3khE8YlWuDhOwiy017337MdsQwsfjz-b7o5JHxEN5XXt5xoMOgnmXiwR5cpXPQD1AW0d8OyU9Ide6FUiYVkvfR8ptSt1Tlct_JynA?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-56.avif)
 
-![](https://uq4qja.bn.files.1drv.com/y4msEkgTJ8epejGEqkOeo5pHKgdxjFv4CFMolU1U_U0PQfnVAsPkeiN9FHZhcYwIP-Gqy3CKt7_p3JWKy1IyWNIP85p5bLR2vVTlAd3mcg0KrpwZ_KCnopQRdHAR4IWt1kThjtV3E-AXXs1eRA5YPr1ID0GYKcuk0I1P4sJNpbhuELCv4k-sQKKPIgT0JXquBL3dcfilZK0YXIsMig96JVDYA?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-57.avif)
 
 很喜欢这个洞口阳光打进来的画面，有种新生的感觉？
 
-![](https://uq4pja.bn.files.1drv.com/y4mS25lPrcnGoim2x4KQThVtnsBvBmG1om2YyVq9v_Shru2wXdQt-VbrkuKh6J3Dnf9sK25eVP4hJRy2NipWoDV2EOdflgtYsrClrBOr7EI6Z4xdBBrLvuPvZV5CEtpBrIEGyT-A6OV00yZOvPALp4dXq2FLVC-heZqQ0sbCzlVS5fXEcGTDxNqADj5x_-EfP2XbiAa-ZQV4XG0xvvjF0niAg?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-58.avif)
 
 就这么走马观花看一下，今天的两个景点就这么游完啦。回家之前先去沿路的一个商城吃点东西，难得招牌里只有绿营大厂 OPPO。
 
-![](https://uq4nja.bn.files.1drv.com/y4mCo7smaB2QPHyPFzqN84bUqqv3Zp0nXnYOl2wGsbEB7ZCwvQNz0D6GSDCnmAqHothJsXXwlEMvZOqRxz87JFX_X9lrhrXKXdXOZpJY_2atSIU8TI6K7lQHTIQ0c0oeDOygnGnd_Evhi9BOLSAQlCbONJr1ivYCp7Rv0-WjWjYp_C3f4i_3A2pr-43F00Pp8HFkqVq9jgvSmAr0mXUgn71aQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-59.avif)
 
 依然选择了肥仔快乐餐，好吧一开始导航的目的地就是这里。
 
-![](https://uq4oja.bn.files.1drv.com/y4mW-qAxDJIE2pUfnthd3XjnjKYWuNs05tXsmlU-CDHmtx3GUaNZU46oQrxvKPwEdGm-3xv20JMdYOFoQi3vwUBzcXo8PUSW9m7GP8JJdBwk98M2HtAYZy-m_jF67Dr74f0x_Q912gc3Dr0IMR8sjVF_aU6voIWqMpg1gR33mZ6diIum14NWnVBQpcBa62hUfN7aOlON3_gbFzU6UF_VunrZw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-60.avif)
 
 这个点餐和取餐台相当简洁，另外右侧桌子上提供了标准插座和 USB 插座，很贴心。
 
-![](https://uq4kja.bn.files.1drv.com/y4m8dyAIGHp0Ae_FPWZ7VHK5E785vg20e0JgPeJGtEGrzfFxgSCwo5xV9qSw5y1YkUxOw1qEh6e7oZcFKJvqKdYI6s8n4teRiH96R6Gq85VTtCQ09XCH6OI3T17BIHPhsZeVC18PYO29f8CNPTplb--2JrW37d9wbTK9cdZjGaQvPpgq_8J8j1xeVJ7dESu44p2UeI5mdry3PxHmqzJPLuwjQ?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-61.avif)
 
 差点都忘了衣服上还贴着拷汪宫的徽章。
 
-![](https://uq4jja.bn.files.1drv.com/y4mfVceoa42xzhPySRsNU43svffl7UuWarTzMQVv6QFX8JItxIU_6TCuMf-Y-9pVTiLxnQF3eXXG0sf4nGgDS249yrrsErAXjIO2KEals7qtiJsXx8nSnuSmCBeK8WGnebn1pjmHwPDCV5_5fJXnrNdS-QrUs-FE-eOFkRqkpLIC5JFOTtJpgcDSL313zwuRx_w3Hg79_wFH6JLUW5tg0k4wA?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-62.avif)
 
 吃完去商城逛了下，和国内类似，这边也会展览卖车，只不过从 SUV 换成了皮卡。
 
-![](https://uq4hja.bn.files.1drv.com/y4mPnykJcZf0QZB2tySzdO0m0OtZzMNSXNXPvdnttPoNXAK0_A_fG80-eoZJlxOzlkkZj3WQ_OKNKARj7aEQJBwJO6azsss-jkuLsYC4zYk7SFmzkGHOR8Qn35aGZOGtLJhIBzRfs_TfYDlugXW00sPWMIUwDUQsvRhHdmyyh_7mt4k_APnbECkK1tIPfD1uOFfsIaKvNTKbgY2qR_j6t42cw?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-63.avif)
 
 路上比较常见的皮卡大多是两座，这个四座的卖近二十万人民币， 也不知道是贵还是便宜。
 
-![](https://uq4ija.bn.files.1drv.com/y4mVyT5mTEkx9fd_sqhpkVfvytSDuFVhZUpkOV8JT70MsNc__6s7SunIe0VvUc39ldrINnNa3hHDVxx0yQlmCRAMagREXRj5HKrhLeGoZYZmxUYiHcHl6fsKk7rvOBKWBatUzZg1scqpgqybgo64vHNYP-vHe4bv7bAnAKbQxzeIcDjSBkHsYB6JWDL1T2DuoI3bJTwrOubPbXVSSq7nQyi4g?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-64.avif)
 
 商场的厕所指示牌有点个性。
 
-![](https://u64qja.bn.files.1drv.com/y4mS8m3tnMCzFgsInmfHBv0o9FP42xaYHTIcvy8EaUD-lZUHGmVzRzztbRJKo8pmvA_jv3BuVeYhvXCbdMxc6Jldc_yfUQUAgSav6HKwiRfWq2bLlGn-CU7DJxPFkjzFP7wInlRqD1op8JIbG5Xe8Hzjil8r2pAM1lbQSxVDBjA5JopofuiPAFuDbDzDTR2ULJjBojiRjrq1Ps5pbUxk9X63A?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-65.avif)
 
 回去休息了一会，等到晚上我又出来走走，顺便买点吃的。公寓旁边这个酒店民宿看起来很棒的样子。
 
-![](https://u64oja.bn.files.1drv.com/y4mRrRiHYcofXmyqHfXLYAyBY1XIW2tKY1GfHwh08hRx0d_T9UPr9Jj2yiADK-n5NTcU2OR1nlvHNOAm-6ixCAMZ72nw1Ow-_AxAQOle_jlpzJWJtQdGRTBwqwIWc-MSqX94MfqrhrLq5mw8OQrbmz7nl8_dmFO_pqaFyRgFK2GSQFn_Gq0LUJcr5mSLKWKQvVSRhCvFIMHz4itOQV7Rkj2Og?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-66.avif)
 
-![](https://u64pja.bn.files.1drv.com/y4mAEtuhXWmOiAREdx6grWnyWwVvfsbyrw9eKJ3-PNVgUaDr6Tj0YvieAElvrzPVG--WIyigKqeAqeoYwp54QvZU5soW4AntYodhPTp_wr9EghzyD0Ad98lswXILTMt9_6txfcnkYQZBjGYBb_fWpOY7YuEoW0MHOJbUByX5a72i6PfSxuJRrbioIgm5ZjcefXx76EgC4k-IllLzlfrRvmuBg?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-67.avif)
 
 公寓里住了不少上了年纪的老外，也不知道是来华欣度假呢还是养老。走到海边，路上偶尔也能看到骑车或者跑步的老外。
 
-![](https://u64nja.bn.files.1drv.com/y4mVvvy_9Ee1K6yp1JdzfIEEIAX0gqjk65atJR0BKuqxA1r-kcbF6wrrsKyfetflTgVNm8ooNpvtiRzw0Ykrvw6D4xPCLTDr7GMhDp3cP_I7tJukXGlX6JMGnSEUcPwymucbqk16NuLPmQz-R_gWoAnSTN5lizAfBbrMhTLbfLVVB5GhfXYYP_5yFaf0kZiEXj9wjtviTbtIcIsQWMxkPR_Mw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-68.avif)
 
 又看到一个高大上的酒店。
 
-![](https://u64mja.bn.files.1drv.com/y4mUUFbNo9EaMqGQzC2S8OinnHl2A9snX2dd48fPzi5DCKFbMEXKH9ckMz-bRB8UGQK2B8pg416th_RV3WYp1Yu-f4zk2M_j0XRIZbApGEcRjOp2rbXkF6wuDqBALmzeyJgq30nacm1gzCtss3sWGfuXbR-ZyKC5l3lcedyBdnXpfALVU7-bEwZef0SUraOlXmqmVE84kKdBrWLcgL621MZOw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-69.avif)
 
 路边除了住宿外，也有些吃饭的小店和排挡。
 
-![](https://u64lja.bn.files.1drv.com/y4mJxNwkyvO2rBc0HZLohdL-itAkVQoEOAdfgzNS_w12bPLSV9n3k40Fq8M6RqqtCQIOsLgoo3u05U8VX5XveH40HnSH32J85P0jeAVQpjMQCB5YW6KStlzK3uJMvc0gMDiMsh8Pw5CMq930pC2w_kU2vMXeVhu7iIOxZWxRExRyxuk3ZHDGSbaMzrPxzOy9DAsrem3acGadN2Kbf92X5oVtg?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-70.avif)
 
-![](https://u64kja.bn.files.1drv.com/y4m_0yY6iZIoLVGoq8uSyN4aNk1B9b0krVxP46OjobOSzT9U3WR5BMtfDOXJ2D4EYSEpvDUlkMChPogI9aMOOF8jqjqaYlJEbape0rPu_YiZcBidojN2o_f43LL1Lwtukj4iX22eW8jb2ozNnkT-fb4FeZpzrK4eTgG6M9kmPn8WBOPuaxFmzv3JV3BzWvzBhxEcA1SPJQLXtzNgq7iVTiLJw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-71.avif)
 
 远远就能听到这边的歌声，唱得很嗨。
 
-![](https://u64hja.bn.files.1drv.com/y4mRN83T0jlf6XKN9t4yzsOSdGLAKEk2DoNc1U-xVFCD7Zsx1t0zTjVbKPMba8fRX8RTG74RCOzCMBjqQ-ZDEETk5BNocT6qamk58ErVKp3DIFJEfZYC3zg4Ab-uTUqy4oXnQvGl0w_qXbRxQo0hPcpoBr2c6OKb099jp3eEV7PzF8ACPeL8oFZdFxVCkKqWBobVtqFa5oka2YE0_iSDGQPog?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-72.avif)
 
 我买了个类似煎饼之类的东西，甜的，不好吃 😭。
 
-![](https://u64jja.bn.files.1drv.com/y4mj7W6vklHKPTyuVZI8WsDFigg58mflWuFgpLnBItKsOYSO4Qj8Gh0yeF6p_kAwFmzjmMP-3bqE5QL8IdSNJZqZJG24aM51MaWXD_I8BNq0FVo6Xm69kNQayamdJ5Ss1xO7mji6pIrrJZGV2NYqBaev8dP1T-YVMUQX2j6tW3cyR4zKMUSVvcK9BOQaAJgQQSkNVqJKbbTNKNbOFVkmbFlMw?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-73.avif)
 
-![](https://u64ija.bn.files.1drv.com/y4mLbBTEc8fc0UiYrEpp45Ee87bph-l5B-VTaNN3XFviyiheOm-M3d9P17fLNtGYobtKtX_PC4qupizRhQTuD9TqOEgUHYysXTCZFifKSZ0Ge79eYgf50Z0sUH9UWKZJZ5FoPcLkYZR0nuqIQpHa0SSaDD_1Bl3rFhoMAanerUXdjmPwyubSas7dyRmwntXy9OmbpLlKx7cAxFDl6m4yukwYg?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-74.avif)
 
 各种杆子上也能看到卖房卖公寓的广告。
 
-![](https://vk4pja.bn.files.1drv.com/y4mBEji91OBSSR_kET34ddcqu58TH24hhfvqvyX4lNvcbYIYueR_0QIo1yRwAuPV-0e-FOa2q9JHvjpPx5I3XOyV0GbXmZFsdQSUqzypYw6R9V3uAF_4uopoJqfJsZ8G-A5_oYvBr55rZGokJB_76d3nS-it3GWhG3DbdKI8rElr0K9ibbWv-8IgT7l2uRgF4uzeuEr7KGEl3IU3a2rFmU5oQ?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-75.avif)
 
 最后回到家，又喝了一瓶大爱的豆奶。
 
-![](https://vk4qja.bn.files.1drv.com/y4mcDpcmIZD6a0Mb54HGW-QW6YSP5Q7VqvTcCw4hNdtB3cahu_X5WkWT959B1ub1gVSI7LQ-HKsCYxSPH3Plckk7Bn9KeqpxJkwcXJrXn39injnsb5WgE1-hSkmDZyl7O5zfgjujRibov6J22UpC4oj2XOCeXqwuCHmZQEr6yjs-at7bDwipZ6-QdLlBe3GvG1GOCMckpddjnFhUxTXxPrYnQ?width=1512&height=2016&cropmode=none)
+![](https://cdn.joouis.com/2019-thai-trip-3-76.avif)
 
 明天就要返回曼谷，在华欣的两天半过得非常充实，给这个安静的地方一个大大的好评。确实如网上所评价的那样，这个海边小城是一个适合带老人来放松的好去处。
 
