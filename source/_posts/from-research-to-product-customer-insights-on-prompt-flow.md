@@ -31,21 +31,21 @@ As 2023 drew to a close, a fortuitous invitation from a university peer led me t
 
 A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets.
 
-![Figure 1: Harnessing LLMs as post-hoc correctors. A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets.](/images/from-research-to-product-customer-insights-on-prompt-flow/1-concept.png)
+![Figure 1: Harnessing LLMs as post-hoc correctors. A fixed LLM is leveraged to propose corrections to an arbitrary ML model's predictions without additional training or the need for additional datasets.](https://cdn.joouis.com/from-research-to-product-customer-insights-on-prompt-flow-1-concept.png)
 
 
 #### A high-level overview of LLMCORR
 
 Harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model.
 
-![Figure 2: A high-level overview of LLMCORR, harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model.](/images/from-research-to-product-customer-insights-on-prompt-flow/2-pipeline.png)
+![Figure 2: A high-level overview of LLMCORR, harnessing Large Language Models (LLMs) as post-hoc correctors to refine predictions made by an arbitrary Machine Learning (ML) model.](https://cdn.joouis.com/from-research-to-product-customer-insights-on-prompt-flow-2-pipeline.png)
 
 
 #### LLMCORR prompt template
 
 Multiple contextual knowledge from training and validation datasets can be included by expanding the template.
 
-![Figure 3: LLMCORR prompt template. Multiple contextual knowledge from training and validation datasets can be included by expanding the template.](/images/from-research-to-product-customer-insights-on-prompt-flow/3-prompt.png)
+![Figure 3: LLMCORR prompt template. Multiple contextual knowledge from training and validation datasets can be included by expanding the template.](https://cdn.joouis.com/from-research-to-product-customer-insights-on-prompt-flow-3-prompt.png)
 
 
 ## Reflections on Prompt flow
