@@ -121,10 +121,11 @@ sidebar:
   # position: left
   position: right
 
-  # Manual define the sidebar width. If commented, will be default for:
-  # Muse | Mist: 320
-  # Pisces | Gemini: 240
-  #width: 300
+  # Sidebar width.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  width_expanded: 320
+  # Applicable to desktop of Pisces | Gemini.
+  width_dual_column: 240
 
   # Sidebar Display (only for Muse | Mist), available values:
   #  - post    expand on posts automatically. Default.
@@ -174,7 +175,6 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: fa fa-globe
-  title: Links
   # Available values: block | inline
   layout: block
 
@@ -288,10 +288,9 @@ follow_me:
 
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
-# Chinese is not supported well yet :(
 related_posts:
   enable: true
-  related_count: 5
+  icon: fa fa-signs-post
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -350,7 +349,7 @@ text_align:
   mobile: justify
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: false
+mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
@@ -368,8 +367,8 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: a11y-light
-    dark: a11y-dark
+    light: atom-one-light
+    dark: atom-one-dark-reasonable
   prism:
     light: prism
     dark: prism-dark
@@ -631,13 +630,14 @@ quicklink:
 # For more information: https://animate.style
 motion:
   enable: true
-  async: false
+  async: true
+  duration: 100
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
-    menu_item: fadeInDown
+    menu_item: fadeIn
     post_block: fadeIn
-    post_header: fadeInDown
-    post_body: fadeInDown
+    post_header: fadeIn
+    post_body: fadeIn
     coll_header: fadeInLeft
     # Only for Pisces | Gemini.
     sidebar: fadeInUp
@@ -678,7 +678,7 @@ comments:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: false
+  lazyload: true
   # Modify texts or order for any navs, here are some examples.
   nav:
     #disqus:
@@ -692,7 +692,7 @@ comments:
 disqus:
   enable: true
   shortname: joou
-  count: true
+  count: false
 
 # DisqusJS
 # For more information: https://disqusjs.skk.moe
@@ -867,9 +867,6 @@ algolia_search:
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: true
-  # If auto, trigger search by changing input.
-  # If manual, trigger search by pressing enter key or search button.
-  trigger: auto
   # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   # Unescape html strings to the readable one.
@@ -915,7 +912,7 @@ vendors:
   # The CDN provider of NexT internal scripts.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Warning: If you are using the latest master branch of NexT, please set `internal: local`
-  internal: local
+  internal: cdnjs
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
