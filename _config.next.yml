@@ -50,10 +50,10 @@ darkmode: true
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/hacker.ico
-  medium: /images/hacker.ico
-  apple_touch_icon: /images/hacker.ico
-  safari_pinned_tab: /images/hacker.ico
+  small: https://cdn.joouis.com/blog-favicon.ico
+  medium: https://cdn.joouis.com/blog-favicon.ico
+  apple_touch_icon: https://cdn.joouis.com/blog-favicon.ico
+  safari_pinned_tab: https://cdn.joouis.com/blog-favicon.ico
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
@@ -142,7 +142,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/avatar.jpg
+  url: https://cdn.joouis.com/blog-avatar.jpg
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -273,8 +273,8 @@ reward_settings:
   comment: Buy me a cup of coffee :)
 
 reward:
-  wechatpay: /images/reward-wechat.jpg
-  alipay: /images/reward-alipay.jpg
+  wechatpay: https://cdn.joouis.com/blog-reward-wechat.jpg
+  alipay: https://cdn.joouis.com/blog-reward-alipay.jpg
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
