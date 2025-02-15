@@ -13,7 +13,7 @@ tags:
 
 
 
-![](https://hzrzxq.bn.files.1drv.com/y4my5VWQjPz_VXUhyL_goql12qS5FYtb_-sIBFRtzF93-Cenee-f8mMtWOpjC_lKRfsJNVpH68wgbzFHd19I3JxD4Ilqcnf89z_HYGYvomN9C9SXfsm9UsXlNNx0jFBm1r7hbEkN3bksY4gDoEAtDV81jJ9-GY_qim98MNc5Lp9DrV5Lahn25prbnjjnNKtPWBbQmA8E1HbcXBHI7DTdkaR1A?width=3024&height=3780&cropmode=none)
+![](https://cdn.joouis.com/microsoft-hackathon-2019-winner-1.avif)
 
 ### **Biang!!!**
 
