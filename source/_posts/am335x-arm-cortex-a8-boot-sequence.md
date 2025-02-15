@@ -31,7 +31,7 @@ tags:
 
 圖一為AM335x開機流程，其包含ROM Code、MLO、U-Boot與OS Image，底下將說明ROM Code、MLO與U-Boot。
 
-![Figure 1: High-level Overview to AM335x Boot Sequence](https://ijrexq.bn.files.1drv.com/y4mX9xkUQI0Bru5Z650NymAW4M7z8au24r95TnCHHsV9itCLjqrqM8EctRKllEp08oUSsmfvy4RI-gVh77wYaOU7yyFDZ7jr7N7I5D6Wu_lGPZh7s3S0ne9hJ9cEeW8hsvWqozUOdC2wqCzCH-Q95SvRBftpgfMOJJHSR7TCyItWknIU8nzSEC2Vw36MOtuMBJzZyfHRmQH5OZC6I7R93R36w?width=999&height=683&cropmode=none)
+![Figure 1: High-level Overview to AM335x Boot Sequence](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-1.png)
 
 ### ROM Code
 
@@ -46,7 +46,7 @@ ROM Code主要有幾項任務:
 
 
 
-圖二為ROM Code架構，由"Public ROM Code drivers"可知ROM code支援如下裝置:
+圖二為ROM Code架構，由“Public ROM Code drivers”可知ROM code支援如下裝置:
 
 - MMCSD (MultiMediaCard SD)
 - NAND
@@ -61,7 +61,7 @@ ROM Code主要有幾項任務:
 
 注意: 該架構的On-chip boot ROM大小為176 KB。
 
-![Figure 2: ROM Code Architecture](https://ijrgxq.bn.files.1drv.com/y4m91R7T1buLeODZG4ugSeHctLOIr7Pw3uVLGKvtPfWhS9GB7vFonpSTwASXEE7YmsbEKMoknKPgRjleSnwgRqoY-jLlag1dp3aiEbEFK2e3ckbi0smrslhehDMRAIUqolxSHQzVVyRoVUxTdxp_dkZiCujhrxLDin7ETfdoVPxcfxdIhql1UutK4J5Sv6z4qhh3v0PBQt2z0Uxm0WSGV6U5g?width=919&height=573&cropmode=none)
+![Figure 2: ROM Code Architecture](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-2.png)
 
 
 
@@ -69,14 +69,14 @@ ROM Code主要有幾項任務:
 
 - ROM Exception Vectors (0x20000-0x2001F): 該區段定義Exception Handler的位址。譬如: 0x20000存放Reset Handler的位址，也就是板子一上電，第一個執行的地方，課程第七周有詳盡的說明，可參考此[文件](https://docs.google.com/document/d/1Ygl6cEGPXUffhTJE0K6B8zEtGmIuIdCjlZBkFlijUaE/edit)。詳盡的ROM Exception Vectors如表一所示。
 
-![Chart 1: ROM Exception Vectors](https://ijrfxq.bn.files.1drv.com/y4mr5vbOMVqr2C2tsjR3qeH3JyeU4Y8x_zAtbshrWvRdC2EPswXAo9Hc_LwNojcmmkbW6Xs0dizUxHeDAxsecG0BfLfwQlqGFyOulBFIPuxAwIuag2tHF9ROM816OpZWgcxOEEmm4kRRDcUzHA5FGMr1k6HdHEmOIpwFqoVsP8uBQMVKw_BiTh64EKF0AyD79fvQl9DoB1ZFXUdYa40MW95Rw?width=921&height=242&cropmode=none)
+![Chart 1: ROM Exception Vectors](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-3.png)
 
 - Public ROM Code CRC (0x20020): 由0x20000-0x2BFFF計算得出的四個位元組CRC值。
 - Dead loops (0x20080-0x200FF): 該區段定義預設的exception handlers，其預設handlers都是執行while(1)迴圈，程式設計者可以定義相同名字的exception handler，如此便能覆蓋 (override)對應之預設exception handlers。可參考[mini-arm-os](https://github.com/jserv/mini-arm-os/blob/master/05-TimerInterrupt/startup.c#L63)與[freertos](https://github.com/embedded2015/freertos-basic/blob/master/freertos/libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.s#L124)程式碼，以便了解其設計概念。
 - Code (started from 0x20100): ROM程式碼
 - ROM Version (0x2BFFC-0x2BFFF): ROM Code Version
 
-![Figure 3: ROM Memory Map](https://ijrdxq.bn.files.1drv.com/y4m1lZgiY0kQlxtKuuClWoEmBLOZYFp0mDWdCMnDla_RSbZC161f532Dwy1EjSxNjCOIKWkDgTN65FLfoE8NLWCgFRY029LQp5BZph_RbFh3VwThpt0Z0WgoIeHqezLJm-v4_6-YVGLzBqUHwizl0wxQ5-EODj0rt0kbpFeKq8bzkRKcxY5PSak9qKmJG6HKxHWDFruFFbQRPP4v92r6QDP6g?width=278&height=299&cropmode=none)
+![Figure 3: ROM Memory Map](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-4.png)
 
 
 
@@ -92,7 +92,7 @@ AM335x ARM Cortex-A8處理器的On-chip memory( internal SRAM)大小為128KB (�
   - 一旦初始化DDR成功後，MLO將`u-boot.img`載入至DDR，並交由U-Boot接管。
 - 18KB area (0x4030B800-0x4030FFFF): ROM Code使用該區域。
 
-![Figure 4: Memory Map for 128KB on-chip memory](https://ijrbxq.bn.files.1drv.com/y4m4Moeghhw0ihVSV10wtEpfV51hlm3BlYa0MaWEVLa_ekCytzWsPBV6pRNWlq-huq-RPbjHe8MnlMNQutmLoUlVKmC6Pnu_8ye8PZTUrNFIDGewxKRvUJmDmyGLHQquJdjwUKF_mLgmAky_ttOjUaQ84do7KpIys2FbGmsSIHA3UEPYdhVSRA4GNv7Yp7QJ1Xt7adi1CPaKicmHUoswQK17g?width=914&height=637&cropmode=none)
+![Figure 4: Memory Map for 128KB on-chip memory](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-5.png)
 
 #### U-boot (File name: `u-boot.img`)
 
@@ -102,4 +102,4 @@ AM335x ARM Cortex-A8處理器的On-chip memory( internal SRAM)大小為128KB (�
 
 由於On-chip memory只能提供109KB給Boot loader。然而，對於一個完整版的U-Boot，其大小約350KB (參考[ARMhf](http://www.armhf.com/download/)編好的[u-boot](http://s3.armhf.com/dist/bone/bone-uboot.tar.xz))。為因應此限制，便需要一個小型的U-boot (MLO)，用以初始化DDR並將完整版U-boot載入至DDR，再將控制權交給完整版U-boot。下圖在BeagleBoard Black成功載入MLO與U-Boot終端機輸出。
 
-![](https://ijrcxq.bn.files.1drv.com/y4mb1ihQSrUuU4o5Gm9YglL6mLkaTvLOgqORGOXEkFkrvwveoOW5wYAf7CoOOlOgWCfswMZNgmQW1hEJr8tWyFr-7WTgkeItjQ7-FsNk0qBSYdenUNzuHddMLOQ9VKiD-RtiSTjf-Hq-Hx5yhI15hclmtEDcYFKok6R6h9OMBOugYBPd_P4-GlfjFPLdL4J7q0ZMQtmSQDT6iS29e7H0117DQ?width=875&height=661&cropmode=none)
+![](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-6.png)
