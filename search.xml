@@ -1495,7 +1495,7 @@
 
 
 <h2 id="Boot-Sequence"><a href="#Boot-Sequence" class="headerlink" title="Boot Sequence"></a>Boot Sequence</h2><p>圖一為AM335x開機流程，其包含ROM Code、MLO、U-Boot與OS Image，底下將說明ROM Code、MLO與U-Boot。</p>
-<p><img data-src="https://ijrexq.bn.files.1drv.com/y4mX9xkUQI0Bru5Z650NymAW4M7z8au24r95TnCHHsV9itCLjqrqM8EctRKllEp08oUSsmfvy4RI-gVh77wYaOU7yyFDZ7jr7N7I5D6Wu_lGPZh7s3S0ne9hJ9cEeW8hsvWqozUOdC2wqCzCH-Q95SvRBftpgfMOJJHSR7TCyItWknIU8nzSEC2Vw36MOtuMBJzZyfHRmQH5OZC6I7R93R36w?width=999&height=683&cropmode=none" alt="Figure 1: High-level Overview to AM335x Boot Sequence"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-1.png" alt="Figure 1: High-level Overview to AM335x Boot Sequence"></p>
 <h3 id="ROM-Code"><a href="#ROM-Code" class="headerlink" title="ROM Code"></a>ROM Code</h3><p>ROM Code主要有幾項任務:</p>
 <ul>
 <li>Stack Setup</li>
@@ -1505,7 +1505,7 @@
 <li>Load the content of the file “MLO” from a bootable device to internal RAM (the 128KB on-chip memory)</li>
 <li>Execute the file “MLO” stored in internal RAM</li>
 </ul>
-<p>圖二為ROM Code架構，由”Public ROM Code drivers”可知ROM code支援如下裝置:</p>
+<p>圖二為ROM Code架構，由“Public ROM Code drivers”可知ROM code支援如下裝置:</p>
 <ul>
 <li>MMCSD (MultiMediaCard SD)</li>
 <li>NAND</li>
@@ -1516,19 +1516,19 @@
 </ul>
 <p>也就是說，系統一上電，ROM Code會掃描上述裝置，以便找到Bootable device。由於ROM Code只支援FAT檔案系統格式，所以Bootable device一定要是FAT檔案系統 (FAT12&#x2F;16&#x2F;32檔案系統都可以)。</p>
 <p>注意: 該架構的On-chip boot ROM大小為176 KB。</p>
-<p><img data-src="https://ijrgxq.bn.files.1drv.com/y4m91R7T1buLeODZG4ugSeHctLOIr7Pw3uVLGKvtPfWhS9GB7vFonpSTwASXEE7YmsbEKMoknKPgRjleSnwgRqoY-jLlag1dp3aiEbEFK2e3ckbi0smrslhehDMRAIUqolxSHQzVVyRoVUxTdxp_dkZiCujhrxLDin7ETfdoVPxcfxdIhql1UutK4J5Sv6z4qhh3v0PBQt2z0Uxm0WSGV6U5g?width=919&height=573&cropmode=none" alt="Figure 2: ROM Code Architecture"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-2.png" alt="Figure 2: ROM Code Architecture"></p>
 <p>圖三為ROM Memory Map:</p>
 <ul>
 <li>ROM Exception Vectors (0x20000-0x2001F): 該區段定義Exception Handler的位址。譬如: 0x20000存放Reset Handler的位址，也就是板子一上電，第一個執行的地方，課程第七周有詳盡的說明，可參考此<a href="https://docs.google.com/document/d/1Ygl6cEGPXUffhTJE0K6B8zEtGmIuIdCjlZBkFlijUaE/edit">文件</a>。詳盡的ROM Exception Vectors如表一所示。</li>
 </ul>
-<p><img data-src="https://ijrfxq.bn.files.1drv.com/y4mr5vbOMVqr2C2tsjR3qeH3JyeU4Y8x_zAtbshrWvRdC2EPswXAo9Hc_LwNojcmmkbW6Xs0dizUxHeDAxsecG0BfLfwQlqGFyOulBFIPuxAwIuag2tHF9ROM816OpZWgcxOEEmm4kRRDcUzHA5FGMr1k6HdHEmOIpwFqoVsP8uBQMVKw_BiTh64EKF0AyD79fvQl9DoB1ZFXUdYa40MW95Rw?width=921&height=242&cropmode=none" alt="Chart 1: ROM Exception Vectors"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-3.png" alt="Chart 1: ROM Exception Vectors"></p>
 <ul>
 <li>Public ROM Code CRC (0x20020): 由0x20000-0x2BFFF計算得出的四個位元組CRC值。</li>
 <li>Dead loops (0x20080-0x200FF): 該區段定義預設的exception handlers，其預設handlers都是執行while(1)迴圈，程式設計者可以定義相同名字的exception handler，如此便能覆蓋 (override)對應之預設exception handlers。可參考<a href="https://github.com/jserv/mini-arm-os/blob/master/05-TimerInterrupt/startup.c#L63">mini-arm-os</a>與<a href="https://github.com/embedded2015/freertos-basic/blob/master/freertos/libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.s#L124">freertos</a>程式碼，以便了解其設計概念。</li>
 <li>Code (started from 0x20100): ROM程式碼</li>
 <li>ROM Version (0x2BFFC-0x2BFFF): ROM Code Version</li>
 </ul>
-<p><img data-src="https://ijrdxq.bn.files.1drv.com/y4m1lZgiY0kQlxtKuuClWoEmBLOZYFp0mDWdCMnDla_RSbZC161f532Dwy1EjSxNjCOIKWkDgTN65FLfoE8NLWCgFRY029LQp5BZph_RbFh3VwThpt0Z0WgoIeHqezLJm-v4_6-YVGLzBqUHwizl0wxQ5-EODj0rt0kbpFeKq8bzkRKcxY5PSak9qKmJG6HKxHWDFruFFbQRPP4v92r6QDP6g?width=278&height=299&cropmode=none" alt="Figure 3: ROM Memory Map"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-4.png" alt="Figure 3: ROM Memory Map"></p>
 <h3 id="Two-Stage-U-Boot-Design-MLO-MMC-Loader-U-boot"><a href="#Two-Stage-U-Boot-Design-MLO-MMC-Loader-U-boot" class="headerlink" title="Two Stage U-Boot Design - MLO (MMC Loader) &amp; U-boot"></a>Two Stage U-Boot Design - MLO (MMC Loader) &amp; U-boot</h3><h4 id="MLO-File-Name-MLO"><a href="#MLO-File-Name-MLO" class="headerlink" title="MLO (File Name: MLO)"></a>MLO (File Name: <code>MLO</code>)</h4><p>AM335x ARM Cortex-A8處理器的On-chip memory( internal SRAM)大小為128KB (詳見AM3358 Data Sheet)，其Memory Map如圖四所示:</p>
 <ul>
 <li>1KB Secure Area: 此區域無法存取</li>
@@ -1539,11 +1539,11 @@
 </li>
 <li>18KB area (0x4030B800-0x4030FFFF): ROM Code使用該區域。</li>
 </ul>
-<p><img data-src="https://ijrbxq.bn.files.1drv.com/y4m4Moeghhw0ihVSV10wtEpfV51hlm3BlYa0MaWEVLa_ekCytzWsPBV6pRNWlq-huq-RPbjHe8MnlMNQutmLoUlVKmC6Pnu_8ye8PZTUrNFIDGewxKRvUJmDmyGLHQquJdjwUKF_mLgmAky_ttOjUaQ84do7KpIys2FbGmsSIHA3UEPYdhVSRA4GNv7Yp7QJ1Xt7adi1CPaKicmHUoswQK17g?width=914&height=637&cropmode=none" alt="Figure 4: Memory Map for 128KB on-chip memory"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-5.png" alt="Figure 4: Memory Map for 128KB on-chip memory"></p>
 <h4 id="U-boot-File-name-u-boot-img"><a href="#U-boot-File-name-u-boot-img" class="headerlink" title="U-boot (File name: u-boot.img)"></a>U-boot (File name: <code>u-boot.img</code>)</h4><p>此完整版U-Boot主要做額外platform初始化 (如: 初始化網卡等)，並載入OS Kernel。</p>
 <p><strong>為何需要two-stage U-boot？</strong></p>
 <p>由於On-chip memory只能提供109KB給Boot loader。然而，對於一個完整版的U-Boot，其大小約350KB (參考<a href="http://www.armhf.com/download/">ARMhf</a>編好的<a href="http://s3.armhf.com/dist/bone/bone-uboot.tar.xz">u-boot</a>)。為因應此限制，便需要一個小型的U-boot (MLO)，用以初始化DDR並將完整版U-boot載入至DDR，再將控制權交給完整版U-boot。下圖在BeagleBoard Black成功載入MLO與U-Boot終端機輸出。</p>
-<p><img data-src="https://ijrcxq.bn.files.1drv.com/y4mb1ihQSrUuU4o5Gm9YglL6mLkaTvLOgqORGOXEkFkrvwveoOW5wYAf7CoOOlOgWCfswMZNgmQW1hEJr8tWyFr-7WTgkeItjQ7-FsNk0qBSYdenUNzuHddMLOQ9VKiD-RtiSTjf-Hq-Hx5yhI15hclmtEDcYFKok6R6h9OMBOugYBPd_P4-GlfjFPLdL4J7q0ZMQtmSQDT6iS29e7H0117DQ?width=875&height=661&cropmode=none"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-6.png"></p>
 ]]></content>
       <categories>
         <category>系统与底层</category>
@@ -5835,52 +5835,66 @@
 
 
 <h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><ul>
-<li>在學習 Linux kernel 分析的基礎課程時有分析到 C 代碼執行時 stack 的行爲，那麼這裏做一個最簡單的實驗，通過把 C 代碼反彙編成 ASM 代碼，來看堆棧的操作情況。</li>
+<li>在學習Linux kernel分析的基礎課程時有分析到C代碼執行時stack的行爲，那麼這裏做一個最簡單的實驗，通過把C代碼反彙編成ASM代碼，來看堆棧的操作情況。</li>
 <li>備註：<ul>
-<li>直接用的 <strong>64-bit</strong> 環境，<code>gcc -S -o main.s main.c</code>（因爲網路大多都是32bit的分析，照做沒新意）</li>
-<li>也可以用 GDB 來看，覺得有點殺雞用牛刀XDD</li>
+<li>直接用的<strong>64-bit</strong>環境，<code>gcc -S -o main.s main.c</code>（因爲網路大多都是32-bit的分析，照做沒新意）</li>
+<li>也可以用GDB來看，覺得有點殺雞用牛刀XDD</li>
 </ul>
 </li>
 </ul>
 <h2 id="源代碼和編譯出來的代碼"><a href="#源代碼和編譯出來的代碼" class="headerlink" title="源代碼和編譯出來的代碼"></a>源代碼和編譯出來的代碼</h2><ul>
 <li>源代碼：</li>
 </ul>
-<p><img data-src="https://idrgxq.bn.files.1drv.com/y4m55mxQAjM25AHJzomnT_XrvcXvro540HjYgQ9-YWE09y8fx95IvWhoSZEX-fCihgqF2WPT0aP2usavJ-9JVHiK0Df1hpuHSKoc32nIMQhv0EOqu24I6tLSwlGORK0-f5cgy8h9TOug5Ny9BMstlLz-2or9oi5tnWJZ-tK9BjBXIvMKaozi_FdacFAB3OZ7WPZ39lQvXV3OnIu-XP1Tveo-A?width=351&height=441&cropmode=none"></p>
+<p><img data-src="https://cdn.joouis.com/observe-stack-behavior-by-disassembling-a-simple-c-code-1.png"></p>
 <ul>
 <li>反編譯出來的代碼（64-bit）：</li>
 </ul>
-<p><img data-src="https://idrfxq.bn.files.1drv.com/y4m-JuD2XCVCaoQUn5lYvubcjojAM7X83VaMjQpRsDvGq0sVUAxDgqKZADgrFo4snyZjgSPvwX-bMDsE-GXhWhOUmnRiW2MyrMjYcssqbV3SVgMf9YAZyWO0p7gTRD26R-yP91fd0qQ6DH_1Q1trPyvE-f40Qjqzf2M_0dS1hL_FOLQazrCK3-AuhxggUb9gkhqNmsVxKdJRQvrYv8uY7_ukQ?width=464&height=720&cropmode=none"></p>
+<p><img data-src="https://cdn.joouis.com/observe-stack-behavior-by-disassembling-a-simple-c-code-2.png"></p>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><ul>
-<li>首先，可以看到一件事是：編譯出來的組合語言是 32-bit 和 64-bit 混合的，應該是針對寄存器的 bit 不同指令做的相應的使用</li>
-<li>指令從第14行開始也就是 main 函數第一條指令開始執行，首先是把<code>%rbp</code>寄存器的值壓入棧內，保存當前工作的棧基指</li>
-<li>接着把<code>rsp</code>的地址賦給<code>rbp</code>，含義是初始化一個新的 stack</li>
-<li>第16行是預設的空間，GCC下<code>-O1</code>指令似乎可以優化</li>
-<li>第17、18行將<code>a(1,2)</code>中的兩個參數分別存到<code>esi</code>和<code>edi</code>寄存器中，這個地方需要說明的是 x86-32 中會使用 push 將實參存入 stack 內，如下圖（原<code>main.c</code>反編譯成 32-bit ASM 代碼）：<ul>
-<li><img data-src="https://idrexq.bn.files.1drv.com/y4m9pIm6sx0UjxAkcwghzHWLAOVrOAVclzqC0meFhZR9_airLB3cMJEPbWgCUtmmUPC0EV-PK3PMllvlkGVXeVzad49Uxj3ne2fiDiy6tnZlKqIaFqBwlH5idcSgefHpeOEzvOrnqmQOf8LRqxmzergtUnSeziVS0S70Lf2mqhEyK2Cqj2IMbw-LyqZgf3ugc1oUUC2GUQgg3nUgMl_KGRJag?width=213&height=54&cropmode=none"></li>
+<li><p>首先，可以看到一件事是：編譯出來的組合語言是32-bit和64-bit混合的，應該是針對寄存器的bit不同指令做的相應的使用。</p>
+</li>
+<li><p>指令從第14行開始也就是main函數第一條指令開始執行，首先是把<code>%rbp</code>寄存器的值壓入棧內，保存當前工作的棧基指。</p>
+</li>
+<li><p>接着把<code>rsp</code>的地址賦給<code>rbp</code>，含義是初始化一個新的stack。</p>
+</li>
+<li><p>第16行是預設的空間，GCC下<code>-O1</code>指令似乎可以優化。</p>
+</li>
+<li><p>第17、18行將<code>a(1,2)</code>中的兩個參數分別存到<code>esi</code>和<code>edi</code>寄存器中，這個地方需要說明的是X86-32中會使用push將實參存入stack內，如下圖（原<code>main.c</code>反編譯成 32-bit ASM 代碼）：</p>
+<ul>
+<li><img data-src="https://cdn.joouis.com/observe-stack-behavior-by-disassembling-a-simple-c-code-3.png"></li>
 <li>而在 x86-64 中，如果參數在6個以內，GCC 就可以利用寄存器來存儲參數值；超過6個的參數，還是通過上述操作實現，這裏給我們了至少兩個啓發：<ul>
-<li>儘量使用6個以下的參數列表</li>
-<li>傳大的數值時儘量使用指針或引用，因爲寄存器只有64位並且只能存整形數值</li>
+<li>儘量使用6個以下的參數列表。</li>
+<li>傳大的數值時儘量使用指針或引用，因爲寄存器只有64位並且只能存整形數值。</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>然後就呼叫 a 函數了，call其實也分爲兩個動作：<ul>
-<li>第一個是把當前<code>rip</code>的值保存</li>
-<li>把 a 函數的指令初始地址給<code>rip</code></li>
+<li><p>然後就呼叫<code>a</code>函數了，call其實也分爲兩個動作：</p>
+<ul>
+<li>第一個是把當前<code>rip</code>的值保存。</li>
+<li>把<code>a</code>函數的指令初始地址給<code>rip</code>。</li>
 </ul>
 </li>
-<li>a 函數也是同理，先保存當前的<code>rbp</code>然後初始化新的 stack</li>
-<li>第4、5行，就將保存在<code>esi</code>和<code>edi</code>內的值按順序放入<code>-24(%ebp)</code>和<code>-20(%ebp)</code>內</li>
-<li>這可以說明，<strong>在X86-64中，實參入棧和賦值給形參都是在子函數代碼段完成的</strong></li>
-<li>第6到8行就是從 stack 中取出參數到通用寄存器完成加法運算</li>
-<li>第9、10行是算出的值會先從<code>eax</code>存到<code>-4(%rbp)</code>，即給 tmp 變量賦值</li>
-<li>然後再將<code>tmp</code>的值給<code>eax</code>寄存器，函數的返回值默認使用<code>eax</code>寄存器返回給上一級函數</li>
-<li>第11行將<code>rbp</code>出棧，然後第12行ret就是把之前保存的<code>rip</code>出棧</li>
-<li>回到第20行指令，將<code>eax</code>的值給<code>-4(%rbp)</code>，也就是給變量 i</li>
-<li>爲了<code>return 0</code>把0給<code>eax</code></li>
-<li>因爲是main函數，所以最後是leave（leave: Releases the local stack storage created by the previous ENTER instruction.）</li>
+<li><p><code>a</code>函數也是同理，先保存當前的<code>rbp</code>然後初始化新的stack。</p>
+</li>
+<li><p>第4、5行，就將保存在<code>esi</code>和<code>edi</code>內的值按順序放入<code>-24(%ebp)</code>和<code>-20(%ebp)</code>內。這可以說明，<strong>在X86-64中，實參入棧和賦值給形參都是在子函數代碼段完成的</strong>。</p>
+</li>
+<li><p>第6到8行就是從stack中取出參數到通用寄存器完成加法運算。</p>
+</li>
+<li><p>第9、10行是算出的值會先從<code>eax</code>存到<code>-4(%rbp)</code>，即給tmp變量賦值。</p>
+</li>
+<li><p>然後再將<code>tmp</code>的值給<code>eax</code>寄存器，函數的返回值默認使用<code>eax</code>寄存器返回給上一級函數。</p>
+</li>
+<li><p>第11行將<code>rbp</code>出棧，然後第12行ret就是把之前保存的<code>rip</code>出棧。</p>
+</li>
+<li><p>回到第20行指令，將<code>eax</code>的值給<code>-4(%rbp)</code>，也就是給變量i。</p>
+</li>
+<li><p>爲了<code>return 0</code>把0給<code>eax</code>。</p>
+</li>
+<li><p>因爲是main函數，所以最後是leave（leave: Releases the local stack storage created by the previous ENTER instruction.）。</p>
+</li>
 </ul>
-<h2 id="流程圖"><a href="#流程圖" class="headerlink" title="流程圖"></a>流程圖</h2><p><img data-src="https://idrcxq.bn.files.1drv.com/y4mmFoqM4ecZs3QlssVTjcuH8z6o-e_krbOlw-16ePd5rX0CK_RUA1T-_-OiwFiYzJJGdaRBY17Ho75BE-3SPqpq7IHFceINb4r5LSXGAu2Y3Qhxq0nrnJalDmHKeXIP9qrPYS8tJUxtZMqHpNVSbyy7zgDg7HbfBq5Su1oYFgtSDn7cFjv3LmeT9opN-qF4c4iXS-Rh02InCUeXh-JlhbLtA?width=1502&height=719&cropmode=none"></p>
+<h2 id="流程圖"><a href="#流程圖" class="headerlink" title="流程圖"></a>流程圖</h2><p><img data-src="https://cdn.joouis.com/observe-stack-behavior-by-disassembling-a-simple-c-code-4.png"></p>
 <h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ul>
 <li><a href="http://www.searchtb.com/2013/03/x86-64_register_and_function_frame.html">http://www.searchtb.com/2013/03/x86-64_register_and_function_frame.html</a></li>
 <li><a href="http://en.wikipedia.org/wiki/X86_instruction_listings">http://en.wikipedia.org/wiki/X86_instruction_listings</a></li>

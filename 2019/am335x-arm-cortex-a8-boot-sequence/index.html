@@ -29,12 +29,12 @@
 <meta property="og:site_name" content="江边的旱鸭子">
 <meta property="og:description" content="这是我的嵌入式笔记第三篇，原文写于2015年。 在真实世界中，一个操作系统是如何被加载的？对于单片机、SoC以及我们常见的计算机，由于硬件设备和软件系统的不同，启动流程肯定会有差异。不过对于大型操作系统，启动流程有不少共通之处，本文将简单解析一个消费类电子产品常用的系统（基于TI的AM335x处理器）是如何被加载启动的。 这篇笔记其实是在组队项目时，由一位队友Adrian Huang所写。相比我们">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://ijrexq.bn.files.1drv.com/y4mX9xkUQI0Bru5Z650NymAW4M7z8au24r95TnCHHsV9itCLjqrqM8EctRKllEp08oUSsmfvy4RI-gVh77wYaOU7yyFDZ7jr7N7I5D6Wu_lGPZh7s3S0ne9hJ9cEeW8hsvWqozUOdC2wqCzCH-Q95SvRBftpgfMOJJHSR7TCyItWknIU8nzSEC2Vw36MOtuMBJzZyfHRmQH5OZC6I7R93R36w?width=999&height=683&cropmode=none">
-<meta property="og:image" content="https://ijrgxq.bn.files.1drv.com/y4m91R7T1buLeODZG4ugSeHctLOIr7Pw3uVLGKvtPfWhS9GB7vFonpSTwASXEE7YmsbEKMoknKPgRjleSnwgRqoY-jLlag1dp3aiEbEFK2e3ckbi0smrslhehDMRAIUqolxSHQzVVyRoVUxTdxp_dkZiCujhrxLDin7ETfdoVPxcfxdIhql1UutK4J5Sv6z4qhh3v0PBQt2z0Uxm0WSGV6U5g?width=919&height=573&cropmode=none">
-<meta property="og:image" content="https://ijrfxq.bn.files.1drv.com/y4mr5vbOMVqr2C2tsjR3qeH3JyeU4Y8x_zAtbshrWvRdC2EPswXAo9Hc_LwNojcmmkbW6Xs0dizUxHeDAxsecG0BfLfwQlqGFyOulBFIPuxAwIuag2tHF9ROM816OpZWgcxOEEmm4kRRDcUzHA5FGMr1k6HdHEmOIpwFqoVsP8uBQMVKw_BiTh64EKF0AyD79fvQl9DoB1ZFXUdYa40MW95Rw?width=921&height=242&cropmode=none">
-<meta property="og:image" content="https://ijrdxq.bn.files.1drv.com/y4m1lZgiY0kQlxtKuuClWoEmBLOZYFp0mDWdCMnDla_RSbZC161f532Dwy1EjSxNjCOIKWkDgTN65FLfoE8NLWCgFRY029LQp5BZph_RbFh3VwThpt0Z0WgoIeHqezLJm-v4_6-YVGLzBqUHwizl0wxQ5-EODj0rt0kbpFeKq8bzkRKcxY5PSak9qKmJG6HKxHWDFruFFbQRPP4v92r6QDP6g?width=278&height=299&cropmode=none">
-<meta property="og:image" content="https://ijrbxq.bn.files.1drv.com/y4m4Moeghhw0ihVSV10wtEpfV51hlm3BlYa0MaWEVLa_ekCytzWsPBV6pRNWlq-huq-RPbjHe8MnlMNQutmLoUlVKmC6Pnu_8ye8PZTUrNFIDGewxKRvUJmDmyGLHQquJdjwUKF_mLgmAky_ttOjUaQ84do7KpIys2FbGmsSIHA3UEPYdhVSRA4GNv7Yp7QJ1Xt7adi1CPaKicmHUoswQK17g?width=914&height=637&cropmode=none">
-<meta property="og:image" content="https://ijrcxq.bn.files.1drv.com/y4mb1ihQSrUuU4o5Gm9YglL6mLkaTvLOgqORGOXEkFkrvwveoOW5wYAf7CoOOlOgWCfswMZNgmQW1hEJr8tWyFr-7WTgkeItjQ7-FsNk0qBSYdenUNzuHddMLOQ9VKiD-RtiSTjf-Hq-Hx5yhI15hclmtEDcYFKok6R6h9OMBOugYBPd_P4-GlfjFPLdL4J7q0ZMQtmSQDT6iS29e7H0117DQ?width=875&height=661&cropmode=none">
+<meta property="og:image" content="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-1.png">
+<meta property="og:image" content="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-2.png">
+<meta property="og:image" content="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-3.png">
+<meta property="og:image" content="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-4.png">
+<meta property="og:image" content="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-5.png">
+<meta property="og:image" content="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-6.png">
 <meta property="article:published_time" content="2019-12-15T13:53:32.000Z">
 <meta property="article:modified_time" content="2019-12-15T13:53:32.000Z">
 <meta property="article:author" content="John Chou">
@@ -49,7 +49,7 @@
 <meta property="article:tag" content="boot">
 <meta property="article:tag" content="os">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ijrexq.bn.files.1drv.com/y4mX9xkUQI0Bru5Z650NymAW4M7z8au24r95TnCHHsV9itCLjqrqM8EctRKllEp08oUSsmfvy4RI-gVh77wYaOU7yyFDZ7jr7N7I5D6Wu_lGPZh7s3S0ne9hJ9cEeW8hsvWqozUOdC2wqCzCH-Q95SvRBftpgfMOJJHSR7TCyItWknIU8nzSEC2Vw36MOtuMBJzZyfHRmQH5OZC6I7R93R36w?width=999&height=683&cropmode=none">
+<meta name="twitter:image" content="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-1.png">
 
 
 <link rel="canonical" href="https://joouis.com/2019/am335x-arm-cortex-a8-boot-sequence/">
@@ -301,7 +301,7 @@
 
 
 <h2 id="Boot-Sequence"><a href="#Boot-Sequence" class="headerlink" title="Boot Sequence"></a>Boot Sequence</h2><p>圖一為AM335x開機流程，其包含ROM Code、MLO、U-Boot與OS Image，底下將說明ROM Code、MLO與U-Boot。</p>
-<p><img data-src="https://ijrexq.bn.files.1drv.com/y4mX9xkUQI0Bru5Z650NymAW4M7z8au24r95TnCHHsV9itCLjqrqM8EctRKllEp08oUSsmfvy4RI-gVh77wYaOU7yyFDZ7jr7N7I5D6Wu_lGPZh7s3S0ne9hJ9cEeW8hsvWqozUOdC2wqCzCH-Q95SvRBftpgfMOJJHSR7TCyItWknIU8nzSEC2Vw36MOtuMBJzZyfHRmQH5OZC6I7R93R36w?width=999&height=683&cropmode=none" alt="Figure 1: High-level Overview to AM335x Boot Sequence"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-1.png" alt="Figure 1: High-level Overview to AM335x Boot Sequence"></p>
 <h3 id="ROM-Code"><a href="#ROM-Code" class="headerlink" title="ROM Code"></a>ROM Code</h3><p>ROM Code主要有幾項任務:</p>
 <ul>
 <li>Stack Setup</li>
@@ -311,7 +311,7 @@
 <li>Load the content of the file “MLO” from a bootable device to internal RAM (the 128KB on-chip memory)</li>
 <li>Execute the file “MLO” stored in internal RAM</li>
 </ul>
-<p>圖二為ROM Code架構，由”Public ROM Code drivers”可知ROM code支援如下裝置:</p>
+<p>圖二為ROM Code架構，由“Public ROM Code drivers”可知ROM code支援如下裝置:</p>
 <ul>
 <li>MMCSD (MultiMediaCard SD)</li>
 <li>NAND</li>
@@ -322,19 +322,19 @@
 </ul>
 <p>也就是說，系統一上電，ROM Code會掃描上述裝置，以便找到Bootable device。由於ROM Code只支援FAT檔案系統格式，所以Bootable device一定要是FAT檔案系統 (FAT12&#x2F;16&#x2F;32檔案系統都可以)。</p>
 <p>注意: 該架構的On-chip boot ROM大小為176 KB。</p>
-<p><img data-src="https://ijrgxq.bn.files.1drv.com/y4m91R7T1buLeODZG4ugSeHctLOIr7Pw3uVLGKvtPfWhS9GB7vFonpSTwASXEE7YmsbEKMoknKPgRjleSnwgRqoY-jLlag1dp3aiEbEFK2e3ckbi0smrslhehDMRAIUqolxSHQzVVyRoVUxTdxp_dkZiCujhrxLDin7ETfdoVPxcfxdIhql1UutK4J5Sv6z4qhh3v0PBQt2z0Uxm0WSGV6U5g?width=919&height=573&cropmode=none" alt="Figure 2: ROM Code Architecture"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-2.png" alt="Figure 2: ROM Code Architecture"></p>
 <p>圖三為ROM Memory Map:</p>
 <ul>
 <li>ROM Exception Vectors (0x20000-0x2001F): 該區段定義Exception Handler的位址。譬如: 0x20000存放Reset Handler的位址，也就是板子一上電，第一個執行的地方，課程第七周有詳盡的說明，可參考此<a target="_blank" rel="noopener" href="https://docs.google.com/document/d/1Ygl6cEGPXUffhTJE0K6B8zEtGmIuIdCjlZBkFlijUaE/edit">文件</a>。詳盡的ROM Exception Vectors如表一所示。</li>
 </ul>
-<p><img data-src="https://ijrfxq.bn.files.1drv.com/y4mr5vbOMVqr2C2tsjR3qeH3JyeU4Y8x_zAtbshrWvRdC2EPswXAo9Hc_LwNojcmmkbW6Xs0dizUxHeDAxsecG0BfLfwQlqGFyOulBFIPuxAwIuag2tHF9ROM816OpZWgcxOEEmm4kRRDcUzHA5FGMr1k6HdHEmOIpwFqoVsP8uBQMVKw_BiTh64EKF0AyD79fvQl9DoB1ZFXUdYa40MW95Rw?width=921&height=242&cropmode=none" alt="Chart 1: ROM Exception Vectors"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-3.png" alt="Chart 1: ROM Exception Vectors"></p>
 <ul>
 <li>Public ROM Code CRC (0x20020): 由0x20000-0x2BFFF計算得出的四個位元組CRC值。</li>
 <li>Dead loops (0x20080-0x200FF): 該區段定義預設的exception handlers，其預設handlers都是執行while(1)迴圈，程式設計者可以定義相同名字的exception handler，如此便能覆蓋 (override)對應之預設exception handlers。可參考<a target="_blank" rel="noopener" href="https://github.com/jserv/mini-arm-os/blob/master/05-TimerInterrupt/startup.c#L63">mini-arm-os</a>與<a target="_blank" rel="noopener" href="https://github.com/embedded2015/freertos-basic/blob/master/freertos/libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.s#L124">freertos</a>程式碼，以便了解其設計概念。</li>
 <li>Code (started from 0x20100): ROM程式碼</li>
 <li>ROM Version (0x2BFFC-0x2BFFF): ROM Code Version</li>
 </ul>
-<p><img data-src="https://ijrdxq.bn.files.1drv.com/y4m1lZgiY0kQlxtKuuClWoEmBLOZYFp0mDWdCMnDla_RSbZC161f532Dwy1EjSxNjCOIKWkDgTN65FLfoE8NLWCgFRY029LQp5BZph_RbFh3VwThpt0Z0WgoIeHqezLJm-v4_6-YVGLzBqUHwizl0wxQ5-EODj0rt0kbpFeKq8bzkRKcxY5PSak9qKmJG6HKxHWDFruFFbQRPP4v92r6QDP6g?width=278&height=299&cropmode=none" alt="Figure 3: ROM Memory Map"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-4.png" alt="Figure 3: ROM Memory Map"></p>
 <h3 id="Two-Stage-U-Boot-Design-MLO-MMC-Loader-U-boot"><a href="#Two-Stage-U-Boot-Design-MLO-MMC-Loader-U-boot" class="headerlink" title="Two Stage U-Boot Design - MLO (MMC Loader) &amp; U-boot"></a>Two Stage U-Boot Design - MLO (MMC Loader) &amp; U-boot</h3><h4 id="MLO-File-Name-MLO"><a href="#MLO-File-Name-MLO" class="headerlink" title="MLO (File Name: MLO)"></a>MLO (File Name: <code>MLO</code>)</h4><p>AM335x ARM Cortex-A8處理器的On-chip memory( internal SRAM)大小為128KB (詳見AM3358 Data Sheet)，其Memory Map如圖四所示:</p>
 <ul>
 <li>1KB Secure Area: 此區域無法存取</li>
@@ -345,11 +345,11 @@
 </li>
 <li>18KB area (0x4030B800-0x4030FFFF): ROM Code使用該區域。</li>
 </ul>
-<p><img data-src="https://ijrbxq.bn.files.1drv.com/y4m4Moeghhw0ihVSV10wtEpfV51hlm3BlYa0MaWEVLa_ekCytzWsPBV6pRNWlq-huq-RPbjHe8MnlMNQutmLoUlVKmC6Pnu_8ye8PZTUrNFIDGewxKRvUJmDmyGLHQquJdjwUKF_mLgmAky_ttOjUaQ84do7KpIys2FbGmsSIHA3UEPYdhVSRA4GNv7Yp7QJ1Xt7adi1CPaKicmHUoswQK17g?width=914&height=637&cropmode=none" alt="Figure 4: Memory Map for 128KB on-chip memory"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-5.png" alt="Figure 4: Memory Map for 128KB on-chip memory"></p>
 <h4 id="U-boot-File-name-u-boot-img"><a href="#U-boot-File-name-u-boot-img" class="headerlink" title="U-boot (File name: u-boot.img)"></a>U-boot (File name: <code>u-boot.img</code>)</h4><p>此完整版U-Boot主要做額外platform初始化 (如: 初始化網卡等)，並載入OS Kernel。</p>
 <p><strong>為何需要two-stage U-boot？</strong></p>
 <p>由於On-chip memory只能提供109KB給Boot loader。然而，對於一個完整版的U-Boot，其大小約350KB (參考<a target="_blank" rel="noopener" href="http://www.armhf.com/download/">ARMhf</a>編好的<a target="_blank" rel="noopener" href="http://s3.armhf.com/dist/bone/bone-uboot.tar.xz">u-boot</a>)。為因應此限制，便需要一個小型的U-boot (MLO)，用以初始化DDR並將完整版U-boot載入至DDR，再將控制權交給完整版U-boot。下圖在BeagleBoard Black成功載入MLO與U-Boot終端機輸出。</p>
-<p><img data-src="https://ijrcxq.bn.files.1drv.com/y4mb1ihQSrUuU4o5Gm9YglL6mLkaTvLOgqORGOXEkFkrvwveoOW5wYAf7CoOOlOgWCfswMZNgmQW1hEJr8tWyFr-7WTgkeItjQ7-FsNk0qBSYdenUNzuHddMLOQ9VKiD-RtiSTjf-Hq-Hx5yhI15hclmtEDcYFKok6R6h9OMBOugYBPd_P4-GlfjFPLdL4J7q0ZMQtmSQDT6iS29e7H0117DQ?width=875&height=661&cropmode=none"></p>
+<p><img data-src="https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-6.png"></p>
 
     </div>
 
