@@ -45,7 +45,6 @@ ROM Code主要有幾項任務:
 - Execute the file "MLO" stored in internal RAM
 
 
-
 圖二為ROM Code架構，由“Public ROM Code drivers”可知ROM code支援如下裝置:
 
 - MMCSD (MultiMediaCard SD)
@@ -56,28 +55,21 @@ ROM Code主要有幾項任務:
 - EMAC (Ethernet Media Access Control)
 
 
-
 也就是說，系統一上電，ROM Code會掃描上述裝置，以便找到Bootable device。由於ROM Code只支援FAT檔案系統格式，所以Bootable device一定要是FAT檔案系統 (FAT12/16/32檔案系統都可以)。
 
 注意: 該架構的On-chip boot ROM大小為176 KB。
 
 ![Figure 2: ROM Code Architecture](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-2.png)
 
-
-
 圖三為ROM Memory Map:
 
 - ROM Exception Vectors (0x20000-0x2001F): 該區段定義Exception Handler的位址。譬如: 0x20000存放Reset Handler的位址，也就是板子一上電，第一個執行的地方，課程第七周有詳盡的說明，可參考此[文件](https://docs.google.com/document/d/1Ygl6cEGPXUffhTJE0K6B8zEtGmIuIdCjlZBkFlijUaE/edit)。詳盡的ROM Exception Vectors如表一所示。
-
-![Chart 1: ROM Exception Vectors](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-3.png)
-
+  ![Chart 1: ROM Exception Vectors](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-3.png)
 - Public ROM Code CRC (0x20020): 由0x20000-0x2BFFF計算得出的四個位元組CRC值。
 - Dead loops (0x20080-0x200FF): 該區段定義預設的exception handlers，其預設handlers都是執行while(1)迴圈，程式設計者可以定義相同名字的exception handler，如此便能覆蓋 (override)對應之預設exception handlers。可參考[mini-arm-os](https://github.com/jserv/mini-arm-os/blob/master/05-TimerInterrupt/startup.c#L63)與[freertos](https://github.com/embedded2015/freertos-basic/blob/master/freertos/libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.s#L124)程式碼，以便了解其設計概念。
 - Code (started from 0x20100): ROM程式碼
 - ROM Version (0x2BFFC-0x2BFFF): ROM Code Version
-
-![Figure 3: ROM Memory Map](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-4.png)
-
+  ![Figure 3: ROM Memory Map](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-4.png)
 
 
 ### Two Stage U-Boot Design - MLO (MMC Loader) & U-boot
@@ -91,8 +83,7 @@ AM335x ARM Cortex-A8處理器的On-chip memory( internal SRAM)大小為128KB (�
   - 初始化DDR (512MB)
   - 一旦初始化DDR成功後，MLO將`u-boot.img`載入至DDR，並交由U-Boot接管。
 - 18KB area (0x4030B800-0x4030FFFF): ROM Code使用該區域。
-
-![Figure 4: Memory Map for 128KB on-chip memory](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-5.png)
+  ![Figure 4: Memory Map for 128KB on-chip memory](https://cdn.joouis.com/am335x-arm-cortex-a8-boot-sequence-5.png)
 
 #### U-boot (File name: `u-boot.img`)
 
