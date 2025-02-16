@@ -26,56 +26,50 @@ tags:
 
 ## [2015q3 Homework #3](http://wiki.csie.ncku.edu.tw/embedded/2015q3h3)
 
--  實做 [Week #2 程式題目](http://people.debian.org.tw/~jserv/ncku/2015q3.pdf)，解釋其運作原理（至少 3 題，限定 [C99](https://en.wikipedia.org/wiki/C99) 或以上的規格）
+-  實做[Week #2 程式題目](http://people.debian.org.tw/~jserv/ncku/2015q3.pdf)，解釋其運作原理（至少3題，限定[C99](https://en.wikipedia.org/wiki/C99)或以上的規格）
   - Question #2, #3, #4, #5, #6, #27
 - 在 GitHub 上 fork [quiz](https://github.com/embedded2015/quiz)，然後逐一修改每個目錄裡面的檔案
   - 對於 Question #2, #3, … #6 都需要實做**遞迴**和**非遞迴**的版本
   - 要一併準備測試資料
-- 除了修改程式，也要編輯 Hackpad 下方「[+作業區](https://paper.dropbox.com/doc/RrcZhOoThosgCSGRKwFTM)」，增添開發紀錄和 GitHub 連結
-  - 額外要求觀賞電影《[進擊的鼓手](https://zh.wikipedia.org/zh-tw/爆裂鼓手)》，思考這 4 週以來，課程給你的衝擊（若你沒衝擊的話，可以退選了），在自己的 Hackpad 紀錄心得，特別是對於追求卓越這件事
+- 除了修改程式，也要編輯Hackpad下方「[+作業區](https://paper.dropbox.com/doc/RrcZhOoThosgCSGRKwFTM)」，增添開發紀錄和GitHub連結
+  - 額外要求觀賞電影《[進擊的鼓手](https://zh.wikipedia.org/zh-tw/爆裂鼓手)》，思考這4週以來，課程給你的衝擊（若你沒衝擊的話，可以退選了），在自己的Hackpad紀錄心得，特別是對於追求卓越這件事
 - 應該要有完整的測試程式，並測試各項邊界狀況
   - 執行時間分析
   - 記憶體需求分析
-  - cache miss 分析
+  - cache miss分析
   - 時間複雜度分析
-- 善用 assert
+- 善用assert
 - 提供遞迴與非遞迴的版本
 - 截止日期：Oct 17, 2015（含）之前
 - remember to use:
-```bash
-astyle --style=kr --indent=spaces=4 --indent-switches --suffix=none *.[ch] 
-```
-
+  ```bash
+  astyle --style=kr --indent=spaces=4 --indent-switches --suffix=none *.[ch]
+  ```
 
 
 ## 關於Drop Cache
 
 - 之前一直都是用`echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh`來清理cache
 - 剛才做quiz#4時突然想到好像echo的數字可以有`1`、`2`、`3`，於是乎都試了一下。驚奇地發現用`3`所耗費的時間比用`1`耗費的時間要多出25%：
+  ```bash
+  echo "echo 3 > /proc/sys/vm/drop_caches" | sudo sh
+  perf stat -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./recursive
+  Performance counter stats for './recursive' (100 runs):
+      44    cache-misses        #   0.490 % of all cache refs    ( +-  8.59% )
+      0.000430226 seconds time elapsed                      ( +- 33.97% )
 
-```bash
-echo "echo 3 > /proc/sys/vm/drop_caches" | sudo sh
-perf stat -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./recursive
-Performance counter stats for './recursive' (100 runs):
-    44    cache-misses        #   0.490 % of all cache refs    ( +-  8.59% )
-    0.000430226 seconds time elapsed                      ( +- 33.97% )
-    
-echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh
-perf stat -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./recursive
-Performance counter stats for './recursive' (100 runs):
-    39    cache-misses        #   0.447 % of all cache refs    ( +-  9.38% )
-    0.000327662 seconds time elapsed                      ( +-  3.46% )
-```
-
+  echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh
+  perf stat -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./recursive
+  Performance counter stats for './recursive' (100 runs):
+      39    cache-misses        #   0.447 % of all cache refs    ( +-  9.38% )
+      0.000327662 seconds time elapsed                      ( +-  3.46% )
+  ```
 - 於是查了一下：
   - `echo 1 > /proc/sys/vm/drop_caches`：To free pagecache
   - `echo 2 > /proc/sys/vm/drop_caches`：To free dentries and inodes
   - `echo 3 > /proc/sys/vm/drop_caches`：To free pagecache, dentries and inodes
   - 關於上述三個名詞的[解釋](http://stackoverflow.com/questions/29870068/what-are-pagecache-dentries-inodes)
-
 - 所以用3多清除了dentries和inodes，相比1多花費的時間，就是讀當前目錄找到該執行檔所花的時間
-
-
 
 
 ## #2
@@ -99,7 +93,6 @@ Output: 'k'
 ```
 
 請寫出合法的 C 語言程式 char smallest_character(char str[], char c) { … }
-
 
 
 ### Recursive
@@ -148,29 +141,26 @@ uchar smallest_char(uchar str[], uchar c, uchar size)
 - 想使用perf kmem觀察slab行為時發生錯誤：`invalid or unsupported event: 'kmem:kmalloc'`
 - 使用perf測量cache misses和time elapsed: 
   `echo "echo 1 > /proc/sys/vm/drop_caches" | sudo sh` 
-  `perf stat -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./iterative`：
+  `perf stat -r 100 -e cache-misses,cache-references,L1-dcache-load-misses,L1-dcache-store-misses,L1-dcache-prefetch-misses,L1-icache-load-misses ./iterative`
+  ```
+  Performance counter stats for './iterative' (100 runs):
+    66    cache-misses        #   0.753 % of all cache refs    ( +-  9.27% )
+    8810    cache-references                        ( +-  0.62% )
+    9600    L1-dcache-load-misses                     ( +-  0.19% )
+    4203    L1-dcache-store-misses                     ( +-  0.23% )
+    0    L1-dcache-prefetch-misses
+    3714    L1-icache-load-misses                     ( +-  0.77% )
+    0.000354619 seconds time elapsed                      ( +-  3.88% )
 
-
-```
-Performance counter stats for './iterative' (100 runs):
-  66    cache-misses        #   0.753 % of all cache refs    ( +-  9.27% )
-  8810    cache-references                        ( +-  0.62% )
-  9600    L1-dcache-load-misses                     ( +-  0.19% )
-  4203    L1-dcache-store-misses                     ( +-  0.23% )
-  0    L1-dcache-prefetch-misses
-  3714    L1-icache-load-misses                     ( +-  0.77% )
-  0.000354619 seconds time elapsed                      ( +-  3.88% )
-  
-Performance counter stats for './recursive' (100 runs):
-  66    cache-misses        #   0.768 % of all cache refs    ( +-  8.41% )
-  8627    cache-references                        ( +-  0.63% )
-  9597    L1-dcache-load-misses                     ( +-  0.24% )
-  4227    L1-dcache-store-misses                     ( +-  0.23% )
-  0    L1-dcache-prefetch-misses
-  3573    L1-icache-load-misses                     ( +-  0.76% )
-  0.000402208 seconds time elapsed                      ( +- 32.71% )
- 
-```
+  Performance counter stats for './recursive' (100 runs):
+    66    cache-misses        #   0.768 % of all cache refs    ( +-  8.41% )
+    8627    cache-references                        ( +-  0.63% )
+    9597    L1-dcache-load-misses                     ( +-  0.24% )
+    4227    L1-dcache-store-misses                     ( +-  0.23% )
+    0    L1-dcache-prefetch-misses
+    3573    L1-icache-load-misses                     ( +-  0.76% )
+    0.000402208 seconds time elapsed                      ( +- 32.71% )
+  ```
 
 | Quiz#2       | recursive   | iterative   |
 | ------------ | ----------- | ----------- |
@@ -184,7 +174,7 @@ Performance counter stats for './recursive' (100 runs):
 
 ### Question
 
-![img](https://itob9g.bn.files.1drv.com/y4mVd0fYruo-LRS3d2fy4LXEAbbUTRy9PhdBjCgfdnF4SfZjDJglUh_PLO5scg1th8jtlkYKUTXATy16FijZWD7GP1Bins39euZa2PnHWXmf4Tr_dAiRA-XrzIOPNj5L5R1ZRyelwS0WR2hUxXixPJAGGdTsSxuUN1zJtgZV_7WUstKWf1mrC9XH23FYAWQVVTIFGVxO87e01SX_s4O21pE4g?width=971&height=698&cropmode=none)
+![](https://cdn.joouis.com/lab-leetcode-practices-1.png)
 
 ### Recursive
 
@@ -319,7 +309,7 @@ int Across_mid(int a[], int left, int mid, int right)
   }
   return lsum+rsum;
 }
- 
+
 int maxArray(int a[], int left, int right)
 {
   if(left == right) {
@@ -332,12 +322,11 @@ int maxArray(int a[], int left, int right)
         Across_mid(a, left, mid, right)
       );
 }
- 
+
 int maxSubArray(int a[], int n)
 {
   return maxArray(a, 0, n-1);
 }
- 
 ```
 
 ### Iterative
