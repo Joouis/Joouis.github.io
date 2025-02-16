@@ -4314,7 +4314,7 @@
 <li><code>layout asm/src</code>：會顯示出當前正在執行的asm&#x2F;src代碼段（這樣就不用看objdump -D啦）</li>
 <li><code>layout split</code>：同時顯示當前執行的原始碼和組語</li>
 <li><code>layout regs</code>：會以10進制和16進制方式顯示寄存器的值，包含r0-r12、sp、lr、pc、cpsr（這樣就可以不用p了）</li>
-<li><code>winheight name +/- count</code>：調整 TUI 窗口大小，例如 winheight src -5 代表 TUI 窗口減少 5 行代碼</li>
+<li><code>winheight name +/- count</code>：調整 TUI 窗口大小，例如<code>winheight src -5</code>代表TUI窗口減少5行代碼</li>
 <li><code>info stack/variables/files/...</code></li>
 <li>REF:<ul>
 <li><a href="http://linuxtools-rst.readthedocs.org/zh_CN/latest/tool/gdb.html">http://linuxtools-rst.readthedocs.org/zh_CN/latest/tool/gdb.html</a></li>
@@ -4444,7 +4444,7 @@
 </ul>
 <h3 id="Phase-4-Iteration"><a href="#Phase-4-Iteration" class="headerlink" title="Phase 4: Iteration"></a>Phase 4: Iteration</h3><ul>
 <li>與階段2、3同理，得知輸入爲一個整數<br><img data-src="https://cdn.joouis.com/lab-gdb-intro-12.png"></li>
-<li>接下來<code>phase_4</code>的函數就很短了<br><img data-src="https://cdn.joouis.com/lab-gdb-intro-13.png"><br>把輸入的數，代入fun4後，return的值要等於1024。</li>
+<li>接下來<code>phase_4</code>的函數很短，把輸入的數代入fun4後，return的值要等於1024<br><img data-src="https://cdn.joouis.com/lab-gdb-intro-13.png"></li>
 <li><code>fun4</code>的代碼如下：<br><img data-src="https://cdn.joouis.com/lab-gdb-intro-14.png"></li>
 <li>當<code>r3</code>不爲0時，會一直減1然後調用自身函數；當<code>r3</code>終於減到0後，會在0x88f2賦值爲1，然後跳到8904，回傳上一層的<code>fun</code>函數。然後<code>r3=r0=1</code>，開始左移</li>
 <li>所以相當於輸入的數字n，可以滿足2的n次方爲1024，即是正確答案，真相如下：<br><img data-src="https://cdn.joouis.com/lab-gdb-intro-15.png"></li>
