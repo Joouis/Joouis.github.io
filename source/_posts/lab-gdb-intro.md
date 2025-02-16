@@ -36,7 +36,7 @@ tags:
 - `layout asm/src`：會顯示出當前正在執行的asm/src代碼段（這樣就不用看objdump -D啦）
 - `layout split`：同時顯示當前執行的原始碼和組語
 - `layout regs`：會以10進制和16進制方式顯示寄存器的值，包含r0-r12、sp、lr、pc、cpsr（這樣就可以不用p了）
-- `winheight name +/- count`：調整 TUI 窗口大小，例如 winheight src -5 代表 TUI 窗口減少 5 行代碼
+- `winheight name +/- count`：調整 TUI 窗口大小，例如`winheight src -5`代表TUI窗口減少5行代碼
 - `info stack/variables/files/...`
 - REF:
   - http://linuxtools-rst.readthedocs.org/zh_CN/latest/tool/gdb.html
@@ -197,9 +197,8 @@ It includes:
 
 - 與階段2、3同理，得知輸入爲一個整數
   ![](https://cdn.joouis.com/lab-gdb-intro-12.png)
-- 接下來`phase_4`的函數就很短了
+- 接下來`phase_4`的函數很短，把輸入的數代入fun4後，return的值要等於1024
   ![](https://cdn.joouis.com/lab-gdb-intro-13.png)
-  把輸入的數，代入fun4後，return的值要等於1024。
 - `fun4`的代碼如下：
   ![](https://cdn.joouis.com/lab-gdb-intro-14.png)
 - 當`r3`不爲0時，會一直減1然後調用自身函數；當`r3`終於減到0後，會在0x88f2賦值爲1，然後跳到8904，回傳上一層的`fun`函數。然後`r3=r0=1`，開始左移
