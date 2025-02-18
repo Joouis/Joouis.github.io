@@ -19,7 +19,7 @@ https://joouis.com/2021/2020-yunnan-trip-1/
 https://joouis.com/2021/getting-started-with-aad-integration-in-javascript/
 https://joouis.com/2021/jazz-guitar-foundations/
 https://joouis.com/2019/build-web-e2e-test-system-from-scratch/
-https://joouis.com/2021/my-first-step-to-jazz/
+https://joouis.com/2021/how-i-met-jazz/
 https://joouis.com/2021/3-idiots-while-driving/
 https://joouis.com/2021/2021-referral-kickoff/
 https://joouis.com/2020/hands-on-linear-regression-for-ml/
@@ -336,6 +336,8 @@ https://joouis.com/tags/weex/
 https://joouis.com/tags/android/
 https://joouis.com/tags/free-software/
 https://joouis.com/tags/x86/
+https://joouis.com/tags/ncku/
+https://joouis.com/tags/ndhu/
 https://joouis.com/categories/%E4%BA%BA%E7%94%9F%E6%B8%B8%E8%AE%B0/
 https://joouis.com/categories/%E6%8A%80%E6%9C%AF%E4%BA%BA%E7%94%9F%E8%B0%88/
 https://joouis.com/categories/%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%BA%95%E5%B1%82/

@@ -191,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://joouis.com/2021/my-first-step-to-jazz/</loc>
+    <loc>https://joouis.com/2021/how-i-met-jazz/</loc>
     
     <lastmod>2021-06-22</lastmod>
     
@@ -2508,6 +2508,20 @@
   
   <url>
     <loc>https://joouis.com/tags/x86/</loc>
+    <lastmod>2025-02-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/ncku/</loc>
+    <lastmod>2025-02-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/ndhu/</loc>
     <lastmod>2025-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
