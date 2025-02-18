@@ -105,7 +105,7 @@ tags:
 
 ![](https://cdn.joouis.com/photos-comparison-between-note9-and-mi10pro-8-n.avif)
 
-![](https://cdn.joouis.com/photos-comparison-between-note9-and-mi10pro-8-n.avif)
+![](https://cdn.joouis.com/photos-comparison-between-note9-and-mi10pro-8-m.avif)
 
 在此期间把 Roland Micro Cube GX音箱给卖了，因为有了这个小箱子——过年前在香港买的Boss Katana Mini。米10 Pro的视角更有优势，同时也把音箱外壳材质的纹理拍得明显更清晰，胜。
 
@@ -187,7 +187,7 @@ Splendor真的超级好玩！之前听朋友们说过几次，这次初次上手
 
 ![](https://cdn.joouis.com/photos-comparison-between-note9-and-mi10pro-21-n.avif)
 
-![](https://cdn.joouis.com/photos-comparison-between-note9-and-mi10pro-21-n.avif)
+![](https://cdn.joouis.com/photos-comparison-between-note9-and-mi10pro-21-m.avif)
 
 这张照片里Note9还是会有酱油放多、画面过于浓郁的问题，米10 Pro上那根葱、还有上方冒着热气模糊的感觉更讨喜，后者胜。
 
@@ -215,4 +215,4 @@ Splendor真的超级好玩！之前听朋友们说过几次，这次初次上手
 
 总的来说米10 Pro拍照能力在Note9之上，符合我的预期，能让我将Note9安心出掉，也算是不负小米想打进高端价位市场的初心。配合一众出色的硬件和成熟的MIUI优化，不愧是今年的“真香机”！
 
-希望小米的股价也能快点涨起来，不要坐实了“年轻人第一支被套牢的股票”之名😂——来自一位在结尾突然想起自己是小米股东的年轻人 Orz
+希望小米的股价也能快点涨起来，不要坐实了“年轻人第一支被套牢的股票”之名😂 —— 来自一位在结尾突然想起自己是小米股东的年轻人 Orz
