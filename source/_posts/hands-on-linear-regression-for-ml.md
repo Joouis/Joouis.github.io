@@ -43,7 +43,7 @@ Let's start with the simplest linear model $f(x)=wx+b$, you can also try more co
 
 The model's ability to adapt properly to new, previously unseen data, drawn from the same distribution as the one used to create the model.
 
-![Goodness of fit, https://bit.ly/2JhniSc](https://miro.medium.com/max/1400/1*iiPH0JyowvS3k12T0-W2HA.png)
+![Goodness of fit, https://bit.ly/2JhniSc](https://cdn.joouis.com/hands-on-linear-regression-for-ml-1.png)
 
 - Underfitting: model is too simple to learn the underlying structure of the data (large bias)
 - Overfitting: model is too complex relative to the amount and noisiness of the training data (large variance)
@@ -106,7 +106,7 @@ Yes we're done. Our introduction is here 🤣🤣🤣 .
 
 Our loss function is differentiable indeed, so we can use it to find the local minimum (also the global minimum in this case). Let's get it by one chart.
 
-![Gradient Descent, Hands-On Machine Learning by Aurélien Géron](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6R2sAAAAAAPQ-mGkDYyePGrI?width=2394&height=1186)
+![Gradient Descent, Hands-On Machine Learning by Aurélien Géron](https://cdn.joouis.com/hands-on-linear-regression-for-ml-2.png)
 
 So here is the last equation in this post (I promise, typing these LaTeX expressions really wore me out 🥲 ), the gradient of our loss function:
 
@@ -114,7 +114,7 @@ $$\nabla{L} = \frac{\partial{L}}{\partial{\mathbf{w}}} = 2 \frac{1}{n} \sum_{i=1
 
 *Question: disadvantages of gradient descent?*
 
-![Gradient Descent pitfalls, Hands-On Machine Learning by Aurélien Géron](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6SGsAAAAAAHmH4xAJ7m_yduo?width=2554&height=1150)
+![Gradient Descent pitfalls, Hands-On Machine Learning by Aurélien Géron](https://cdn.joouis.com/hands-on-linear-regression-for-ml-3.png)
 
 #### Variants optimizers
 
@@ -132,7 +132,7 @@ Probably it's enough for us to dig into the code, so the recap should be stopped
 - Early stopping
 - Feature engineering
   - Feature selection by recursive feature elimination and cross-validation ([RFECV](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFECV.html))
-    ![Recursive feature elimination with cross-validation, https://scikit-learn.org](https://scikit-learn.org/stable/_images/sphx_glr_plot_rfe_with_cross_validation_001.png)
+    ![Recursive feature elimination with cross-validation, https://scikit-learn.org](https://cdn.joouis.com/hands-on-linear-regression-for-ml-4.png)
   - Feature scaling like normalization
   - Data correction for dirty part
   - Defining and removing outliers
@@ -163,7 +163,7 @@ Here is a [brief introduction](https://docs.microsoft.com/en-us/azure/machine-le
 - Rich sample notebooks are provided, and the tab view allows user to open several documents with several file types in one page.
 - An one-stop platform for user to develop their machine learning project, you can take it as cloud IDE (Integrated Development Environment). For example, user can manager their huge datasets by Datasets, and then consume them in Notebooks.
 
-![UI of Notebooks of AML Studio](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6U2sAAAAAAPYURa9nEX-UPE0?width=4912&height=2582)
+![UI of Notebooks of AML Studio](https://cdn.joouis.com/hands-on-linear-regression-for-ml-5.png)
 
 #### Google Colaboratory
 
@@ -174,7 +174,7 @@ You can open `ipynb` file on Google Drive by this product, there are also severa
 - It will create compute target or VM (virtual machine) for the user automatically.
 - Download dataset from Google Drive, comment and share are easily.
 
-![UI of Google Colab](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6UmsAAAAAALqhcQe6PL5VPxE?width=4908&height=2568)
+![UI of Google Colab](https://cdn.joouis.com/hands-on-linear-regression-for-ml-6.png)
 
 
 
@@ -203,7 +203,7 @@ Original data structure looks like this:
 
 24 columns represent 24 hours, 18 features with every first 20 days of month in one year, we have $18\ast20\ast12=4320$ rows.
 
-![Dataset preview in AML Studio](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6TmsAAAAAAARo5bii67wvUE4?width=4904&height=2598)
+![Dataset preview in AML Studio](https://cdn.joouis.com/hands-on-linear-regression-for-ml-7.png)
 
 Our target data structure of $\mathbf{X}$ will be:
 
