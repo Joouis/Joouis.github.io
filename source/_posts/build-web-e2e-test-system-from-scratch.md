@@ -60,7 +60,7 @@ The following parts will cover the answers for questions above, several workarou
 
 ### Legacy solution
 
-![studio-v1-solution](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB62WMAAAAAAKciKJan2mvOicA?width=3563&height=1506)
+![studio-v1-solution](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-1.png)
 
 Solution for V1 is developed in about 5 years ago. Selenium is chosen as test framework, it's usually for automating web applications for testing purpose. Test service is based on .Net framework as well as test cases coded in C# which is a very typical Microsoft style. They will manipulate Selenium client to do testing on different browsers for various scenarios by browser drivers. And the service is hosted by Geneva Runner Service, the part of Geneva Monitoring system. This system is a really useful and important internal system, Metrics and Alerting services can help for logging runner data, filing tickets in Incident Management system (IcM) and finally reporting to service owner through phone call , text message and E-mail when high priority ticket issued.
 
@@ -102,7 +102,7 @@ We already picked Jest as unit test framework for our React components, but anot
 
 Unfortunately, after YC and I wrote some complicated test cases, we both found that tests would fail inexplicable at some steps, elements couldn't be captured by our scripts. We didn't have too much time to solve this problem, thus YC had to switch to Jest with Puppeteer plan quickly. Fortunately this plan was not bad, most of steps worked fine and then I wrote more test cases based on it, including common functions like login and full scenarios like run an experiment.
 
-![test-framework](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB62mMAAAAAADDsxgiSjuCJLeE?width=2289&height=1528)
+![test-framework](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-2.png)
 
 The biggest challenge of this part is robustness of test case scripts, which means test case can't fail when our web application is healthy, false positive rate should be as low as possible. The unexpected failures may caused by network traffic or browser lag, we need to reorder our actions with reasonable sequence, set enough timeout and try many times to make sure test cases are stable.
 
@@ -134,13 +134,13 @@ How to receive data from runner was not a hard thing too, Flow provides a set of
 
 This flow looks like the one in following picture.
 
-![flow-example](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB61WMAAAAAAA-u_7YO73_JtTI?width=1029&height=1544)
+![flow-example](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-3.png)
 
 One more important thing in this section that you may think about for a while: **our runners are running on a VM instead of cloud service, also Task Scheduler is not stable, how to ensure our test service is always running? Or how to keep stability of our service?** If once the service stopped, how to recognize this disaster as soon as possible? A simple but useful solution is detecting heartbeat. Since we already stored metrics in database, we could query latest row and check its timestamp regularly to see if runners were still working. If time interval between latest record and current time exceeds an hour (one hour is the timeout of run experiment test), our flow will trigger IcM connector to file a ticket named like `[E2E][AUE] Runners are missing heartbeat more than 60 minutes!`.
 
 We also built several dashboards for service stability which will be introduced later, at present we have simple metrics and alert, let's take a look at following diagram to see the whole process.
 
-![task-scheduler](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB622MAAAAAAFD6fCVtJSUNcq8?width=3514&height=1469)
+![task-scheduler](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-4.png)
 
 
 
@@ -152,11 +152,11 @@ You can't imagine how fast JS is developing. From Express.js, KOA.js to Egg.js, 
 
 - Not only I'm familiar with this framework, but it's also an out of box framework with well documentation. Comparing with Express.js, KOA.js offers a middleware onion model to handle asynchronous operations easily, and Egg.js is based on KOA.js with more key features for building enterprise application, such as clusters and production mode.
 
-  ![koa-onion-model](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB62GMAAAAAAK0cU8bDyUAB9qY?width=478&height=435)
+  ![koa-onion-model](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-5.png)
 
 - High performance with robustness, we already built several productions based on it in Alibaba for 11.11 shopping festival in last few years. Node.js service is good at I/O operations, and Egg.js offers a multi-process model to take advantage of modern CPU. We'll talk about how it applies to our scenario soon.
 
-  ![eggjs-cluster-model](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB61GMAAAAAAGjvGkGYWHTmwL4?width=1131&height=782)
+  ![eggjs-cluster-model](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-6.png)
 
 - Featured plugins like logger, scheduler, static server, i18n, session, security, template engine and so on.
 
@@ -180,7 +180,7 @@ There's no doubt that it's the first time to use Node.js with Kusto SDK in my te
 
 So here is our new system work flow.
 
-![eggjs-solution](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB61mMAAAAAABeAW-BZNv5XbLU?width=3594&height=1945)
+![eggjs-solution](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-7.png)
 
 Node.js can run across all popular platforms, I put service on Ubuntu server because we need to take full advantage of VM, graphical interface of Windows server is meaningless but also costs some resources. Each runner will cost about 500MB memory space (mostly taken by headless Chromium), when 30 runners work simultaneously I can't even move the pointer on Windows server but nothing is difference on Ubuntu server through SSH connection.
 
@@ -224,7 +224,7 @@ So what's new in this 2021 version?
 
 Here is the architecture of this system.
 
-![arch-2021](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6DXYAAAAAAEuOvHpvxdFHrMI?width=4370&height=1674)
+![arch-2021](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-8.png)
 
 ### Testing framework
 
@@ -232,7 +232,7 @@ We choose [Playwright](https://playwright.dev/) as E2E testing framework since 2
 
 Test cases are all written by my colleague Jie since it's decoupled with infrastructure works. One of the difficult thing is to simulate drag and drop action to put the modules on the canvas and connect them, all based on coordinate position. We also need to pay attention to the timeout settings to improve robustness for unexpected network conditions.
 
-![test-case-sample](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6CnYAAAAAAN7M2gTdHv7WcIo?width=3466&height=2602)
+![test-case-sample](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-9.png)
 
 ### CI/CD
 
@@ -250,7 +250,7 @@ The most significant improvement compared to the 2019 system is the alerting lat
 
 Geneva Monitor will create incident ticket on IcM platform when alert conditions meet, for instance there is a heartbeat monitor showed below. We set a computed metric named `Runs` which is the total run times for web service creation test, the monitor will lookback on the sum of `Runs` in last 1 hour per 2 minutes, and create a severity 3 ticket if sum of `Runs` is equal to 0. The IcM platform will do the rest of alerting stuffs responding to different severities.
 
-![monitor-sample](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6DHYAAAAAAH6YKNmvzReY8_o?width=3702&height=2600)
+![monitor-sample](https://cdn.joouis.com/build-web-e2e-test-system-from-scratch-10.png)
 
 When recreated these monitors (because part of the old ones were not actually working...), I also enabled the "Auto-mitigate Incident" feature with 15 times look back. So after the incident ticket created, if the monitor status turns back to healthy for 30 minutes, it will mitigate the ticket created on IcM before. This is really helpful to the DRI (Directly Response Individual, this role is also known by various other names, such as Google’s "Sheriff" or Facebook’s slightly different "Designated Response Individual"), as I happen to be one of them.
 
