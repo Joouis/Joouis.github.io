@@ -1,5 +1,5 @@
 ---
-title: 2020 云南游记（下）
+title: 2020云南游记（下）
 date: 2021-12-18 17:05:07
 updated: 2021-12-18 23:03:00
 description: 悠闲地“浪费”掉九月的最后两天。
@@ -19,11 +19,11 @@ tags:
 
 ## 上一集
 
-《[2020 云南游记（中）](https://joouis.com/2021/2020-yunnan-trip-2/)》
+《[2020云南游记（中）](https://joouis.com/2021/2020-yunnan-trip-2/)》
 
 
 
-## 09.29 丽江古城与木府
+## 09.29丽江古城与木府
 
 尽管前几日的行程负荷不算太大，但我一路兼顾车夫和游客的双重身份，仍有些疲惫，所以最后两天我们选择让节奏再慢一点。当然早餐还是不能落下，闹钟定在九点半，醒来拉开窗帘，让阳光照进古香古色的房间。
 
@@ -37,11 +37,11 @@ tags:
 
 ![](https://bnz05pap002files.storage.live.com/y4mXYqEpOlJ2ho4hAjV8926IkLLzouk_GuO69694PICcOZR8OsFjTHMO4aDxadpRS0udYQTkjA95_gKycQoInLkLbG8-USF2qARkgv7RgTsDHQDzolIv0xsld-Hdc24TrcCFk5mZ6jS9kAinGLL15OhX3KqYICz-ODcKYsCdM_PmWjDD4kKPw9S7j-UpnCA0L8E?width=2896&height=2172&cropmode=none)
 
-回笼觉睡到两点，磨蹭一下出门吃午饭。我们选择了网上口碑很好甚至有同事推荐的云雪丽餐厅，皇冠分店就在酒店隔壁，步行三分钟可达。不过我们参考大众点评的热门榜单点了三个菜，只有炸豆腐合我们的口味（推荐！），另外两个菜嘛... 吃不惯，算难得的翻车经历吧，并且这顿是我们云南之行吃得最贵的一餐 😂。
+回笼觉睡到两点，磨蹭一下出门吃午饭。我们选择了网上口碑很好甚至有同事推荐的云雪丽餐厅，皇冠分店就在酒店隔壁，步行三分钟可达。不过我们参考大众点评的热门榜单点了三个菜，只有炸豆腐合我们的口味（推荐！），另外两个菜嘛... 吃不惯，算难得的翻车经历吧，并且这顿是我们云南之行吃得最贵的一餐😂。
 
 ![](https://bnz05pap002files.storage.live.com/y4mIhU02DT3gLTuXbwr0OwOp69TvrLRvPmxkCJaijV9bgaxWSrpicwy7GWYsqR9fV1hoG_dura6TNmE5T51IrHfd7RXmfd6FE9LHtzBH0jHzKR8ESs4d7-BEvo8qBjqzW1wAmHXNXWbk4GFKFcAWBq3uBk2ZBHcR5beqxViN_RwsJfogld_WrrM_-HKFXz7kJ-X?width=2172&height=2896&cropmode=none)
 
-鱼是甜口的，小火煮到后面越吃越甜 😢。
+鱼是甜口的，小火煮到后面越吃越甜😢。
 
 ![](https://bnz05pap002files.storage.live.com/y4mYG-7uf1Bk7KlE7V-gckmRszl8i0qjVk4IGHRc9pjSUKQPfudDK3hBNb_Ca-qX8SDIdInik1jb01bIXzQMwrudsHNzKDACn6R-33yOwk_RkZo-KljEl7SpcQh5ty6H69XztqMLgDs9GArYpbnpJc29f-1XbcmrZvAaJysZDm5aehet1AEzMLR8oRvZR6riuKH?width=2896&height=2172&cropmode=none)
 
@@ -63,7 +63,7 @@ tags:
 
 ![](https://bnz05pap002files.storage.live.com/y4m7H83NT8UAmma26sqQ4E2y7Yh0E9UO54JkOWSnz47krq9EriPsoUpvgksbHYZxkfm5b7w6nJRbmslflkp-5QuDJJ5lYYIzPwclFJnl6FcrSrRxAf5XDJxHrl97-j00BwnQ2z4FqLEes7F-hGKnFtUxnoE2CNUTom_azKgc5_0a-D4wIyZeHUD9numf3MxONN5?width=2592&height=1940&cropmode=none)
 
-门票包含导游解说服务，由于游客不多，都是聚集一批游客才开始导览。我们木府门后的广场等待时，还见识了旅游景点的赚钱套路。有工作人员主动安排我们合影留恋，等参观完回到广场时他们便拿着洗好的照片和挂牌问我们买不买。老一辈或传统观念的人还是很吃这套，想着来都来了留个纪念或者担心打好的照片被用作其他用途，便掏出手机扫码付款、被强行消费了一把。只可惜工作人员今天遇上我们，一口回绝不要，主动跟我们讨价还价还是不要，当代年轻人谁要在你这大殿门口拍到此一游照 😂。
+门票包含导游解说服务，由于游客不多，都是聚集一批游客才开始导览。我们木府门后的广场等待时，还见识了旅游景点的赚钱套路。有工作人员主动安排我们合影留恋，等参观完回到广场时他们便拿着洗好的照片和挂牌问我们买不买。老一辈或传统观念的人还是很吃这套，想着来都来了留个纪念或者担心打好的照片被用作其他用途，便掏出手机扫码付款、被强行消费了一把。只可惜工作人员今天遇上我们，一口回绝不要，主动跟我们讨价还价还是不要，当代年轻人谁要在你这大殿门口拍到此一游照😂。
 
 ![](https://bnz05pap002files.storage.live.com/y4mOK3VglhLItVgQzhzdn8irdV5uLzhIPYVVEjl_3_xdiWB88oqvm97R4rTgKApNnSOlBaSrhdxbwW5GrfLDCD0jYJFCprEsr2hxWupfsYuqsQJFn4U-38M0ACHknhsWxn4SxXg8g7a-lT-ZKW8ZE_Jb8ygTlYOlecusbrRjoH5vzs3WsvZI9EOWFU2x3R06_Ik?width=2592&height=1940&cropmode=none)
 
@@ -141,7 +141,7 @@ tags:
 
 ![](https://bnz05pap002files.storage.live.com/y4malvJaiPTNoQgYLNsvPkoj78A6g-VrW3dvXTY0UyCGG7zOhVeYJWy8haeMWt9BlQdW35gk7TCSK9MC8bdG5mAoNjinegnI_wcQWFeGx68IDckfQl4Iv_gocnIcLTp6iBHIP_Z2SOmgrcOhC9EELnljD5T29QNm-h-SG56_qPW_3JJwaIREt9sXzs3wUhLq9DW?width=2896&height=2172&cropmode=none)
 
-最后一项活动是回酒店泡澡玩手游 😆，顺带一提云南的网络延迟在玩游戏时特别明显，打PVP游戏只配玩玩娱乐模式。
+最后一项活动是回酒店泡澡玩手游😆，顺带一提云南的网络延迟在玩游戏时特别明显，打PVP游戏只配玩玩娱乐模式。
 
 洲际酒店的后门，有点欧式建筑的感觉，还挺好看的。
 
@@ -149,7 +149,7 @@ tags:
 
 
 
-## 09.30 返程
+## 09.30返程
 
 今天睡到十点多，卡在极限来吃最后的早午餐。
 
@@ -167,7 +167,7 @@ tags:
 
 ![](https://bnz05pap002files.storage.live.com/y4mfBYjoxFquPXo6X61SOzW-rffGBW_dARton4-rQUbeAQ8isQ-6ubKLuHqZNtmqIlqcZW3NmGP6FRJn_5O7d8pIwz14Cw685G0GXToaZb2SD22AGIr1KMODUtiOi_8Hn8TJ4zEKMV7zR-pMvTgDl0E1IVHt5IaC2o28iS_lVy2tEQ2U8LACBwQcv0HRM8gFyEl?width=2896&height=2172&cropmode=none)
 
-从酒店打车到三义机场的终点直接设在贵宾楼，招行 CIP 的点数赶紧消耗一下，疫情下都要用不完了。
+从酒店打车到三义机场的终点直接设在贵宾楼，招行CIP点数赶紧消耗一下，疫情日子都要用不完了。
 
 ![](https://bnz05pap002files.storage.live.com/y4m4clzvZQj3xyTmkeiFM5ySEsEvWVgHzAIpnkCpIAOih9vfgJaCDYWai3_oFJzRNE2BrUtSi9Sugppf3Nmhj1TpaP1rDnWdDuLLp_iOP6bxvmREFSVYGVMcXev8ffhrPRcF8Ed8-kTNhioTW6mZdmSYNARoXO6FcDuFtL7-7w0Q6YGDLsFpAJ-OFSztIfSQOEL?width=2896&height=2172&cropmode=none)
 
@@ -177,7 +177,7 @@ tags:
 
 ![](https://bnz05pap002files.storage.live.com/y4m2-pzGxDh1eEzmTM1mB6ADtzT3yqcJVkPE-OGxMtYEmqoYN0i3RNSQt3Iv8KMxJs-akYihb4T3wyVEktqD2yu2hvZ9frKO9l1RPJ2KGvQjP5-KBzxNb0toysmX5GtCc0IKAkOd6pSrlTMbxvgeDKDebFZCUFrcUu6bpghGJsfB7wQEh0t1VmJV06DyJeY0POS?width=2172&height=2896&cropmode=none)
 
-是时候说再见了，我们下篇游记再见吧 👋🏻。
+是时候说再见了，我们下篇游记再见吧👋🏻。
 
 ![](https://bnz05pap002files.storage.live.com/y4mDD1PbUAqE_zcTN9ouu9f8GUBHDFY7xjunULID6wUuge2wu5Q9TK8_44EygfMsA_CbvFG_wR1WrndJ8v8VGu8geDKnqoh-WHBz9I5lUcwbeoTChRtFo3HXvn3YjplsjYEakfC17IUWUvfCR0U1DTSHpxLxs9263VFHQoK_-OTXZ4GMSLCIoswKZsUUCu2t5hv?width=2896&height=2172&cropmode=none)
 

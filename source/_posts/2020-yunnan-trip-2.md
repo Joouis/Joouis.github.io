@@ -1,5 +1,5 @@
 ---
-title: 2020 云南游记（中）
+title: 2020云南游记（中）
 date: 2021-12-12 16:35:36
 updated: 2021-12-12 23:55:00
 description: 像醉汉一般登上地球上最温暖的的雪山😅。
@@ -19,159 +19,157 @@ tags:
 
 ## 上一集
 
-《[2020 云南游记（上）](https://joouis.com/2021/2020-yunnan-trip-1/)》
+《[2020云南游记（上）](https://joouis.com/2021/2020-yunnan-trip-1/)》
 
 
 
-## 09.28 玉龙雪山
+## 09.28玉龙雪山
 
 对于夜猫族来说，假期的上午九点多起床、十点出门已经够早，我们需要赶在最后一刻去吃自助早餐。洲际和府酒店的房间坐落在一群古香古色的二层楼房里，如果有较重的行李或距离大堂较远可以提前预约电瓶车接送。
 
-![](https://bnz05pap002files.storage.live.com/y4mZP_zmaDcqgrAUh1u6KY6BnRZKLlRoBDm971HRgf6eOqxajV_pXdS4q_FTukOqFQNHomhc4H-OFaMfsoMXyLcvvF_ULawMoJ_5WBYBzdBxh1CMdBGrTIHDXS6l-ll3XgRYxrkgdfGyn1zzxlUAQUvI1zh0yKBhH7vRin_8XJMrVghlxMlIgxVoA4W806VqnlU?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-1.avif)
 
 餐厅在大堂一楼的一侧，味道中规中矩，关键还是装修风格和视野别有风情。
 
-![](https://bnz05pap002files.storage.live.com/y4mcYY6fyX9h93DbZJofDMEqG7PyUYi5yWfD7EHj52j9G5_h-xpJb2GWa9DalsXUZWQdJ5MfPkXioLd7OGDyU3z5MsJMRA9oCeztr2cFOGtyI8D7MMSw1cYnmXye9gc24dhVNVN2kxt1PuaA5Dn3qERMvBeJPgHmlOzkGgps2ZOxdfuo1UtC0lLoFbP-mEAK7eA?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-2.avif)
 
 吃饱站在外面的天台，找个合适的角度能看到雪山。
 
-![](https://bnz05pap002files.storage.live.com/y4mciorbt9THZrTlqWTf7cWWgbSoDbNNuZ-pQxz4xrYGPKnZxoE-2sUK_EBM9CSo0u0JHrk_j3lnE40xc1hiuO_X5pO_rYiY29Ops99x3UMZzk4r-JtEe78vVrlVI0p9rXUc-1eTHiYTzd4eNgGCmLbF-CZB_9vgVDeRTW0hRvt153n9sFKBcRUiymRE5bukkJU?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-3.avif)
 
 当然酒店内视野最好的观景点，同时也是酒店著名的打卡点之一，便是大堂中央的酒廊。犹抱琵琶半遮面的雪山远景如同一幅壁画镶嵌在巨大的落地窗上。
 
-![](https://bnz05pap002files.storage.live.com/y4mH-BNvdmMttZ0ZerYy9cR4c6zAfdu6kqP6nNrH4sbJhaffDwlDQH5UCU1N5e-22bgGVapZsC44_5EA9Kj7Zj5jR-k8H1oEIbq6TlUl_RcPw3ARmlzTxxi_TZ6QQ0HeMRd5vtdZipkjjQnoTxHS6SJu06seWQdbYXX3Ajcu0OUjsmKwVOY8eVFiC9uqfYroPrb?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-4.avif)
 
 条条大路通雪山😁。
 
-![](https://bnz05pap002files.storage.live.com/y4m1VxIRXjWEOCT_F6MX7oadOqWYYZr2X28hwnUijGMWFr-esT_zF4e3YD5Ax_vO6OKF8zXaOR35tc7PBYbU9s14Vqai4ttNzgRzZxmwAo29BrlC7hY0bGNAthZlfsPBEedbFwn20hsVBIlekolDRMnkDUdWnTWmf9_Kp1KLNLdlLV4CelAa7p2YaNi_tJ3ufZu?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-5.avif)
 
 半小时出头，我们便到了雪山景区入口。除了套餐里包含的玉龙雪山门票，需要额外付一笔主景区门票费，网上也称为进山费，80块一个人。
 
-![](https://bnz05pap002files.storage.live.com/y4m_vfpi28CNww8n4vgIu4TkYmtSj97U9sUcic02MohbqOQFUDAPeUyjHY19ztWJFlibOoHNVw7z7u4zh4ow6vgTV7G-oa1t2cGEUr0EmHHXFfS-T27iKulUE7mMzJCUEXhDfyJSIc4jDRN9NMgkP6id3Rol5Q7XlNHFLHAdhcCuWdGPU3SSFYg2M-s2OH05e9h?width=2592&height=1940&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-6.avif)
 
 进入景区大门之后，实际还有一段路程才到停车场，沿路已经开始有人停车拍照。
 
-![](https://bnz05pap002files.storage.live.com/y4mLX-mQ7Guaq6CKOK1afeMpc5BbjUajNSmdpmW_OV_p32gnm8ETQTuVxatbYI2qukpAWlfv32Pj5GKmibNHFN9gYuM4cj5gYUVLR63Fs10I3qc5ADldU8AZ2-OLARabWomrMDNFZPzzWzgm8mhdaGhGoEHn9N0eNhP_Mbchn-x3IPI9B2IX67mjR2ANq1lYXvj?width=1940&height=2106&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-7.avif)
 
 从停车场往游客中心走去，环境不错，像走在一个生态公园中。
 
-![](https://bnz05pap002files.storage.live.com/y4mPo42Mths0fQnmsGGzqoJvivZdkb1ODG6LKSasbyGyBas_fDV-JJgsmoKCj9YqLfk3-Cmry3uoInWpXCIpdHHBOMAGqypD7IEbvC0LFuBRh3ftEi_dbOwWL1x0YEsdaVTIRGRmn1Q-cQyjYIDhgafDwk44wwp-EKFMXAQP0Sw6jWaCtfGmX7x0Qd3tihAyHis?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-8.avif)
 
-![](https://bnz05pap002files.storage.live.com/y4mwX08mzwTdWst6-BCOBKJPojMDpzQtiEsLb7Xtxhw4RXkYg9me77oWDMT9lB9q7nAIKaEZpzahYDqFonR9-H4UOroCa0YdDU6hGrbJLYoXC9rqfgan27zjUrMgJjESiFfLmNNSsuM1QTzdPAMHLHmDVV7CB8KpFnr2qtqTvz6x7z_Bxe9KOL5itE9jawoldOP?width=2592&height=1940&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-9.avif)
 
 本次云南之行的一个重要目的，就是考察景区智慧厕所的建设情况（大误）。
 
-![](https://bnz05pap002files.storage.live.com/y4mntSqO7VCjgnBy85Tgg1ExwN4yDvhbEpGsvQqHGuVpyn8a4p8yB-zBNMUjArXg0a7GWEdMwcqsN67SWTecNKpbp90YVK2X66W4mmUm_GOyieS1QJW0y4zz1YmCzCZ9SUJAQS96AVmtt66FkyvKW1yIbhbuzAyWX9WMbWPcm0UmkF2-wd9VX1cA2Ylfm3BZt7_?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-10.avif)
 
 在游客接待大厅兑票、检票过后，坐上了旅游大巴，把我们送去雪山脚下的索道站。沿途这蜿蜒的盘山公路，配上四周高耸林立的树木，和之前又是完全不同的景色。
 
-![](https://bnz05pap002files.storage.live.com/y4mKAtrKraz3HpYrL-hChayfZa4_dHmbH-9H9H_n9Rc5OE2kWJqEdp6xDYC-MG1W-ZQVZyZnjHNOovkSen-xQhpN6Hm7yIzlUIrfCU-DQPtLPuM7akd8ZYgZgpIyeEqIu6cz4yNDOU42UNVERsD26Dnwo1PTJfgjUo7t4ULGpZhTMH0WHdjSi-xOBxZ45FtL18b?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-11.avif)
 
 索道口的海拔高度是3356米，对常人来说已不算低。其实从停车场下车走了两步，我就隐约感觉脚下有点飘。事实证明越往上走，随着供氧不足，高原反应会越来越严重。而我们一开始在网上做功课的结论是不买氧气罐，那么实际情况会如何呢？
 
-![](https://bnz05pap002files.storage.live.com/y4meLv0N4ckKU9KMwSEIPr0hXcAB6zTPIZuUcsEfzRb8FTX72ouazC1u0vvu4Mq8NqGW8nxBPHuC5mi_svHAkhM4gmbzZVjkrSdUOsleUA9S2nzPiTs_4QVTgZzul0YtDA1fyRntHkKMINz460yVl70qdM_MSO3_mCXFCKO_sTb68eprfA12_boX_H2Nn-1eZIL?width=2172&height=2896&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-12.avif)
 
 坐上缆车，没想到某人怕得要命，抓紧了我的裤子😂。
 
-![](https://bnz05pap002files.storage.live.com/y4mSQVuW0z4LOPPJ6r-GT4bpRrpxwqHOFul4st963Pei1mjKSS8rMUjRNlECRX_8FHhPvLeafq20eLbCPqhWU_BFawpW8SkNfIoC6OIKD9NnMCmvW049ETpETKRnaGELs4cj15909xJJeeyLu0yOO_f0ylF2PvhWLnQeRLAdeCXvvTFM6kCrRFinvFgRcYPmFy7?width=2172&height=2896&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-13.avif)
 
 不过害怕这事因人而异，我们隔壁的一对情侣是男生怕得闭上了眼睛，反倒是他对象一直喊他睁眼看看。索道的后半段已经云雾缭绕，窗外什么都看不清，直到接近光秃秃的雪山。
 
-![](https://bnz05pap002files.storage.live.com/y4m0JiQ3bbSXxRPTrc5EUI-OFpm22LBF_6h9_YOdZ3gRJFCN8KAHXKlM3_kj7trmgzNMt1ybbR7D0crkFyNJ-pfM8BbZBE3z1KPAwPVJOZl2kwb8J9G9-ADtYF8cXLSkR6BE6Kmma2ubGqzEZJFCyFlvaWVaVEhuCvvCv7m9v0-0PZxzIIW5iLxHO1LbAvHgMqJ?width=2592&height=1940&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-14.avif)
 
 前一天了解到九月底的雪山还没有雪，温度也不是很低，我便只穿了短袖T恤套一件厚绒外套上去。事实证明静止不动时还是有一点冷，爬山则刚刚好。出了索道出口这边的游客中心，就到了登山的大平台，海拔4506米。望向玉龙雪山允许游客攀爬的终点觉得并不远，等到实际爬起来才发现并不容易，每一步上升的海拔高度都仿佛在对渺小的人类说“到此为止吧”。有些年纪大的老人确实没上去，就在平台上拍拍照、转悠一下。
 
-![](https://bnz05pap002files.storage.live.com/y4m0cWBS4z8bU7csF74ZHrCVn1I7meabupV_9cruccERNJeW-_3SnfSikPpa9KQEnokL35ELXfo-R1JRIEMOOHI9L060i9SDs-Q0CQuuBlptTyjrsauTjV8pQt6X6ZtiP0yAuCcOa7mihA2KKwRTYUghoTSlNc94qP4PKU1wS83LftQn2m4MXEoQaB_JJQOERcQ?width=2592&height=1940&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-15.avif)
 
 往下看很壮观，有平原、山峦、索道还有栈道。
 
-![](https://bnz05pap002files.storage.live.com/y4m_FV6uA3pyGfIL8vuvBR10LL227j5rgIeUrsnxisObRfiHBEC6YUJiVIpP6zDjASEWr8C9UqNbWRkNI9fx1jHI8yr79O4QN-dc-TSALiK1suChmeQD7rcKe0W0TxyuJ-vt1O48YnhsSzrg3sQEE17KheTgLI-aeu74IT0MNL3Cxass8d2IXyST5WX3cQETLeh?width=2592&height=1940&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-16.avif)
 
-![](https://bnz05pap002files.storage.live.com/y4mnlzyilvKwv1HQPlYpM19m1XsHCcORi--e-FX3vr58bqSMV-I4mKmjgWTnzZ9TWcbb0dqwLjs3Tt3qoPQl9YxpgrRxBAFZPI-r6TJke1EPY-d6MU-0J_KLhJ26RGelgWYJOot_Rld-jVvod7fkqKec_Wwudw5fofW4qthHVlj4_IWhnkXhKKMA11ICg2benJ_?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-17.avif)
 
 居然还有商家运了只羊驼上来搞创收，有点离谱。然而大爷大妈们似乎对它很感兴趣。
 
-![](https://bnz05pap002files.storage.live.com/y4mEGan72ScEArDQkfHHT_2Je6eHK0Da6n_6nMCcvNHdF-sP604LV7CMpqhahCNImY_jnpthkys7fyrTHqJteEeunuorXSUWkky-k7VZcQO_xxDwo1l_YvJ8b8hCJhhadpoZD7zHJVGt-XbwmJZwB7R3PGJjayO5Zd5LKF60OKwdOtSX864G0N9-yVbui6cfF0g?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-18.avif)
 
 我们在4506米平台上晃了一圈，吃掉昨天在大理买的鲜花饼和自助早餐薅的酸奶后，做了一个明智的决定——买瓶氧气罐再上栈道。最终这瓶氧气罐支撑着某位朋友上到终点，按照她的理论，身体好的人高反会更加严重，而我这种身体差加上长期过度疲劳的人，受到的影响会小很多🙄。
 
 那么，开始爬向终点吧。
 
-![](https://bnz05pap002files.storage.live.com/y4m8qE7If1DYacbvE8OCfb4S8Fh5XQJmSaVaf4XDrZQcR22eV13zHL2PWDLEcmt8MPAZjXg3hIfZWeB_3n8_EJsQabbu6RsfY2Cb40jRyJaBkOJl28oPQcnyUKVh1rmY9cnSuEiygp9FXoQ8fuPFtMRgii0Ja5UEWRZbFXt4Gw0MOfNIGbbCJYnbyyo9AuoapHt?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-19.avif)
 
 走一段台阶就休息一下，顺便拍拍照、欣赏下风景。
 
-![](https://bnz05pap002files.storage.live.com/y4mirS5WUSD6xO8NBsG8r-Pz4cDfkcEfIeY4M6WgMLtFhkRTP3awpBVUnzqTjGTnazLzurF_EP2-xfOB-4MA03VjRMQdY1sVoa2yqLCkfCU9250-jwfCcFUJUcS52YE-zoDEvheRZBp3vE8kJPlFz_VSTtBwqKTTg3MdxmIYdhRufBhrwA2Y5DeWGjTsGcu-eDq?width=2592&height=1940&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-20.avif)
 
 一眨眼就爬了65米，比想象中轻松呢。
 
-![](https://bnz05pap002files.storage.live.com/y4mUYY1KskOK16ItJ1hf2YZsFt-a51zaTJ7E0okQzM02_bAKTRdwARmVDUqrXFA-kEFbbZZ3CgLNdKjix0HOFxywi1xPeVgTLzLrqXUAu_K0BFfXS25VDqkyOO3PUamG0gdGtaCrn3tNFjHPp6vTCfyaSwarMuydnhAE_h_qR7QWlim2O1i0EOW4jq1nxlhff36?width=2172&height=2896&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-21.avif)
 
 往另一边看，一点绿色都没有。
 
-![](https://bnz05pap002files.storage.live.com/y4m412v4C-ZzckupBd06kb6itwrgSaylOYKS5H0_uBYefa3lkywVj6nADjVcxYL9ARieRk8QJQUXXyAZ6bUqnJmnmJ2uXdmE40GR11BGPjjpJ-iMHFVtS3ku1axWit7aV9Nfm04joH4MuY7O9WhteCYFicaCBkN9APS-A3M6VkZRhL8IEgoIWeDFbNYhgqKWF_Q?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-22.avif)
 
 人少，走走停停还是比较舒服。
 
-![](https://bnz05pap002files.storage.live.com/y4m2ndxFjwmtvTn_c30JWcGz-JI47dJW1_Yv3J4aMXjYri4lwepLDeEmWZ3WHseQjxRjBqIvU6akJcJxuhSYt91WPCENQO_LdZuJPsguK6bGCVGzc9OpghtFhPCMHzsSj2RYysPabGTV_rz34gy_wvMYTd4QMvKC-I9G_XfFUSYARzscIYAbkr7uEXaPXB-Sf1Y?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-23.avif)
 
-![](https://bnz05pap002files.storage.live.com/y4mhtRKzuuODvJntWKtV_iWDVx6xFRg-JJ-rSeg-GzVi8glC-brc7Fn1Cm_nEb9ti0HoE6P7Mxfnk2fdy7SS2CJdri85LKQOYmwcWODLRiYurTrkPczUcV5WVe3TEXsyh15fV0TK0UjFq9xQg4G0Mke9axYvuQZIUT_TR-C24-ettXAd40JBNIeIJNoFc2nFMPI?width=2016&height=1512&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-24.avif)
 
 又上升了20米，距离终点4680还有228米。另外无人机禁飞，赞！
 
-![](https://bnz05pap002files.storage.live.com/y4mvYrXlpSqaNrSvreRlY-QRM_P8gCVn3NQX_-06lK37bk9jgkVnog4aP2bnCxS7trrbLcNUdrkZDz5FbF1zQejXS85mFvUsgqHlfA4ClsJMKSzmsct-DraOroENUObUoQC7lHo6dFEQrjDCJ4hNiDW4LOzYBZsO1F6dpAv4uMBs69GKstUSoC5FrfFVupTQJuC?width=2172&height=2896&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-25.avif)
 
 距离4506米平台的垂直高度，这么看根本不像有85米。
 
-![](https://bnz05pap002files.storage.live.com/y4mZuImvQH60pszxWJarPd1uDnAspUpqVNlRuyP9T8Y57kMcnspamtlTiuYRCbcQuXwCOGq_taX-W1JtuV3KyjSX1Dr_b_fJFQeeO1PGRDhRiKZwLzczZ4aupWtaZnQlqbPU9XgZgxZ6tP7PnbCcAv_s3GLSgYy1RjyFnJ5mMnK0z7G9qB-f7AIOEgFCUeyT4SQ?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-26.avif)
 
 救命的“大宝贝”，景点商铺卖60块一瓶，对某位朋友发出“真香”⚠️。一路上有不少跟团来的游客，除了自己买的氧气罐外，旅行团也发了，压根用不完。他们直接原地叫卖，我们半价30又收了一瓶😂。
 
-![](https://bnz05pap002files.storage.live.com/y4mcVnwkeHwArAMLuBU4bsYiOoowPpfnG5LvLhX5TSXfUjKXYOwH_mu0i8Tya1pTXJb6p9Jhc3yC9DgXMuj3tnvONi8H5zVBcdLgYYh-7S8D_UaO_NvEG-h6AbGd09ccXeILiBaXXIh4rnrCp5RWohLm4ibRE2u-9Yz4CNITz5SOtpGR9B3x0PUsLPn9knI1O5M?width=1620&height=2880&cropmode=none)
-
-![](https://bnz05pap002files.storage.live.com/y4m2iUhhslzpHJZRgyTQddGbf0DAHJOodeUk_otabVtQSGHfcI8fStvekUN7PF9ZlNgB7N307dAuZdOjIkmrkc6faBG0s-Mq2QDfxNZLUzS_zpP1xQm6iCRnftRtg6qSJkz9icfeQf9XCLzqSEQtAtSP4SqHQ_e3islHEIkUtw1b2Z6rysSC5zzLazffFX-ETF4?width=1620&height=2880&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-27.avif)
 
 来，摆个自黑的pose，哈哈哈哈。
 
-![](https://bnz05pap002files.storage.live.com/y4m7oYOO2_fPSBNLMWPyZ4JEQ5btZig2mKh3K97JcPFOJLsPu-jIuwzPsXBUc3oc0v4C6162vaVyr3Kcf60Bu4c0Tqho2k424l-ImnuFIX-eETWzCErgUoB1hKKvCkOk22C7uG-4o2MjuqLwISsFddg3FWuPCG1g090AhVP3385L20HGJlvGONGkvL7yU7k306Z?width=1620&height=2880&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-28.avif)
 
 有点雪山那意思了。
 
-![](https://bnz05pap002files.storage.live.com/y4mNkv-gtFuSyvlk4nFH49KpVDc-6PHrSzGNBKatUJSEzWAf6tHiOyAgJWfnlJLgYQPmpIPANujIuBUBkr17BZKrXtAwGSnxkqa_ipwpw1djOE-gxYT-O2P43j9yf86sctFDzvh35I3P1pU3ZxC-7SPJgblvePlqIYq_jo63zFzBnA_aTcsfRbgWmkD08rYbm0R?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-29.avif)
 
-![](https://bnz05pap002files.storage.live.com/y4mujqiqu4vvnBlDmYtBreWx7_5QgKw2yxMmDmjL1fDgZfafHMFBBz1OO8q2ZuplMT6VC-6FLxwkRbu1uDYLI-gEgcu1sEFrFuHq-Pno9z47LbLze1vwEZw8uesVZy7q29CrXVt0wp0TsVWNZtPXUS_wqlQbjPGUV71UaD5lnsfUAW2XArNj0Fx8OFM4hZWiACu?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-30.avif)
 
 另一侧还是这种黑灰色沙土面。
 
-![](https://bnz05pap002files.storage.live.com/y4mf1RY_VS-2OaE7UI8038nQdSJj-xfCGqmLzGyOoUhFTkee4SHSjGDrYO0EZRH0TGLHJHKgSlRa_guEglofoFW5ze4JrDffICxhgqdRlQIn_dJmYMJeVI2Z5ZSBqed3uxSRruz07SPPE6RumDvosejf91WhFrzJXdqZHr5IFQnpkntC64rR0pdVb3sHXzdI1G5?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-31.avif)
 
 终于，来到了终点！
 
-![](https://bnz05pap002files.storage.live.com/y4md2unvk0vxZdK_RE9AUFswIrboAVm8pnem8bOidcMzHO4iz6_nO4B_3OZZYMdsidiIa47ItyrlfQvtqCHAC-QSh4q8jTXjbvlDib7dFScYRyGjfXxQTRf2lhiCu2qf6ll0Z2sdwLN8DKzWT1klsa0eO4-7UZ11tZDlzfJoj5tR5TqXC4sm2hC-Z1grcQB_GSe?width=2560&height=1440&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-32.avif)
 
 4680米！一对东北的母女游客给她们可爱的玩偶拍打卡站，超有爱。
 
-![](https://bnz05pap002files.storage.live.com/y4mQtBq747m7FbOFbEXiQlGcTtoGOcg9NxnRbDIBa7Ubxn5DksVVH-a2U3NQ9grs8HD9X6n5Fu5IOEjABYNKWRY7kImBpI6p5GPec-lmpEggEdQSQa8tRxUIctCpdWkKHdqttnwq_Wi6sTTgUxaPwfZLd_-xElucN5wONBoJOfn95bijcY2B3BVBSHAylYFRWnF?width=1620&height=2880&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-33.avif)
 
 回头看看来时走过的路，174米的高度。
 
-![](https://bnz05pap002files.storage.live.com/y4msQrX4I2frdGQ8CVoh6l1MXlGM9zQ0e-IjlZTghL1MS__2q_aEGENoL0lULqh-ESBZVhULFGwRQOhZpI3dAzmimL8bI4uUcOzMmmGflLuLs1H1_b7THsxqogBofBdeYT_k7pQby2ndGXaltlqgwr-h1Gi2j0lxc7d1wSwHg_qeQoXhXivmBkd5cHPeXu5QY-W?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-34.avif)
 
 冰川分段景观，这时候没什么好看的。
 
-![](https://bnz05pap002files.storage.live.com/y4mrFv5Rnisj3kIk3xQ3WPHWvpHqvu8f3TIGQmiHQUlKejB86FLyDEVbBPZbteLmPQDswvzIdPaW5GJKsk913uOcYYq4q9B6ELbvF3cszUda8Fz3UW5x9E672V6dTjTjmZq7tonR00S-d5Ryq08_jFgXEd_n2yqmZlGkJG2DLei-ppSN_5rY7z7q1o_ht1sy6jm?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-35.avif)
 
 下山前来根全国各大旅游景点的知名美食——台湾烤肠补充体力。
 
-![](https://bnz05pap002files.storage.live.com/y4mULIstMS35PJ9PjrCITTX6K18DCo-mZ9hQYk8GEjE0S_f4hGiCMIlVlhEIXEb-GgokBBHSAc6d7wW7o7Rb-HtXAOwS3g9mLJIck1vaNUYAg99FsgjV3qEZ5yZ0cOS3cEz4gHM0BODXmrdUCHbJiwd18wyug-fXWwmlz9u-66jnNaC1Q7jIjwa7WIBYS38DxHP?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-36.avif)
 
 下山的路上已经可以看到我们的下一个目标蓝月湖。
 
-![](https://bnz05pap002files.storage.live.com/y4mKTkthrbUClrDgJBZ_bsPIexQswuXZ2MtXzAAYki8OBtPWIUQ_pNrQo3RItwZWvMV9c3GQDFsHRwO78NLYhib8-IaNmblulStf_OD4kSCjry1O08yG-Ori-X_uBrCfoohvGp0zxT0_VJTcEwMlMfcH8Idor19maUsxlOjOfSsOLijY3-JkIpAS8KZqwVQugi2?width=2016&height=1134&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-37.avif)
 
 返回4506米平台，最后在缆车中看一眼美丽山川。
 
-![](https://bnz05pap002files.storage.live.com/y4msJZVdV48mad0FP26XfBV07OgrHdlQZMClBMtCxk1MJ8gampGxVTLvVuXSYgPIje6a19izWshsLLlsxe4eWw_YwYG62wKIZkT2HYvKLgcIuZPZtkP9tLKSPe9j2BPmp5a4KX11SvezWSHz40pyHB8Jn_czcmROw-W58-3GellIiB-48dREys6H-7ChVI94ECl?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-38.avif)
 
 
 
@@ -179,82 +177,82 @@ tags:
 
 走完玉龙雪山，下一站是同样大名鼎鼎的蓝月湖。看到第一眼就被折服，好美！
 
-![](https://bnz05pap002files.storage.live.com/y4mouKTd3tcu9BSZ3yBgIfQTEp5qUGlP0LQhM07PJCMTb3M24OuGHHqUk7d63KxuN0tX8c1cXWprkMdVCpu4gt7aXcEHRVhdsvoZ1GoUjJ51IwIyEU0Nx659wrBn-jR_hw7p5wgWOGnpqYhwCowAuXGMxVHRbP8aRwtprk65h60U_X8y_xtDTuB9QOQBu8xqu7C?width=2560&height=1440&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-39.avif)
 
 雪山脚下的壮丽。
 
-![](https://bnz05pap002files.storage.live.com/y4m2XYJrVHjdQMziuKigLDzIbV8t6tKXf7k5orFGrZvhmMyDu0K8lzJZa6RZDOZhqVlYXQ64iKoSuymYnJcWIwVeKbZtoY4IWES19-Ucuslrjfncvm53THvIbyb8tAWsbilxVnCkWRR7vtOLuux0u5DD4EDgQLom2k7H91Kr1mKd2JLeR92fIHVuxz0dslqc6gz?width=2560&height=1440&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-40.avif)
 
-![](https://bnz05pap002files.storage.live.com/y4mfDqyGhvu7Udrbwwws4VbiUlkpmNVDXdpiReM9C5ahAHdoaBR0Na3N6POMv62FQTz5TBF8GiUt4RbfxPId_ftJ9K8Qkapkoi8XUZZ_ZfJOQb3gCr_sq68He0OAZkY9g8zMezYoPeRoCVwX9pLW7dNVPtJJbRaU__2-VZpBnvegeaqQ8r0M18t1zx_SWtSuWmr?width=1620&height=2880&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-41.avif)
 
 我很中意这一处景，很有感觉。
 
-![](https://bnz05pap002files.storage.live.com/y4mhJV5p2FLAJ_6D7EdGD5NbotOBv5goiyvn56nTjlz8qlGpMCyLroqYx-7zLEEIQqVdMzu2IhnPEupb3wDaMvvkru4ZAv4c9k0Mpu29Jj6anOlueiLwaw1G0H_-PJILowfFuZZ3fvaC-UJmrFuJ64Z7hA8t1bFcnz2Cx1Qeq7CFYvh8Lub1ncCKPnI6D6J3R85?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-42.avif)
 
-![](https://bnz05pap002files.storage.live.com/y4mS6YWECztkrhwz8W0H_x4cL_cDzR7QEQqusBPKsLfzoef3Z8xKRma3yNMipG_TgYZdFU65qYiq_OvsCMewMblhowSvYSDAhzdBPZFJvvwRW0q0rO1BdejLRdLWerzRqhwIh4ufLdZacJzxyMQMAApADHi2NI6xEbhYdu20kQGZoj5CnB7o5zLc5Cx2kuo4iGd?width=1620&height=2818&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-43.avif)
 
 除了拍婚纱的新人外，似乎还有奇怪的主播入镜？
 
-![](https://bnz05pap002files.storage.live.com/y4m-pA1OWzQaczZAxiJHzfUigcAbZUyOK9Sav8NH_6srh4cW4pODpCTKqoAlkwZEDLq8sW7N7m6Dk3lhexpHG1YYc_Hc1jUe24QPuHfPuLXJkEP2F7-e6Nz97gAD-lTuJ0k3so2CG3g6LrgLbDpFB4wx4D1S__f-KGfbfaJkmOFGiNvcl2aGIiNdddShgiCSZHH?width=2560&height=1440&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-44.avif)
 
 不同角度看湖水颜色还不完全一样。
 
-![](https://bnz05pap002files.storage.live.com/y4mrOREZTZddDHCKVTQrBiEiIOmF_39G3F4mke0rt0y7qh_ibcrxaDn_yCkojHillAfBUfyFxjHORP1lLE3RUz3CPZZxrUfM5S2oLMScjVr0xEBZgey0OY0ZcembowAO1rFv9BdSbL3zvzUniiACqYxnRKjJUnQZYbV8I3Lg221P8HrjddzCMl-wsT-3lM9BL9e?width=2560&height=1440&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-45.avif)
 
 实际上湖水非常清澈。
 
-![](https://bnz05pap002files.storage.live.com/y4mOHTRMER8wMj3CXoW7SL8HsU_niRLS3FtETf-HCPP7DySNhay0Yy7fObuacy5eSobv0rlBsR2xBTFbq0Oe0iiq1BbH7Y68oFPEjF16Ogizk6kXZ1LxZTGzwJkH82rWnb-GfF77-bypdkdrbCb4NjBKRz7PF_4JJbwedSDu3yN_A5KWy_alWz793QgU6-p9U8Q?width=2560&height=1440&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-46.avif)
 
 走到第三个湖，脚酸的不行，湖景也看够了，打道回府吧。
 
-![](https://bnz05pap002files.storage.live.com/y4mUChFkdkTdhwU58IK651gocRPtbalk9FW-JOT6lvFq7Wl89AbApi8N4J1yU_qD9uMv_fOUvzMc1E16CfGtQNI0mAdtiT5raYFc5poxpmslDMWPlA6sDTYm9poazJ0w83M3ZqrqZuJoBOS4mVyc5Y7cV3CEaewM8KqJpuOYNP28RSJxNd1ADcZ-7Vn9UdVs3Qw?width=2560&height=1440&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-47.avif)
 
 上大巴前看到三位老太太齐坐一排吸氧😂。
 
-![](https://bnz05pap002files.storage.live.com/y4mUQj3F4Ta_UWCQO0Akoxx4429twi-m8ajpDgBjH1Ua9Th-Fa_hbOtXhsRcvNIBVeXwJ1rMkpI4UJnFalZKYGeqVVqpAef1XkGwma9GY66cKHGRoLSNlSKlq5Osd99oWaomZHKIMb72-oaFl-qiHCrFUO6DPm7kN3pf8S13AjRfHrTOj7KuYzBsOq0OU8vB1An?width=1820&height=1024&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-48.avif)
 
 回到停车场，走前再去马路对面拍几张，远处也有人在拍婚纱照。
 
-![](https://bnz05pap002files.storage.live.com/y4mnd0eCTZS3dzGHXU789B64GTXWs5rJvI_rjX69mMkXTJe9yvBVwVvgYiI7lEvh00D0AVSZFGcz21gUHtBlvloPz7zhV3GrSk5YUZOUhrhy1lD2YsVNu5CYlYAfuJR7IUf12AA3o9Fs9n8frYC4WES6ej6albINBNLcW27c_zsYCnuVkx8yOkAYfLRd90AEgZ3?width=2560&height=1440&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-49.avif)
 
-![](https://bnz05pap002files.storage.live.com/y4mdojSpxVqWSTLur7DG2rjeMxx95SinQDKc9wIqpiGm34VR76KLi0F9BzR7n2S4Wyswgba-Bo0pWXqah1xvAOmELEckoZD0r-HbAi5n1cDx3eV-55lzITPIFZOPgispqPvZuY3ancYBAJOOteTrJHh4cCpEVWUen_uj3_S3o7JHxDPtCKAJn50BUYgXJ2uwup9?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-50.avif)
 
 下山的路，没什么车，开起来超级惬意。
 
-![](https://bnz05pap002files.storage.live.com/y4m-zG7Hs0acjT3NSv4H3ihMBrLnaoz2G89GpAzyDtNq6kwyomUnnntNTAxqglvM5U2cuAqpv1HezZgqQMUPYdjg0gdk1eulCFK0UWn6MdQToLbFwTQqWxYtIc2SF1WY0KUE5asXPKvy5lTEiy9G5CclFBUEWnfxhVbb_wY0U0D7JBCrzsn4m8Adv1bmIKF27uZ?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-51.avif)
 
 回到酒店，电话车行来停车场取车。三天跑了五百公里，回本咯。
 
-![](https://bnz05pap002files.storage.live.com/y4mIPPrjOHjs1wTDmKBL1juM5AAYC0Mtf1Zt7u9riaZBmgEsr59_ga3XGgXrmVDp-OGW71yEGfA22Od66c-rg33E9hbkYTBsS9SmBFUD7GRz3RvWw99EkDo34HC7PnHdRY88lNPmWO6MDdAw3JW-zW-tq_CxTN-_vhKZRw3-VixI6FxbWpOeGHl1_TDC6cXGVVa?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-52.avif)
 
 傍晚的酒店，也还蛮好看的。
 
-![](https://bnz05pap002files.storage.live.com/y4m4iTBt_k9tgWq2WnGR-tWN1x2uF4AHuI0QFeBWoPBZ700ntT2lOzld8gZ_XUR8I7dohB8z1pqsn-7cYevmcdst0S58ICNd5dqfCILsMU0xtdFAJ9aPnNtT5lEdUOJVLm0CVquNj7kAJ0JslP_7LgwpUQAYDXGnWeFbMsos7KrAc9L9ifnmrmAtjpyVBeTNhzY?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-53.avif)
 
-![](https://bnz05pap002files.storage.live.com/y4mSAtAHnKmly9d-zezZx50jRvRA0Sjb-jVr6ObFoAfV2dRPtVBKfQZZgkGIkOo2ldvJzkBtEenVhAl_29XcEYSG8chNYvMSUKjlcmMpGiHHLfAsmXSIS-YZZQtgSQ5exnccrM1_vP1yKOyOseSmj-pTciwR9oNQ7JniK9V3Ts8Oshaj1OTFqhaK8YE2EuY0M5l?width=1620&height=2880&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-54.avif)
 
 今天整理房间的服务员小姐姐给折了一只小象，有点丑萌哈哈。
 
-![](https://bnz05pap002files.storage.live.com/y4mbTUvQlhirv5o2TrDvPHfeZhum_8mwV0x4SM66HgchEkX754Te8esjT4INQy1-UK67uxSvOsv3959tKxApazO9N_vDk9qCu6SS-7IE8VFvCbwdr-PCnNLKzCPzVYoEKY4Eiy6PgKSVMmH3Xo97hdkNf-Y_jg0g9Vl8FhBiFpuLK6WH7OLVvoRUgpxNGkVq4_R?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-55.avif)
 
 晚餐来吃大众点评热门的阿婆腊排骨，从酒店步行十分钟就到了。店不大，生意很好。
 
-![](https://bnz05pap002files.storage.live.com/y4mnGDTKnPQ87xt7g3z9BZpJpGOIR4c3Ek4dj7qGEMmzwvrc9Uw_5Ces-jrPi7sMOwIkc_vLOAJVoLuPJdC7_-eFDGgaF66tUuDKbxLIjw1gZFG_By3unR5zFgeDMx9eiqY2T7pWVzYwN80boiN1chT64VrTkpxNYYBhXP-ZIFooY8D9INIhonPqEhyce6Xle5q?width=2172&height=2896&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-56.avif)
 
 团购的情侣套餐才109块，这满满一锅肉，味道可以。连续两天晚餐都物美价廉，大大的好评！
 
-![](https://bnz05pap002files.storage.live.com/y4madPoPrecfZeehBXY7E1dMqBwNp9OKFfLMBbwfXChU5UowWE8rYjoN8VIuTphVbOEcf6EJnwt2cPEROxzkC03oaKmTIdTDtU0olbq87XsSqKV2jCtZ-VKIjMc92dZsv2wcwrBWiRLDtUX-RRC28-zrpxFdzWg7p6LUw7M_yyJ4WM48Zp4XOA15_kmcp24S9Kb?width=2880&height=1620&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-57.avif)
 
 走完溜达回去，看到了酒店的招聘广告，有需要的朋友直接电话联系，就说是我介绍的👌。
 
-![](https://bnz05pap002files.storage.live.com/y4mlEokfz16ZIbTHa27oRrLFgGpcs15PamMhXrm-uHFbhbgNcgSzzQkbxrAFR8rTXIWeEFYBLpUGXDelad-BKQSmn6KZpsQLQiqD4FGqMz2Lm9wsiwODLP_XanXrmPuRPwHUunaQ-rCNkREN6aRq14bQAfkVFq1rRm5g5QZOKrhCS2cMEwiKWF6-NJPgogLn-hJ?width=2172&height=2896&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-58.avif)
 
 抬头还能看到几颗星星，真好，晚安。
 
-![](https://bnz05pap002files.storage.live.com/y4mt3HAw_-bKU3ML8KmRiQoW3nIlJUTYGOjjed7hyQOBlpTdc03teX6Ysv-ODHUVjbjyaRpk8ErA6RBDewQT1RUkpTmsZvcE6_o6pveW1sKblsY-Vb18Sfrg08oYmhxJhGn-DUjgAXxADCiSaI6iPYP9peoTjpaf_peHeKDJgv8_xC74Q4i9krG141ImcAW32mP?width=2896&height=2172&cropmode=none)
+![](https://cdn.joouis.com/2020-yunnan-trip-2-59.avif)
 
 
 
 ## 下一集
 
-《[2020 云南游记（下）](https://joouis.com/2021/2020-yunnan-trip-3/)》
+《[2020云南游记（下）](https://joouis.com/2021/2020-yunnan-trip-3/)》

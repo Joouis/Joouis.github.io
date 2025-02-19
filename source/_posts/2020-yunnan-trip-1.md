@@ -1,5 +1,5 @@
 ---
-title: 2020 云南游记（上）
+title: 2020云南游记（上）
 date: 2021-10-04 21:27:59
 updated: 2021-10-07 01:54:00
 description: 为超值折扣机酒，出发云南！
@@ -263,7 +263,7 @@ tags:
 
 ![](https://cdn.joouis.com/2020-yunnan-trip-1-62.avif)
 
-饭店厕所门前的景色居然也不错。
+饭店厕所门前的景色竟然也不错。
 
 ![](https://cdn.joouis.com/2020-yunnan-trip-1-63.avif)
 
@@ -333,5 +333,5 @@ tags:
 
 ## 下一集
 
-《[2020 云南游记（中）](https://joouis.com/2021/2020-yunnan-trip-2/)》
+《[2020云南游记（中）](https://joouis.com/2021/2020-yunnan-trip-2/)》
 
