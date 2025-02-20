@@ -19,7 +19,7 @@ tags:
 
 ## 上一集
 
-《[2020云南游记（上）](https://joouis.com/2021/2020-yunnan-trip-1/)》
+《[2020云南游记（上）- 洱海、喜洲、大理与双廊](https://joouis.com/2021/2020-yunnan-trip-1/)》
 
 
 
@@ -255,4 +255,4 @@ tags:
 
 ## 下一集
 
-《[2020云南游记（下）](https://joouis.com/2021/2020-yunnan-trip-3/)》
+《[2020云南游记（下）- 丽江古城与木府](https://joouis.com/2021/2020-yunnan-trip-3/)》

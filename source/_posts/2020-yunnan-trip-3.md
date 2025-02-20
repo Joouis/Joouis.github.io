@@ -19,7 +19,7 @@ tags:
 
 ## 上一集
 
-《[2020云南游记（中）](https://joouis.com/2021/2020-yunnan-trip-2/)》
+《[2020云南游记（中）- 玉龙雪山与蓝月谷](https://joouis.com/2021/2020-yunnan-trip-2/)》
 
 
 
