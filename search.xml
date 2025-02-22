@@ -1495,13 +1495,17 @@
 <li>隐藏标签菜单入口。考虑到目前已有大几十种标签，太多太杂，不如换成分类菜单。同时保留文章内的标签展示，作为二级入口可以查看某一标签的所有博文；</li>
 <li>支持 Aplayer 音乐播放器。</li>
 </ul>
-<h3 id="2020-11-24-更新"><a href="#2020-11-24-更新" class="headerlink" title="2020.11.24 更新"></a>2020.11.24 更新</h3><p>没想到今天又更新了一版主题，将 NexT 主题升级到了 <code>8.0.2</code> 版。这次也非常偶然，原本准备写一篇关于机器学习入门的文章，里面需要使用到数学公式插件。其实原本 NexT <code>7.1.0</code> 就有插件支持该功能，但我完全忘了这茬，一番 Google 后装了 <code>hexo-math</code> 插件，命令行报错发现它“Requires Hexo 5+”，再一看原本的 Hexo 还是 <code>3.8.0</code> 版，好家伙一下子差了两代，升！</p>
+<h3 id="2020-11-24更新"><a href="#2020-11-24更新" class="headerlink" title="2020.11.24更新"></a>2020.11.24更新</h3><p>没想到今天又更新了一版主题，将 NexT 主题升级到了 <code>8.0.2</code> 版。这次也非常偶然，原本准备写一篇关于机器学习入门的文章，里面需要使用到数学公式插件。其实原本 NexT <code>7.1.0</code> 就有插件支持该功能，但我完全忘了这茬，一番 Google 后装了 <code>hexo-math</code> 插件，命令行报错发现它“Requires Hexo 5+”，再一看原本的 Hexo 还是 <code>3.8.0</code> 版，好家伙一下子差了两代，升！</p>
 <p>主题升级带来的最大收益非黑暗模式莫属。其实去年做博客翻新工程期间，就恰好发现下一个小版本支持了黑暗模式，但当时尝试升级发现体验并不理想，小毛病不少，因此作罢。时隔一年半再次尝试，效果已经基本达到我的预期。其他方面，常规的升级依赖包括字体、修复 bugs、优化性能，还有一些小的 features 增删（不过未必在博客中启用），都可以在 NexT 的 <a href="https://github.com/next-theme/hexo-theme-next/releases">Release Notes</a> 中查看。</p>
-<h3 id="2024-02-24-更新"><a href="#2024-02-24-更新" class="headerlink" title="2024.02.24 更新"></a>2024.02.24 更新</h3><p>这次更新的契机来自Github Security Dependabot alerts，总共有56个问题，其中不乏数个Critical severity。那就刚好把Hexo、Next以及一众插件依赖都升到最新版看看能解决多少问题，剩下的再手动调整吧。</p>
+<h3 id="2024-02-24更新"><a href="#2024-02-24更新" class="headerlink" title="2024.02.24更新"></a>2024.02.24更新</h3><p>这次更新的契机来自Github Security Dependabot alerts，总共有56个问题，其中不乏数个Critical severity。那就刚好把Hexo、Next以及一众插件依赖都升到最新版看看能解决多少问题，剩下的再手动调整吧。</p>
 <ul>
 <li>移除 Aplayer 插件，使用频率实在太低。</li>
 <li>移除<code>themes/next-x.x.x</code>目录，改用NPM包。</li>
 </ul>
+<h3 id="2025-02-22更新"><a href="#2025-02-22更新" class="headerlink" title="2025.02.22更新"></a>2025.02.22更新</h3><p>此前一直使用OneDrive作为图床，去年底发现图片全都无法访问，应该是OneDrive更换了托管分享图片服务的域名，导致23年之前的图片链接全部失效，其他网友也有相似遭遇（<a href="https://www.reddit.com/r/Wordpress/comments/1gybnz8/lost_thousands_of_embedded_image_links_from/">Lost thousands of embedded image links from OneDrive in my WordPress Blog Site…</a>、<a href="https://learn.microsoft.com/en-us/answers/questions/2046218/embedding-links-change-to-1drv-how-to-change-back">Embedding links change to 1drv how to change back to onedrive.live</a>）。无力吐槽OneDrive这种完全不负责任的行为，不维护之前的链接就算了，也不提前告知用户服务有重大变更。遇到这种恶心人的服务商，只能打掉牙往肚子里吞。</p>
+<p>经过一番调研，将图床服务改为CloudFlare R2。一是国内网络大多时间能访问CF服务，二是可以直接在CF托管的域名上添加子域名。配置CF服务很简单，但挨个替换博文中的链接是纯纯体力活。最麻烦的是游记文章中存在大量图片，其OneDrive链接不含文件名，无法对应上。万幸去Wayback Machine网站能搜到过去文章的镜像，和云盘上的照片一一对应，两周时间总算全部恢复。</p>
+<p>此外游记中的照片体积都比较大，动辄三四MB起，加上切到CF服务后国内网络访问速度不稳定，整体体验捉急。因此小小研究一番图片压缩技术，选择使用AVIF格式来展示大图。在整个图床服务重建的过程中，对比了几百张JPG和转为AVIF格式（<code>magick mogrify -format avif *.jpg</code>）的图片，肉眼几乎看不出区别。同时AVIF格式压缩率非常可观，大部分图片的压缩率超过70%，最高的甚至达到98%。PNG转AVIF格式的图片有明显的细节丢失，好在PNG格式图片体积普遍偏小，就直接上传R2。</p>
+<p>除了图片文件，在控制台观察脚本文件的加载也较慢。当前默认从本地加载这些文件，即GitHub的静态服务。顺手改成cdnjs源，背后同样是CF的服务，加载速度也得到明显提升。</p>
 <h2 id="尾巴"><a href="#尾巴" class="headerlink" title="尾巴"></a>尾巴</h2><p>博客的升级花费大概两天的时间，一点点扣细节，既当产品又做技术，搞一个自嗨的项目，还是玩得非常开心。未来当然还是以输出文章为主，除了内容本身外，也试着丰富展现形式，达到一个比较舒服的阅读体验。最后关于博客的推广，其实在建站之初只想创造一个属于自己的空间，不过现在慢慢感受到，如果自己的文字能够帮助到更多人，是一件正能量满满的事情。</p>
 <p>等到五周年时再看看又发生了哪些变化吧~</p>
 ]]></content>
