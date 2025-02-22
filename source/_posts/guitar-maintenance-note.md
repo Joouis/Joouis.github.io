@@ -96,8 +96,12 @@ tags:
 
 ## 参考与推荐视频
 
-- [【談琴說愛】指板&漆面究竟如何保养？](https://www.bilibili.com/video/BV1zE411i79z)
-- [【談琴說愛】电吉他究竟怎么调？](https://www.bilibili.com/video/BV1pE411y74X)
+- [【光头说】自己给吉他Setup：Nut和Relief【Trebor_TTTTT】](https://www.bilibili.com/video/BV1pt41117QC)
+- [【光头说】自己给吉他Setup2：Saddle【Trebor_TTTTT】](https://www.bilibili.com/video/BV1at411979J)
+- [【光头说】自己给吉他Setup3：八度音准【Trebor_TTTTT】](https://www.bilibili.com/video/BV1st411q796)
+- [【光头说】自己给吉他Setup4：拾音器高度【Trebor_TTTTT】](https://www.bilibili.com/video/BV1Bt411e7jr)
+- [【光头说】自己给吉他做Setup：木吉他篇【Trebor_TTTTT】](https://www.bilibili.com/video/BV1pb411n7Db)
+- [【Tubes&Tone】我如何调节拾音器Pole Piece？](https://www.bilibili.com/video/BV1t54y1b7Hq)
 - [Pickup Height Specs](https://www.thegearpage.net/board/index.php?threads/pickup-height-specs-sheet.1678657/)
 - [冬季吉他保养基础攻略](https://www.bilibili.com/video/BV15U4y1K7bg)
 - [夏式吉他保养调整一条龙服务初探](https://www.bilibili.com/video/BV19741127nm)
