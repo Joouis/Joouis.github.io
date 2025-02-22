@@ -197,7 +197,7 @@ Tomoko把我们带到Eyama前团队所在的区域和老同事打招呼后就因
 
 ## 04.25 东京Google办公室长什么样？
 
-东京的最后一个行程也尤为精彩，那便是参观谷歌在涩谷的办公室。来之前我们本想在涩谷站取返回大阪的新干线高铁票，但不知为何Visa卡付款一直有问题，远程求助Lq君无果，她直接杀下楼帮我们重买两张票。再一看行李寄存柜的价格，算了还是托管在办公室的前台吧。
+东京的最后一个行程也尤为精彩，那便是参观谷歌在涩谷的办公室。来之前我们本想在涩谷站取返回大阪的新干线高铁票，但不知为何Visa卡付款一直有问题，远程求助LQ君无果，她直接杀下楼帮我们重买两张票。再一看行李寄存柜的价格，算了还是托管在办公室的前台吧。
 
 和贵软的中年企业风相比，谷歌办公室的风格更加年轻时尚，符合我们对互联网大厂的期待。
 
@@ -237,7 +237,7 @@ Google的食堂毫无疑问秒杀贵软，无论是东京还是国内的几个�
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138429&authkey=%21AElZmbKsxVq5-ng&width=2000&height=1500)
 
-直到我们走后几个月，Lq才搞明白跳舞机和打碟机该怎么玩。
+直到我们走后几个月，LQ才搞明白跳舞机和打碟机该怎么玩。
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138430&authkey=%21AKb6JV3nmA3dBoU&width=1500&height=2000)
 
@@ -245,7 +245,7 @@ Google的食堂毫无疑问秒杀贵软，无论是东京还是国内的几个�
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138431&authkey=%21AHsFCIF_MDoW6mk&width=2000&height=1500)
 
-感谢Lq大佬这几天在东京的照顾，大感恩~
+感谢LQ大佬这几天在东京的照顾，大感恩~
 
 ![](https://onedrive.live.com/embed?resid=7A756318060FAEEC%2138544&authkey=%21AH6AMiu0HKkY43k&width=1500&height=2000)
 
