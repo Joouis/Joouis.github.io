@@ -66,7 +66,7 @@ tags:
 - 按住高音`E`弦的21品，琴弦到拾音器的高度为：琴颈 1.5mm，中间 2.0mm，琴桥 1.0mm；
 - 按住低音`E`弦的21品，琴弦到拾音器的高度为：琴颈 2.5mm，中间 3.5mm，琴桥 2.0mm；
 
-![](https://1drv.ms/i/c/7a756318060faeec/UQTsrg8GGGN1IIB6PXYAAAAAAJ2g965Vbv1SEmY?width=2128&height=2006)
+![](https://cdn.joouis.com/guitar-maintenance-note-1.png)
 
 如果一把琴的两个或三个拾音器的功率不同，将它们调至同一高度后，需对功率较小的拾音器再次调节，使其音量与其他拾音器音量保持一致。如果同时有单拾音器和双拾音器，可以不追求音量平衡，发挥各自拾音器的特色。
 
