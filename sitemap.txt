@@ -8,7 +8,6 @@ https://joouis.com/2019/3rd-blog-anniversary/
 https://joouis.com/2023/my-first-trip-to-japan-3/
 https://joouis.com/2023/my-first-trip-to-japan-2/
 https://joouis.com/2023/my-first-trip-to-japan-1/
-https://joouis.com/2018/an-overview-of-javascript-testing-in-2018/
 https://joouis.com/2021/music-concepts-cheat-sheet/
 https://joouis.com/2021/guitar-maintenance-note/
 https://joouis.com/2022/cj-jazz-guitar-school-notes-2/
@@ -53,6 +52,7 @@ https://joouis.com/2019/x86-performance-qna/
 https://joouis.com/2019/a-thought-of-referral/
 https://joouis.com/2019/reading-notes-nonviolent-communication/
 https://joouis.com/2018/goodbye-alibaba/
+https://joouis.com/2018/an-overview-of-javascript-testing-in-2018/
 https://joouis.com/2018/reading-notes-1587/
 https://joouis.com/2018/reading-notes-extreme-ownership/
 https://joouis.com/2018/how-you-can-refactor-to-use-classes/
