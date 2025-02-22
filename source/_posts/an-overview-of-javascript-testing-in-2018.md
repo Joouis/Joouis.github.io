@@ -1,7 +1,7 @@
 ---
-title: 2018 年 JavaScript 测试概观
+title: 2018年JavaScript测试概观
 date: 2018-10-29 21:26:06
-date: 2018-10-29 21:26:06
+updated: 2018-10-29 21:26:06
 categories:
 - Web 前端
 tags:
