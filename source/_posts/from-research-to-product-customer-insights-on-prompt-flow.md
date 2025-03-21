@@ -3,6 +3,8 @@ title: 'From Research to Product: Customer Insights on Prompt flow'
 date: 2024-05-27 21:55:12
 updated: 2024-05-31 12:26:00
 description: Reflections on becoming a customer of our own product.
+categories:
+- ML/DL/LLM
 tags:
 - machine learning
 - large language model

@@ -3,7 +3,7 @@ title: Hands-on linear regression for machine learning
 date: 2020-11-24 10:58:35
 updated: 2020-11-25 13:08:00
 categories:
-- ML/DL
+- ML/DL/LLM
 tags:
 - machine learning
 - linear regression

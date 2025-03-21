@@ -3,6 +3,9 @@ title: Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline
 date: 2025-01-17 22:22:30
 updated: 2025-01-18 01:35:00
 description: If you haven't heard Cline before, just try it!
+categories:
+- ML/DL/LLM
+- AI Agent
 tags:
 - large language model
 - llm
