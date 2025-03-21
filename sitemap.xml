@@ -1207,6 +1207,69 @@
   </url>
   
   <url>
+    <loc>https://joouis.com/tags/e2e-test/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/nodejs/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/kusto/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/geneva/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/playwright/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/docker/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/certificate/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/onecert/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/dri/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://joouis.com/tags/music/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1278,69 +1341,6 @@
   
   <url>
     <loc>https://joouis.com/tags/improvisation/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/e2e-test/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/nodejs/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/kusto/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/geneva/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/playwright/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/docker/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/certificate/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/onecert/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/dri/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1438,6 +1438,62 @@
   </url>
   
   <url>
+    <loc>https://joouis.com/tags/workflow/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/uml/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/scheduler/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/xml/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/parser/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/libxml2/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/dom/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/ezxml/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://joouis.com/tags/flutter/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1529,27 +1585,6 @@
   </url>
   
   <url>
-    <loc>https://joouis.com/tags/workflow/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/uml/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/scheduler/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://joouis.com/tags/oauth/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1599,90 +1634,6 @@
   </url>
   
   <url>
-    <loc>https://joouis.com/tags/xml/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/parser/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/libxml2/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/dom/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/ezxml/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/taiwan/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/ncku/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/ndhu/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/linear-regression/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/regularization/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/gradient-descent/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/feature-engineering/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://joouis.com/tags/guitar/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1719,6 +1670,55 @@
   
   <url>
     <loc>https://joouis.com/tags/pickup/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/linear-regression/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/regularization/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/gradient-descent/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/feature-engineering/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/taiwan/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/ncku/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/ndhu/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1935,20 +1935,6 @@
   </url>
   
   <url>
-    <loc>https://joouis.com/tags/hackathon/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/reward/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://joouis.com/tags/prefetch/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1984,6 +1970,34 @@
   </url>
   
   <url>
+    <loc>https://joouis.com/tags/hackathon/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/reward/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/cheat-sheet/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/intervals/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://joouis.com/tags/ubuntu/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1999,20 +2013,6 @@
   
   <url>
     <loc>https://joouis.com/tags/config/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/cheat-sheet/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/intervals/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2146,76 +2146,6 @@
   
   <url>
     <loc>https://joouis.com/tags/mi10-pro/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/agent/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/coding-assistant/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/gpt-4o/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/qwen2-5/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/cline/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/windsurf/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/cursor/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/azure-ai/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/history/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/politics/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2376,6 +2306,97 @@
   </url>
   
   <url>
+    <loc>https://joouis.com/tags/agent/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/coding-assistant/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/gpt-4o/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/qwen2-5/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/cline/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/windsurf/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/cursor/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/azure-ai/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/history/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/politics/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/management/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/leadership/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/ownership/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://joouis.com/tags/communication/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -2425,76 +2446,6 @@
   </url>
   
   <url>
-    <loc>https://joouis.com/tags/SSR/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/server-side/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/render/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/isomorphic/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/management/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/leadership/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/ownership/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/silicon-valley/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/software/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://joouis.com/tags/inspiration/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://joouis.com/tags/rwd/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -2531,6 +2482,55 @@
   
   <url>
     <loc>https://joouis.com/tags/responsive/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/SSR/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/server-side/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/render/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/isomorphic/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/silicon-valley/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/software/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/inspiration/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2579,13 +2579,6 @@
   </url>
   
   <url>
-    <loc>https://joouis.com/tags/free-software/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://joouis.com/tags/data-structure/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -2615,6 +2608,13 @@
   
   <url>
     <loc>https://joouis.com/tags/android/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://joouis.com/tags/free-software/</loc>
     <lastmod>2025-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

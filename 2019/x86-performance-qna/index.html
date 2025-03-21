@@ -323,8 +323,7 @@
 <h3 id="Scott-Tsai"><a href="#Scott-Tsai" class="headerlink" title="Scott Tsai"></a>Scott Tsai</h3><p>Champ Yen 大上面的討論很完整，我來扮演助教，補充一些 Linux 下工具的使用方式。</p>
 <ol>
 <li><p>CPU frequency scaling 用 “cpupower frequency-{info,set}” ：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cpupower frequency-info <span class="token comment"># typically set to 'powersave' by default</span>
-cpupower frequency-set <span class="token parameter variable">-g</span> performance<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cpupower frequency-info <span class="comment"># typically set to &#x27;powersave&#x27; by default</span></span><br><span class="line">cpupower frequency-set -g performance</span><br></pre></td></tr></table></figure>
 
 <p>cpupower 由 linux-tools-common (Ubuntu) 或 kernel-tools (Fedora) 套件提供。</p>
 <blockquote>
@@ -341,27 +340,13 @@ cpupower frequency-set <span class="token parameter variable">-g</span> performa
 <li><p>開機進入 single user mode（請自行 google）；</p>
 </li>
 <li><p><code>perf stat --detail /bin/true</code> ，把 &#x2F;bin&#x2F;true 替換成你的程式。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Performance counter stats <span class="token keyword">for</span> <span class="token string">'/bin/true'</span><span class="token builtin class-name">:</span>
-
-<span class="token number">0.264133</span> task-clock <span class="token punctuation">(</span>msec<span class="token punctuation">)</span> <span class="token comment"># 0.549 CPUs utilized </span>
-<span class="token number">0</span> context-switches <span class="token comment"># 0.000 K/sec </span>
-<span class="token number">0</span> cpu-migrations <span class="token comment"># 0.000 K/sec </span>
-<span class="token number">46</span> page-faults <span class="token comment"># 0.174 M/sec </span>
-<span class="token number">943,098</span> cycles <span class="token comment"># 3.571 GHz </span>
-<span class="token number">735,484</span> instructions <span class="token comment"># 0.78 insn per cycle </span>
-<span class="token number">134,926</span> branches <span class="token comment"># 510.826 M/sec </span>
-<span class="token number">4,595</span> branch-misses <span class="token comment"># 3.41% of all branches </span>
-<span class="token number">197,277</span> L1-dcache-loads <span class="token comment"># 746.885 M/sec </span>
-<span class="token number">11,454</span> L1-dcache-load-misses <span class="token comment"># 5.81% of all L1-dcache hits </span>
-<span class="token number">5,176</span> LLC-loads <span class="token comment"># 19.596 M/sec </span>
-<span class="token number">2,696</span> LLC-load-misses <span class="token comment"># 52.09% of all LL-cache hits</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Performance counter stats <span class="keyword">for</span> <span class="string">&#x27;/bin/true&#x27;</span>:</span><br><span class="line"></span><br><span class="line">0.264133 task-clock (msec) <span class="comment"># 0.549 CPUs utilized </span></span><br><span class="line">0 context-switches <span class="comment"># 0.000 K/sec </span></span><br><span class="line">0 cpu-migrations <span class="comment"># 0.000 K/sec </span></span><br><span class="line">46 page-faults <span class="comment"># 0.174 M/sec </span></span><br><span class="line">943,098 cycles <span class="comment"># 3.571 GHz </span></span><br><span class="line">735,484 instructions <span class="comment"># 0.78 insn per cycle </span></span><br><span class="line">134,926 branches <span class="comment"># 510.826 M/sec </span></span><br><span class="line">4,595 branch-misses <span class="comment"># 3.41% of all branches </span></span><br><span class="line">197,277 L1-dcache-loads <span class="comment"># 746.885 M/sec </span></span><br><span class="line">11,454 L1-dcache-load-misses <span class="comment"># 5.81% of all L1-dcache hits </span></span><br><span class="line">5,176 LLC-loads <span class="comment"># 19.596 M/sec </span></span><br><span class="line">2,696 LLC-load-misses <span class="comment"># 52.09% of all LL-cache hits</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 <li><p>也可以用專門分析 CPU microarhitecture 效能的模擬器。<br>再次強調，模擬器很多套，要用「專門模擬 CPU microchitecture 效能」的。</p>
 <p>這種模擬器中，最容易上手的大概是 callgrind。它模擬獨立的 L1 D$ 與 I$ 與 shared last-level cache。（$ 讀作 cache，因為英文中”現金”, cash, 音近 cache）</p>
 <p>另外，看看 cachegrind 的 <a target="_blank" rel="noopener" href="http://valgrind.org/docs/manual/cg-manual.html?fbclid=IwAR2MpxcrUi93xTTh5C3jo_nRnI4Bwa1jb3T6rOhruDjiSl9sURt8ybfuKa8#cg-manual.annopts.accuracy">“Accuracy” 一節所列出的模擬器限制</a>。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">valgrind <span class="token parameter variable">--tool</span><span class="token operator">=</span>callgrind --simulate-cache<span class="token operator">=</span>yes YOUR-PROGRMS PROGRAM-ARGS
-callgrind_annotate <span class="token parameter variable">--auto</span><span class="token operator">=</span>yes callgrind.out.YOUR-PID<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">valgrind --tool=callgrind --simulate-cache=<span class="built_in">yes</span> YOUR-PROGRMS PROGRAM-ARGS</span><br><span class="line">callgrind_annotate --auto=<span class="built_in">yes</span> callgrind.out.YOUR-PID</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>善意提示：不要只看 cache miss rate。<br>比較不同程式用 “perf stat” 量出的 “insn per cycle” 值，然後想想為什麼。Instruction per cycle, cache miss 都討論完後還有時間，也可以討論一下 TLB miss。</p>
 </li>
