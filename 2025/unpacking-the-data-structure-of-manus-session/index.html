@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.joouis.com/blog-favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.joouis.com/blog-favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.joouis.com/blog-favicon.ico">
+  <link rel="mask-icon" href="https://cdn.joouis.com/blog-favicon.ico" color="#222">
+  <meta name="google-site-verification" content="NbLkH228plarNfqTQkFa_uQ_H8j5Q3LNExDwLMXAxog">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"joouis.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"duration":100,"transition":{"menu_item":"fadeIn","post_block":"fadeIn","post_header":"fadeIn","post_body":"fadeIn","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/config.min.js"></script>
+
+    <meta name="description" content="Simple note of data interface of Manus session with examples.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unpacking the Data Structure of Manus Session">
+<meta property="og:url" content="https://joouis.com/2025/unpacking-the-data-structure-of-manus-session/index.html">
+<meta property="og:site_name" content="江边的旱鸭子">
+<meta property="og:description" content="Simple note of data interface of Manus session with examples.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-1.avif">
+<meta property="og:image" content="https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-2.avif">
+<meta property="og:image" content="https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-3.avif">
+<meta property="article:published_time" content="2025-03-21T06:23:27.000Z">
+<meta property="article:modified_time" content="2025-03-21T06:57:14.615Z">
+<meta property="article:author" content="John Chou">
+<meta property="article:tag" content="large language model">
+<meta property="article:tag" content="llm">
+<meta property="article:tag" content="gpt">
+<meta property="article:tag" content="agent">
+<meta property="article:tag" content="data structure">
+<meta property="article:tag" content="manus">
+<meta property="article:tag" content="session">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-1.avif">
+
+
+<link rel="canonical" href="https://joouis.com/2025/unpacking-the-data-structure-of-manus-session/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://joouis.com/2025/unpacking-the-data-structure-of-manus-session/","path":"2025/unpacking-the-data-structure-of-manus-session/","title":"Unpacking the Data Structure of Manus Session"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Unpacking the Data Structure of Manus Session | 江边的旱鸭子</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E247SGMNGH"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-E247SGMNGH","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/third-party/analytics/google-analytics.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/third-party/analytics/baidu-analytics.min.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?199f195e233fd5ecca0d9346d3259670"></script>
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="江边的旱鸭子" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">江边的旱鸭子</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Blog of John Chou</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section">首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-recruit"><a href="/recruit/" rel="section">招聘</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Data"><span class="nav-number">1.</span> <span class="nav-text">Data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Events"><span class="nav-number">2.</span> <span class="nav-text">Events</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#chat"><span class="nav-number">2.1.</span> <span class="nav-text">chat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#liveStatus"><span class="nav-number">2.2.</span> <span class="nav-text">liveStatus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sandboxUpdate"><span class="nav-number">2.3.</span> <span class="nav-text">sandboxUpdate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#resourceAccessed"><span class="nav-number">2.4.</span> <span class="nav-text">resourceAccessed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#statusUpdate"><span class="nav-number">2.5.</span> <span class="nav-text">statusUpdate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#toolUsed"><span class="nav-number">2.6.</span> <span class="nav-text">toolUsed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#planUpdate"><span class="nav-number">2.7.</span> <span class="nav-text">planUpdate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#newPlanStep"><span class="nav-number">2.8.</span> <span class="nav-text">newPlanStep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#knowledgeSuggested"><span class="nav-number">2.9.</span> <span class="nav-text">knowledgeSuggested</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Insights"><span class="nav-number">3.</span> <span class="nav-text">Insights</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-steps-collection-of-plan"><span class="nav-number">4.</span> <span class="nav-text">A steps collection of plan</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="John Chou"
+      src="https://cdn.joouis.com/blog-avatar.jpg">
+  <p class="site-author-name" itemprop="name">John Chou</p>
+  <div class="site-description" itemprop="description">Stand high, think different.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">69</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">280</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Joouis" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Joouis" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:luckyjoou@gmail.com" title="E-Mail → mailto:luckyjoou@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/Joouis" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;Joouis" rel="noopener me" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.slideshare.net/choujohn351" title="SlideShare → http:&#x2F;&#x2F;www.slideshare.net&#x2F;choujohn351" rel="noopener me" target="_blank"><i class="fab fa-slideshare fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nd.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+        <div class="pjax">
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://joouis.com/2025/unpacking-the-data-structure-of-manus-session/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.joouis.com/blog-avatar.jpg">
+      <meta itemprop="name" content="John Chou">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="江边的旱鸭子">
+      <meta itemprop="description" content="Stand high, think different.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Unpacking the Data Structure of Manus Session | 江边的旱鸭子">
+      <meta itemprop="description" content="Simple note of data interface of Manus session with examples.">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Unpacking the Data Structure of Manus Session
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-03-21 14:23:27 / 修改时间：14:57:14" itemprop="dateCreated datePublished" datetime="2025-03-21T14:23:27+08:00">2025-03-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ML-DL-LLM/" itemprop="url" rel="index"><span itemprop="name">ML/DL/LLM</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ML-DL-LLM/AI-Agent/" itemprop="url" rel="index"><span itemprop="name">AI Agent</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>15 分钟</span>
+    </span>
+</div>
+
+            <div class="post-description">Simple note of data interface of Manus session with examples.</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>The data comes from the case <a target="_blank" rel="noopener" href="https://manus.im/share/xFgpHb15vKqfRPWIs3JJPJ"><strong>Comprehensive Tesla Stock Analysis and Investment Insights - manus</strong></a>.</p>
+<p>The history data of a session is provided by the API <code>https://api.manus.im/api/chat/getSession?sessionId=xxx</code>.</p>
+<h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"xFgpHb15vKqfRPWIs3JJPJ"</span><span class="token punctuation">,</span>
+  <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Comprehensive Tesla Stock Analysis and Investment Insights"</span><span class="token punctuation">,</span>
+  <span class="token property">"iconInfo"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"$typeName"</span><span class="token operator">:</span> <span class="token string">"session.v1.IconInfo"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://files.manuscdn.com/assets/icon/session/apple-stocks-data.svg"</span><span class="token punctuation">,</span>
+    <span class="token property">"bgColorLight"</span><span class="token operator">:</span> <span class="token string">"#E43573"</span><span class="token punctuation">,</span>
+    <span class="token property">"bgColorDark"</span><span class="token operator">:</span> <span class="token string">"#3F3F3F"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token property">"agentTaskMode"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">"events"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Q: how many kinds of <code>agentTaskMode</code>?</p>
+<h2 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h2><h3 id="chat"><a href="#chat" class="headerlink" title="chat"></a>chat</h3><p><code>sender</code>: “user”, “assistant”</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"vG1n3GhvODVIjGoJ12J2GS"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060890011</span><span class="token punctuation">,</span>
+    <span class="token property">"sender"</span><span class="token operator">:</span> <span class="token string">"user"</span><span class="token punctuation">,</span>
+    <span class="token property">"messageType"</span><span class="token operator">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
+    <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"I'd like a thorough analysis of Tesla stock, including:\n\nSummary: Company overview, key metrics, performance data and investment recommendations\nFinancial Data: Revenue trends, profit margins, balance sheet and cash flow analysis\nMarket Sentiment: Analyst ratings, sentiment indicators and news impact\nTechnical Analysis: Price trends, technical indicators and support/resistance levels\nCompare Assets: Market share and financial metrics vs. key competitors\nValue Investor: Intrinsic value, growth potential and risk factors\nInvestment Thesis: SWOT analysis and recommendations for different investor types"</span><span class="token punctuation">,</span>
+    <span class="token property">"attachments"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token punctuation">&#123;</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"messageType"</span><span class="token operator">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
+    <span class="token property">"attachments"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"I'll help you create a comprehensive analysis of Tesla stock. I'll gather the latest financial data, market sentiment, technical analysis, competitive comparisons, and develop investment recommendations. This will take some time to research thoroughly, but I'll work on it right away and provide you with a detailed report."</span><span class="token punctuation">,</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"4hJnLZZjels3kckkeY8WFQ"</span><span class="token punctuation">,</span>
+    <span class="token property">"sender"</span><span class="token operator">:</span> <span class="token string">"assistant"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060892861</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>With attachments created before.</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"chat"</span><span class="token punctuation">,</span>
+  <span class="token property">"messageType"</span><span class="token operator">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
+  <span class="token property">"attachments"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://private-us-east-1.manuscdn.com/sessionFile/xFgpHb15vKqfRPWIs3JJPJ/sandbox/CZjwux2HibnKjGKnS2xC3V_1741061983802_na1fn_L2hvbWUvdWJ1bnR1L3Rlc2xhX2FuYWx5c2lzL2NoYXJ0cy90ZXNsYV9oaXN0b3JpY2FsX3ByaWNl.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUveEZncEhiMTV2S3FmUlBXSXMzSkpQSi9zYW5kYm94L0Naand1eDJIaWJuS2pHS25TMnhDM1ZfMTc0MTA2MTk4MzgwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNSbGMyeGhYMkZ1WVd4NWMybHpMMk5vWVhKMGN5OTBaWE5zWVY5b2FYTjBiM0pwWTJGc1gzQnlhV05sLnBuZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzEyODIwOH19fV19&amp;Key-Pair-Id=K2HSFNDJXOU9YS&amp;Signature=QObuZr3pgEcIYMAdT1xhHBF0wvusk73og2YC8YHEOnnyYsWxMLVCk0I2byrMJrzekDUVmnmsfxoUX8Wei0srzeaoi9hlb~bgbGTiZjyDCV3t~8Fsoz5z8rbIr6L8STQsib3kRlLQB2dC44nibbfWTGbzrnXX~cPsoayQyVq0jHK851brNQywIp2sHx8d~1DgzFxXi3iKuLdyFad9ZQbutjMxoX1Mii-XdHJ9229yP0FSkQYO0XzrFeFtR0bGmdZSMkvwPJXR-qn~XWpSgEeiSxOZ2N~ZtaH1gHMq~z~at7f0WzJkPlkm3ULCz6oD74MnhVwHZxBFtdb6zDcBDZeOOA__"</span><span class="token punctuation">,</span>
+      <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/home/ubuntu/tesla_analysis/charts/tesla_historical_price.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image"</span><span class="token punctuation">,</span>
+      <span class="token property">"filename"</span><span class="token operator">:</span> <span class="token string">"tesla_historical_price.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741061983802</span><span class="token punctuation">,</span>
+      <span class="token property">"contentType"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">,</span>
+      <span class="token property">"contentLength"</span><span class="token operator">:</span> <span class="token number">47609</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://private-us-east-1.manuscdn.com/sessionFile/xFgpHb15vKqfRPWIs3JJPJ/sandbox/CZjwux2HibnKjGKnS2xC3V_1741061983802_na1fn_L2hvbWUvdWJ1bnR1L3Rlc2xhX2FuYWx5c2lzL2NoYXJ0cy90ZXNsYV9jYXBpdGFsX3N0cnVjdHVyZQ.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUveEZncEhiMTV2S3FmUlBXSXMzSkpQSi9zYW5kYm94L0Naand1eDJIaWJuS2pHS25TMnhDM1ZfMTc0MTA2MTk4MzgwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNSbGMyeGhYMkZ1WVd4NWMybHpMMk5vWVhKMGN5OTBaWE5zWVY5allYQnBkR0ZzWDNOMGNuVmpkSFZ5WlEucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzQzMTI4MjA4fX19XX0_&amp;Key-Pair-Id=K2HSFNDJXOU9YS&amp;Signature=rOY3ZIfUl3nxTME0-OmihUdCCh~syAj3USviGwc1sPEF40XTwFIXpd-~oa1UBgfoNPB3pR6T-e6diYUdX96KlShuEOjAloeLALOgWkErX2J4mlW8dOtBOFNo0~YTk0R~GeLHDtwT7OwbhrqvW1OMHZIk7foUjLDoDitGY8sIlf4Fpt7uDk3auN0WlVxer3aE5FvgIhrZbSSbYHeh5OCAvDXQ4cxgvYxzzkg3HH0bBmUF3sdogn6ZW4gPv-sWy15tgjcjYKCakUUMZUTP4todL6HgLH~ZCKJ2DKJjNJDiRiN6ns8LuUed8HO60Ao7LrlRhsdyZtK3dXZxhgKBwiY2Ng__"</span><span class="token punctuation">,</span>
+      <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/home/ubuntu/tesla_analysis/charts/tesla_capital_structure.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image"</span><span class="token punctuation">,</span>
+      <span class="token property">"filename"</span><span class="token operator">:</span> <span class="token string">"tesla_capital_structure.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741061983802</span><span class="token punctuation">,</span>
+      <span class="token property">"contentType"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">,</span>
+      <span class="token property">"contentLength"</span><span class="token operator">:</span> <span class="token number">30300</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://private-us-east-1.manuscdn.com/sessionFile/xFgpHb15vKqfRPWIs3JJPJ/sandbox/CZjwux2HibnKjGKnS2xC3V_1741061983802_na1fn_L2hvbWUvdWJ1bnR1L3Rlc2xhX2FuYWx5c2lzL2NoYXJ0cy90ZXNsYV9yZXZlbnVlX2dyb3d0aA.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUveEZncEhiMTV2S3FmUlBXSXMzSkpQSi9zYW5kYm94L0Naand1eDJIaWJuS2pHS25TMnhDM1ZfMTc0MTA2MTk4MzgwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNSbGMyeGhYMkZ1WVd4NWMybHpMMk5vWVhKMGN5OTBaWE5zWVY5eVpYWmxiblZsWDJkeWIzZDBhQS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3NDMxMjgyMDh9fX1dfQ__&amp;Key-Pair-Id=K2HSFNDJXOU9YS&amp;Signature=TOhZSNCFinyvfUW3pT1RxOHa9v5KMyMbZ0Tjcy6OzzIoW8JTUa7S0KNZskgUtuoBnqimVaEyqAVVida9-ZBSGpbwTocJH8IygaUZSkpRhtKDtrlUPGUHV~bZyYkURRkc7zo57C1HO9u3g3gfc55jjBJLZzfU4m2ht92Hfe0vwAoPLMoyjXSR7wgs1vGjQ4SR97N6pOFh-CA3q4BRPEPyk5BiX0F6EJjoXeAD5gF0lNBhhtMwXSar0u6kEAMPcgxdGfKGIe5B-4YGYi2DEhe4v7o26fNW-2oeJpL8kLpbLYY-0qYGpex8JyQCpDNbxwujkC-mMd3qizXjUqTkahyb2g__"</span><span class="token punctuation">,</span>
+      <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/home/ubuntu/tesla_analysis/charts/tesla_revenue_growth.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image"</span><span class="token punctuation">,</span>
+      <span class="token property">"filename"</span><span class="token operator">:</span> <span class="token string">"tesla_revenue_growth.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741061983802</span><span class="token punctuation">,</span>
+      <span class="token property">"contentType"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">,</span>
+      <span class="token property">"contentLength"</span><span class="token operator">:</span> <span class="token number">32821</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://private-us-east-1.manuscdn.com/sessionFile/xFgpHb15vKqfRPWIs3JJPJ/sandbox/CZjwux2HibnKjGKnS2xC3V_1741061983802_na1fn_L2hvbWUvdWJ1bnR1L3Rlc2xhX2FuYWx5c2lzL2NoYXJ0cy90ZXNsYV9wcm9maXRhYmlsaXR5X21hcmdpbnM.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUveEZncEhiMTV2S3FmUlBXSXMzSkpQSi9zYW5kYm94L0Naand1eDJIaWJuS2pHS25TMnhDM1ZfMTc0MTA2MTk4MzgwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNSbGMyeGhYMkZ1WVd4NWMybHpMMk5vWVhKMGN5OTBaWE5zWVY5d2NtOW1hWFJoWW1sc2FYUjVYMjFoY21kcGJuTS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3NDMxMjgyMDh9fX1dfQ__&amp;Key-Pair-Id=K2HSFNDJXOU9YS&amp;Signature=R4ECYV9kqx2Ktfx-lxMTyd7mpF-6EWqY~rjd1nu7g417pHP2XiAlANwDhCXHowizuu276LWMY5sv79w4qqxYkIZMcH~awKcEov~HD8jirSDvjAX7hD4Q3uiDw-gsoTF4705Ic3liw655GSGb35XDUOEDN6ml15szhqi9xP4XaqFVeMfdqXelYHldYrLQyB0h~2TggYHpeEdOHFGX7ea96N9CdbV3X3tT37gD5iLUkAJjnnx~ny0oF26Eflj1L0YdzwSK~tpC-VZYZl9js1vTd4J2FGbyz9yp3CZyTvz0inUt-WnmcrVCS1M7KFGYrtf5U3S75p7sdf6dpncZWgrGzw__"</span><span class="token punctuation">,</span>
+      <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/home/ubuntu/tesla_analysis/charts/tesla_profitability_margins.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image"</span><span class="token punctuation">,</span>
+      <span class="token property">"filename"</span><span class="token operator">:</span> <span class="token string">"tesla_profitability_margins.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741061983802</span><span class="token punctuation">,</span>
+      <span class="token property">"contentType"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">,</span>
+      <span class="token property">"contentLength"</span><span class="token operator">:</span> <span class="token number">61140</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://private-us-east-1.manuscdn.com/sessionFile/xFgpHb15vKqfRPWIs3JJPJ/sandbox/CZjwux2HibnKjGKnS2xC3V_1741061983802_na1fn_L2hvbWUvdWJ1bnR1L3Rlc2xhX2FuYWx5c2lzL2NoYXJ0cy90ZXNsYV9jYXNoX2Zsb3dfYW5hbHlzaXM.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUveEZncEhiMTV2S3FmUlBXSXMzSkpQSi9zYW5kYm94L0Naand1eDJIaWJuS2pHS25TMnhDM1ZfMTc0MTA2MTk4MzgwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNSbGMyeGhYMkZ1WVd4NWMybHpMMk5vWVhKMGN5OTBaWE5zWVY5allYTm9YMlpzYjNkZllXNWhiSGx6YVhNLnBuZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzEyODIwOH19fV19&amp;Key-Pair-Id=K2HSFNDJXOU9YS&amp;Signature=P0GyMLi38cIp0ssnWkQYaG1g1wuSfFOv1yg8jIrse7HGQlMaWFUi2pQKA9IDrZv-UXDqitqy-S1-lSfRECFdUXI0sxqfSg8rlMfl9afGySE~5lYlue4Ym9ZGJeyZ3eqVhDP2sy-P9iY~QWmE5qSdBbcCMnIhK6fv4xQVXNXMW9-swcaM0yYaUyfYuYXNUe8taMIUjBnYJZu~rJ57zAfh8VgAoKrcVl-W3xdBP~Qk-2zZUk6jmcf8uZArUjnZ1L45KjQhmzh15D7B9b8zXIlIXX0s4ygnMHdQ6twYjVG-ITHOO1XqSjD8fEVt0ufEAV6UxgyM3lZkf4A~Ce9ol6BPRg__"</span><span class="token punctuation">,</span>
+      <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/home/ubuntu/tesla_analysis/charts/tesla_cash_flow_analysis.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image"</span><span class="token punctuation">,</span>
+      <span class="token property">"filename"</span><span class="token operator">:</span> <span class="token string">"tesla_cash_flow_analysis.png"</span><span class="token punctuation">,</span>
+      <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741061983802</span><span class="token punctuation">,</span>
+      <span class="token property">"contentType"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">,</span>
+      <span class="token property">"contentLength"</span><span class="token operator">:</span> <span class="token number">44464</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"I've completed the financial data collection and analysis for Tesla. Here's what I've gathered:\n\n1. Historical Stock Data: I've retrieved Tesla's stock price history from Yahoo Finance, including key metrics like the current price ($284.65), 52-week high ($488.54), and 52-week low ($138.80). I've created visualizations of the price trends and calculated volatility metrics.\n\n2. Revenue Analysis: Tesla has shown remarkable growth, with revenue increasing from $24.6 billion in 2019 to $96.8 billion in 2023, representing a strong compound annual growth rate.\n\n3. Profitability Metrics: I've analyzed Tesla's gross margins, operating margins, and net margins over the past five years, showing their progression from negative operating income in 2019 to substantial profitability in recent years.\n\n4. Balance Sheet Strength: Tesla has significantly improved its financial position, reducing debt while building cash reserves to over $29 billion by 2023.\n\n5. Cash Flow Analysis: The company has demonstrated strong cash generation capabilities with positive and growing free cash flow despite significant capital expenditures.\n\n6. R&amp;D and Capital Investments: Tesla continues to invest heavily in research and development and production capacity expansion.\n\nI'm now moving on to analyze market sentiment for Tesla, including analyst ratings, price targets, and news impact on the stock. This will give us insight into how the market perceives Tesla's future prospects."</span><span class="token punctuation">,</span>
+  <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"CZjwux2HibnKjGKnS2xC3V"</span><span class="token punctuation">,</span>
+  <span class="token property">"sender"</span><span class="token operator">:</span> <span class="token string">"assistant"</span><span class="token punctuation">,</span>
+  <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741061983997</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Ask for approval.</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"chat"</span><span class="token punctuation">,</span>
+  <span class="token property">"messageType"</span><span class="token operator">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
+  <span class="token property">"attachments"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">"requestDeployActionId"</span><span class="token operator">:</span> <span class="token string">"toolu_01Xea7dTETZUtxWThJB9Ggsi"</span><span class="token punctuation">,</span>
+  <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"Manus 正在尝试将位于 `/home/ubuntu/tesla_analysis/dashboard` 的服务部署到公网上。请通过点击按钮确认您是否同意。"</span><span class="token punctuation">,</span>
+  <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"YCrGxLFvxLLJlGHKSfx8zg"</span><span class="token punctuation">,</span>
+  <span class="token property">"sender"</span><span class="token operator">:</span> <span class="token string">"assistant"</span><span class="token punctuation">,</span>
+  <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741065199191</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="liveStatus"><a href="#liveStatus" class="headerlink" title="liveStatus"></a>liveStatus</h3><p>Always show the latest one at the bottom before the job is finished.</p>
+<p><img data-src="https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-1.avif"></p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"k7QnLyNeOeCtPCzteTREAz"</span><span class="token punctuation">,</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"liveStatus"</span><span class="token punctuation">,</span>
+  <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060890082</span><span class="token punctuation">,</span>
+  <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"初始化沙箱"</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="sandboxUpdate"><a href="#sandboxUpdate" class="headerlink" title="sandboxUpdate"></a>sandboxUpdate</h3><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"Kgfk50K5yUzFGh8kBmD25y"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"sandboxUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060891120</span><span class="token punctuation">,</span>
+    <span class="token property">"sandboxId"</span><span class="token operator">:</span> <span class="token string">"****"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"codeServerUrl"</span><span class="token operator">:</span> <span class="token string">"****"</span><span class="token punctuation">,</span>
+    <span class="token property">"vncUrl"</span><span class="token operator">:</span> <span class="token string">"****"</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"DPtpw7TlfGM0F3JBFOe5Vf"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"sandboxUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741066408097</span><span class="token punctuation">,</span>
+    <span class="token property">"sandboxId"</span><span class="token operator">:</span> <span class="token string">"****"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"stopped"</span><span class="token punctuation">,</span>
+    <span class="token property">"codeServerUrl"</span><span class="token operator">:</span> <span class="token string">"****"</span><span class="token punctuation">,</span>
+    <span class="token property">"vncUrl"</span><span class="token operator">:</span> <span class="token string">"****"</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="resourceAccessed"><a href="#resourceAccessed" class="headerlink" title="resourceAccessed"></a>resourceAccessed</h3><p>A read-only list showed on web page.</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"FTSYIESAA0lX1IKWQEMDcx"</span><span class="token punctuation">,</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"resourceAccessed"</span><span class="token punctuation">,</span>
+  <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060897834</span><span class="token punctuation">,</span>
+  <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"已连接到数据源"</span><span class="token punctuation">,</span>
+  <span class="token property">"resourceType"</span><span class="token operator">:</span> <span class="token string">"data_api"</span><span class="token punctuation">,</span>
+  <span class="token property">"resources"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"api_19"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Get stock chart"</span><span class="token punctuation">,</span>
+      <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"builtin"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"api_20"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Get stock holders"</span><span class="token punctuation">,</span>
+      <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"builtin"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"api_21"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Get stock insights"</span><span class="token punctuation">,</span>
+      <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"builtin"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"api_16"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Get stock profile"</span><span class="token punctuation">,</span>
+      <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"builtin"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"api_22"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Get stock SEC filing"</span><span class="token punctuation">,</span>
+      <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"builtin"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"api_23"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Get what analysts are saying of a stock"</span><span class="token punctuation">,</span>
+      <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"builtin"</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="statusUpdate"><a href="#statusUpdate" class="headerlink" title="statusUpdate"></a>statusUpdate</h3><p>Note that <code>planStepId</code> will be generated before <code>stepId</code>.</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"l5ckmcJ92qsBeEcPWdd517"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060902886</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在工作"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Creating a plan for Tesla stock analysis"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"E7Q4GDL3FsNrzRuv3Cb5Xa"</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"JjrDxkPfwe54YWM2akBGEp"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741065081706</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在运行"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Manus 正在处理您的请求"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"jxqdGJWP8ipvTYx6Y4fCEZ"</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"WLYbSvWSWXO94sQHJzLNlf"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741065742563</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"stopped"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 已完成工作"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Manus 已完成当前任务，并准备好接收新请求或修改。"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"qUIIRtCmzKhU9rXxeGIfpb"</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="toolUsed"><a href="#toolUsed" class="headerlink" title="toolUsed"></a>toolUsed</h3><ul>
+<li><code>tool</code>: “terminal”, “text_editor”</li>
+<li><code>detail</code> data should be used to show runtime outputs in “Manus’ computer” card</li>
+</ul>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"lxD5h6ztASqqdXXvJMoKcq"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"toolUsed"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060905794</span><span class="token punctuation">,</span>
+    <span class="token property">"actionId"</span><span class="token operator">:</span> <span class="token string">"toolu_014zqVgHFTWGj543mEUAmYnx"</span><span class="token punctuation">,</span>
+    <span class="token property">"tool"</span><span class="token operator">:</span> <span class="token string">"terminal"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在使用终端"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"已执行命令 `mkdir -p tesla_analysis &amp;&amp; cd tesla_analysis &amp;&amp; touch todo.md`"</span><span class="token punctuation">,</span>
+    <span class="token property">"message"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"正在执行命令"</span><span class="token punctuation">,</span>
+        <span class="token property">"param"</span><span class="token operator">:</span> <span class="token string">"mkdir -p tesla_analysis &amp;&amp; cd tesla_analysis &amp;&amp; touch todo.md"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"detail"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"terminal"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"execute"</span><span class="token punctuation">,</span>
+            <span class="token property">"finished"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"shellId"</span><span class="token operator">:</span> <span class="token string">"shell1"</span><span class="token punctuation">,</span>
+            <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"mkdir -p tesla_analysis &amp;&amp; cd tesla_analysis &amp;&amp; touch todo.md"</span><span class="token punctuation">,</span>
+            <span class="token property">"outputType"</span><span class="token operator">:</span> <span class="token string">"append"</span><span class="token punctuation">,</span>
+            <span class="token property">"output"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">"\u001b[32mubuntu@sandbox:~ $\u001b[0m cd /home/ubuntu &amp;&amp; mkdir -p tesla_analysis &amp;&amp; cd tesla_analysis &amp;&amp; touch todo.md\n\n\u001b[32mubuntu@sandbox:~/tesla_analysis $\u001b[0m"</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"E7Q4GDL3FsNrzRuv3Cb5Xa"</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"g5UfojfdB2VhWIxwcvs6Uj"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"toolUsed"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060924172</span><span class="token punctuation">,</span>
+    <span class="token property">"actionId"</span><span class="token operator">:</span> <span class="token string">"toolu_01HjcgTGFBtBfZpRCKZRzZ32"</span><span class="token punctuation">,</span>
+    <span class="token property">"tool"</span><span class="token operator">:</span> <span class="token string">"text_editor"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"E7Q4GDL3FsNrzRuv3Cb5Xa"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在使用文本编辑器"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"正在创建文件 `tesla_analysis/todo.md`"</span><span class="token punctuation">,</span>
+    <span class="token property">"message"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"正在创建文件"</span><span class="token punctuation">,</span>
+        <span class="token property">"param"</span><span class="token operator">:</span> <span class="token string">"tesla_analysis/todo.md"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"detail"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"textEditor"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"write"</span><span class="token punctuation">,</span>
+            <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/home/ubuntu/tesla_analysis/todo.md"</span><span class="token punctuation">,</span>
+            <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"# Tesla Stock Analysis Todo List\n\n## 1. Create Todo List\n- [x] Create project directory structure\n- [x] Create todo.md file\n- [x] Outline all required analysis components\n\n## 2. Gather Tesla Company Overview\n- [ ] Collect basic company information (ticker, exchange, etc.)\n- [ ] Get company profile and business summary\n- [ ] Identify key executives and leadership team\n- [ ] Document company history and major milestones\n- [ ] Analyze business model and revenue streams\n\n## 3. Collect Tesla Financial Data\n- [ ] Retrieve historical stock price data\n- [ ] Analyze revenue trends over past 5 years\n- [ ] Calculate profit margins and profitability metrics\n- [ ] Examine balance sheet strength and liabilities\n- [ ] Analyze cash flow statements and free cash flow\n- [ ] Review capital expenditures and R&amp;D investments\n\n## 4. Analyze Market Sentiment for Tesla\n- [ ] Gather recent analyst ratings and price targets\n- [ ] Collect analyst commentary and research reports\n- [ ] Analyze recent news impact on stock price\n- [ ] Review insider trading activity\n- [ ] Examine institutional ownership changes\n- [ ] Assess social media and retail investor sentiment\n\n## 5. Perform Technical Analysis on Tesla Stock\n- [ ] Create price charts for different time periods\n- [ ] Identify key support and resistance levels\n- [ ] Calculate and analyze moving averages\n- [ ] Evaluate momentum indicators (RSI, MACD, etc.)\n- [ ] Identify chart patterns and potential breakout points\n- [ ] Assess volume trends and distribution\n\n## 6. Compare Tesla with Competitors\n- [ ] Identify key competitors in EV and automotive space\n- [ ] Compare market share and growth rates\n- [ ] Analyze financial metrics relative to peers\n- [ ] Compare valuation multiples (P/E, P/S, EV/EBITDA)\n- [ ] Assess technological advantages and disadvantages\n- [ ] Evaluate manufacturing capacity and efficiency\n\n## 7. Calculate Intrinsic Value of Tesla\n- [ ] Apply discounted cash flow (DCF) model\n- [ ] Estimate future growth rates and margins\n- [ ] Calculate weighted average cost of capital (WACC)\n- [ ] Perform sensitivity analysis on key assumptions\n- [ ] Compare intrinsic value to current market price\n- [ ] Assess margin of safety for potential investors\n\n## 8. Develop Investment Thesis for Tesla\n- [ ] Conduct SWOT analysis (Strengths, Weaknesses, Opportunities, Threats)\n- [ ] Identify key growth drivers and catalysts\n- [ ] Assess major risk factors and potential headwinds\n- [ ] Develop bull case scenario and price target\n- [ ] Develop bear case scenario and price target\n- [ ] Create recommendations for different investor types\n\n## 9. Compile Comprehensive Tesla Stock Report\n- [ ] Write executive summary with key findings\n- [ ] Organize all analysis sections into cohesive report\n- [ ] Create visualizations for key metrics and trends\n- [ ] Format report with proper sections and references\n- [ ] Review and proofread final document\n\n## 10. Deliver Report to User\n- [ ] Finalize all report components\n- [ ] Ensure all analyses are complete and accurate\n- [ ] Package report with all supporting files\n- [ ] Deliver final report to user\n"</span><span class="token punctuation">,</span>
+            <span class="token property">"oldContent"</span><span class="token operator">:</span> <span class="token string">""</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="planUpdate"><a href="#planUpdate" class="headerlink" title="planUpdate"></a>planUpdate</h3><ul>
+<li><code>status</code>: “doing”, “todo”, “done”</li>
+<li><code>endAt</code> for “done” status task</li>
+</ul>
+<p>It seems that this event will be emitted after a <code>toolUsed</code> or <code>newPlanStep</code> event.</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"XrXQO9oRo34MYtstDRLZwE"</span><span class="token punctuation">,</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"planUpdate"</span><span class="token punctuation">,</span>
+  <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060908470</span><span class="token punctuation">,</span>
+  <span class="token property">"tasks"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_001"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Create comprehensive Tesla stock analysis task list"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"doing"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_002"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Gather Tesla company overview and key information"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"todo"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_003"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Collect and analyze Tesla's financial data"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"todo"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_004"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Evaluate market sentiment for Tesla"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"todo"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_005"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Perform technical analysis on Tesla stock"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"todo"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_006"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Compare Tesla with key industry competitors"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"todo"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_007"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Calculate intrinsic value of Tesla stock"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"todo"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_008"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Develop comprehensive investment thesis"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"todo"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_009"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Compile detailed Tesla stock analysis report"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"todo"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"step_010"</span><span class="token punctuation">,</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Deliver comprehensive stock analysis to user"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"todo"</span><span class="token punctuation">,</span>
+      <span class="token property">"startedAt"</span><span class="token operator">:</span> <span class="token number">1741060908465</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="newPlanStep"><a href="#newPlanStep" class="headerlink" title="newPlanStep"></a>newPlanStep</h3><p><code>stepId</code> instead of <code>planStepId</code> in data, which will wrap the steps like this:</p>
+<p><img data-src="https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-2.avif"></p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"4UHAXLMlsuovhOWGm6WBzB"</span><span class="token punctuation">,</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"newPlanStep"</span><span class="token punctuation">,</span>
+  <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741060902693</span><span class="token punctuation">,</span>
+  <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Create comprehensive Tesla stock analysis task list"</span><span class="token punctuation">,</span>
+  <span class="token property">"stepId"</span><span class="token operator">:</span> <span class="token string">"E7Q4GDL3FsNrzRuv3Cb5Xa"</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="knowledgeSuggested"><a href="#knowledgeSuggested" class="headerlink" title="knowledgeSuggested"></a>knowledgeSuggested</h3><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"Gg74U4LDSvOC4x1wGDW1IL"</span><span class="token punctuation">,</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"knowledgeSuggested"</span><span class="token punctuation">,</span>
+  <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741064324520</span><span class="token punctuation">,</span>
+  <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"建议的新知识"</span><span class="token punctuation">,</span>
+  <span class="token property">"resources"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Tesla stock analysis dashboard creation"</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="Insights"><a href="#Insights" class="headerlink" title="Insights"></a>Insights</h2><ul>
+<li><code>newPlanStep</code> seems to be the flag to indicate next step is beginning. (Guess the step status is also controlled by this.)<br>  <img data-src="https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-3.avif"></li>
+<li><code>statusUpdate</code> and <code>toolUsed</code> events searched by a same <code>planStepId</code> .</li>
+<li><code>tasks</code> list in <code>planUpdate</code> event will be appended after user asked a new question.</li>
+</ul>
+<h2 id="A-steps-collection-of-plan"><a href="#A-steps-collection-of-plan" class="headerlink" title="A steps collection of plan"></a>A steps collection of plan</h2><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">[</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"wQ0tsoHiqVskSwU9Ud93sA"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741061972527</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在工作"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Moving to analyze market sentiment for Tesla"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"XYu58JLESxdSecDmgKLeJi"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"newPlanStep"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741061972511</span><span class="token punctuation">,</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Evaluate market sentiment for Tesla"</span><span class="token punctuation">,</span>
+    <span class="token property">"stepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"ooZqdunPTMjCQY1WZe75mY"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741061994707</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在工作"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Analyzing market sentiment for Tesla"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"dH95W9Qz9mwR9Xd9Vh029D"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"toolUsed"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062198875</span><span class="token punctuation">,</span>
+    <span class="token property">"actionId"</span><span class="token operator">:</span> <span class="token string">"toolu_01PbZbqkKu517na1HvYTWsZu"</span><span class="token punctuation">,</span>
+    <span class="token property">"tool"</span><span class="token operator">:</span> <span class="token string">"terminal"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在使用终端"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"已执行命令 `cd /home/ubuntu/tesla_analysis/data &amp;&amp; touch tesla_market_sentiment.py`"</span><span class="token punctuation">,</span>
+    <span class="token property">"message"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"正在执行命令"</span><span class="token punctuation">,</span>
+      <span class="token property">"param"</span><span class="token operator">:</span> <span class="token string">"cd /home/ubuntu/tesla_analysis/data &amp;&amp; touch tesla_market_sentiment.py"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"detail"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"terminal"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"execute"</span><span class="token punctuation">,</span>
+        <span class="token property">"finished"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">"shellId"</span><span class="token operator">:</span> <span class="token string">"shell2"</span><span class="token punctuation">,</span>
+        <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cd /home/ubuntu/tesla_analysis/data &amp;&amp; touch tesla_market_sentiment.py"</span><span class="token punctuation">,</span>
+        <span class="token property">"outputType"</span><span class="token operator">:</span> <span class="token string">"append"</span><span class="token punctuation">,</span>
+        <span class="token property">"output"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token string">"\u001b[32mubuntu@sandbox:~/tesla_analysis/data $\u001b[0m cd /home/ubuntu/tesla_analysis/data &amp;&amp; cd /home/ubuntu/tesla_analysis/data &amp;&amp; touch tesla_market_sentiment.py\n\n\u001b[32mubuntu@sandbox:~/tesla_analysis/data $\u001b[0m"</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"kp9yBKsz4TVgQn8oNtp8wD"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062306008</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在工作"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Analyzing market sentiment for Tesla"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"5sP3g1brITVABMTqR6WwgC"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"toolUsed"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062396685</span><span class="token punctuation">,</span>
+    <span class="token property">"actionId"</span><span class="token operator">:</span> <span class="token string">"toolu_01BRfXbq4SLzWftS4fjUBLCM"</span><span class="token punctuation">,</span>
+    <span class="token property">"tool"</span><span class="token operator">:</span> <span class="token string">"text_editor"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在使用文本编辑器"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"正在创建文件 `tesla_analysis/data/tesla_market_sentiment.py`"</span><span class="token punctuation">,</span>
+    <span class="token property">"message"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"正在创建文件"</span><span class="token punctuation">,</span>
+      <span class="token property">"param"</span><span class="token operator">:</span> <span class="token string">"tesla_analysis/data/tesla_market_sentiment.py"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"detail"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"textEditor"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"write"</span><span class="token punctuation">,</span>
+        <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/home/ubuntu/tesla_analysis/data/tesla_market_sentiment.py"</span><span class="token punctuation">,</span>
+        <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"import sys\nsys.path.append('/opt/.manus/.sandbox-runtime')\nfrom data_api import ApiClient\nimport json\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom datetime import datetime\nimport os\nimport re\nfrom collections import Counter\n\n# Initialize API client\n&lt;response clipped>&lt;NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.&lt;/NOTE>"</span><span class="token punctuation">,</span>
+        <span class="token property">"oldContent"</span><span class="token operator">:</span> <span class="token string">""</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"Rsk8LFoezHv2npHjVCwlRo"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062403749</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在工作"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Analyzing market sentiment for Tesla"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"IoPrLfFwxxO3VuwnBLogJO"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"toolUsed"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062438389</span><span class="token punctuation">,</span>
+    <span class="token property">"actionId"</span><span class="token operator">:</span> <span class="token string">"toolu_0115Z943k9mQYDZgPT2vp46Q"</span><span class="token punctuation">,</span>
+    <span class="token property">"tool"</span><span class="token operator">:</span> <span class="token string">"terminal"</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在使用终端"</span><span class="token punctuation">,</span>
+    <span class="token property">"message"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"正在执行命令"</span><span class="token punctuation">,</span>
+      <span class="token property">"param"</span><span class="token operator">:</span> <span class="token string">"cd /home/ubuntu/tesla_analysis/data &amp;&amp; python3 tesla_market_sentiment.py"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"执行命令 `cd /home/ubuntu/tesla_analysis/data &amp;&amp; python3 tesla_market_sentiment.py` 并等待了 `30` 秒"</span><span class="token punctuation">,</span>
+    <span class="token property">"detail"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"terminal"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"execute"</span><span class="token punctuation">,</span>
+        <span class="token property">"finished"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">"shellId"</span><span class="token operator">:</span> <span class="token string">"shell2"</span><span class="token punctuation">,</span>
+        <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cd /home/ubuntu/tesla_analysis/data &amp;&amp; python3 tesla_market_sentiment.py"</span><span class="token punctuation">,</span>
+        <span class="token property">"outputType"</span><span class="token operator">:</span> <span class="token string">"append"</span><span class="token punctuation">,</span>
+        <span class="token property">"output"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"(No output from terminal)"</span><span class="token punctuation">]</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"dg1mAnR7Mpxs7R2oVY4czy"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062544145</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在工作"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Analyzing market sentiment for Tesla"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"aRArJ9xWzOlLzzUUh4cmFM"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"toolUsed"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062548731</span><span class="token punctuation">,</span>
+    <span class="token property">"actionId"</span><span class="token operator">:</span> <span class="token string">"toolu_01Q8eFq4SuY8icHma6NNc9B4"</span><span class="token punctuation">,</span>
+    <span class="token property">"tool"</span><span class="token operator">:</span> <span class="token string">"terminal"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在使用终端"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"已执行命令 `cd /home/ubuntu/tesla_analysis/data &amp;&amp; ls -la`"</span><span class="token punctuation">,</span>
+    <span class="token property">"message"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"正在执行命令"</span><span class="token punctuation">,</span>
+      <span class="token property">"param"</span><span class="token operator">:</span> <span class="token string">"cd /home/ubuntu/tesla_analysis/data &amp;&amp; ls -la"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"detail"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"terminal"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"execute"</span><span class="token punctuation">,</span>
+        <span class="token property">"finished"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">"shellId"</span><span class="token operator">:</span> <span class="token string">"shell3"</span><span class="token punctuation">,</span>
+        <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cd /home/ubuntu/tesla_analysis/data &amp;&amp; ls -la"</span><span class="token punctuation">,</span>
+        <span class="token property">"outputType"</span><span class="token operator">:</span> <span class="token string">"append"</span><span class="token punctuation">,</span>
+        <span class="token property">"output"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token string">"\u001b[32mubuntu@sandbox:~ $\u001b[0m cd /home/ubuntu/tesla_analysis/data &amp;&amp; cd /home/ubuntu/tesla_analysis/data &amp;&amp; ls -la\ntotal 660\ndrwxrwxr-x 2 ubuntu ubuntu   4096 Mar  3 14:38 \u001b[0m\u001b[01;34m.\u001b[0m\ndrwxrwxr-x 4 ubuntu ubuntu   4096 Mar  3 14:25 \u001b[01;34m..\u001b[0m\n-rw-rw-r-- 1 ubuntu ubuntu    174 Mar  3 14:38 tesla_analyst_reports_raw.json\n-rw-rw-r-- 1 ubuntu ubuntu   1675 Mar  3 14:20 tesla_business_model.json\n-rw-rw-r-- 1 ubuntu ubuntu   1166 Mar  3 14:20 tesla_business_model.txt\n-rw-rw-r-- 1 ubuntu ubuntu   2404 Mar  3 14:18 tesla_company_profile.py\n-rw-rw-r-- 1 ubuntu ubuntu   1848 Mar  3 14:18 tesla_company_profile.txt\n-rw-rw-r-- 1 ubuntu ubuntu  12466 Mar  3 14:29 tesla_financial_analysis.py\n-rw-rw-r-- 1 ubuntu ubuntu   3744 Mar  3 14:30 tesla_financial_analysis.txt\n-rw-rw-r-- 1 ubuntu ubuntu    232 Mar  3 14:25 tesla_financial_metrics.json\n-rw-rw-r-- 1 ubuntu ubuntu   1548 Mar  3 14:29 tesla_financial_metrics_detailed.json\n-rw-rw-r-- 1 ubuntu ubuntu    287 Mar  3 14:25 tesla_financial_summary.txt\n-rw-rw-r-- 1 ubuntu ubuntu  21753 Mar  3 14:25 tesla_historical_prices.csv\n-rw-rw-r-- 1 ubuntu ubuntu   1741 Mar  3 14:20 tesla_history.json\n-rw-rw-r-- 1 ubuntu ubuntu    945 Mar  3 14:20 tesla_history.txt\n-rw-rw-r-- 1 ubuntu ubuntu   8602 Mar  3 14:38 tesla_holders_raw.json\n-rw-rw-r-- 1 ubuntu ubuntu 216917 Mar  3 14:38 tesla_insights_raw.json\n-rw-rw-r-- 1 ubuntu ubuntu    891 Mar  3 14:20 tesla_leadership.json\n-rw-rw-r-- 1 ubuntu ubuntu   8480 Mar  3 14:20 tesla_leadership.py\n-rw-rw-r-- 1 ubuntu ubuntu    443 Mar  3 14:20 tesla_leadership.txt\n-rw-rw-r-- 1 ubuntu ubuntu  21364 Mar  3 14:38 tesla_market_sentiment.py\n-rw-rw-r-- 1 ubuntu ubuntu   3150 Mar  3 14:38 tesla_market_sentiment.txt\n-rw-rw-r-- 1 ubuntu ubuntu   2579 Mar  3 14:18 tesla_profile_raw.json\n-rw-rw-r-- 1 ubuntu ubuntu 126156 Mar  3 14:38 tesla_sec_filings_raw.json\n-rw-rw-r-- 1 ubuntu ubuntu   6083 Mar  3 14:38 tesla_sentiment_data.json\n-rw-rw-r-- 1 ubuntu ubuntu   6926 Mar  3 14:23 tesla_stock_data.py\n-rw-rw-r-- 1 ubuntu ubuntu   9321 Mar  3 14:25 tesla_stock_data_raw_1mo.json\n-rw-rw-r-- 1 ubuntu ubuntu  20505 Mar  3 14:25 tesla_stock_data_raw_1y.json\n-rw-rw-r-- 1 ubuntu ubuntu     60 Mar  3 14:25 tesla_stock_data_raw_5y.json\n-rw-rw-r-- 1 ubuntu ubuntu  43112 Mar  3 14:25 tesla_stock_data_raw_6mo.json\n-rw-rw-r-- 1 ubuntu ubuntu  62875 Mar  3 14:25 tesla_stock_data_raw_max.json\n-rw-rw-r-- 1 ubuntu ubuntu    182 Mar  3 14:38 tesla_twitter_raw.json\n\u001b[32mubuntu@sandbox:~/tesla_analysis/data $\u001b[0m"</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"FWT7evw7q3d78b0ordJp58"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062614593</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在工作"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Completing market sentiment analysis for Tesla"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"oU4CahZLkVztLlRx78Mho6"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"toolUsed"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062614950</span><span class="token punctuation">,</span>
+    <span class="token property">"actionId"</span><span class="token operator">:</span> <span class="token string">"toolu_01QsGKEkNeUoZFWoyiFaiUX1"</span><span class="token punctuation">,</span>
+    <span class="token property">"tool"</span><span class="token operator">:</span> <span class="token string">"terminal"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在使用终端"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"已执行命令 `cd /home/ubuntu/tesla_analysis/charts &amp;&amp; ls -la`"</span><span class="token punctuation">,</span>
+    <span class="token property">"message"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"正在执行命令"</span><span class="token punctuation">,</span>
+      <span class="token property">"param"</span><span class="token operator">:</span> <span class="token string">"cd /home/ubuntu/tesla_analysis/charts &amp;&amp; ls -la"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"detail"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"terminal"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"execute"</span><span class="token punctuation">,</span>
+        <span class="token property">"finished"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">"shellId"</span><span class="token operator">:</span> <span class="token string">"shell3"</span><span class="token punctuation">,</span>
+        <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cd /home/ubuntu/tesla_analysis/charts &amp;&amp; ls -la"</span><span class="token punctuation">,</span>
+        <span class="token property">"outputType"</span><span class="token operator">:</span> <span class="token string">"append"</span><span class="token punctuation">,</span>
+        <span class="token property">"output"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token string">"\u001b[32mubuntu@sandbox:~/tesla_analysis/data $\u001b[0m cd /home/ubuntu/tesla_analysis &amp;&amp; cd /home/ubuntu/tesla_analysis/charts &amp;&amp; ls -la\ntotal 252\ndrwxrwxr-x 2 ubuntu ubuntu  4096 Mar  3 14:38 \u001b[0m\u001b[01;34m.\u001b[0m\ndrwxrwxr-x 4 ubuntu ubuntu  4096 Mar  3 14:25 \u001b[01;34m..\u001b[0m\n-rw-rw-r-- 1 ubuntu ubuntu 30300 Mar  3 14:30 tesla_capital_structure.png\n-rw-rw-r-- 1 ubuntu ubuntu 44464 Mar  3 14:30 tesla_cash_flow_analysis.png\n-rw-rw-r-- 1 ubuntu ubuntu 47609 Mar  3 14:25 tesla_historical_price.png\n-rw-rw-r-- 1 ubuntu ubuntu 61140 Mar  3 14:30 tesla_profitability_margins.png\n-rw-rw-r-- 1 ubuntu ubuntu 32821 Mar  3 14:30 tesla_revenue_growth.png\n-rw-rw-r-- 1 ubuntu ubuntu 23416 Mar  3 14:38 tesla_technical_outlook.png\n\u001b[32mubuntu@sandbox:~/tesla_analysis/charts $\u001b[0m"</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"sPndWS5ngDLS0XuGHYep6N"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"statusUpdate"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062620453</span><span class="token punctuation">,</span>
+    <span class="token property">"agentStatus"</span><span class="token operator">:</span> <span class="token string">"running"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在工作"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Completing market sentiment analysis for Tesla"</span><span class="token punctuation">,</span>
+    <span class="token property">"noRender"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"FpA1ynrLVk70PPIjM3RGKA"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"toolUsed"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token number">1741062626134</span><span class="token punctuation">,</span>
+    <span class="token property">"actionId"</span><span class="token operator">:</span> <span class="token string">"toolu_01F7XnUyYY9SXZYnLS4xmMPV"</span><span class="token punctuation">,</span>
+    <span class="token property">"tool"</span><span class="token operator">:</span> <span class="token string">"text_editor"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span>
+    <span class="token property">"planStepId"</span><span class="token operator">:</span> <span class="token string">"7galTGLGCzryoM1tSeM1YR"</span><span class="token punctuation">,</span>
+    <span class="token property">"brief"</span><span class="token operator">:</span> <span class="token string">"Manus 正在使用文本编辑器"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"编辑文件 `tesla_analysis/todo.md`"</span><span class="token punctuation">,</span>
+    <span class="token property">"message"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"正在编辑文件"</span><span class="token punctuation">,</span>
+      <span class="token property">"param"</span><span class="token operator">:</span> <span class="token string">"tesla_analysis/todo.md"</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"detail"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"textEditor"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"update"</span><span class="token punctuation">,</span>
+        <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/home/ubuntu/tesla_analysis/todo.md"</span><span class="token punctuation">,</span>
+        <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"# Tesla Stock Analysis Todo List\n\n## 1. Create Todo List\n- [x] Create project directory structure\n- [x] Create todo.md file\n- [x] Outline all required analysis components\n\n## 2. Gather Tesla Company Overview\n- [x] Collect basic company information (ticker, exchange, etc.)\n- [x] Get company profile and business summary\n- [x] Identify key executives and leadership team\n- [x] Document company history and major milestones\n- [x] Analyze business model and revenue streams\n\n## 3. Collect Tesla Financial Data\n- [x] Retrieve historical stock price data\n- [x] Analyze revenue trends over past 5 years\n- [x] Calculate profit margins and profitability metrics\n- [x] Examine balance sheet strength and liabilities\n- [x] Analyze cash flow statements and free cash flow\n- [x] Review capital expenditures and R&amp;D investments\n\n## 4. Analyze Market Sentiment for Tesla\n- [x] Gather recent analyst ratings and price targets\n- [x] Collect analyst commentary and research reports\n- [x] Analyze recent news impact on stock price\n- [x] Review insider trading activity\n- [x] Examine institutional ownership changes\n- [x] Assess social media and retail investor sentiment\n\n## 5. Perform Technical Analysis on Tesla Stock\n- [ ] Create price charts for different time periods\n- [ ] Identify key support and resistance levels\n- [ ] Calculate and analyze moving averages\n- [ ] Evaluate momentum indicators (RSI, MACD, etc.)\n- [ ] Identify chart patterns and potential breakout points\n- [ ] Assess volume trends and distribution\n\n## 6. Compare Tesla with Competitors\n- [ ] Identify key competitors in EV and automotive space\n- [ ] Compare market share and growth rates\n- [ ] Analyze financial metrics relative to peers\n- [ ] Compare valuation multiples (P/E, P/S, EV/EBITDA)\n- [ ] Assess technological advantages and disadvantages\n- [ ] Evaluate manufacturing capacity and efficiency\n\n## 7. Calculate Intrinsic Value of Tesla\n- [ ] Apply discounted cash flow (DCF) model\n- [ ] Estimate future growth rates and margins\n- [ ] Calculate weighted average cost of capital (WACC)\n- [ ] Perform sensitivity analysis on key assumptions\n- [ ] Compare intrinsic value to current market price\n- [ ] Assess margin of safety for potential investors\n\n## 8. Develop Investment Thesis for Tesla\n- [ ] Conduct SWOT analysis (Strengths, Weaknesses, Opportunities, Threats)\n- [ ] Identify key growth drivers and catalysts\n- [ ] Assess major risk factors and potential headwinds\n- [ ] Develop bull case scenario and price target\n- [ ] Develop bear case scenario and price target\n- [ ] Create recommendations for different investor types\n\n## 9. Compile Comprehensive Tesla Stock Report\n- [ ] Write executive summary with key findings\n- [ ] Organize all analysis sections into cohesive report\n- [ ] Create visualizations for key metrics and trends\n- [ ] Format report with proper sections and references\n- [ ] Review and proofread final document\n\n## 10. Deliver Report to User\n- [ ] Finalize all report components\n- [ ] Ensure all analyses are complete and accurate\n- [ ] Package report with all supporting files\n- [ ] Deliver final report to user\n"</span><span class="token punctuation">,</span>
+        <span class="token property">"oldContent"</span><span class="token operator">:</span> <span class="token string">"# Tesla Stock Analysis Todo List\n\n## 1. Create Todo List\n- [x] Create project directory structure\n- [x] Create todo.md file\n- [x] Outline all required analysis components\n\n## 2. Gather Tesla Company Overview\n- [x] Collect basic company information (ticker, exchange, etc.)\n- [x] Get company profile and business summary\n- [x] Identify key executives and leadership team\n- [x] Document company history and major milestones\n- [x] Analyze business model and revenue streams\n\n## 3. Collect Tesla Financial Data\n- [x] Retrieve historical stock price data\n- [x] Analyze revenue trends over past 5 years\n- [x] Calculate profit margins and profitability metrics\n- [x] Examine balance sheet strength and liabilities\n- [x] Analyze cash flow statements and free cash flow\n- [x] Review capital expenditures and R&amp;D investments\n\n## 4. Analyze Market Sentiment for Tesla\n- [ ] Gather recent analyst ratings and price targets\n- [ ] Collect analyst commentary and research reports\n- [ ] Analyze recent news impact on stock price\n- [ ] Review insider trading activity\n- [ ] Examine institutional ownership changes\n- [ ] Assess social media and retail investor sentiment\n\n## 5. Perform Technical Analysis on Tesla Stock\n- [ ] Create price charts for different time periods\n- [ ] Identify key support and resistance levels\n- [ ] Calculate and analyze moving averages\n- [ ] Evaluate momentum indicators (RSI, MACD, etc.)\n- [ ] Identify chart patterns and potential breakout points\n- [ ] Assess volume trends and distribution\n\n## 6. Compare Tesla with Competitors\n- [ ] Identify key competitors in EV and automotive space\n- [ ] Compare market share and growth rates\n- [ ] Analyze financial metrics relative to peers\n- [ ] Compare valuation multiples (P/E, P/S, EV/EBITDA)\n- [ ] Assess technological advantages and disadvantages\n- [ ] Evaluate manufacturing capacity and efficiency\n\n## 7. Calculate Intrinsic Value of Tesla\n- [ ] Apply discounted cash flow (DCF) model\n- [ ] Estimate future growth rates and margins\n- [ ] Calculate weighted average cost of capital (WACC)\n- [ ] Perform sensitivity analysis on key assumptions\n- [ ] Compare intrinsic value to current market price\n- [ ] Assess margin of safety for potential investors\n\n## 8. Develop Investment Thesis for Tesla\n- [ ] Conduct SWOT analysis (Strengths, Weaknesses, Opportunities, Threats)\n- [ ] Identify key growth drivers and catalysts\n- [ ] Assess major risk factors and potential headwinds\n- [ ] Develop bull case scenario and price target\n- [ ] Develop bear case scenario and price target\n- [ ] Create recommendations for different investor types\n\n## 9. Compile Comprehensive Tesla Stock Report\n- [ ] Write executive summary with key findings\n- [ ] Organize all analysis sections into cohesive report\n- [ ] Create visualizations for key metrics and trends\n- [ ] Format report with proper sections and references\n- [ ] Review and proofread final document\n\n## 10. Deliver Report to User\n- [ ] Finalize all report components\n- [ ] Ensure all analyses are complete and accurate\n- [ ] Package report with all supporting files\n- [ ] Deliver final report to user\n"</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="https://cdn.joouis.com/blog-reward-wechat.jpg" alt="John Chou 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="https://cdn.joouis.com/blog-reward-alipay.jpg" alt="John Chou 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>John Chou
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://joouis.com/2025/unpacking-the-data-structure-of-manus-session/" title="Unpacking the Data Structure of Manus Session">https://joouis.com/2025/unpacking-the-data-structure-of-manus-session/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nd/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/large-language-model/" rel="tag"># large language model</a>
+              <a href="/tags/llm/" rel="tag"># llm</a>
+              <a href="/tags/gpt/" rel="tag"># gpt</a>
+              <a href="/tags/agent/" rel="tag"># agent</a>
+              <a href="/tags/data-structure/" rel="tag"># data structure</a>
+              <a href="/tags/manus/" rel="tag"># manus</a>
+              <a href="/tags/session/" rel="tag"># session</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/qwen25-vs-gpt4o-with-cline/" rel="prev" title="Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline">
+                  <i class="fa fa-angle-left"></i> Qwen2.5 vs. GPT-4o - Unlocking Coding Potential with Cline
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2016 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Chou</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/comments.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/utils.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/motion.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/sidebar.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/next-boot.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/pjax.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/third-party/search/local-search.min.js"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/third-party/fancybox.min.js"></script>
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"joou","count":false,"i18n":{"disqus":"disqus"}}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-next/8.22.0/third-party/comments/disqus.min.js"></script>
+
+</body>
+</html>

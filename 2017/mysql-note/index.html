@@ -165,18 +165,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">68</span>
+          <span class="site-state-item-count">69</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">278</span>
+        <span class="site-state-item-count">280</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -294,17 +294,43 @@
 <li><strong><a target="_blank" rel="noopener" href="http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html">21分钟 MySQL 入门教程</a></strong></li>
 </ul>
 <h2 id="遣词造句"><a href="#遣词造句" class="headerlink" title="遣词造句"></a>遣词造句</h2><p>像翻译英语句子一样来记录语法。</p>
-<h4 id="按用户名查询用户的所有昵称"><a href="#按用户名查询用户的所有昵称" class="headerlink" title="按用户名查询用户的所有昵称"></a>按用户名查询用户的所有昵称</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span>(nick) <span class="keyword">FROM</span> TABLE_SAMPLE <span class="keyword">WHERE</span> name <span class="keyword">IN</span></span><br><span class="line">(<span class="keyword">SELECT</span> name <span class="keyword">FROM</span> TABLE_SAMPLE <span class="keyword">GROUP</span> <span class="keyword">BY</span> name)</span><br></pre></td></tr></table></figure>
+<h4 id="按用户名查询用户的所有昵称"><a href="#按用户名查询用户的所有昵称" class="headerlink" title="按用户名查询用户的所有昵称"></a>按用户名查询用户的所有昵称</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token keyword">DISTINCT</span><span class="token punctuation">(</span>nick<span class="token punctuation">)</span> <span class="token keyword">FROM</span> TABLE_SAMPLE <span class="token keyword">WHERE</span> name <span class="token operator">IN</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> name <span class="token keyword">FROM</span> TABLE_SAMPLE <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> name<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="按月以及平台查询用户数"><a href="#按月以及平台查询用户数" class="headerlink" title="按月以及平台查询用户数"></a>按月以及平台查询用户数</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">DATE_FORMAT(<span class="type">time</span>, <span class="string">&#x27;%Y-%m&#x27;</span>) months, <span class="built_in">COUNT</span>(<span class="keyword">DISTINCT</span>(uid)) <span class="keyword">AS</span> user_count</span><br><span class="line"><span class="keyword">FROM</span> TABLE_SAMPLE <span class="keyword">GROUP</span> <span class="keyword">BY</span> months, platforms</span><br></pre></td></tr></table></figure>
+<h4 id="按月以及平台查询用户数"><a href="#按月以及平台查询用户数" class="headerlink" title="按月以及平台查询用户数"></a>按月以及平台查询用户数</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span>
+DATE_FORMAT<span class="token punctuation">(</span><span class="token keyword">time</span><span class="token punctuation">,</span> <span class="token string">'%Y-%m'</span><span class="token punctuation">)</span> months<span class="token punctuation">,</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token keyword">DISTINCT</span><span class="token punctuation">(</span>uid<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> user_count
+<span class="token keyword">FROM</span> TABLE_SAMPLE <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> months<span class="token punctuation">,</span> platforms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="查询时间单位的数据总和"><a href="#查询时间单位的数据总和" class="headerlink" title="查询时间单位的数据总和"></a>查询时间单位的数据总和</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># 每分钟</span><br><span class="line">SELECT</span><br><span class="line">SUM(data) AS sum</span><br><span class="line">FROM TABLE_SAMPLE GROUP BY YEAR(time), MONTH(time), DAY(time), HOUR(time), MINUTE(time)</span><br><span class="line"></span><br><span class="line"># 每10分钟</span><br><span class="line">SELECT</span><br><span class="line">SUM(data) AS sum</span><br><span class="line">FROM TABLE_SAMPLE GROUP BY YEAR(time), MONTH(time), DAY(time), HOUR(time), FLOOR(MINUTE(time)/10)</span><br><span class="line"></span><br><span class="line"># 每小时</span><br><span class="line">SELECT</span><br><span class="line">SUM(data) AS sum</span><br><span class="line">FROM TABLE_SAMPLE GROUP BY YEAR(time), MONTH(time), DAY(time), HOUR(time)</span><br><span class="line"></span><br><span class="line"># 后面依此类推...</span><br></pre></td></tr></table></figure>
+<h4 id="查询时间单位的数据总和"><a href="#查询时间单位的数据总和" class="headerlink" title="查询时间单位的数据总和"></a>查询时间单位的数据总和</h4><pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql"># 每分钟
+SELECT
+SUM(data) AS sum
+FROM TABLE_SAMPLE GROUP BY YEAR(time), MONTH(time), DAY(time), HOUR(time), MINUTE(time)
 
-<h4 id="查询每小时的数据总和"><a href="#查询每小时的数据总和" class="headerlink" title="查询每小时的数据总和"></a>查询每小时的数据总和</h4><h4 id="一次查询里查询多样数据"><a href="#一次查询里查询多样数据" class="headerlink" title="一次查询里查询多样数据"></a>一次查询里查询多样数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">(<span class="keyword">SELECT</span> uid <span class="keyword">FROM</span> TABLE_SAMPLE_1 <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;我最帅&#x27;</span>) <span class="keyword">AS</span> uid,</span><br><span class="line">(<span class="keyword">SELECT</span> height <span class="keyword">FROM</span> TABLE_SAMPLE_2 <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;我最帅&#x27;</span>) <span class="keyword">AS</span> height</span><br></pre></td></tr></table></figure>
+# 每10分钟
+SELECT
+SUM(data) AS sum
+FROM TABLE_SAMPLE GROUP BY YEAR(time), MONTH(time), DAY(time), HOUR(time), FLOOR(MINUTE(time)&#x2F;10)
 
-<h4 id="一次更新多条数据"><a href="#一次更新多条数据" class="headerlink" title="一次更新多条数据"></a>一次更新多条数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> TABLE_SAMPLE</span><br><span class="line"><span class="keyword">SET</span> credit <span class="operator">=</span> credit <span class="operator">+</span> <span class="keyword">CASE</span></span><br><span class="line">  <span class="keyword">WHEN</span> name <span class="operator">=</span> <span class="string">&#x27;我最帅&#x27;</span> <span class="keyword">THEN</span> <span class="number">1000</span></span><br><span class="line">  <span class="keyword">WHEN</span> name <span class="operator">=</span> <span class="string">&#x27;我不帅&#x27;</span> <span class="keyword">THEN</span> <span class="number">0</span> <span class="keyword">END</span>,</span><br><span class="line">  <span class="type">time</span> <span class="operator">=</span> <span class="built_in">CURRENT_DATE</span></span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;我最帅&#x27;</span>, <span class="string">&#x27;我不帅&#x27;</span>)</span><br></pre></td></tr></table></figure>
+# 每小时
+SELECT
+SUM(data) AS sum
+FROM TABLE_SAMPLE GROUP BY YEAR(time), MONTH(time), DAY(time), HOUR(time)
 
-<h4 id="一次插入多条数据"><a href="#一次插入多条数据" class="headerlink" title="一次插入多条数据"></a>一次插入多条数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> TABLE_SAMPLE (name, credit)</span><br><span class="line"><span class="keyword">VALUES</span> (<span class="string">&#x27;我最帅&#x27;</span>, <span class="number">1000</span>), (<span class="string">&#x27;我不帅&#x27;</span>, <span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+# 后面依此类推...<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="查询每小时的数据总和"><a href="#查询每小时的数据总和" class="headerlink" title="查询每小时的数据总和"></a>查询每小时的数据总和</h4><h4 id="一次查询里查询多样数据"><a href="#一次查询里查询多样数据" class="headerlink" title="一次查询里查询多样数据"></a>一次查询里查询多样数据</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> uid <span class="token keyword">FROM</span> TABLE_SAMPLE_1 <span class="token keyword">WHERE</span> name <span class="token operator">=</span> <span class="token string">'我最帅'</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> uid<span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> height <span class="token keyword">FROM</span> TABLE_SAMPLE_2 <span class="token keyword">WHERE</span> name <span class="token operator">=</span> <span class="token string">'我最帅'</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> height<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="一次更新多条数据"><a href="#一次更新多条数据" class="headerlink" title="一次更新多条数据"></a>一次更新多条数据</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">UPDATE</span> TABLE_SAMPLE
+<span class="token keyword">SET</span> credit <span class="token operator">=</span> credit <span class="token operator">+</span> <span class="token keyword">CASE</span>
+  <span class="token keyword">WHEN</span> name <span class="token operator">=</span> <span class="token string">'我最帅'</span> <span class="token keyword">THEN</span> <span class="token number">1000</span>
+  <span class="token keyword">WHEN</span> name <span class="token operator">=</span> <span class="token string">'我不帅'</span> <span class="token keyword">THEN</span> <span class="token number">0</span> <span class="token keyword">END</span><span class="token punctuation">,</span>
+  <span class="token keyword">time</span> <span class="token operator">=</span> <span class="token keyword">CURRENT_DATE</span>
+<span class="token keyword">WHERE</span> name <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token string">'我最帅'</span><span class="token punctuation">,</span> <span class="token string">'我不帅'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="一次插入多条数据"><a href="#一次插入多条数据" class="headerlink" title="一次插入多条数据"></a>一次插入多条数据</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> TABLE_SAMPLE <span class="token punctuation">(</span>name<span class="token punctuation">,</span> credit<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'我最帅'</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'我不帅'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 
 <h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><ul>

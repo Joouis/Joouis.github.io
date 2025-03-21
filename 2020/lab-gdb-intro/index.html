@@ -185,18 +185,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">68</span>
+          <span class="site-state-item-count">69</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">278</span>
+        <span class="site-state-item-count">280</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -357,7 +357,12 @@
 <li><code>autotools</code></li>
 </ul>
 </li>
-<li>Install stlink<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/texane/stlink stlink.git</span><br><span class="line">cd stlink.git</span><br><span class="line">./autogen.sh</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></li>
+<li>Install stlink<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/texane/stlink stlink.git
+<span class="token builtin class-name">cd</span> stlink.git
+./autogen.sh
+./configure
+<span class="token function">make</span>
+<span class="token function">make</span> <span class="token function">install</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 <p>It includes:</p>
 <ul>
@@ -393,7 +398,9 @@
 </ul>
 <h3 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h3><ul>
 <li>Disassembling THUMB code in GDB<br> By default, the disassemble command in GDB operates in ARM mode. The programs running on CORTEX-M3 are compiled in THUMB mode. To correctly disassemble them under GDB, uses an odd address. For instance, if you want to disassemble the code at 0x20000000, use <code>(gdb) disassemble 0x20000001</code></li>
-<li>每次都輸入一堆必備的指令很麻煩，可以寫入一個<code>gdb.script</code>檔案裏，例如：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">target remote:4242</span><br><span class="line">file stm32f429-example.elf</span><br><span class="line">layout src</span><br></pre></td></tr></table></figure>
+<li>每次都輸入一堆必備的指令很麻煩，可以寫入一個<code>gdb.script</code>檔案裏，例如：<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">target remote:4242
+<span class="token function">file</span> stm32f429-example.elf
+layout src<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 然後使用 <code>arm-none-eabi-gdb -x gdb.script</code> 進入後，單步執行即可。<ul>
 <li>記得先打開 <code>st-util</code>；</li>
 <li>個人習慣把 <code>arm-none-eabi-gdb -x gdb.script</code> 寫進 <code>Makefile</code> 裏。</li>
@@ -421,7 +428,11 @@
 <li>走到0x885e，如果輸入的數的個數不是4個，就會explode bomb，若是則跳到0x8864</li>
 <li>接下來的代碼中：<br><img data-src="https://cdn.joouis.com/lab-gdb-intro-6.png"><ul>
 <li>從0x886a到0x887a是一個迴圈，完整的<code>si</code>走了一邊，只是運行完後不能讀到<code>r2</code> <code>r3</code>的值所指向的地址裏的值</li>
-<li>類似的代碼爲:<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a=2;i=0;</span><br><span class="line">do &#123;</span><br><span class="line">  a+=1;</span><br><span class="line">  i++;</span><br><span class="line">&#125; while (i&lt;=9);</span><br></pre></td></tr></table></figure></li>
+<li>類似的代碼爲:<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span><span class="token assign-left variable">i</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">do</span> <span class="token punctuation">&#123;</span>
+  <span class="token assign-left variable">a</span><span class="token operator">+=</span><span class="token number">1</span><span class="token punctuation">;</span>
+  i++<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>i<span class="token operator">&lt;=</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li>意外但肯定不是巧合地發現，之前輸入的四個數分別存在<code>r7+12</code> <code>r7+16</code> <code>r7+20</code> <code>r7+24</code>裏（其實是用<code>x/s $r7+n</code>試出來的）</li>
 <li>所以輸入的第二個數（上述代碼中的<code>a</code>）在迴圈後會增加10</li>
 <li>而函數最後對比的是<code>r7+16</code>和<code>r7+20</code>，需要他們相等，故輸入時第三個數減第二個數要等於10</li>

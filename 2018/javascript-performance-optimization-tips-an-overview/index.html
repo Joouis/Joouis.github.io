@@ -173,18 +173,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">68</span>
+          <span class="site-state-item-count">69</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">278</span>
+        <span class="site-state-item-count">280</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -354,19 +354,32 @@
 <p>当你在删繁就简、加载更少的 JS 代码之后，试着更聪明地加载它：需要时再加载。</p>
 <p>Webpack 3 有一组了不起的功能名为 <a target="_blank" rel="noopener" href="https://webpack.js.org/guides/code-splitting/">code splitting</a> 和 <a target="_blank" rel="noopener" href="https://webpack.js.org/guides/code-splitting/#dynamic-imports">dynamic imports</a>。相较将所有 JS 模块打包成一个庞大的 app.js 包，这组功能可以自动切分代码并使用 <code>import()</code> 语法异步加载它们。</p>
 <p>你不一定需要使用框架、组件和客户端路由以获得其优点。假设你有一段复杂的代码处理 <code>.mega-widget</code> 类的节点，这段代码可能存在于任意页面上，你可以简单得在你的主 JS 文件中编写如下代码：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.mega-widget&#x27;</span>)) &#123;</span><br><span class="line">  <span class="keyword">import</span>(<span class="string">&#x27;./mega-widget&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.mega-widget'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./mega-widget'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>如果你的应用在当前页找到了部件，它将会动态加载所需的依赖代码。否则一切正常。</p>
 <p>除此之外，Webpack 工作需要其自身的运行时，它将在其生成的所有 JS 文件中注入运行时代码。如果你使用了 <code>commonChunks</code> 插件，你可以使用如下方法<a target="_blank" rel="noopener" href="https://medium.com/connect-the-dots/caching-assets-long-term-with-webpack-5ad24a4c39bd">将运行时抽取到一个独立的代码块中</a>：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> webpack.<span class="property">optimize</span>.<span class="title class_">CommonsChunkPlugin</span>(&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;runtime&#x27;</span>,</span><br><span class="line">&#125;),</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>optimize<span class="token punctuation">.</span>CommonsChunkPlugin</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'runtime'</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>在这个例子中，会将所有代码块中的运行时剔除出来，写入 <code>runtime.js</code> 中。只需确保在主 JS 包之前先加载它，例如这样：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;runtime.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;main-bundle.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>runtime.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main-bundle.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>接下来谈谈 transpiled code 和 polyfills。如果你编写的是现代（ES6+） JS 代码，你很可能正在使用 Babel 将它们转译为 ES5 兼容的代码。转译（Transpiling）不仅因为各种冗余增加文件体积，也因其相比原生 ES6+ 代码更加复杂带来了<a target="_blank" rel="noopener" href="https://github.com/babel/babel/pull/6748">性能退化</a>问题。</p>
 <p>你可能还顺道使用了 <code>babel-polyfill</code> 和 <code>whatwg-fetch</code> 库来补充旧版本浏览器中缺失的一些特性。然后，如果你在代码中使用了 <code>async/await</code> ，你还需要引用 <code>regenerator-runtime</code> 库来转译…</p>
 <p>重点是，为了支持老版本的浏览器，你的 JS 包因此平添了近 100K，不仅体积较大，也会耗费更多的解析和执行成本。</p>
 <p>没理由因为上述问题而降低使用现代浏览器的人的用户体验，这里介绍一个我正在使用、同时 Philip Walton 也在<a target="_blank" rel="noopener" href="https://philipwalton.com/articles/deploying-es2015-code-in-production-today/">这篇文章</a>中介绍的方法：创建两个独立的包并依情况加载。使用 <code>babel-preset-env</code> 可以很容易实现，例如你有一个支持 IE 11 的包和另一个为最新版现代浏览器准备的没有任何 polyfills 的包，一种不优雅但是高效的方式是将以下代码写入内联脚本中：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Function</span>(<span class="string">&#x27;async () =&gt; &#123;&#125;&#x27;</span>)();</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="comment">// create script tag pointing to legacy-bundle.js;</span></span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// create script tag pointing to modern-bundle.js;;</span></span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">new</span> <span class="token class-name">Function</span><span class="token punctuation">(</span><span class="token string">'async () => &#123;&#125;'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// create script tag pointing to legacy-bundle.js;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token comment">// create script tag pointing to modern-bundle.js;;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>如果浏览器无法识别 <code>async</code> 函数，我们则判定它是一个旧版浏览器并加载已经 polyilled 的包，反之将加载一个简洁且现代化的变体。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我们想要你从本文得到的观点是 JS 是一门运行昂贵、应该被小心使用的语言。</p>
