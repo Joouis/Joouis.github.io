@@ -15,7 +15,13 @@ tags:
   - session
 ---
 
-The data comes from the case [**Comprehensive Tesla Stock Analysis and Investment Insights - manus**](https://manus.im/share/xFgpHb15vKqfRPWIs3JJPJ).
+The data comes from these cases:
+
+- [Comprehensive Tesla Stock Analysis and Investment Insights](https://manus.im/share/xFgpHb15vKqfRPWIs3JJPJ)
+- [Comparative Analysis of Travel Insurance Policies](https://manus.im/share/1ICnnOiC9L3HMK07vG0iDn)
+- [Interview Schedule Creation for April 13-15](https://manus.im/share/AN3pVVcq4qHnWbC55XhAYB)
+- [SEO Audit and Optimization Report for Karpathy's Website](https://manus.im/share/AWssWxITcsrl70js5L8LgU)
+- [Customer Form for B2B Gen AI Consulting Firms](https://manus.im/share/YIRZaLUfghVxGCN7dE6hbI)
 
 The history data of a session is provided by the API `https://api.manus.im/api/chat/getSession?sessionId=xxx`.
 
@@ -42,7 +48,8 @@ Q: how many kinds of `agentTaskMode`?
 
 ### chat
 
-`sender`: "user", "assistant"
+- `sender`: "user", "assistant"
+- `content`: Markdown format text
 
 ```json
 {
@@ -69,6 +76,44 @@ Q: how many kinds of `agentTaskMode`?
 With attachments created before.
 
 ```json
+{
+  "id": "JhkoA2vSJq7PUdIAVBpFzM",
+  "type": "chat",
+  "timestamp": 1740979547968,
+  "sender": "user",
+  "messageType": "text",
+  "content": "Here is the survey for available interview times from April 13 to April 15. Please create an interview schedule for me with two interview sessions each day (one in the morning and one in the afternoon). The number of candidates in each session should be as evenly distributed as possible, and the schedule should accommodate each student's available time. Please provide the most reasonable interview schedule.",
+  "attachments": [
+      {
+          "id": "Oe6qO9ScdztzivCMXvdstA",
+          "url": "https://private-us-east-1.manuscdn.com/users/309511696588767621/uploads/Oe6qO9ScdztzivCMXvdstA_na1fn_aW50ZXJ2aWV3X3N1cnZleV9maW5hbA.xlsx?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vdXNlcnMvMzA5NTExNjk2NTg4NzY3NjIxL3VwbG9hZHMvT2U2cU85U2NkenR6aXZDTVh2ZHN0QV9uYTFmbl9hVzUwWlhKMmFXVjNYM04xY25abGVWOW1hVzVoYkEueGxzeCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MTU4MzM0OH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=cnywaO-NMF9UdLF36czp5PW63BPGpOJvJvyrFCiLsgzw6H3wI1yoRQ8l4giGhDltF45BA1I9QCXHac3RdBTBOHRqd3Pm8lz1SU3CVxcYnkrRwVqjpIjrN0u7J69y-cSlclrh5IQs0UnnEXcaBMFgcqG9uG4yQvPHdMi-UXTkYmTSmx-q0VqfuM4gGxWTMC~p4WXGLcJf0wvSDcE4QNkrDbtNTnmGC-Dnoy5U3ett5eX8ySx27PLwJ8~aKBvQMRK28Wkgc52mvBroUWBSm9yMz~QtviRy77DL2qf6G9dG-Qar~Bv6iCRATYYRc7iGnFTizlEVrTA1Lnm-nn-HWGJ4YA__",
+          "type": "file",
+          "filename": "interview_survey_final.xlsx",
+          "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "contentLength": 11353
+      }
+  ]
+}
+
+{
+  "id": "KX9zvuTApeB3f9cYpVcKEl",
+  "type": "chat",
+  "timestamp": 1740986701272,
+  "sender": "user",
+  "messageType": "text",
+  "content": "Please analyze these travel policies and provide a comparative table with key dimensions to clearly highlight the differences between them.",
+  "attachments": [
+      {
+          "id": "oUO7cTCVFHVvQVOkXF0i5q",
+          "url": "https://private-us-east-1.manuscdn.com/users/309511696588767621/uploads/oUO7cTCVFHVvQVOkXF0i5q_na1fn_dHJhdmVsLXBvbGljeS1kb2N1bWVudA.pdf?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vdXNlcnMvMzA5NTExNjk2NTg4NzY3NjIxL3VwbG9hZHMvb1VPN2NUQ1ZGSFZ2UVZPa1hGMGk1cV9uYTFmbl9kSEpoZG1Wc0xYQnZiR2xqZVMxa2IyTjFiV1Z1ZEEucGRmIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzQxNTkwNTAxfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=FQaTrhK0ZTzHWF8QW4Vneobb26Tuzv6CDgFmVUfU2dL375FrH2TaJXIzI68wgHx0NYYMRSiqaALsOdnI0r7Hmam4QBV-7IIrsMlFuIAkRsN7pAlR-POZ6kHBN55L5fVrzV00tyQSymwXW75vRyHGgxpPxcu8HsAJHZBYh9pnelxRKe6eKZcL5fjU2M8qDDKOP7a1CpckPioDwzHAIgQ5y8a67HJmkqw7enTf16J7b6cOoqJW0Ba3eiz~7A83J1QjKDuMj15teiKqjtWMR5XP-V8z~r3iXILCGKWC0kJDxH8QP6Gds~TopIU3MtRC7lT39e2D308gl5Aygi8NE1ypNw__",
+          "type": "file",
+          "filename": "travel-policy-document.pdf",
+          "contentType": "application/pdf",
+          "contentLength": 779625
+      }
+  ]
+}
+
 {
   "type": "chat",
   "messageType": "text",
@@ -126,7 +171,7 @@ With attachments created before.
 }
 ```
 
-Ask for approval.
+Ask for approval by `requestDeployActionId`.
 
 ```json
 {
@@ -138,6 +183,95 @@ Ask for approval.
   "id": "YCrGxLFvxLLJlGHKSfx8zg",
   "sender": "assistant",
   "timestamp": 1741065199191
+}
+```
+
+Text output result.
+
+```json
+{
+  "type": "chat",
+  "messageType": "text",
+  "attachments": [
+      {
+          "url": "https://private-us-east-1.manuscdn.com/sessionFile/1ICnnOiC9L3HMK07vG0iDn/sandbox/17M5PpfEyRmhkYuQKEN1rD_1740987315310_na1fn_L2hvbWUvdWJ1bnR1L3RyYXZlbF9wb2xpY3lfYW5hbHlzaXMvdHJhdmVsX2luc3VyYW5jZV9jb21wYXJpc29uX2FuYWx5c2lz.md?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvMUlDbm5PaUM5TDNITUswN3ZHMGlEbi9zYW5kYm94LzE3TTVQcGZFeVJtaGtZdVFLRU4xckRfMTc0MDk4NzMxNTMxMF9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNSeVlYWmxiRjl3YjJ4cFkzbGZZVzVoYkhsemFYTXZkSEpoZG1Wc1gybHVjM1Z5WVc1alpWOWpiMjF3WVhKcGMyOXVYMkZ1WVd4NWMybHoubWQiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3NDM0OTMwMDV9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=S6sY4GEiJ7Ewfuqs0guIKF~Zz8fn~0FJbrO5fFLB6eFs~s9HxhGbL12~waVslQr17phRTyMNE80r1Ygn4pG9NUYYccTIZFDCgbicCs3Yz0o2CjnnYoRJYuqDfwtwG7B5NmX8A2ClkwJe6QnDVGOuHWM0z~GgBRpHKJHU11dTCw2dOltuRzoiWKIrKrBoXW3Q60mesiI3Fszv9tjhtlT6g52YKVGLlrR6pWXSHrd219mUfp73P~Pa4DkmaTf5~46hNgbWw06jomVvd7K2TgrsIFlwx9DJ812ZCNZwy~4mJz7JYPTBi4P0CLLfv1izeTHewytWeY8SMIPtYhsnlZSd7Q__",
+          "path": "/home/ubuntu/travel_policy_analysis/travel_insurance_comparison_analysis.md",
+          "type": "file",
+          "filename": "travel_insurance_comparison_analysis.md",
+          "timestamp": 1740987315310,
+          "contentType": "text/markdown",
+          "contentLength": 10605
+      },
+      {
+          "url": "https://private-us-east-1.manuscdn.com/sessionFile/1ICnnOiC9L3HMK07vG0iDn/sandbox/17M5PpfEyRmhkYuQKEN1rD_1740987315310_na1fn_L2hvbWUvdWJ1bnR1L3RyYXZlbF9wb2xpY3lfYW5hbHlzaXMvdHJhdmVsX2luc3VyYW5jZV9jb21wYXJpc29uX3RhYmxl.md?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvMUlDbm5PaUM5TDNITUswN3ZHMGlEbi9zYW5kYm94LzE3TTVQcGZFeVJtaGtZdVFLRU4xckRfMTc0MDk4NzMxNTMxMF9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNSeVlYWmxiRjl3YjJ4cFkzbGZZVzVoYkhsemFYTXZkSEpoZG1Wc1gybHVjM1Z5WVc1alpWOWpiMjF3WVhKcGMyOXVYM1JoWW14bC5tZCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzQ5MzAwNX19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=n4xbqL2MlOZaIArjsBB8Jjsrh3cEhvhV1Iiv0KRFVOc1gPPNeRUV6IeZDuoE2zogIvlp8Q41p3TMljG-h5~~QMTulSzgM5iV5b~GT7mn23o9oG0mlwQa9yTblV4rZ4BaFgqM0OFBlUs7LfABjQZnRoRxcd0m4xm18dGFdbeTkPvskQh3DQwmS0GKx~wfB9OBpTeAJOqaeuJJXC-1i7ekC~nH1v5dupBMZbk0~gBL6VgDCN785W05zB8AaOgS80RzUuMXowqkKYzsVo6FP7wZgtkGnWnG5~aJVhqkEAZ7k87YI12TOVGnCc-gqosHqoiDCnmAYKj1qEQoyNCVzZZW2w__",
+          "path": "/home/ubuntu/travel_policy_analysis/travel_insurance_comparison_table.md",
+          "type": "file",
+          "filename": "travel_insurance_comparison_table.md",
+          "timestamp": 1740987315310,
+          "contentType": "text/markdown",
+          "contentLength": 4098
+      }
+  ],
+  "content": "I've completed the comparative analysis of the four travel insurance policies you provided. The analysis includes a comprehensive breakdown of key dimensions such as medical coverage, trip protection, baggage coverage, personal accident and liability, special benefits, plan structure, and additional features.\n\nI've created a detailed report that highlights the strengths and unique offerings of each policy, along with key insights for each dimension and specific recommendations based on different traveler needs.\n\nHere's the full comparative analysis document and the supporting comparison table.",
+  "id": "17M5PpfEyRmhkYuQKEN1rD",
+  "sender": "assistant",
+  "timestamp": 1740987315791
+}
+
+{
+  "type": "chat",
+  "messageType": "text",
+  "attachments": [
+      {
+          "url": "https://private-us-east-1.manuscdn.com/sessionFile/AN3pVVcq4qHnWbC55XhAYB/sandbox/myZ92j2wqYkDtJWabMe6pl_1740979879402_na1fn_L2hvbWUvdWJ1bnR1L3NjaGVkdWxlX3ZhbGlkYXRpb24.txt?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQU4zcFZWY3E0cUhuV2JDNTVYaEFZQi9zYW5kYm94L215WjkyajJ3cVlrRHRKV2FiTWU2cGxfMTc0MDk3OTg3OTQwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNOamFHVmtkV3hsWDNaaGJHbGtZWFJwYjI0LnR4dCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzQ5MzMwMn19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=iRnP0nf6jevr5v84yS5X8~aeWPpdh7zBxzKsFApy7sVVoCCpUU4c0y6g0p2ZLWb-LBVE0rsbcVwhniwP9EGX15xwy9APsd1JxcrCFxL1IekKIkrjZnB3uJbFokn3yVNLra7G7VF6YFAyPnMjSBwQafGNUmU0S~HhxM-a~M-OjJDQnXGMnU7YIeP74Cyk2x-3zHVYAb4txv1YmrTo~BN9GFUTIXQtu5yZirPy6D-ghXdB32O64Z-WYdx28O2QB2dRf7DAgAeBj1aXWnf9TsjhsuLRCD~455t6deFYmc4rFfJJFh6uFtFHLRNqIlGCgPMnPGyrBKtjP4h-CnRDXC8GMg__",
+          "path": "/home/ubuntu/schedule_validation.txt",
+          "type": "file",
+          "filename": "schedule_validation.txt",
+          "timestamp": 1740979879402,
+          "contentType": "text/plain",
+          "contentLength": 461
+      },
+      {
+          "url": "https://private-us-east-1.manuscdn.com/sessionFile/AN3pVVcq4qHnWbC55XhAYB/sandbox/myZ92j2wqYkDtJWabMe6pl_1740979879402_na1fn_L2hvbWUvdWJ1bnR1L2ZpbmFsX2ludGVydmlld19zY2hlZHVsZQ.html?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQU4zcFZWY3E0cUhuV2JDNTVYaEFZQi9zYW5kYm94L215WjkyajJ3cVlrRHRKV2FiTWU2cGxfMTc0MDk3OTg3OTQwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDJacGJtRnNYMmx1ZEdWeWRtbGxkMTl6WTJobFpIVnNaUS5odG1sIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzQzNDkzMzAyfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Jbu7otQtMTx8B2ZuDxWVOxswA-MCH-u4XaiSxpr7NfbwHgOsMewq3FArJYPTiiPREnKBtpclGhBM9IK6NtKLmonjjxMYX45QyZV5646QGmVEJRsLE2xAs9~0JZ3v8i6kazZhkVQl2OCvQq0CC~nBw03gX3pPafYVbNplYP7iwjVaL9LPWBkI~W~tc7hdxMKYs40hUkVq2loJgsA6hILGFimeeUDUdEBZT8Xl9RI0jMsyTihrYsDNAhWigSbiOkc5AeS9UEChLTvzhPfVHLTld9RmhcMyPla4F4DsR4fEG2BSvLnOTG7qFwnn~qv879bpUrLaVZZSEy9fH3aHF6AjZg__",
+          "path": "/home/ubuntu/final_interview_schedule.html",
+          "type": "file",
+          "filename": "final_interview_schedule.html",
+          "timestamp": 1740979879402,
+          "contentType": "text/html",
+          "contentLength": 5892
+      },
+      {
+          "url": "https://private-us-east-1.manuscdn.com/sessionFile/AN3pVVcq4qHnWbC55XhAYB/sandbox/myZ92j2wqYkDtJWabMe6pl_1740979879402_na1fn_L2hvbWUvdWJ1bnR1L2ZpbmFsX2ludGVydmlld19zY2hlZHVsZQ.md?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQU4zcFZWY3E0cUhuV2JDNTVYaEFZQi9zYW5kYm94L215WjkyajJ3cVlrRHRKV2FiTWU2cGxfMTc0MDk3OTg3OTQwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDJacGJtRnNYMmx1ZEdWeWRtbGxkMTl6WTJobFpIVnNaUS5tZCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzQ5MzMwMn19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=m2e5536kp1d3IHj9kES0U9ON~EcGn65VGejuVHtZb~D9QUVi7eFqhfgD45MQuGpDb5yZEAT4HFrVTlhSPjwFaCJjYs9vO6Ke8Ysu7qoyVNYASU0LrIupfPg2MjCQpGsMI61bHTUIAfqJbh~5DBg1pfEkGXPnb9Z2vR6KHTepIOTtFZWyf-LcFSYd2789kGUos-i4fYdWfDN8RfzK1dslNs8F8b8FItT3n4UdqFYOgxNikUjc253uWFWsVBwHAnvYp90Zj1SwyutD4VdqhPD-zy1SI~ZWXuDHd4csshG3dxp6g7YB2SHpKd7ygzHxMcsL1cof4A7Du6lLXZAsSlpWAQ__",
+          "path": "/home/ubuntu/final_interview_schedule.md",
+          "type": "file",
+          "filename": "final_interview_schedule.md",
+          "timestamp": 1740979879402,
+          "contentType": "text/markdown",
+          "contentLength": 1566
+      },
+      {
+          "url": "https://private-us-east-1.manuscdn.com/sessionFile/AN3pVVcq4qHnWbC55XhAYB/sandbox/myZ92j2wqYkDtJWabMe6pl_1740979879402_na1fn_L2hvbWUvdWJ1bnR1L2ludGVydmlld19zY2hlZHVsZV92aXN1YWw.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQU4zcFZWY3E0cUhuV2JDNTVYaEFZQi9zYW5kYm94L215WjkyajJ3cVlrRHRKV2FiTWU2cGxfMTc0MDk3OTg3OTQwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDJsdWRHVnlkbWxsZDE5elkyaGxaSFZzWlY5MmFYTjFZV3cucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzQzNDkzMzAyfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=sL97hTV77CAh9IDkZy6RNBWXd-a3JBqSIoucaElZoQWdK-gCiNXRVpUaUIGRReYiAdwvyVRtvIrUx4VcUdgiyrOa76EZv2hVSYNmLH1cu9qaxivtDvwfY~8d8C8iR30ojQGfwgbABR0bBfK7K4jvjA3KH04Od5bk2mTU17SuegX4das6D6SZO0Zyty7WYJy1KOoxTgw61nWByaaGQu4OzCvJDhdZGb5XxVrCIoKvqlbtRVw9l6qZTQGjiawe-fHzmRDbn3bglsBN8PvGBrDhHKl1TdGoNij9voFKfixgMs~YO5G~cSM4n5OfhzEGphca89LgiPpvIz7hkCcjf~ISlg__",
+          "path": "/home/ubuntu/interview_schedule_visual.png",
+          "type": "image",
+          "filename": "interview_schedule_visual.png",
+          "timestamp": 1740979879402,
+          "contentType": "image/png",
+          "contentLength": 373745
+      },
+      {
+          "url": "https://private-us-east-1.manuscdn.com/sessionFile/AN3pVVcq4qHnWbC55XhAYB/sandbox/myZ92j2wqYkDtJWabMe6pl_1740979879402_na1fn_L2hvbWUvdWJ1bnR1L2ludGVydmlld19zY2hlZHVsZQ.txt?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQU4zcFZWY3E0cUhuV2JDNTVYaEFZQi9zYW5kYm94L215WjkyajJ3cVlrRHRKV2FiTWU2cGxfMTc0MDk3OTg3OTQwMl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDJsdWRHVnlkbWxsZDE5elkyaGxaSFZzWlEudHh0IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzQzNDkzMzAyfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=QOl4zvhkq~bx7CWVWuTR3aWNMZ-cFp7paT7Xa54ARx3X5D0KCGpkAzdEmJWIpPVEf25soICrGMtBkRMKazzUXZ3~7g2NcyKI5CsKZZD~Le45LZje1qYDlLgTmC201LiqAefkLKZ3xviUPAdPwWUYrYA05HwqJyNb3zYnGpFyIC0Zrh~HOiUvD52v~CMKmfAAuJKWq-39dDIEYG9XLuTVOPQtE9QmQi6Pcw5hU208uY7mU6h2jRCraROTMZeOSMcF8hv2bfIM1jH6KPEXgTDKP-5ihe6xrihh8yOYnZifGQgEvRqCYjk0~9WsekWHNSLhtDzQlLDKIhhQkpJGl9jmiA__",
+          "path": "/home/ubuntu/interview_schedule.txt",
+          "type": "file",
+          "filename": "interview_schedule.txt",
+          "timestamp": 1740979879402,
+          "contentType": "text/plain",
+          "contentLength": 1179
+      }
+  ],
+  "content": "I've completed creating the interview schedule based on the survey data. Here's what I've prepared:\n\n1. I've created a balanced interview schedule with two sessions per day (morning and afternoon) from April 13-15.\n2. All 45 candidates have been assigned to sessions according to their availability.\n3. The distribution is well-balanced with 8, 7, 6, 8, 7, and 7 candidates per session.\n4. The schedule has been validated to ensure all candidates are assigned to times they're available.\n\nI'm attaching the schedule in multiple formats:\n- A text version with the basic schedule\n- A markdown version with more detailed formatting\n- An HTML version with enhanced visual presentation\n- A visual representation showing the schedule graphically\n\nThe schedule successfully accommodates all candidates' availability constraints while maintaining an even distribution across all six sessions.",
+  "id": "myZ92j2wqYkDtJWabMe6pl",
+  "sender": "assistant",
+  "timestamp": 1740979879558
 }
 ```
 
@@ -267,8 +401,10 @@ Note that `planStepId` will be generated before `stepId`.
 
 ### toolUsed
 
-- `tool`: "terminal", "text_editor"
+- `tool`: "terminal", "text_editor", "search", "browser"
 - `detail` data should be used to show runtime outputs in “Manus’ computer” card
+
+#### `terminal`
 
 ```json
 {
@@ -298,7 +434,11 @@ Note that `planStepId` will be generated before `stepId`.
     },
     "planStepId": "E7Q4GDL3FsNrzRuv3Cb5Xa"
 }
+```
 
+#### `text_editor`
+
+```json
 {
     "id": "g5UfojfdB2VhWIxwcvs6Uj",
     "type": "toolUsed",
@@ -324,12 +464,286 @@ Note that `planStepId` will be generated before `stepId`.
 }
 ```
 
+#### `search`
+
+```json
+{
+  "id": "ojMR1Nj4QG7x8YWJRZ3h97",
+  "type": "toolUsed",
+  "timestamp": 1741008399077,
+  "actionId": "toolu_01DS3VkDNRcRRg77a3MmW8Qs",
+  "tool": "search",
+  "status": "success",
+  "brief": "Manus 正在搜索网络",
+  "description": "正在搜索 `pre-Series B American B2B AI companies startups`",
+  "message": {
+      "action": "正在搜索",
+      "param": "pre-Series B American B2B AI companies startups"
+  },
+  "detail": {
+      "search": {
+          "queries": [
+              "pre-Series B American B2B AI companies startups"
+          ],
+          "results": [
+              {
+                  "favicon": "TODO",
+                  "link": "https://explodingtopics.com/blog/ai-startups",
+                  "snippet": "Here are our picks for some of the most promising AI startups with a broad range of use cases across different industries.",
+                  "title": "60 Growing AI Companies & Startups (2025) - Exploding Topics"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://topstartups.io/?industries=Artificial%20Intelligence",
+                  "snippet": "Top AI startups and new AI companies hiring now. Sort by valuation and recent funding. Funded by Sequoia, YC, A16Z, Benchmark - the very best.",
+                  "title": "Top 147 AI Startups 2025 | Funded by Sequoia, YC, A16Z"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.ycombinator.com/companies/industry/ai",
+                  "snippet": "Browse 100 of the top AI startups funded by Y Combinator. We also have a Startup Directory where you can search through over 5,000 companies.",
+                  "title": "AI (Artificial Intelligence) Startups funded by Y Combinator (YC) 2025"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://aimresearch.co/generative-ai/b2b-ai-startup-ceos-to-watch-in-the-u-s-in-2024",
+                  "snippet": "According to forecasts, around $87 billion in opportunities are projected to emerge in the AI sector for B2B companies this year, with ...",
+                  "title": "B2B AI Startup CEOs to Watch in the U.S. in 2024 - AIM Research"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://growthlist.co/pre-seed-startups/",
+                  "snippet": "We compile startup data every week and have thousands of pre-seed funded startups in our database that we update every week.",
+                  "title": "List of Funded Pre-Seed Startups For 2025 - Growth List"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.ycombinator.com/companies/industry/b2b",
+                  "snippet": "Browse 100 of the top B2B Software and Services startups funded by Y Combinator.",
+                  "title": "B2B Software and Services Startups funded by Y Combinator (YC ..."
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://startupsavant.com/startups-to-watch/ai",
+                  "snippet": "Take a look at the top AI startups entering the market today and learn about the investors, funding amounts, and founders who are changing the world.",
+                  "title": "43 Top AI Startups to Watch in 2025 | TRUiC"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.pymnts.com/artificial-intelligence-2/2025/snowflake-plans-ai-hub-and-200-million-in-startup-investments/",
+                  "snippet": "Data cloud company Snowflake says it is opening a new Silicon Valley “AI hub” designed to support artificial intelligence startups.",
+                  "title": "Snowflake Plans 'AI Hub' and $200 Million in Startup Investments"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.whoraised.io/saas-startups/artificial-intelligence-saas-startups",
+                  "snippet": "Here is a list of 152 SaaS Startups in the Artificial Intelligence Industry. We explore each business including funding, investors and company profile.",
+                  "title": "152 SaaS Startups in the Artificial Intelligence Industry | who raised?"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.seedtable.com/best-ai-startups",
+                  "snippet": "Discover Fast-growing Global startups ... Seedtable uses technology and people to track over 71,000 companies to help you find the right ones to partner with.",
+                  "title": "69 Best Ai Startups to Watch in 2025 - Seedtable"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.netguru.com/blog/generative-ai-startups",
+                  "snippet": "We've curated this list of 31 promising generative AI startups from different categories and markets.",
+                  "title": "30 Remarkable Generative AI Startups You Simply Can't Ignore"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://news.crunchbase.com/ai/startup-billion-dollar-fundraisers-openai-anthropic/",
+                  "snippet": "There were at least 23 private, AI-focused startups funded in the past couple years that have raised over $1 billion in equity financing to date.",
+                  "title": "These Are The AI Startups That Raised Over $1B - Crunchbase News"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://aventis-advisors.com/ai-valuation-multiples/",
+                  "snippet": "We reviewed all the funding rounds by AI companies across the globe in the period between 2010 and September 2024.",
+                  "title": "AI Valuation Multiples 2024 - Aventis Advisors"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.startupblink.com/blog/ai-accelerators-incubators-and-startup-programs/",
+                  "snippet": "Explore our list of AI accelerators, incubators, and startup programs offering funding, mentorship, and resources to help AI startups grow ...",
+                  "title": "Top 20 AI Accelerators, Incubators & Startup Programs - StartupBlink"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.digitalocean.com/resources/articles/startup-funding-series-a-b-c",
+                  "snippet": "In fact, the median Series B startup has a pre-money valuation of $40 million. Series B funding is mostly used for scale — not development.",
+                  "title": "Startup funding explained: Series A, Series B, Series C | DigitalOcean"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://growthrocks.com/blog/ai-startups/",
+                  "snippet": "The Top 15 AI Startups to Keep Eye on in 2024 · 1. ElevenLabs [AI voice generator] · 2. Krutrim [AI computing] · 3. DataSnipper [intelligent ...",
+                  "title": "The Top 15 AI Startups to Keep Eye on in 2024 - GrowthRocks"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://topstartups.io/?funding_round=Series%20A",
+                  "snippet": "Top Series A startups hiring now. Sort by valuation and recent funding. Research Series A startup salary and equity.",
+                  "title": "Top Series A Startups 2025 — Sequoia, YC, A16Z, Benchmark"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.datamation.com/artificial-intelligence/ai-companies/",
+                  "snippet": "The top AI companies are leading the way in developing and deploying cutting-edge artificial intelligence applications across nearly every sector.",
+                  "title": "100 Top AI Companies Trendsetting In 2024 - Datamation"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://visible.vc/blog/startup-funding-stages/",
+                  "snippet": "How to Acquire Pre-Seed Funding? Raising a pre-seed round mirrors a traditional B2B sales process. You will be talking and adding investors ...",
+                  "title": "The Ultimate Guide to Startup Funding Stages - Visible.vc"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies",
+                  "snippet": "This is a list of unicorn startup companies. In finance, a unicorn is a privately held startup company with a current valuation of US$1 billion or more.",
+                  "title": "List of unicorn startup companies - Wikipedia"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://www.digitalocean.com/resources/articles/startup-funding-series-a-b-c",
+                  "snippet": "What is Series B? Most Series A funding is expected to last 12 to 18 months. If a company still needs funds after this period to dominate its market, it can go through Series B funding. By the point a startup gets to Series B funding, it's already successful. However, this success isn't necessarily measured in profits.",
+                  "title": "Startup funding explained: Series A, Series B, Series C | DigitalOcean"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://explodingtopics.com/blog/ai-startups",
+                  "snippet": "HERE ARE OUR PICKS FOR SOME OF THE MOST PROMISING AI STARTUPS WITH A BROAD RANGE OF USE CASES ACROSS DIFFERENT INDUSTRIES.\n1\nDeepL. 5-year search growth: 258% ...\n2\nFrame AI. 5-year search growth: 1,900% ...\n3\nUizard. 5-year search growth: 3,233% ...\n4\nMoveworks. 5-year search growth: 296% ...\n5\nDatabricks. ...\n6\nSynthesia. ...\n7\nCodeium. ...\n8\nCohere.",
+                  "title": "60 Growing AI Companies & Startups (2025) - Exploding Topics"
+              },
+              {
+                  "favicon": "TODO",
+                  "link": "https://ascendixtech.com/how-many-ai-companies-are-there/",
+                  "snippet": "How Many AI Startups Are There? According to Stanford's 2024 AI Index Report, there are approximately 10,095 AI startups across the top ten countries leading in artificial intelligence innovation. The United States dominates the field with 5,509 AI startups, accounting for more than half of this total.",
+                  "title": "How Many AI Companies Are There in the World? [2024] - Ascendix Tech"
+              }
+          ]
+      }
+  },
+  "planStepId": "5JipVHomfozTx0oN3E9tdH"
+}
+```
+
+#### `browser`
+
+```json
+{
+  "id": "CXm1fugpdRdl6JKocCWnRR",
+  "type": "toolUsed",
+  "timestamp": 1740980974476,
+  "actionId": "toolu_01P9z6gShaD7Y6jUZD8LXfzL",
+  "tool": "browser",
+  "status": "success",
+  "brief": "Manus 正在使用浏览器",
+  "description": "正在浏览 `https://karpathy.ai/`",
+  "message": {
+      "action": "正在浏览",
+      "param": "https://karpathy.ai/"
+  },
+  "detail": {
+      "browser": {
+          "url": "https://karpathy.ai/",
+          "screenshot": "https://private-us-east-1.manuscdn.com/sessionFile/AWssWxITcsrl70js5L8LgU/browserScreenshots/5iFPa0Xhs9IAzHuKf7ByKD_1740980970271_na1fn_Y2xlYW4.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQVdzc1d4SVRjc3JsNzBqczVMOExnVS9icm93c2VyU2NyZWVuc2hvdHMvNWlGUGEwWGhzOUlBekh1S2Y3QnlLRF8xNzQwOTgwOTcwMjcxX25hMWZuX1kyeGxZVzQud2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzQ5Mzg4MX19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=wHW~YsIRLSrIuv~Pi8AdnL9bm2M9~rKqH0iT9cE9QY-pmK-MVSIIxm1ohvb8nMo0TYbilkMSVL-00Pf40IGZr4rlpKxd2mG3RqrZ7UwmuCp97jN999EBSBr-Ep1dqbKIDPKyVD0rdMsGgqWwfWv~ukGgTFU0~mlnRLkaRVxmJctEoNqdMiKEO7gnuUCzaiG-9n0cFZ1HZlSOGUVt4jKjVQyvulp~5Y-UH8NmKIL~qeP-v0VkyXnpsp~QF1v1LkOVm66xCnE99kwWlKKB5RBcXFUA5dsQruJ2AJOX4pEAEg7wKWeU59cbMWlgRKjrM2P6cbFaKO4dRBCJAik7Uk7OYw__"
+      }
+  },
+  "planStepId": "3mPWD1nYK6JeimtDwK4N6e"
+}
+
+{
+  "id": "3olVNF5YnNYm7oK5hsTeQy",
+  "type": "toolUsed",
+  "timestamp": 1740981189108,
+  "actionId": "toolu_01HMaehhr62BUTN5dqhHyaGy",
+  "tool": "browser",
+  "status": "success",
+  "brief": "Manus 正在使用浏览器",
+  "description": "运行 JavaScript: `// Check for canonical tags\nconst canonicalLink = document.querySelector('link[rel=\"canonical\"]');\nconst canonicalUrl = canonicalLink ? canonicalLink.href : 'No canonical URL found';\n\n// Check for schema markup\nconst schemaScripts = document.querySelectorAll('script[type=\"application/ld+json\"]');\nconst schemaData = Array.from(schemaScripts).map(script => script.textContent);\n\n// Check for SSL implementation\nconst isSSL = window.location.protocol === 'https:';\n\n// Analyze internal linking structure\nconst internalLinks = Array.from(document.getElementsByTagName('a'))\n  .filter(a => a.href.includes('karpathy.ai'))\n  .map(a => ({\n    text: a.textContent.trim(),\n    href: a.href\n  }));\n\n// Check for duplicate content\nconst h1Tags = document.getElementsByTagName('h1');\nconst h1Count = h1Tags.length;\n\n// Check for hreflang tags\nconst hreflangTags = document.querySelectorAll('link[rel=\"alternate\"][hreflang]');\nconst hreflangData = Array.from(hreflangTags).map(tag => ({\n  hreflang: tag.getAttribute('hreflang'),\n  href: tag.getAttribute('href')\n}));\n\n// Return all collected data\nJSON.stringify({\n  canonicalUrl,\n  schemaData,\n  isSSL,\n  internalLinks,\n  h1Count,\n  hreflangData\n}, null, 2);`",
+  "message": {
+      "action": "正在运行 JavaScript",
+      "param": "// Check for canonical tags\nconst canonicalLink = document.querySelector('link[rel=\"canonical\"]');\nc..."
+  },
+  "detail": {
+      "browser": {
+          "url": "https://karpathy.ai/sitemap.xml",
+          "screenshot": "https://private-us-east-1.manuscdn.com/sessionFile/AWssWxITcsrl70js5L8LgU/browserScreenshots/8ok3S2fztznd3xXXAckWuU_1740981186961_na1fn_Y2xlYW4.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQVdzc1d4SVRjc3JsNzBqczVMOExnVS9icm93c2VyU2NyZWVuc2hvdHMvOG9rM1MyZnp0em5kM3hYWEFja1d1VV8xNzQwOTgxMTg2OTYxX25hMWZuX1kyeGxZVzQud2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzQ5Mzg4MX19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=a5f63042KYtlkK0EBZ~6wchQhFIyF3UPznX5BwyRhOTkBKqIxpccQKwfA61Mjoh7G3olaAEnMoKY8V33yppQqh~XtqhDH4Zi9WhhvPjvsT1x3kEUi~TsNAPWAyquTsevwp8AnN3FNvji6W5LejYf3FPqYrwDxQ3CovabG66gTymBPuDH6xRPpTMZJ3e5V6dJpUeFvfme2P83lMfOocPanb6oVUjuI5NbFtPlfrBCdZ1viRbW7nsJ17cva8xnLMhdGvSDiZgpjR3cR8JQgWIduGS6~OGYDEWJjWbSLzruXCSfMKgISIRKu8p3I-r1V92FdPnf3ibZEFO0DWvc5t-cEg__"
+      }
+  },
+  "planStepId": "zIMD9AzOodmLihMIWvrfau"
+}
+
+{
+    "id": "HWODKdCH1qsyTRRqfBr9Rv",
+    "type": "toolUsed",
+    "timestamp": 1740981300966,
+    "actionId": "toolu_01JbRvGTd1ZZqro7x9cG7fyp",
+    "tool": "browser",
+    "status": "success",
+    "brief": "Manus 正在使用浏览器",
+    "description": "向下滚动",
+    "message": {
+        "action": "向下滚动"
+    },
+    "detail": {
+        "browser": {
+            "url": "https://karpathy.ai/sitemap.xml",
+            "screenshot": "https://private-us-east-1.manuscdn.com/sessionFile/AWssWxITcsrl70js5L8LgU/browserScreenshots/NtlzbhabiafX6YzkUV4IPW_1740981297970_na1fn_Y2xlYW4.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQVdzc1d4SVRjc3JsNzBqczVMOExnVS9icm93c2VyU2NyZWVuc2hvdHMvTnRsemJoYWJpYWZYNll6a1VWNElQV18xNzQwOTgxMjk3OTcwX25hMWZuX1kyeGxZVzQud2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzQ5Mzg4MX19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=vp3ct3QZMgwNEexJpMuxZ-PHgPnBjrwhD2jG6A10X11vOy7bfEbvF8eVJW~6diSn1hqnOFKVeOP0-dtbA81KCYQoWnEJlKzPXjQOF3JSoNKSfByCtCtmGOaeFony-4RFvgLhIXFo5YRlXK3yqOjLPHJ61ZjDtv8ubH8nKXiQR7EpgFCkEdY~UYCy6G5mpOBRO8SRF2PDvkjbnHaMLhKsR1ktX-A1KHfrnCipV7u4sxz-~8wtNlVpI195iFT0P1zxoG8SYoFUMdPojuqM3HZm2vRhPK8WoDYGfT9UslFNOrzVLMEu0oT0~ngIyS3LdoMstGATwB4jg4b9WJMkD7yYOw__"
+        }
+    },
+    "planStepId": "aEN75n7TG4G4jQIa3Wcq6w"
+}
+
+{
+    "id": "TQdH6uiDxug1mvfuax1wev",
+    "type": "toolUsed",
+    "timestamp": 1741008567997,
+    "actionId": "toolu_01KMrkUjZRaNwYtYszogRu3S",
+    "tool": "browser",
+    "status": "success",
+    "brief": "Manus 正在使用浏览器",
+    "description": "点击索引为 `17` 的元素",
+    "message": {
+        "action": "正在点击元素"
+    },
+    "detail": {
+        "browser": {
+            "url": "https://topstartups.io/?industries=Artificial%20Intelligence",
+            "screenshot": "https://private-us-east-1.manuscdn.com/sessionFile/YIRZaLUfghVxGCN7dE6hbI/browserScreenshots/4krQb4zV8cVF2C2ZBHqGd5_1741008563479_na1fn_Y2xlYW4.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvWUlSWmFMVWZnaFZ4R0NON2RFNmhiSS9icm93c2VyU2NyZWVuc2hvdHMvNGtyUWI0elY4Y1ZGMkMyWkJIcUdkNV8xNzQxMDA4NTYzNDc5X25hMWZuX1kyeGxZVzQud2VicCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzQ5NDM4M319fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=fGPk7NotNLYyve10v9CMq~3k~B-QXeWQ8m17S9276KOpqNcv5cFnhVPHn2F08j-EQVWWJPyNqnVoHgmZ22p5YdmG1DC1wGKmRwzwMZ41-mFGW-W2kdSYRi9I3Ha9uPP23ZpgR1HPLDu-wOAKQzhPZCX1Mx0F8y-2qrJVmLqeAyaELm6Pvlk7cZzSGF~W5hJptHx7xdfARXLWV-gtKU~XtCu5ZdIZfutyjryGPiV8xIknpTyFvPfR~MCypNWMAXY2tR3MAmV1x3r~F7CWj5JV44kpYZrTPI-maPUtnkoxXnt7oLXFNUAHFYamBq86uo8C5ZNjTa9Q5D25nlbSicp8uw__"
+        }
+    },
+    "planStepId": "crQ9ZsB23l5MN7IYhwOnSx"
+}
+
+{
+    "id": "AUsLw5l0nxo5Qwa4jZhZQM",
+    "type": "toolUsed",
+    "timestamp": 1741009272646,
+    "actionId": "toolu_014ymijbAfUVMC9RFfPht8oA",
+    "tool": "browser",
+    "status": "error",
+    "brief": "Manus 正在使用浏览器",
+    "description": "browser:Error executing action browser_navigate: Page.goto: net::ERR_EMPTY_RESPONSE at http://8000-i5hfldcpydtx82vqb7cu1-226a4af3.manus.computer/\nCall log:\n  - navigating to \"http://8000-i5hfldcpydtx82vqb7cu1-226a4af3.manus.computer/\", waiting until \"commit\"\n",
+    "message": {
+        "action": "正在处理浏览器错误"
+    },
+    "planStepId": "iSOY2zdYOeyP0kAWNHrDLF"
+}
+```
+
 ### planUpdate
 
 - `status`: "doing", "todo", "done"
 - `endAt` for "done" status task
 
 It seems that this event will be emitted after a `toolUsed` or `newPlanStep` event.
+
+`tasks` list in `planUpdate` event will be appended after user asked a new question.
 
 ```json
 {
@@ -407,6 +821,10 @@ It seems that this event will be emitted after a `toolUsed` or `newPlanStep` eve
 
 ![](https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-2.avif)
 
+`newPlanStep` seems to be the flag to indicate next step is beginning. (Guess the step status is also controlled by this.)
+
+![](https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-3.avif)
+
 ```json
 {
   "id": "4UHAXLMlsuovhOWGm6WBzB",
@@ -433,14 +851,10 @@ It seems that this event will be emitted after a `toolUsed` or `newPlanStep` eve
 }
 ```
 
-## Insights
-
-- `newPlanStep` seems to be the flag to indicate next step is beginning. (Guess the step status is also controlled by this.)
-    ![](https://cdn.joouis.com/unpacking-the-data-structure-of-manus-session-3.avif)
-- `statusUpdate` and `toolUsed` events searched by a same `planStepId` .
-- `tasks` list in `planUpdate` event will be appended after user asked a new question.
 
 ## A steps collection of plan
+
+`statusUpdate` and `toolUsed` events searched by a same `planStepId` .
 
 ```json
 [
